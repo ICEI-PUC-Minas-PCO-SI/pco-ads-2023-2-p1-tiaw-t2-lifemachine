@@ -2,25 +2,34 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11691172&assignment_repo_type=AssignmentRepo)
 # Título do Projeto
 
-`CURSO: Sistemas de Informação`
+`CURSO: Análise e Desenvolvimento de Sistemas`
 
 `DISCIPLINA: Projeto - Aplicações Web`
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O Projeto seria um sistema para auxiliar pessoas no âmbito da academia no qual teria um acesso único em que quando a pessoa se cadastrasse, ela teria campos para informar ao sistema coisas como:
+
+-Objetivo(Emagrecer, Ganhar massa etc.)
+-Tempo disponível(Por exemplo: 2horas diárias, 5 dias da semana) 
+-Horário de sono/Quanto tempo o usuário costuma dormir
+-Parte do corpo no qual o usuário quer ter um melhor desenvolvimento (Opcional)
+
+E com essas informações o sistema analisaria todo o conteúdo adicionado pelo usuário e iria desenvolver um "formulário" no qual vai mostrar uma rotina de treino de acordo com o objetivo que o usuário escolheu e com seu tempo disponível, terá fichas e periodizações de treino diferentes caso a pessoa queira um desenvolvimento em pontos específicos (Não só de estética mas também caso a pessoa queira desenvolver algum atributo, como por exemplo força ou resistência). O sistema poderá ter uma "calculadora de sono" vinculada, no qual é um estudo que demonstra quanto tempo seria o mais saudável para vc dormir de acordo com sua rotina/o tempo que vc tem disponível.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Caio Ferreira Araujo
+* Pedro Henrique Ferraz Lima
+* Erick Soares Costa
+* Karolayne Ketheley Dias de Sousa
+* Daniel Teles dos Prazeres
+* Bruna Gomes de Souza
+* 
 
 ## Orientador
 
-* Nome completo do professor 1
+* Fábio Leandro Rodrigues Cordeiro
 
 # Planejamento
 
