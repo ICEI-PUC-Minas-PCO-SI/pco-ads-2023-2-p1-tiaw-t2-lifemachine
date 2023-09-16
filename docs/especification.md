@@ -1,8 +1,6 @@
 # Especificações do Projeto
+Abordaremos o problema da gestão das rotinas de condicionamento físico na academia e apresentaremos uma solução centrada nos usuários. Utilizaremos técnicas como diagramas de pessoas e histórias de usuários para mapear suas necessidades. Nossa solução é um sistema integrado e adaptativo que oferece suporte personalizado, usando algoritmos de aprendizado de máquina. Isso permite criar rotinas de treinamento baseadas em objetivos, tempo disponível e preferências pessoais, promovendo a importância do sono adequado. A abordagem atende a uma variedade de perfis de usuários, garantindo a segurança dos dados. Vamos continuar desenvolvendo o projeto para oferecer uma experiência abrangente e personalizada. Assim utilizando as tecnologias de HTML, CSS, Java Script, e Bootstrap, Back-end, GitHub, Local storage, Local storage Group server.
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
 
