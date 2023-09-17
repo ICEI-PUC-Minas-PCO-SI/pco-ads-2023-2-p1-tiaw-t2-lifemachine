@@ -1,7 +1,12 @@
 # Especificações do Projeto
 Abordaremos o desafio da gestão das rotinas de condicionamento físico na academia e apresentaremos uma solução centrada nos usuários. Utilizaremos técnicas como diagramas de personas e histórias de usuários para mapear suas necessidades. Nossa solução é um sistema integrado e adaptativo, impulsionado por algoritmos de aprendizado de máquina, que oferece suporte personalizado. Isso nos permite criar rotinas de treinamento personalizadas com base nos objetivos, tempo disponível e preferências individuais, destacando a importância de um sono adequado e alimentação saudável
 
-Nossa abordagem é flexível, atendendo a uma ampla gama de perfis de usuários, com a máxima priorização da segurança dos dados. Continuaremos a aprimorar este projeto, empregando tecnologias como HTML, CSS, JavaScript e Bootstrap para o frontend, além de utilizar recursos de backend, GitHub e armazenamento local e em grupo para oferecer uma experiência completa e personalizada."
+Nossa abordagem é flexível, atendendo a uma ampla gama de perfis de usuários, com a máxima priorização da segurança dos dados. Continuaremos a aprimorar este projeto, empregando as tecnologias de HTML e CSS.
+Além diso, utilizaremos o framework BootStrap para agilizar o desenvolvimento do Front-end.
+
+Na área do "Back-end", adotaremos uma abordagem diferente, optando por desenvolver uma API para cobrir o papel do Back-end, fornecendo dados para o cliente. Para isso iremos utilizar das tecnologias do JavaScript. Quanto ao armazenamento, implementaremos o um sistema CRUD com JSON Server.
+
+O versionamento do código será gerenciado por meio da tecnologia do Git, hospedado na plataforma GitHub, para facilitar a colaboração e o controle das alterações ao longo do projeto.
 
 ## Personas
 
