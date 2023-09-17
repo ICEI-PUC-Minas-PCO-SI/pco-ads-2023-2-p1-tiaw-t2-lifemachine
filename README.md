@@ -28,7 +28,7 @@ Com base nessas informações, o sistema realizará uma análise abrangente e, a
 * Karolayne Ketheley Dias de Sousa
 * Daniel Teles dos Prazeres
 * Bruna Gomes de Souza
-* 
+* Rodrigo Falcão Muniz
 
 ## Orientador
 
