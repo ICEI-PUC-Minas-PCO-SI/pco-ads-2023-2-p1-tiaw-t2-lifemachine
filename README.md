@@ -8,14 +8,16 @@
 
 `SEMESTRE: 1º`
 
-O Projeto seria um sistema para auxiliar pessoas no âmbito da academia no qual teria um acesso único em que quando a pessoa se cadastrasse, ela teria campos para informar ao sistema coisas como:
+O projeto consiste em um sistema projetado para auxiliar indivíduos no ambiente acadêmico, oferecendo um acesso único. Quando um usuário se cadastra, ele terá a possibilidade de preencher campos com informações relevantes, tais como:
 
--Objetivo(Emagrecer, Ganhar massa etc.)
--Tempo disponível(Por exemplo: 2horas diárias, 5 dias da semana) 
--Horário de sono/Quanto tempo o usuário costuma dormir
--Parte do corpo no qual o usuário quer ter um melhor desenvolvimento (Opcional)
+.Dados pessoais (Nome, sexo, idade, CPF, CEP, etc.)
+.Informações sobre o corpo (altura, peso, medidas, restrições médicas, etc.)
+.Objetivos (Perda de peso, ganho de massa muscular, adoção de uma dieta saudável, regulagem do sono)
+.Disponibilidade de tempo (por exemplo, 2 horas diárias, 5 dias por semana)
+.Padrões de sono (horário de sono e duração habitual do sono)
+.Áreas específicas do corpo para desenvolvimento (opcional)
 
-E com essas informações o sistema analisaria todo o conteúdo adicionado pelo usuário e iria desenvolver um "formulário" no qual vai mostrar uma rotina de treino de acordo com o objetivo que o usuário escolheu e com seu tempo disponível, terá fichas e periodizações de treino diferentes caso a pessoa queira um desenvolvimento em pontos específicos (Não só de estética mas também caso a pessoa queira desenvolver algum atributo, como por exemplo força ou resistência). O sistema poderá ter uma "calculadora de sono" vinculada, no qual é um estudo que demonstra quanto tempo seria o mais saudável para vc dormir de acordo com sua rotina/o tempo que vc tem disponível.
+Com base nessas informações, o sistema realizará uma análise abrangente e, a partir disso, criará um plano de treinamento personalizado. Esse plano levará em consideração o objetivo do usuário, a disponibilidade de tempo e, se necessário, a ênfase em áreas específicas do corpo ou atributos, como força ou resistência. Além disso, o sistema pode incluir uma calculadora de sono que determinará o tempo de sono mais saudável com base na rotina e na disponibilidade de tempo do usuário."
 
 ## Integrantes
 
