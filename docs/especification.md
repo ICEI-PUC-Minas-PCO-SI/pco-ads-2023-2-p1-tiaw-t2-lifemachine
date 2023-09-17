@@ -94,12 +94,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve ser responsivo | MÉDIA | 
 |RNF-003| Garantir segurança dos usuarios com seus dados | ALTA | 
 |RNF-004| Armazenar dados de login dos usuários | ALTA | 
 |RNF-005| Armazenar dados da ficha e a sugestoes do aplicativo | MÉDIA| 
-|RNF-006| Disponibilidade a qualquer momento  | | ALTA| 
+|RNF-006| Disponibilidade de acesso a qualquer momento  |  ALTA| 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -126,7 +125,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |02| Não pode ser desenvolvido um módulo de backend        |
 |03| Não pode falta requisitos declarados                  |
 |04| Não pode faltar nenhuma documentação                  |
-|05| Qualidade em relação à sua funcionalidade.            |                                        
+|05| O usuário só poderá ter acesso as fichas se preencher os dados físicos |  
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
