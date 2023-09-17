@@ -76,7 +76,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
 |RF-001| Permitir cadastro do usuário | ALTA |  |
-|RF-002| Permitir login do usuário  | ALTA | |
+|RF-002| Permitir login do usuário  | ALTA | Erick |
 |RF-003| Permitir a inserção dos dados fisicos do usuário  | ALTA | |
 |RF-004| Permitir a inserção dos dados da rotina do usuário  | ALTA | |
 |RF-005| Permitir ao usuario alterar os dados de sua rotina  | ALTA | |
@@ -84,7 +84,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-007| Permitir o usuario escolher aprovar ficha   | MÉDIA | | Caio
 |RF-008| Permitir o usuario escolher gerar outra ficha | MÉDIA | |
 |RF-009| Gerar sugestao de calorias para consumo diário do usuario. | MÉDIA | |
-|RF-010| Gerar sugestao de receitas fitness para o usuario.  | BAIXA | |
+|RF-010| Gerar sugestao de receitas fitness para o usuario.  | BAIXA | Erick |
 |RF-011| Gerar sugestao de macro-nutrientes para consumo diário do usuario.  | MÉDIA | |
 |RF-012| Gerar sugestao de horario de sono de acordo com a rotina do usuario.  | MÉDIA | |
 |RF-013| Permitir o usuario inserir fotos da sua evoluçao.  | BAIXA | |
@@ -92,7 +92,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-015| Permitir o usuario registrar feedback sobre mudanças geradas pelo programa.  | BAIXA | |
 |RF-016| Gerar para o usuario estatisticas do seu desempenho fisico.  | MÉDIA | |
 |RF-017| Exibir para o usuario mensagens motivacionais. | BAIXA | | Caio
-|RF-018| Permitir que o usuario entre em contato com o suporte  | MÉDIA | |
+|RF-018| Permitir que o usuario entre em contato com o suporte  | MÉDIA | Erick |
 
 
 ### Requisitos não Funcionais
