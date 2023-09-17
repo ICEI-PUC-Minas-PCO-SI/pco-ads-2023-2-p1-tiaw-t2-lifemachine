@@ -37,8 +37,21 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Usuário do sistema  | Ter uma ficha sugestiva de treino  | Ter o direcionamento de quais exercícios realizar conforme meu objetivo             |
+|Usuário do sistema  | Aprovar ou não a ficha sugestiva de treino  | Escolher uma ficha que se adeque a minha realidade |
+|Usuário do sistema  | Ter mais de uma opção de ficha de treino   | Escolher uma ficha que se adeque a minha realidade |
+|Usuário do sistema  | Ter salvo minhas estatísticas de conclusão de treinos    | Acompanhar meu progresso nos treinos |
+|Usuário do sistema  | Ter uma ficha sugestiva de dieta         |Ccriar uma alimentação balanceada e melhorar minha saúde|
+|Usuário do sistema  | Ter uma ficha de horas de sono | Dormir melhor recuperando minhas energias |
+|Usuário do sistema  | Inserir minha foto | Comparar a evolução estética usando a ferramenta |
+|Usuário do sistema  | Poder alterar os dados pessoais | Manter atualizado meu perfil |
+|Usuário do sistema  | Ter sugestão de receitas fitness | Ter ideias de refeições nutritivas e saudáveis |
+|Usuário do sistema  | Registrar feedback dos resultados físicos obtidos | Poder regitrar avanços e observações para análises posteriores |
+|Usuário do sistema  | Acompanhar estatísticas de peso | Analisar o andamento do processo |
+|Usuário do sistema  | Acompanhar estatísticas de massa muscular |  Analisar o andamento do processo |
+|Usuário do sistema  | Acompanhar estatísticas de qualidade de sono | Verificar se estou dormindo melhor |
+|Usuário do sistema  | Visualizar mensagens motivacionais | Ter inspiração para seguir com o plano de melhorar a saúde |
+|Usuário do sistema  | Entrar em contato com o suporte | Tirar dúvidas, registrar reclamções e/ou melhorias |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
