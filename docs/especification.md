@@ -79,18 +79,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-002| Permitir login do usuário  | ALTA | Erick |
 |RF-003| Permitir a inserção dos dados fisicos do usuário  | ALTA | Karol |
 |RF-004| Permitir a inserção dos dados da rotina do usuário  | ALTA | Rodrigo |
-|RF-005| Permitir ao usuario alterar os dados de sua rotina  | ALTA | |
+|RF-005| Permitir ao usuario alterar os dados de sua rotina  | ALTA | Daniel |
 |RF-006| Gerar treino personalizado de acordo com objetivo do usuario | ALTA | Caio |
 |RF-007| Permitir o usuario escolher aprovar ficha   | MÉDIA | Caio |
-|RF-008| Permitir o usuario escolher gerar outra ficha | MÉDIA | |
+|RF-008| Permitir o usuario escolher gerar outra ficha | MÉDIA | Daniel |
 |RF-009| Gerar sugestao de calorias para consumo diário do usuario. | MÉDIA | Pedro |
-|RF-010| Gerar sugestao de receitas fitness para o usuario.  | BAIXA | Erick |
+|RF-010| Gerar sugestao de receitas fitness para o usuario.  | BAIXA | Erick | 
 |RF-011| Gerar sugestao de macro-nutrientes para consumo diário do usuario.  | MÉDIA | Karol |
 |RF-012| Gerar sugestao de horario de sono de acordo com a rotina do usuario.  | MÉDIA | Rodrigo |
-|RF-013| Permitir o usuario inserir fotos da sua evoluçao.  | BAIXA | Rodrigo |
+|RF-013| Permitir o usuario inserir fotos da sua evoluçao.  | BAIXA | Rodrigo | 
 |RF-014| Permitir o usuario cadastrar medidas corporais da sua evoluçao.  | BAIXA | Pedro |
 |RF-015| Permitir o usuario registrar feedback sobre mudanças geradas pelo programa.  | BAIXA | Karol |
-|RF-016| Gerar para o usuario estatisticas do seu desempenho fisico.  | MÉDIA | |
+|RF-016| Gerar para o usuario estatisticas do seu desempenho fisico.  | MÉDIA | Daniel |
 |RF-017| Exibir para o usuario mensagens motivacionais. | BAIXA | Caio |
 |RF-018| Permitir que o usuario entre em contato com o suporte  | MÉDIA | Erick |
 
