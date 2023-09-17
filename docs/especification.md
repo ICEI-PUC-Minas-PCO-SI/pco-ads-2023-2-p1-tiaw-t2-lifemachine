@@ -80,7 +80,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-003| Permitir a inserção dos dados fisicos do usuário  | ALTA | |
 |RF-004| Permitir a inserção dos dados da rotina do usuário  | ALTA | |
 |RF-005| Permitir ao usuario alterar os dados de sua rotina  | ALTA | |
-|RF-006| Gerar treino personalizado de acordo com objetivo do usuario | ALTA | Caio | 
+|RF-006| Gerar treino personalizado de acordo com objetivo do usuario | ALTA | Caio |
 |RF-007| Permitir o usuario escolher aprovar ficha   | MÉDIA | Caio |
 |RF-008| Permitir o usuario escolher gerar outra ficha | MÉDIA | |
 |RF-009| Gerar sugestao de calorias para consumo diário do usuario. | MÉDIA | |
