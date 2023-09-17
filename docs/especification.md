@@ -72,23 +72,22 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |------|-----------------------------------------|----| ----|
 |RF-001| Permitir cadastro do usuário | ALTA |  |
 |RF-002| Permitir login do usuário  | ALTA | |
-|RF-003| Introduçao de dados fisicos do usuário  | ALTA | |
-|RF-004| Introduçao de dados da rotina do usuário  | ALTA | |
+|RF-003| Permitir a inserção dos dados fisicos do usuário  | ALTA | |
+|RF-004| Permitir a inserção dos dados da rotina do usuário  | ALTA | |
 |RF-005| Permitir ao usuario alterar os dados de sua rotina  | ALTA | |
 |RF-006| Gerar treino personalizado de acordo com objetivo do usuario | ALTA | |
-|RF-007| Ser capaz do usuario escolher aprovar ficha   | MÉDIA | |
-|RF-008| Ser capaz do usuario escolher gerar outra ficha | MÉDIA | |
-|RF-009| Gerar sugestao de calorias para se consumir por dia do usuario. | MÉDIA | |
+|RF-007| Permitir o usuario escolher aprovar ficha   | MÉDIA | |
+|RF-008| Permitir o usuario escolher gerar outra ficha | MÉDIA | |
+|RF-009| Gerar sugestao de calorias para consumo diário do usuario. | MÉDIA | |
 |RF-010| Gerar sugestao de receitas fitness para o usuario.  | BAIXA | |
-|RF-011| Gerar sugestao de macro-nutrientes para se se consumir por dia do usuario.  | MÉDIA | |
-|RF-012| Gerar uma sugestao para horario de sono de acordo com a rotina do usuario.  | MÉDIA | |
-|RF-013| Permitir o usuario ter a opçao cadastrar fotos da sua evoluçao.  | BAIXA | |
-|RF-014| Permitir o usuario ter a opçao cadastrar medidas corporais da sua evoluçao.  | BAIXA | |
-|RF-015| Permitir o usuario ter a opçao gerar um feedback sobre mudanças geradas pelo programa.  | BAIXA | |
-|RF-016| Gerar para o usuario estatisticas do seu desempenho fisico.  | ALTA | |
+|RF-011| Gerar sugestao de macro-nutrientes para consumo diário do usuario.  | MÉDIA | |
+|RF-012| Gerar sugestao de horario de sono de acordo com a rotina do usuario.  | MÉDIA | |
+|RF-013| Permitir o usuario inserir fotos da sua evoluçao.  | BAIXA | |
+|RF-014| Permitir o usuario cadastrar medidas corporais da sua evoluçao.  | BAIXA | |
+|RF-015| Permitir o usuario registrar feedback sobre mudanças geradas pelo programa.  | BAIXA | |
+|RF-016| Gerar para o usuario estatisticas do seu desempenho fisico.  | MÉDIA | |
 |RF-017| Exibir para o usuario mensagens motivacionais. | BAIXA | |
-|RF-018| Gerar para o usuario estatisticas do seu desempenho fisico.  | ALTA | |
-|RF-019| Permitir que o usuario entre em contato com o suporte  | MÉDIA | |
+|RF-018| Permitir que o usuario entre em contato com o suporte  | MÉDIA | |
 
 
 ### Requisitos não Funcionais
