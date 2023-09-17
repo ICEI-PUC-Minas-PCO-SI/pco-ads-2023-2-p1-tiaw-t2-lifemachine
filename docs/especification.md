@@ -87,8 +87,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-003| Garantir segurança dos usuarios com seus dados | ALTA | 
 |RNF-004| Armazenar dados de login dos usuários | ALTA | 
 |RNF-005| Armazenar dados da ficha e a sugestoes do aplicativo | MÉDIA| 
-|RNF-006| Sistema responsivo | ALTA| 
-|RNF-007| Disponibilidade a qualquer momento  | | ALTA| 
+|RNF-006| Disponibilidade a qualquer momento  | | ALTA| 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -113,7 +112,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
-
+|03| Não pode falta requisitos declarados                  |
+|04| Não pode faltar nenhuma documentação                  |
+|05| Qualidade em relação à sua funcionalidade.            |                                        
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
