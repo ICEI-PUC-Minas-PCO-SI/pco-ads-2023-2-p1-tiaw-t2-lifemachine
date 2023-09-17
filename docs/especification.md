@@ -78,7 +78,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| Permitir cadastro do usuário | ALTA | Pedro |
 |RF-002| Permitir login do usuário  | ALTA | Erick |
 |RF-003| Permitir a inserção dos dados fisicos do usuário  | ALTA | Karol |
-|RF-004| Permitir a inserção dos dados da rotina do usuário  | ALTA | |Rodrigo
+|RF-004| Permitir a inserção dos dados da rotina do usuário  | ALTA | Rodrigo |
 |RF-005| Permitir ao usuario alterar os dados de sua rotina  | ALTA | |
 |RF-006| Gerar treino personalizado de acordo com objetivo do usuario | ALTA | Caio |
 |RF-007| Permitir o usuario escolher aprovar ficha   | MÉDIA | Caio |
