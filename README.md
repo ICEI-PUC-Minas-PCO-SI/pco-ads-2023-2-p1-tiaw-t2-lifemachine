@@ -10,12 +10,8 @@
 
 O projeto consiste em um sistema projetado para auxiliar indivíduos no ambiente acadêmico, oferecendo um acesso único. Quando um usuário se cadastra, ele terá a possibilidade de preencher campos com informações relevantes, tais como:
 
-- Dados pessoais (Nome, sexo, idade, CPF, CEP, etc.)
-- Informações sobre o corpo (altura, peso, medidas, restrições médicas, etc.)
-- Objetivos (Perda de peso, ganho de massa muscular, adoção de uma dieta saudável, regulagem do sono)
-- Disponibilidade de tempo (por exemplo, 2 horas diárias, 5 dias por semana)
-- Padrões de sono (horário de sono e duração habitual do sono)
-- Áreas específicas do corpo para desenvolvimento (opcional)
+.Dados pessoais (Nome, sexo, idade, CPF, CEP, etc.)
+.Informações sobre o corpo (altura, peso, medidas, restrições médicas, etc.)
 
 Com base nessas informações, o sistema realizará uma análise abrangente e, a partir disso, criará um plano de treinamento personalizado. Esse plano levará em consideração o objetivo do usuário, a disponibilidade de tempo e, se necessário, a ênfase em áreas específicas do corpo ou atributos, como força ou resistência. Além disso, o sistema pode incluir uma calculadora de sono que determinará o tempo de sono mais saudável com base na rotina e na disponibilidade de tempo do usuário."
 
