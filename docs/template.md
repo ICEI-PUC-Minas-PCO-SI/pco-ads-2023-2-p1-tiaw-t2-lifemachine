@@ -34,7 +34,7 @@ tornam uma escolha atraente para projetos que buscam uma aparência contemporân
 
 ## Cores
 
-![paleta de cores](img/paleta-de-cores-lifemachine.png)
+![paleta de cores](img/paleta-de-cores.JPG)
 
 Paleta de cores :
 black / Preto	#000000
