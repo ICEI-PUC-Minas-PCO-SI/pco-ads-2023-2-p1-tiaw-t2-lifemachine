@@ -34,7 +34,7 @@ tornam uma escolha atraente para projetos que buscam uma aparência contemporân
 
 ## Cores
 
-![paleta de cores](img/paleta-de-cores.JPG)
+![Exemplo de UserFlow](img/paleta-de-cores.jpg)
 
 Paleta de cores :
 black / Preto	#000000
