@@ -34,7 +34,7 @@ tornam uma escolha atraente para projetos que buscam uma aparência contemporân
 
 ## Cores
 
-![paleta de cores](img/userflow-lifemachine.png)
+![paleta de cores](img/paleta-de-cores-lifemachine.png)
 
 Paleta de cores :
 black / Preto	#000000
