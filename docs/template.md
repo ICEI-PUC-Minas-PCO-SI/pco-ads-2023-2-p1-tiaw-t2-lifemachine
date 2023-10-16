@@ -47,9 +47,13 @@ A escolha dessas cores foi para buscar algo simples e solido, como uma rotina. O
 Para a composição geral do site, optamos por usar a fonte "Bahnschrift".
 
 Título do Projeto: Bahnschrift Negrito (30px)
+
 Título das Seções: Bahnschrift Regular (52px)
+
 Textos em geral: Bahnschrift Negrito (15-20px)
+
 Botões: Bahnschrift Negrito (20px)
+
 Rótulos de inputs: Bahnschrift Negrito (20px)
 
 ## Iconografia
