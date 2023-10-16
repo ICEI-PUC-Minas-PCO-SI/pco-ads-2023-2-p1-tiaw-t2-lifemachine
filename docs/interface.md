@@ -9,19 +9,26 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Wireframes
 
-Página Inicial
-![Exemplo de UserFlow](img/PaginaInicial.png)
-Página de Login
+## Página Inicial
+![Exemplo de UserFlow](img/PáginaInicial.png)
+
+## Página de Login
 ![Exemplo de UserFlow](img/PaginaLogin.png)
-Página de Cadastro
-![Exemplo de UserFlow](img/PaginaCadastro)
-Página Principal
-![Exemplo de UserFlow](img/PaginaPrincipal)
-Página de configurações
-![Exemplo de UserFlow](img/PaginaConfiguracoes)
-Página de Alimentação
-![Exemplo de UserFlow](img/PaginaAlimentacao)
-Página de Treino
-![Exemplo de UserFlow](img/PaginaTreino)
-Página de Sono
-![Exemplo de UserFlow](img/PaginaSono)
+
+## Página de Cadastro
+![Exemplo de UserFlow](img/PaginaCadastro.png)
+
+## Página Principal
+![Exemplo de UserFlow](img/PaginaPrincipal.png)
+
+## Página de configurações
+![Exemplo de UserFlow](img/PaginaConfiguracoes.png)
+
+## Página de Alimentação
+![Exemplo de UserFlow](img/PaginaAlimentacao.png)
+
+## Página de Treino
+![Exemplo de UserFlow](img/PaginaTreino.png)
+
+## Página de Sono
+![Exemplo de UserFlow](img/PaginaSono.png)
