@@ -58,7 +58,8 @@ Rótulos de inputs: Bahnschrift Negrito (20px)
 
 Logo do projeto/identidade da marca utilizado nos cabeçlhos
 
-![Exemplo de UserFlow](img/arrow.png) Simples seta, utilizada em dropdown buttons
+###Simples seta, utilizada em dropdown buttons
+![Exemplo de UserFlow](img/arrow.png) 
 
 ![Exemplo de UserFlow](img/horizontal-arrow.png)
 
