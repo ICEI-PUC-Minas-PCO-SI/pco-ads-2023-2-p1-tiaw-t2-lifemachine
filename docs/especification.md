@@ -1,10 +1,10 @@
 # Especificações do Projeto
-Abordaremos o desafio da gestão das rotinas de condicionamento físico na academia e apresentaremos uma solução centrada nos usuários. Utilizaremos técnicas como diagramas de personas e histórias de usuários para mapear suas necessidades. Nossa solução é um sistema integrado e adaptativo, impulsionado por algoritmos de aprendizado de máquina, que oferece suporte personalizado. Isso nos permite criar rotinas de treinamento personalizadas com base nos objetivos, tempo disponível e preferências individuais, destacando a importância de um sono adequado e alimentação saudável
+O projeto pretende abordar o desafio da gestão das rotinas de condicionamento físico na academia e apresentaremos uma solução centrada nos usuários. Será utilizado técnicas como diagramas de personas e histórias de usuários para mapear suas necessidades. A solução é um sistema integrado e adaptativo, impulsionado por algoritmos de aprendizado de máquina, que oferece suporte personalizado. Isso permite criar rotinas de treinamento personalizadas com base nos objetivos, tempo disponível e preferências individuais, destacando a importância de um sono adequado e alimentação saudável
 
-Nossa abordagem é flexível, atendendo a uma ampla gama de perfis de usuários, com a máxima priorização da segurança dos dados. Continuaremos a aprimorar este projeto, empregando as tecnologias de HTML e CSS.
-Além diso, utilizaremos o framework BootStrap para agilizar o desenvolvimento do Front-end.
+A abordagem é flexível, atendendo a uma ampla gama de perfis de usuários, com a máxima priorização da segurança dos dados. Com isso será necessário aprimorar este projeto, empregando as tecnologias de HTML e CSS.
+Além diso, será presente também a tecnologia do framework BootStrap para agilizar o desenvolvimento do Front-end.
 
-Na área do "Back-end", adotaremos uma abordagem diferente, optando por desenvolver uma API para cobrir o papel do Back-end, fornecendo dados para o cliente. Para isso iremos utilizar das tecnologias do JavaScript. Quanto ao armazenamento, implementaremos o um sistema CRUD com JSON Server.
+Na área do "Back-end", será adotada uma abordagem diferente, optando por desenvolver uma API para cobrir o papel do Back-end, fornecendo dados para o cliente. Para isso, seré feita a utilização das tecnologias do JavaScript. Quanto ao armazenamento, terá a adoção do sistema CRUD com JSON Server.
 
 O versionamento do código será gerenciado por meio da tecnologia do Git, hospedado na plataforma GitHub, para facilitar a colaboração e o controle das alterações ao longo do projeto.
 
@@ -31,20 +31,20 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Usuário do sistema  | Ter uma ficha sugestiva de treino  | Ter o direcionamento de quais exercícios realizar conforme meu objetivo             |
-|Usuário do sistema  | Aprovar ou não a ficha sugestiva de treino  | Escolher uma ficha que se adeque a minha realidade |
+|Usuário que Busca Personalização ou Flexibilidade  | Aprovar ou não a ficha sugestiva de treino  | Escolher uma ficha que se adeque a minha realidade |
 |Usuário do sistema  | Ter mais de uma opção de ficha de treino   | Escolher uma ficha que se adeque a minha realidade |
-|Usuário do sistema  | Ter salvo minhas estatísticas de conclusão de treinos    | Acompanhar meu progresso nos treinos |
-|Usuário do sistema  | Ter uma ficha sugestiva de dieta         |Ccriar uma alimentação balanceada e melhorar minha saúde|
+|Usuário em busca de progresso visual  | Ter salvo minhas estatísticas de conclusão de treinos    | Acompanhar meu progresso nos treinos |
+|Usuário do sistema  | Ter uma ficha sugestiva de dieta         |Criar uma alimentação balanceada e melhorar minha saúde|
 |Usuário do sistema  | Ter uma ficha de horas de sono | Dormir melhor recuperando minhas energias |
-|Usuário do sistema  | Inserir minha foto | Comparar a evolução estética usando a ferramenta |
-|Usuário do sistema  | Poder alterar os dados pessoais | Manter atualizado meu perfil |
+|Usuário em busca de progresso visual | Inserir minha foto | Comparar a evolução estética usando a ferramenta |
+|Usuário que Busca Personalização ou Flexibilidade  | Poder alterar os dados pessoais | Manter atualizado meu perfil |
 |Usuário do sistema  | Ter sugestão de receitas fitness | Ter ideias de refeições nutritivas e saudáveis |
-|Usuário do sistema  | Registrar feedback dos resultados físicos obtidos | Poder regitrar avanços e observações para análises posteriores |
+|Usuário em busca de progresso visual  | Registrar feedback dos resultados físicos obtidos | Poder regitrar avanços e observações para análises posteriores |
 |Usuário do sistema  | Acompanhar estatísticas de peso | Analisar o andamento do processo |
 |Usuário do sistema  | Acompanhar estatísticas de massa muscular |  Analisar o andamento do processo |
 |Usuário do sistema  | Acompanhar estatísticas de qualidade de sono | Verificar se estou dormindo melhor |
 |Usuário do sistema  | Visualizar mensagens motivacionais | Ter inspiração para seguir com o plano de melhorar a saúde |
-|Usuário do sistema  | Entrar em contato com o suporte | Tirar dúvidas, registrar reclamções e/ou melhorias |
+|Usuário que Requer Suporte Adicional | Entrar em contato com o suporte | Tirar dúvidas, registrar reclamções e/ou melhorias |
 
 ## Requisitos
 
@@ -54,24 +54,24 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Permitir cadastro do usuário | ALTA | Pedro |
-|RF-002| Permitir login do usuário  | ALTA | Erick |
-|RF-003| Permitir a inserção dos dados fisicos do usuário  | ALTA | Karol |
-|RF-004| Permitir a inserção dos dados da rotina do usuário  | ALTA | Rodrigo |
-|RF-005| Permitir ao usuario alterar os dados de sua rotina  | ALTA | Daniel |
-|RF-006| Gerar treino personalizado de acordo com objetivo do usuario | ALTA | Caio |
-|RF-007| Permitir o usuario escolher aprovar ficha   | MÉDIA | Caio |
-|RF-008| Permitir o usuario escolher gerar outra ficha | MÉDIA | Daniel |
-|RF-009| Gerar sugestao de calorias para consumo diário do usuario. | MÉDIA | Pedro |
-|RF-010| Gerar sugestao de receitas fitness para o usuario.  | BAIXA | Erick | 
-|RF-011| Gerar sugestao de macro-nutrientes para consumo diário do usuario.  | MÉDIA | Karol |
-|RF-012| Gerar sugestao de horario de sono de acordo com a rotina do usuario.  | MÉDIA | Rodrigo |
-|RF-013| Permitir o usuario inserir fotos da sua evoluçao.  | BAIXA | Rodrigo | 
-|RF-014| Permitir o usuario cadastrar medidas corporais da sua evoluçao.  | BAIXA | Pedro |
-|RF-015| Permitir o usuario registrar feedback sobre mudanças geradas pelo programa.  | BAIXA | Karol |
-|RF-016| Gerar para o usuario estatisticas do seu desempenho fisico.  | MÉDIA | Daniel |
-|RF-017| Exibir para o usuario mensagens motivacionais. | BAIXA | Caio |
-|RF-018| Permitir que o usuario entre em contato com o suporte  | MÉDIA | Erick |
+|RF-001| O sistema deve permitir cadastro do usuário | ALTA | Pedro |
+|RF-002| O sistema deve permitir login do usuário  | ALTA | Erick |
+|RF-003| O sistema deve permitir a inserção dos dados fisicos do usuário  | ALTA | Karol |
+|RF-004| O sistema deve permitir a inserção dos dados da rotina do usuário  | ALTA | Rodrigo |
+|RF-005| O sistema deve permitir ao usuario alterar os dados de sua rotina  | ALTA | Daniel |
+|RF-006| O sistema deve gerar treino personalizado de acordo com objetivo do usuario | ALTA | Caio |
+|RF-007| O sistema deve permitir o usuario escolher aprovar ficha   | MÉDIA | Caio |
+|RF-008| O sistema deve permitir o usuario escolher gerar outra ficha | MÉDIA | Daniel |
+|RF-009| O sistema deve gerar sugestao de calorias para consumo diário do usuario. | MÉDIA | Pedro |
+|RF-010| O sistema deve gerar sugestao de receitas fitness para o usuario.  | BAIXA | Erick | 
+|RF-011| O sistema deve gerar sugestao de macro-nutrientes para consumo diário do usuario.  | MÉDIA | Karol |
+|RF-012| O sistema deve gerar sugestao de horario de sono de acordo com a rotina do usuario.  | MÉDIA | Rodrigo |
+|RF-013| O sistema deve permitir o usuario inserir fotos da sua evoluçao.  | BAIXA | Rodrigo | 
+|RF-014| O sistema deve permitir o usuario cadastrar medidas corporais da sua evoluçao.  | BAIXA | Pedro |
+|RF-015| O sistema deve permitir o usuario registrar feedback sobre mudanças geradas pelo programa.  | BAIXA | Karol |
+|RF-016| O sistema deve gerar para o usuario estatisticas do seu desempenho fisico.  | MÉDIA | Daniel |
+|RF-017| O sistema deve exibir para o usuario mensagens motivacionais. | BAIXA | Caio |
+|RF-018| O sistema deve permitir que o usuario entre em contato com o suporte  | MÉDIA | Erick |
 
 ### Requisitos não Funcionais
 
@@ -80,8 +80,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-001| O sistema deve ser responsivo | MÉDIA | 
 |RNF-003| Garantir segurança dos usuarios com seus dados | ALTA | 
 |RNF-004| Armazenar dados de login dos usuários | ALTA | 
-|RNF-005| Armazenar dados da ficha e a sugestoes do aplicativo | MÉDIA| 
-|RNF-006| Disponibilidade de acesso a qualquer momento  |  ALTA| 
+|RNF-005| Disponibilidade de acesso a qualquer momento  |  ALTA| 
 
 ## Restrições
 
