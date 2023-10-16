@@ -54,21 +54,18 @@ Rótulos de inputs: Bahnschrift Negrito (20px)
 
 ## Iconografia
 
-![Exemplo de UserFlow](docs/img/logo.png)
-
-Logo do projeto/identidade da marca utilizado nos cabeçlhos
+### Logo do projeto/identidade da marca utilizado nos cabeçlhos
+![Exemplo de UserFlow](img/logo.png)
 
 ### Simples seta, utilizada em dropdown buttons
 ![Exemplo de UserFlow](img/arrow.png) 
 
+### Seta na horizontal, utilizada para retornar a página anterior
 ![Exemplo de UserFlow](img/horizontal-arrow.png)
 
-Seta na horizontal, utilizada para retornar a página anterior
-
+### Seta vermelha utilizada para demonstrar uma piora em certas estatísticas
 ![Exemplo de UserFlow](img/red-arrow.png)
 
-Seta vermelha utilizada para demonstrar uma piora em certas estatísticas
+### Seta verde utilizada para demonstrar uma melhora em certas estatísticas
+![Exemplo de UserFlow](img/green-arrow.png)
 
-![Exemplo de UserFlow](docs/img/green-arrow.png)
-
-Seta verde utilizada para demonstrar uma melhora em certas estatísticas
