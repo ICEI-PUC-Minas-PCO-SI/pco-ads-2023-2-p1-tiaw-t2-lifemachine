@@ -27,7 +27,7 @@ tornam uma escolha atraente para projetos que buscam uma aparência contemporân
 
 ## Cores
 
-![Exemplo de UserFlow](img/paletadecores.JPG)
+![Exemplo de UserFlow](img/PaletaDeCores.png)
 
 Paleta de cores :
 
@@ -54,4 +54,22 @@ Rótulos de inputs: Bahnschrift Negrito (20px)
 
 ## Iconografia
 
+![Exemplo de UserFlow](docs/img/logo.png)
 
+Logo do projeto/identidade da marca utilizado nos cabeçlhos
+
+![Exemplo de UserFlow](img/arrow.png)
+
+Simples seta, utilizada em dropdown buttons
+
+![Exemplo de UserFlow](img/horizontal-arrow.png)
+
+Seta na horizontal, utilizada para retornar a página anterior
+
+![Exemplo de UserFlow](img/red-arrow.png)
+
+Seta vermelha utilizada para demonstrar uma piora em certas estatísticas
+
+![Exemplo de UserFlow](docs/img/green-arrow.png)
+
+Seta verde utilizada para demonstrar uma melhora em certas estatísticas
