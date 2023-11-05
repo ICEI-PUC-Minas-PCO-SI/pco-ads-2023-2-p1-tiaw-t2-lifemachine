@@ -60,18 +60,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-004| O sistema deve permitir a inserção dos dados da rotina do usuário  | ALTA | Rodrigo |
 |RF-005| O sistema deve permitir ao usuario alterar os dados de sua rotina  | ALTA | Daniel |
 |RF-006| O sistema deve gerar treino personalizado de acordo com objetivo do usuario | ALTA | Caio |
-|RF-007| O sistema deve permitir o usuario escolher aprovar ficha   | MÉDIA | Caio |
-|RF-008| O sistema deve permitir o usuario escolher gerar outra ficha | MÉDIA | Daniel |
-|RF-009| O sistema deve gerar sugestao de calorias para consumo diário do usuario. | MÉDIA | Pedro |
-|RF-010| O sistema deve gerar sugestao de receitas fitness para o usuario.  | BAIXA | Erick | 
-|RF-011| O sistema deve gerar sugestao de macro-nutrientes para consumo diário do usuario.  | MÉDIA | Karol |
-|RF-012| O sistema deve gerar sugestao de horario de sono de acordo com a rotina do usuario.  | MÉDIA | Rodrigo |
-|RF-013| O sistema deve permitir o usuario inserir fotos da sua evoluçao.  | BAIXA | Rodrigo | 
-|RF-014| O sistema deve permitir o usuario cadastrar medidas corporais da sua evoluçao.  | BAIXA | Pedro |
-|RF-015| O sistema deve permitir o usuario registrar feedback sobre mudanças geradas pelo programa.  | BAIXA | Karol |
-|RF-016| O sistema deve gerar para o usuario estatisticas do seu desempenho fisico.  | MÉDIA | Daniel |
-|RF-017| O sistema deve exibir para o usuario mensagens motivacionais. | BAIXA | Caio |
-|RF-018| O sistema deve permitir que o usuario entre em contato com o suporte  | MÉDIA | Erick |
+|RF-007| O sistema deve permitir o usuario escolher gerar outra ficha | MÉDIA | Daniel |
+|RF-008| O sistema deve gerar sugestao de calorias para consumo diário do usuario. | MÉDIA | Pedro |
+|RF-009| O sistema deve gerar sugestao de receitas fitness para o usuario.  | BAIXA | Erick | 
+|RF-010| O sistema deve gerar sugestao de macro-nutrientes para consumo diário do usuario.  | MÉDIA | Karol |
+|RF-011| O sistema deve gerar sugestao de horario de sono de acordo com a rotina do usuario.  | MÉDIA | Rodrigo |
+|RF-012| O sistema deve permitir o usuario cadastrar medidas corporais da sua evoluçao.  | BAIXA | Pedro |
+|RF-013| O sistema deve permitir o usuario registrar feedback sobre mudanças geradas pelo programa.  | BAIXA | Karol |
+|RF-014| O sistema deve gerar para o usuario estatisticas do seu desempenho fisico.  | MÉDIA | Daniel |
+|RF-015| O sistema deve exibir para o usuario mensagens motivacionais. | BAIXA | Caio |
+|RF-016| O sistema deve permitir que o usuario entre em contato com o suporte  | MÉDIA | Erick |
 
 ### Requisitos não Funcionais
 
