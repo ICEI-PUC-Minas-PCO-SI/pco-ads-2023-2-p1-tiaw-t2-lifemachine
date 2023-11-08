@@ -1,49 +1,39 @@
+
 .container-main-style {
-    background-image: url('img/background.jpg');
+    background-image: url('../img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
 }
 .card{
-    max-width: 1000px;
+    max-width: 600px;
     margin: auto ;
 }
 
 .card-body {
     width: 100%;
 }
-.card-style {
-    margin: auto;
-}
-.input-style{
-    width: 70% !important;
-    margin-bottom: 20px;
-}
-.label-style{
-    width: 30%;
-}
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: Bahnschrift;
 }
 
-
-.header-style{
+.header-style {
     height: 100px;
     background-color: #D9D9D9;
 }
-.img-header-style{
+
+.img-header-style {
     height: 80px;
     width: 78px;
     border-radius: 60px;
 }
+
 .header-style h2 {
     font-style: normal;
     font-weight: 700;
-
 }
-
 
 .footer-style {
     background: #D9D9D9;
@@ -53,7 +43,6 @@
     bottom: 0;
     width: 100%;
 }
-
 
 .footer-style p {
     font-size: 12px;
