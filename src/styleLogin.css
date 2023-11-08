@@ -1,8 +1,18 @@
-body {
+
+.container-main-style {
     background-image: url('img/pexels-ivan-samkov-4162451.jpg');
-    background-size: 1600px 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.card{
+    max-width: 600px;
+    margin: auto ;
 }
 
+.card-body {
+    width: 100%;
+}
 * {
     margin: 0;
     padding: 0;
