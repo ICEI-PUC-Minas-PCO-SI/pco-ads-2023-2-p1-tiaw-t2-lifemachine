@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,52 +17,57 @@
         </div>
     </header>
 
-    <div class="container mt-4 pt-5 clearfix">
-        <div class="personal-data">
-            <h1 class="fs-3">Dados Pessoais</h1>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label fs-4">Nome</label>
-                    <input type="text" class="form-control" id="name" name="name">
-                </div>
-                <div class="mb-3">
-                    <label for="height" class="form-label fs-4">Altura (cm)</label>
-                    <input type="text" class="form-control" id="height" name="height">
-                </div>
-                <div class="mb-3">
-                    <label for= "weight" class="form-label fs-4">Peso (kg)</label>
-                    <input type="text" class="form-control" id="weight" name="weight">
-                </div>
-                <div class="mb-3">
-                    <label for="goal" class="form-label fs-4">Objetivo</label>
-                    <select class="form-select" id="goal" name="goal">
-                        <option value="perder-peso">Perder Peso</option>
-                        <option value="ganhar-musculo">Ganhar Músculo</option>
-                        <option value="manter-peso">Manter o Peso</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="days-training" class="form-label fs-4">Dias de Treinamento por Semana</label>
-                    <input type="number" class="form-control" id="days-training" name="days-training">
-                </div>
-            </form>
-        </div>
+    <div class="container mt-4 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 p-5 ">
+                <div class="card">
+                    <div class="card-body p-5">
+                        <h1 class="card-title text-center">BEM VIND@</h1>
+                        <form>
+                            <div class="mb-3 text-start pt-5 row">
+                                <div class="col">
+                                    <h3> Dados de acesso </h3>
+                                    <div class="mb-3">
+                                        <label for="username" class="form-label text-start fs-4">E-mail:</label>
+                                        <input type="text" class="form-control" id="username" name="username">
+                                        <label for="password" class="form-label text-start fs-4">Senha:</label>
+                                        <input type="password" class="form-control" id="password" name="password">
+                                    </div>
+                                </div>
+                            
+                                <div class="col">
+                                    <h3> Dados Pessoais </h3>
+                                    <div class="mb-3">
+                                        <label for="Nome" class="form-label text-start fs-4">Nome:</label>
+                                        <input type="text" class="form-control" id="Nome" name="Nome">
+                                        <label for="Altura" class="form-label text-start fs-4">Altura (cm):</label>
+                                        <input type="number" class="form-control" id="Altura" name="Altura">
+                                        <label for="Peso" class="form-label text-start fs-4">Peso (kg):</label>
+                                        <input type="number" class="form-control" id="Peso" name="Peso">
+                                        <label for="Objetivo" class="form-label text-start fs-4">Objetivo:</label>
+                                        <select class="form-select" id="Objetivo" name="Objetivo">
+                                            <option value="perder-peso">Perder Peso</option>
+                                            <option value="ganhar-peso">Ganhar Peso</option>
+                                            <option value="manter-peso">Manter Peso</option>
+                                        </select>
+                                        <label for="DiasDeTreino" class="form-label text-start fs-4 pt-2">Dias de Treino:</label>
+                                        <select class="form-select" id="DiasDeTreino" name="DiasDeTreino">
+                                            <option value="3-dias">3 Dias por Semana</option>
+                                            <option value="5-dias">5 Dias por Semana</option>
+                                            <option value="7-dias">7 Dias por Semana</option>
+                                        </select>
+                                        </div>
 
-        <div class="login-data">
-            <h1 class="fs-3">Login e Senha</h1>
-            <form>
-                <div class="mb-3">
-                    <label for="username" class="form-label fs-4">E-mail</label>
-                    <input type="text" class="form-control" id="username" name="username">
+                                    </div>
+                                </div>
+                                <div class="text-center pt-5"> 
+                                    <button type="submit" class="btn btn-danger btn-lg">Cadastrar</button>
+                            </div>
+                            
+                        </form>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label fs-4">Senha</label>
-                    <input type="password" class="form-control" id="password" name="password">
-                </div>
-                <div class="text-center pt-5">
-                    <button type="submit" class="btn btn-danger btn-lg">Cadastrar</button>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
 
