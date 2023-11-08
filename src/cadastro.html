@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styleCadastro.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
     <header class="container-fluid d-flex header-style align-items-center">
         <div class="row d-flex flex-column">
@@ -17,53 +19,78 @@
         </div>
     </header>
 
-    <div class="container mt-4 pt-5">
+    <div class="container-main-style container-fluid">
         <div class="row justify-content-center">
-            <div class="col-md-6 p-5 ">
-                <div class="card">
+            <div class="col-md py-5 ">
+                <div class="card card-style">
                     <div class="card-body p-5">
                         <h1 class="card-title text-center">BEM VIND@</h1>
                         <form>
                             <div class="mb-3 text-start pt-5 row">
-                                <div class="col">
-                                    <h3> Dados de acesso </h3>
+                                <div class="col-12 col-md-6">
+                                    <h3 class="mb-4 fw-bold"> Dados de acesso </h3>
                                     <div class="mb-3">
-                                        <label for="username" class="form-label text-start fs-4">E-mail:</label>
-                                        <input type="text" class="form-control" id="username" name="username">
-                                        <label for="password" class="form-label text-start fs-4">Senha:</label>
-                                        <input type="password" class="form-control" id="password" name="password">
+                                        <div class="d-flex">
+                                            <label for="username"
+                                                class=" label-style form-label text-start fs-4">E-mail:</label>
+                                            <input type="email" class="input-style form-control" id="username"
+                                                name="username">
+                                        </div>
+                                        <div class="d-flex">
+                                            <label for="password" class="label-style form-label text-start fs-4">Senha:</label>
+                                            <input type="password" class="input-style form-control" id="password"
+                                                name="password">
+                                        </div>
                                     </div>
                                 </div>
-                            
-                                <div class="col">
-                                    <h3> Dados Pessoais </h3>
+
+                                <div class="col-12 col-md-6">
+                                    <h3 class="mb-3 fw-bold"> Dados Pessoais </h3>
                                     <div class="mb-3">
-                                        <label for="Nome" class="form-label text-start fs-4">Nome:</label>
-                                        <input type="text" class="form-control" id="Nome" name="Nome">
-                                        <label for="Altura" class="form-label text-start fs-4">Altura (cm):</label>
-                                        <input type="number" class="form-control" id="Altura" name="Altura">
-                                        <label for="Peso" class="form-label text-start fs-4">Peso (kg):</label>
-                                        <input type="number" class="form-control" id="Peso" name="Peso">
-                                        <label for="Objetivo" class="form-label text-start fs-4">Objetivo:</label>
-                                        <select class="form-select" id="Objetivo" name="Objetivo">
-                                            <option value="perder-peso">Perder Peso</option>
-                                            <option value="ganhar-peso">Ganhar Peso</option>
-                                            <option value="manter-peso">Manter Peso</option>
-                                        </select>
-                                        <label for="DiasDeTreino" class="form-label text-start fs-4 pt-2">Dias de Treino:</label>
-                                        <select class="form-select" id="DiasDeTreino" name="DiasDeTreino">
-                                            <option value="3-dias">3 Dias por Semana</option>
-                                            <option value="5-dias">5 Dias por Semana</option>
-                                            <option value="7-dias">7 Dias por Semana</option>
-                                        </select>
+
+                                        <div class="d-flex">
+                                            <label for="Nome" class=" label-style form-label text-start fs-4">Nome:</label>
+                                            <input type="text" class="input-style form-control" id="Nome" name="Nome">
                                         </div>
 
+                                        <div class="d-flex">
+                                            <label for="Altura" class="label-style form-label text-start fs-4">Altura (cm):</label>
+                                            <input type="number" class="input-style form-control" id="Altura"
+                                                name="Altura">
+                                        </div>
+
+                                        <div class="d-flex">
+                                            <label for="Peso" class="label-style form-label text-start fs-4">Peso (kg):</label>
+                                            <input type="number" class="input-style form-control" id="Peso" name="Peso">
+                                        </div>
+
+                                        <div class="d-flex">
+                                            <label for="Objetivo" class="label-style form-label text-start fs-4">Objetivo:</label>
+                                            <select class="input-style form-select" id="Objetivo" name="Objetivo">
+                                                <option value="perder-peso">Perder Peso</option>
+                                                <option value="ganhar-peso">Ganhar Peso</option>
+                                                <option value="manter-peso">Manter Peso</option>
+                                            </select>
+                                        </div>
+                                        <div class="d-flex">
+                                            <label for="DiasDeTreino"
+                                                class="label-style form-label text-start fs-4">Dias de
+                                                Treino:</label>
+                                            <select class="input-style form-select" id="DiasDeTreino"
+                                                name="DiasDeTreino">
+                                                <option value="3-dias">3 Dias por Semana</option>
+                                                <option value="5-dias">5 Dias por Semana</option>
+                                                <option value="7-dias">7 Dias por Semana</option>
+                                            </select>
+                                        </div>
                                     </div>
+
                                 </div>
-                                <div class="text-center pt-5"> 
-                                    <button type="submit" class="btn btn-danger btn-lg">Cadastrar</button>
                             </div>
-                            
+                            <div class="text-center pt-5">
+                                <button type="submit" class="btn btn-danger btn-lg">Cadastrar</button>
+                            </div>
+
                         </form>
                     </div>
                 </div>
@@ -71,7 +98,7 @@
         </div>
     </div>
 
-    <footer class="container-fluid mt-4 footer-style d-flex align-items-center">
+    <footer class="container-fluid footer-style d-flex align-items-center">
         <div class="row-fluid">
             <div class="col d-flex">
                 <p class="m-0 p-0">Copyright 2023</p>
@@ -79,4 +106,5 @@
         </div>
     </footer>
 </body>
+
 </html>
