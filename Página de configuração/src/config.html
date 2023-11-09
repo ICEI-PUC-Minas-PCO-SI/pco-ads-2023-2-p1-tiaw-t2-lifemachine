@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="style_config.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-         <img src="./img/logo.png" alt="logo">
-        </div>
-        <div>
-            <h2>Life Machine</h2>
+    <header class="container-fluid d-flex header-style align-items-center">
+        <div class="row d-flex flex-column">
+            <div class="col d-flex align-items-center">
+                <img class="img-header-style" src="./img/logo.png" alt="logo-lifemachine">
+                <h2 class="ms-4 fs-1">LifeMachine</h2>
+            </div>
         </div>
     </header>
     <main>
@@ -48,8 +48,8 @@
                             <div class="container_text"><p id="label5">Dias de Treino:</p>
                             <input class="input_label" style="border-radius: 5px; margin-bottom: 15px;" type="text">        
                             </div><br>
-                            <div style="margin-left: auto; margin-right: auto; justify-content: center; display: block;">
-                                <button class="botao">Salvar</button>
+                            <div class="d-flex justify-content-center mb-3">
+                                <button class="btn bg-danger">Salvar</button>
                             </div>
 
                         </div>
@@ -61,11 +61,13 @@
 
     </main>
     
-    <footer>
-        <p>
-            Copryght 2023
-        </p>
+
+    <footer class="container-fluid mt-4 footer-style d-flex align-items-center">
+        <div class="row-fluid">
+            <div class="col d-flex">
+            <p class="m-0 p-0">Copyright 2023</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
-b 
