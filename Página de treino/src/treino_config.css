@@ -1,5 +1,5 @@
 /*MEDIAS QUERYS*/
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 857px) {
 
     .titulo{
         padding: 20px 0px 40px 40px;
@@ -88,7 +88,7 @@
     
     
     .container_config {
-        height: max-content;
+        height: 350px;
         width: 350px;
         border-radius: 20px;
         border-style: solid;
@@ -135,7 +135,7 @@
 }
 
 /*MEDIAS QUERYS-----------------------------------*/
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 856px) {
 
 
 .titulo{
@@ -272,5 +272,15 @@ footer {
     border-radius: 20px;
     font-weight: bold;
 }
+
+
+#tela2{
+    margin-top: 350px;
+}
+
+#tela3{
+    margin-top: 710px;
+}
+
 
 }
