@@ -1,0 +1,287 @@
+/*MEDIAS QUERYS*/
+@media only screen and (min-width: 1000px) {
+
+.titulo{
+    padding: 20px 0px 40px 40px;
+    font-size:25px;
+} 
+
+.seta{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    padding-top: 18px;
+    padding-right: 10px;
+    float: left;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    height:auto;
+    font-family: sans-serif;
+}
+
+header {
+    height: max-content;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.logo {
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding-top: 25px;
+    justify-content: left;
+    display: block;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.img_usu{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.foto_usuario {
+    height: 200px;
+    width: 200px;
+    padding-top: 30px;
+    border-radius: 30%;
+    border-style: solid;
+    border-color: red;
+}
+
+.nome_usu {
+    display: flex;
+    font-size: 30px;
+    padding: 10px 0px 40px 0px;
+}
+
+footer {
+    background-color: #D9D9D9;
+    height: 45px;
+    display: fixed;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.container_config {
+    height:fit-content;
+    width: 800px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgba(255, 0, 0, 0.753);
+    background-color: rgb(197, 193, 193);
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.input_label{
+    border-radius: 5px; 
+    width: 300px;
+}
+
+.container_config{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_text{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#label_prime{
+    margin-top: 85px;
+    font-weight: bold;
+    font-size: x-large;
+}
+#label1{
+    margin-right: 60px;
+    font-weight: bold;
+    font-size: x-large;
+}
+#label2{
+    margin-right: 55px;
+    font-weight: bold;
+    font-size: x-large;
+}
+#label3{
+    margin-right: 60px;
+    font-weight: bold;
+    font-size: x-large;
+}
+#label4{
+    margin-right: 40px;
+    font-weight: bold;
+    font-size: x-large;
+}
+#label5{
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+}
+
+/*MEDIAS QUERYS-----------------------------------*/
+@media only screen and (max-width: 999px) {
+
+
+.titulo{
+    padding: 20px 0px 40px 40px;
+    font-size:25px;
+} 
+
+.seta{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    padding-top: 18px;
+    padding-right: 10px;
+    float: left;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    height: max-content;
+    font-family: sans-serif;
+}
+
+header {
+    height: max-content;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.logo {
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding-top: 25px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.img_usu{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.foto_usuario {
+    height: 200px;
+    width: 200px;
+    padding-top: 30px;
+    border-radius: 30%;
+    margin: 0 auto;
+    display: block;
+    border-style: solid;
+    border-color: red;
+}
+
+.nome_usu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px 0px 40px 0px;
+}
+
+footer {
+    background-color: #D9D9D9;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+
+.container_config {
+    height: max-content;
+    width: 350px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgba(255, 0, 0, 0.753);
+    background-color: rgb(197, 193, 193);
+    margin: 0 auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.input_label{
+    border-radius: 5px; 
+    width: 160px;
+}
+
+.container_config{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_text{
+    margin-top: 10px;
+    display: flex;;
+}
+
+.ficha{
+    margin: 40px 30px 20px 100px;
+    justify-content: center;
+    
+}
+
+.botoes{
+    color: red;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+}
