@@ -8,156 +8,181 @@
     <link rel="stylesheet" href="pagina inicial.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="medias.css">
+    <link rel="stylesheet" href="medias.css">
 
 </head>
 
 <body>
-
-    <header class="container-fluid d-flex header-style align-items-center">
-        <div class="row d-flex flex-column">
-            <div class="col d-flex align-items-center">
-                <img class="img-header-style" src="./img/logo.jpg" alt="logo-lifemachine">
-                <h2 class="ms-4 fs-1">LifeMachine</h2>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary header-style">
+        <div class="container-fluid">
+            <div class="d-flex flex-row align-items-center">
+                <a class="navbar-brand" href="#"><img src="./Img/logo.png" alt="logo-lifeMachine"></a>
+                <h1 class="p-0 m-0">LifeMachine</h1>
             </div>
-        </div>
-    </header>
-
-    <nav class="container-fluid navbar-style d-flex align-items-center flex-row-reverse pe-4">
-        <div class="row">
-            <div class="col d-flex">
-                <a href="../Página de login/login.html"><button class="btn">Acessar</button></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Soluções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Opniões dos Usuários</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container-fluid m-0 p-0">
-        <article class="container-fluid first-area-style position-relative">
+    <div class="all-content">
+
+        <nav class="container-fluid navbar-style d-flex align-items-center flex-row-reverse pe-4">
             <div class="row">
-                <div class="col p-0 text-center">
-                    <h3 class="text-light text-motivacional">"Quando você sentir vontade de desistir,<br> lembre por
-                        qual motivo começou."</h3>
-                    <img class="img-fluid" src="./img/back2.jpg" alt="background-image">
+                <div class="col d-flex">
+                    <a href="../Página de login/login.html"><button class="btn">Acessar</button></a>
                 </div>
             </div>
-        </article>
-        <article class="container-fluid mt-4 mb-4">
-            <div class="row ">
-                <div class="col text-center">
-                    <h1>
-                        SOLUÇÕES
-                    </h1>
-                </div>
-            </div>
-        </article>
-        <article class="container-fluid d-flex justify-content-center">
-            <div class="row-fluid d-flex flex-column all-cards-solucao">
-                <div class="col p-3 text-center card-solucao mb-3 d-flex flex-row">
-                    <div class="col-4 col-sm-2 col-md-2">
-                        <img class="img-fluid" src="./img/logo.jpg" alt="">
-                    </div>
-                    <div class="col-10-fluid d-flex align-items-center text-start px-2">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel leo commodo, vulputate
-                            justo
-                            ut, vehicula mi. </p>
-                    </div>
-                </div>
-                <div class="col p-3 text-center card-solucao mb-3 d-flex">
-                    <div class="col-4 col-sm-2 col-md-2">
-                        <img class="img-fluid" src="./img/logo.jpg" alt="">
-                    </div>
-                    <div class="col-10-fluid d-flex align-items-center text-start px-2">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel leo commodo, vulputate
-                            justo
-                            ut, vehicula mi. </p>
-                    </div>
-                </div>
-                <div class="col p-3 text-center card-solucao mb-5 d-flex">
-                    <div class="col-4 col-sm-2 col-md-2">
-                        <img class="img-fluid" src="./img/logo.jpg" alt="">
-                    </div>
-                    <div class="col-10-fluid d-flex align-items-center text-start px-2">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel leo commodo, vulputate
-                            justo
-                            ut, vehicula mi. </p>
-                    </div>
-                </div>
+        </nav>
 
-            </div>
-        </article>
-        <article class="container-fluid mt-3 mb-4 pt-5 sobre-nos">
-            <div class="row-fluid d-flex flex-column align-items-center ">
-                <div class="col-2-fluid col-sm-4 text-center">
-                    <h1>SOBRE NÓS</h1>
+        <main class="container-fluid m-0 p-0">
+            <article class="container-fluid first-area-style position-relative">
+                <div class="row">
+                    <div class="col p-0 text-center">
+                        <h3 class="text-light text-motivacional">"Quando você sentir vontade de desistir,<br> lembre por
+                            qual motivo começou."</h3>
+                        <img class="img-fluid" src="./img/back2.jpg" alt="background-image">
+                    </div>
                 </div>
-                <div class="col-fluid text-center sobre-nos-banner p-3 d-flex align-items-center">
-                      <p class="texto-sobrenos">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel leo commodo, vulputate justo ut, vehicula mi. Integer sed molestie diam. Quisque in vehicula erat. Mauris maximus enim sapien, posuere aliquam eros eleifend sit amet. Sed risus ex, porttitor ut libero ut, faucibus dictum risus. Quisque in bibendum urna, vel varius dolor. Ut tempor cursus nibh, eget vestibulum libero dignissim vel. Suspendisse nec mi lectus. Maecenas ut pretium risus.
-                      </p>
+            </article>
+            <article class="container-fluid mt-4 mb-4">
+                <div class="row ">
+                    <div class="col text-center">
+                        <h1>
+                            SOLUÇÕES
+                        </h1>
+                    </div>
                 </div>
-            </div>
-        </article>
-        
-        <article class="container-fluid mt-4 mb-4">
-            <div class="row ">
-                <div class="col text-center">
-                    <h1>
-                        OPNIÕES DOS USUÁRIOS
-                    </h1>
-                </div>
-            </div>
-        </article>
-        <article class="container-fluid d-flex justify-content-center all-cards-opniao">
-            <div class="row-fluid d-flex flex-column align-items-center">
+            </article>
+            <article class="container-fluid d-flex justify-content-center">
+                <div class="row-fluid d-flex flex-column all-cards-solucao">
+                    <div class="col p-3 text-center card-solucao mb-3 d-flex flex-row">
+                        <div class="col-4 col-sm-2 col-md-2">
+                            <img class="img-fluid" src="./img/logo.jpg" alt="">
+                        </div>
+                        <div class="col-10-fluid d-flex align-items-center text-start px-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel leo commodo, vulputate
+                                justo
+                                ut, vehicula mi. </p>
+                        </div>
+                    </div>
+                    <div class="col p-3 text-center card-solucao mb-3 d-flex">
+                        <div class="col-4 col-sm-2 col-md-2">
+                            <img class="img-fluid" src="./img/logo.jpg" alt="">
+                        </div>
+                        <div class="col-10-fluid d-flex align-items-center text-start px-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel leo commodo, vulputate
+                                justo
+                                ut, vehicula mi. </p>
+                        </div>
+                    </div>
+                    <div class="col p-3 text-center card-solucao mb-5 d-flex">
+                        <div class="col-4 col-sm-2 col-md-2">
+                            <img class="img-fluid" src="./img/logo.jpg" alt="">
+                        </div>
+                        <div class="col-10-fluid d-flex align-items-center text-start px-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel leo commodo, vulputate
+                                justo
+                                ut, vehicula mi. </p>
+                        </div>
+                    </div>
 
-                <div class="col p-2 text-center card-opniao mb-3 d-flex">
-                    <div class="col-4 col-sm-3 col-md-2">
-                        <img class="img-fluid" src="./img/logo.jpg" alt="">
+                </div>
+            </article>
+            <article class="container-fluid mt-3 mb-4 pt-5 sobre-nos">
+                <div class="row-fluid d-flex flex-column align-items-center ">
+                    <div class="col-2-fluid col-sm-4 text-center">
+                        <h1>SOBRE NÓS</h1>
                     </div>
-                    <div class="col-10-fluid d-flex align-items-center text-start px-2">
-                        <p class="pt-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel Lorem"</p>
+                    <div class="col-fluid text-center sobre-nos-banner p-3 d-flex align-items-center">
+                        <p class="texto-sobrenos">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel leo commodo, vulputate
+                            justo ut, vehicula mi. Integer sed molestie diam. Quisque in vehicula erat. Mauris maximus
+                            enim sapien, posuere aliquam eros eleifend sit amet. Sed risus ex, porttitor ut libero ut,
+                            faucibus dictum risus. Quisque in bibendum urna, vel varius dolor. Ut tempor cursus nibh,
+                            eget vestibulum libero dignissim vel. Suspendisse nec mi lectus. Maecenas ut pretium risus.
+                        </p>
                     </div>
                 </div>
+            </article>
 
-                <div class="col p-2 text-center card-opniao mb-3 d-flex">
-                    <div class="col-4 col-sm-3 col-md-2">
-                        <img class="img-fluid" src="./img/logo.jpg" alt="">
-                    </div>
-                    <div class="col-10-fluid d-flex align-items-center text-start px-2">
-                        <p class="pt-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel leo"</p>
+            <article class="container-fluid mt-4 mb-4">
+                <div class="row ">
+                    <div class="col text-center">
+                        <h1>
+                            OPNIÕES DOS USUÁRIOS
+                        </h1>
                     </div>
                 </div>
+            </article>
+            <article class="container-fluid d-flex justify-content-center all-cards-opniao">
+                <div class="row-fluid d-flex flex-column align-items-center">
 
-                <div class="col p-2 text-center card-opniao mb-5 d-flex">
-                    <div class="col-4 col-sm-3 col-md-2">
-                        <img class="img-fluid" src="./img/logo.jpg" alt="">
+                    <div class="col p-2 text-center card-opniao mb-3 d-flex">
+                        <div class="col-4 col-sm-3 col-md-2">
+                            <img class="img-fluid" src="./img/logo.jpg" alt="">
+                        </div>
+                        <div class="col-10-fluid d-flex align-items-center text-start px-2">
+                            <p class="pt-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel Lorem"
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-10-fluid d-flex align-items-center text-start px-2">
-                        <p class="pt-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel leo Lorem, ipsum dolor. Lorem, ipsum dolor sit" </p>
+
+                    <div class="col p-2 text-center card-opniao mb-3 d-flex">
+                        <div class="col-4 col-sm-3 col-md-2">
+                            <img class="img-fluid" src="./img/logo.jpg" alt="">
+                        </div>
+                        <div class="col-10-fluid d-flex align-items-center text-start px-2">
+                            <p class="pt-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel leo"</p>
+                        </div>
+                    </div>
+
+                    <div class="col p-2 text-center card-opniao mb-5 d-flex">
+                        <div class="col-4 col-sm-3 col-md-2">
+                            <img class="img-fluid" src="./img/logo.jpg" alt="">
+                        </div>
+                        <div class="col-10-fluid d-flex align-items-center text-start px-2">
+                            <p class="pt-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel leo
+                                Lorem, ipsum dolor. Lorem, ipsum dolor sit" </p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <article class="container-fluid mt-4 coment-area">
+                <div class="row-fluid d-flex flex-column">
+                    <div class="col text-center">
+                        <h1>DEIXE SUA OPNIÃO</h1>
+                    </div>
+                    <div class="col text-center">
+                        <input class="comentario-input" type="text" maxlength="130">
+                    </div>
+                    <div class="col text-center">
+                        <button class="btn btn-block mt-2">Enviar</button>
                     </div>
                 </div>
+            </article>
 
-            </div>
-        </article> 
-        <article class="container-fluid mt-4 coment-area">
-            <div class="row-fluid d-flex flex-column">
-                <div class="col text-center">
-                    <h1>DEIXE SUA OPNIÃO</h1>
-                </div>
-                <div class="col text-center">
-                    <input class="comentario-input" type="text" maxlength="130">
-                </div>
-                <div class="col text-center">
-                    <button class="btn btn-block mt-2">Enviar</button>
-                </div>
-            </div>
-        </article>
-
-    </main>
+        </main>
+    </div>
     <footer class="container-fluid mt-4 footer-style d-flex align-items-center">
         <div class="row-fluid">
             <div class="col d-flex">
-            <p class="m-0 p-0">Copyright 2023</p>
+                <p class="m-0 p-0">Copyright 2023</p>
             </div>
         </div>
     </footer>
