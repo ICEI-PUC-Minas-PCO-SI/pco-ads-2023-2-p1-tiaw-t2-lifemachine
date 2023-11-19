@@ -2,21 +2,127 @@ function myFunction1() {
     let numero1 = document.getElementById("numero1");
     return numero1.value;
 }
-
 function myFunction2() {
     let numero2 = document.getElementById("numero2");
     return numero2.value;
 }
-
-function criarHora(){
-    let Horario = {
-        Hora: myFunction1(),
-        Minuto: myFunction2(),
+function validHora(hora, valor){
+    if(hora < 900){
+        let resultado = 2400 - (valor - hora);
+        return resultado;
     }
-    return Horario;
+    else{
+        let resultado = hora - valor;
+        return resultado;
+    }
+}
+function aaa (inteiro){
+    if(inteiro > 2400){
+        let resultado = inteiro - 2400;
+        return resultado;
+    }
+    else{
+        return inteiro;
+    }
+}
+function concatenar(resultHora){
+
+    if(resultHora < 1000){
+        let horaString = "0"+resultHora.toString();
+        let hora = horaString.substring(0, 2);
+        let minuto = horaString.substring(2, 4);
+        let resultado = hora + ":" + minuto;
+        return resultado;
+    }
+    else{
+        let horaString = resultHora.toString();
+        let hora = horaString.substring(0, 2);
+        let minuto = horaString.substring(2, 4);
+        let resultado = hora + ":" + minuto;
+        return resultado;
+    }
+}
+function validarMinutos(inteiro){
+    let inteiroStr = inteiro.toString();
+    let finalInteiro = inteiroStr.substring(2, 4);
+    if (finalInteiro == 30)
+        return inteiro + 170;
+    else{
+        return inteiro + 130;
+    }
+}
+
+function teste(){
+
+    var horaString = myFunction1().toString() + myFunction2().toString();
+    var horaInt = parseInt(horaString);
+    var HoraValidada = validHora(horaInt, 900);
+
+    var ciclo1 = HoraValidada;
+    var ciclo2 = validarMinutos(HoraValidada);
+    var ciclo3 = aaa(validarMinutos(parseInt(ciclo2)));
+    var ciclo4 = aaa(validarMinutos(parseInt(ciclo3)));
+    var ciclo5 = aaa(validarMinutos(parseInt(ciclo4)));
+    var ciclo6 = aaa(validarMinutos(parseInt(ciclo5)));
+
+    let Divtela = document.getElementById("x");
+    let newDiv = `
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Ciclo</th>
+                        <th scope="col">Hora de adormecer</th>
+                        <th scope="col">Tempo de Sono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>1</td>
+                        <td>${concatenar(ciclo1)}</td>
+                        <td>540 minutos</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>2</td>
+                        <td>${concatenar(ciclo2)}</td>
+                        <td>450 minutos</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>3</td>
+                        <td>${concatenar(ciclo3)}</td>
+                        <td>360 minutos</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>4</td>
+                        <td>${concatenar(ciclo4)}</td>
+                        <td>270 minutos</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>5</td>
+                        <td>${concatenar(ciclo5)}</td>
+                        <td>180 minutos</td>
+                    </tr>
+                    <tr>
+                    <th scope="row"></th>
+                        <td>6</td>
+                        <td>${concatenar(ciclo6)}</td>
+                        <td>90 Minutos</td>
+                    </tr>
+                </tbody>
+            </table>
+        `;
+
+    Divtela.innerHTML = newDiv;
 }
 
 
+  
+
+/*
 function modelarHoras (horas, tempoCiclo){
     if(horas < 9){
         var resultado1 = 24 - (tempoCiclo - horas);
