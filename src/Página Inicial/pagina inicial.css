@@ -15,7 +15,7 @@
     width: 100px;
     border-radius: 50%;
 }
-.header-style h2 {
+.header-style h1 {
     font-style: normal;
     font-weight: 700;
 
@@ -48,7 +48,7 @@
 }
 
 .card-solucao {
-    height: 60px;
+    /* height: 60px; */
     background-color: #D2D2D2;
     border-radius: 10px;
     font-size: 12px;
@@ -57,19 +57,16 @@
     border: 1px solid black;
 }
 .card-solucao img {
-    height: 100%;
-    border-radius: 50%;
+    height: 70%;
 }
-
 .all-cards-solucao {
     width: 800px;
-    height: 450px;
     box-sizing: border-box;
 }
 
 .sobre-nos {
     background-color: #D9D9D9;
-    height: 450px;
+    padding-bottom: 30px;
 }
 .sobre-nos-banner {
     background-color: #796E6E;
@@ -84,7 +81,6 @@
 
 
 .card-opniao {
-    height: 100px;
     background-color: #D2D2D2;
     border-radius: 50px;
     font-size: 12px;
@@ -93,13 +89,12 @@
     border: 1px solid black;
 }
 .card-opniao img {
-    height: 100%;
-    border-radius: 50%;
+    height: 40%;
 }
 
 .all-cards-opniao {
     width: 400px;
-    height: 350px;
+    /* height: 350px; */
     box-sizing: border-box;
 }
 
