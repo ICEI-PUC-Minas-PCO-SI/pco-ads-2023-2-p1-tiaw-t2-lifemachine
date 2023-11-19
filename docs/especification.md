@@ -56,7 +56,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |------|-----------------------------------------|----| ----|
 |RF-001| O sistema deve permitir cadastro do usuário | ALTA | Caio | 
 |RF-002| O sistema deve permitir login do usuário  | ALTA | Caio |
-|RF-003| O sistema deve permitir a inserção dos dados fisicos do usuário  | ALTA | Karol |  
+|RF-003| O sistema deve permitir a inserção dos dados fisicos do usuário  | ALTA | Caio |  
 |RF-004| O sistema deve permitir a inserção dos dados da rotina do usuário  | ALTA | Daniel | 
 |RF-005| O sistema deve permitir ao usuario alterar os dados de sua rotina  | ALTA | Daniel | 
 |RF-006| O sistema deve gerar treino personalizado de acordo com objetivo do usuario | ALTA | Erick |
