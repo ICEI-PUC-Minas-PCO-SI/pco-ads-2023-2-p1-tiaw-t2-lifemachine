@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -25,21 +25,34 @@
                 <div class="card card-style">
                     <div class="card-body p-5">
                         <h1 class="card-title text-center">BEM VIND@</h1>
-                        <form>
+                        <form id="registration-form">
                             <div class="mb-3 text-start pt-5 row">
                                 <div class="col-12 col-md-6">
                                     <h3 class="mb-4 fw-bold"> Dados de acesso </h3>
                                     <div class="mb-3">
                                         <div class="d-flex">
+                                            <label for="username" class="label-style form-label text-start fs-4">Nome:</label>
+                                            <input type="nome" class="input-style form-control" id="nome" name="nome">
+                                        </div>
+                                        <div class="d-flex">
                                             <label for="username"
-                                                class=" label-style form-label text-start fs-4">E-mail:</label>
-                                            <input type="email" class="input-style form-control" id="username"
+                                                class=" label-style form-label text-start fs-4">Telefone:</label>
+                                            <input type="number" class="input-style form-control" id="username"
                                                 name="username">
                                         </div>
                                         <div class="d-flex">
+                                            <label for="email" class="label-style form-label text-start fs-4">E-mail:</label>
+                                            <input type="email" class="input-style form-control" id="email" name="email" required>
+                                        </div>
+                                        <div class="d-flex">
                                             <label for="password" class="label-style form-label text-start fs-4">Senha:</label>
-                                            <input type="password" class="input-style form-control" id="password"
-                                                name="password">
+                                            <input type="password" class="input-style form-control" id="password" 
+                                            name="password">
+                                        </div>
+                                        <div class="d-flex">
+                                            <label for="1password" class="label-style form-label text-start fs-4">Confirme a senha:</label>
+                                            <input type="password" class="input-style form-control" id="1password" 
+                                            name="1password">
                                         </div>
                                     </div>
                                 </div>
@@ -47,11 +60,6 @@
                                 <div class="col-12 col-md-6">
                                     <h3 class="mb-3 fw-bold"> Dados Pessoais </h3>
                                     <div class="mb-3">
-
-                                        <div class="d-flex">
-                                            <label for="Nome" class=" label-style form-label text-start fs-4">Nome:</label>
-                                            <input type="text" class="input-style form-control" id="Nome" name="Nome">
-                                        </div>
 
                                         <div class="d-flex">
                                             <label for="Altura" class="label-style form-label text-start fs-4">Altura (cm):</label>
@@ -63,7 +71,14 @@
                                             <label for="Peso" class="label-style form-label text-start fs-4">Peso (kg):</label>
                                             <input type="number" class="input-style form-control" id="Peso" name="Peso">
                                         </div>
-
+                                        <div class="d-flex">
+                                            <label for="Sexo" class="label-style form-label text-start fs-4">Sexo:</label>
+                                            <select class="input-style form-select" id="Sexo" name="Sexo">
+                                                <option value="F">Feminino</option>
+                                                <option value="M">Masculino</option>
+                                                <option value="N">Prefiro não informar</option>
+                                            </select>
+                                        </div>
                                         <div class="d-flex">
                                             <label for="Objetivo" class="label-style form-label text-start fs-4">Objetivo:</label>
                                             <select class="input-style form-select" id="Objetivo" name="Objetivo">
@@ -74,8 +89,7 @@
                                         </div>
                                         <div class="d-flex">
                                             <label for="DiasDeTreino"
-                                                class="label-style form-label text-start fs-4">Dias de
-                                                Treino:</label>
+                                                class="label-style form-label text-start fs-4">Disposiçao:</label>
                                             <select class="input-style form-select" id="DiasDeTreino"
                                                 name="DiasDeTreino">
                                                 <option value="3-dias">3 Dias por Semana</option>
@@ -88,8 +102,9 @@
                                 </div>
                             </div>
                             <div class="text-center pt-5">
-                                <a href="../Página de login/login.html"><button type="button" class="btn btn-danger btn-lg">Cadastrar</button></a>
+                                <button type="submit" class="btn btn-danger btn-lg" id="BotaoCadastrar">Cadastrar</button>
                             </div>
+                            
 
                         </form>
                     </div>
@@ -105,6 +120,91 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- ... Seu código HTML anterior ... -->
+
+<script>
+    $(document).ready(function () {
+    var users = JSON.parse(localStorage.getItem('users')) || [];
+
+    $('#registration-form').submit(function (event) {
+        event.preventDefault();
+
+        var camposFaltando = validarCampos();
+
+        if (camposFaltando.length > 0) {
+            alert('Por favor, preencha todos os campos obrigatórios (' + camposFaltando.join(', ') + ').');
+            return; 
+        }
+
+        var email = $('#email').val();
+        var senha = $('#password').val();
+        var confirmSenha = $('#1password').val();
+        var nome = $('#nome').val();
+        var Altura = $('#Altura').val();
+        var Peso = $('#Peso').val();
+        var Objetivo = $('#Objetivo').val();
+        var DiasDeTreino = $('#DiasDeTreino').val();
+        var Sexo = $('#Sexo').val();
+        
+        // Validaçoes pra ta certinho
+        if (emailusado(email)) {
+            alert('Este e-mail ja esta em uso. Por favor, use outro e-mail.');
+            return;
+        }
+
+        if (senha !== confirmSenha) {
+            alert('A senha e a confirmação de senha não são iguais.');
+            return; 
+        }
+
+        // Caso tudo de boa faz o cadastro
+        var CadastroUsuario = {
+            email: email,
+            senha: senha,
+            nome: nome,
+            altura: Altura,
+            peso: Peso,
+            objetivo: Objetivo,
+            diasDeTreino: DiasDeTreino,
+            sexo: Sexo
+        };
+
+        users.push(CadastroUsuario);
+        localStorage.setItem('users', JSON.stringify(users));
+
+        window.location.href = '../Página de login/login.html';
+    });
+
+    //funcoes para ver c ta tudo certinho
+    function validarCampos() {
+        var camposObrigatorios = ['#email', '#password', '#1password', '#nome', '#Altura', '#Peso', '#Objetivo', '#DiasDeTreino', '#Sexo'];
+        var camposFaltando = [];
+
+        for (var x = 0; x < camposObrigatorios.length; x++) {
+            var campo = $(camposObrigatorios[x]);
+            if (!campo.val()) {
+                camposFaltando.push(camposObrigatorios[x]);
+            }
+        }
+
+        return camposFaltando;
+    }
+
+    function emailusado(email) {
+        for (var x = 0; x < users.length; x++) {
+            if (users[x].email === email) {
+                return true; 
+            }
+        }
+        return false;
+    }
+});
+
+</script>
+
 </body>
 
 </html>
