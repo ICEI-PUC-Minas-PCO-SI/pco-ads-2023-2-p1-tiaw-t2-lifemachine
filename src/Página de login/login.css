@@ -13,6 +13,7 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    object-fit: cover;
 }
 .header-style h1 {
     font-style: normal;
@@ -49,7 +50,6 @@ body {
     margin: 0px;
     padding: 0px;
     max-height: fit-content;
-    
 }
 
 .all-content{
