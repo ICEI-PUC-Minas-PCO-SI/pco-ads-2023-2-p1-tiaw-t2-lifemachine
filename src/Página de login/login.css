@@ -48,13 +48,15 @@ body {
     height: 100vh;
     margin: 0px;
     padding: 0px;
+    max-height: fit-content;
+    
 }
 
 .all-content{
     max-width: 2500px;
     min-width: 280px;
     margin: auto;
-    height: 100vh;
+    height: 100%;
 }
 
 .form-style {
