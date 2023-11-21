@@ -6,6 +6,85 @@ function myFunction2() {
     let numero2 = document.getElementById("numero2");
     return numero2.value;
 }
+
+function adicionarMinutos(hora, minuto, minutosAdicionais) {
+    // Converter a hora e o minuto para minutos
+    let totalMinutos = hora * 60 + minuto;
+
+    // Adicionar os minutos adicionais
+    totalMinutos += minutosAdicionais;
+
+    // Calcular a nova hora e o novo minuto
+    let novaHora = Math.floor(totalMinutos / 60);
+    let novoMinuto = totalMinutos % 60;
+
+    if(novaHora>23){
+      novaHora = novaHora-24;
+    }
+
+    if(novaHora < 10){
+      novaHora = "0"+novaHora.toString();
+    }
+    if(novoMinuto < 10){
+      novoMinuto = "0"+novoMinuto;
+    }
+
+
+    // Retornar a nova hora e o novo minuto
+    novaHora = novaHora.toString();
+    novoMinuto = novoMinuto.toString();
+
+    let horario = novaHora+":"+novoMinuto;
+    return horario;
+    
+}
+
+function subtractMinutes(hour, minute, minutesToSubtract) {
+    // Convert the hour and minute to minutes
+    let totalMinutes = hour * 60 + minute;
+
+    // Subtract the minutes
+    totalMinutes -= Math.abs(minutesToSubtract);
+
+    // Calculate the new hour and minute
+    let novaHora = Math.floor(totalMinutes / 60);
+    let novoMinuto = totalMinutes % 60;
+
+      if(novaHora < 0){
+        novaHora = 24 - novaHora;
+      }
+      if(novoMinuto < 0){
+      novoMinuto = 0-novoMinuto;
+      }
+  
+      if(novaHora>23){
+        novaHora = novaHora-24;
+      }
+  
+      if(novaHora < 10){
+        novaHora = "0"+novaHora.toString();
+      }
+      if(novoMinuto < 10){
+        novoMinuto = "0"+novoMinuto;
+      }
+
+  
+      // Retornar a nova hora e o novo minuto
+      novaHora = novaHora.toString();
+      novoMinuto = novoMinuto.toString();
+  
+      let horario = novaHora+":"+novoMinuto;
+      return horario;
+}
+console.log(subtractMinutes(1,00,90))
+
+
+
+
+
+//#region Tentativas frustratadas 
+/*
+
 function validHora(hora, valor){
     if(hora < 900){
         let resultado = 2400 - (valor - hora);
@@ -27,6 +106,13 @@ function aaa (inteiro){
 }
 function concatenar(resultHora){
 
+    if(resultHora < 100){
+        let horaString = "00"+resultHora.toString();
+        let hora = horaString.substring(0, 2);
+        let minuto = horaString.substring(2, 4);
+        let resultado = hora + ":" + minuto;
+        return resultado;
+    }
     if(resultHora < 1000){
         let horaString = "0"+resultHora.toString();
         let hora = horaString.substring(0, 2);
@@ -317,3 +403,5 @@ let objeto = {
 let json = JSON.stringify(objeto);
 console.log(json);
 */
+
+//#endregion
