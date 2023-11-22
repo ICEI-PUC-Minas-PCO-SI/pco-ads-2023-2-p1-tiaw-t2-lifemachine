@@ -35,9 +35,6 @@ body {
 }
 
 .container-main-style {
-    /* background-image: url('./img/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat; */
     display: flex;
     justify-content:center ;
     flex-direction: column;
