@@ -26,6 +26,41 @@
     .texto-receita {
         flex: 1; 
     }
-  
+    #receita{
+        min-width: 300px !important;
+        }
     
   }
+
+@media (max-width: 856px){
+#receita {
+    margin-right: 10px;
+}
+#dados {
+    margin-bottom: 20px;
+}
+.campo-input label {
+    text-align: center;
+}
+#receita {
+    width: 100%;
+    min-width: 378px;
+    min-height: 280px;
+}
+}
+@media (max-width: 648px){
+    #receita{
+    min-height: 280px;
+    min-width: 180px;
+    }
+}
+@media screen and (max-width:400px){
+    #receita{
+        min-width: 160px !important;
+    }
+
+    #dados {
+        font-size: 12px;
+    }
+
+}
