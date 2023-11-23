@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Pagina sono.css">
+    <script src="script_pag_sono.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -184,31 +185,31 @@
             <h2>Horário de Despertar</h2>
             <div class="campo-input">
                 <label for="horas">Horas:</label>
-                <select class="input-style form-select dropdownX" id="Objetivo" name="Objetivo">
-                  <option value="perder-peso">00</option>
-                  <option value="perder-peso">01</option>
-                  <option value="ganhar-peso">02</option>
-                  <option value="manter-peso">03</option>
-                  <option value="perder-peso">04</option>
-                  <option value="ganhar-peso">05</option>
-                  <option value="manter-peso">06</option>
-                  <option value="perder-peso">07</option>
-                  <option value="ganhar-peso">08</option>
-                  <option value="manter-peso">09</option>
-                  <option value="manter-peso">10</option>
-                  <option value="perder-peso">11</option>
-                  <option value="perder-peso">12</option>
-                  <option value="ganhar-peso">13</option>
-                  <option value="manter-peso">14</option>
-                  <option value="perder-peso">15</option>
-                  <option value="ganhar-peso">16</option>
-                  <option value="manter-peso">17</option>
-                  <option value="perder-peso">18</option>
-                  <option value="ganhar-peso">19</option>
-                  <option value="manter-peso">20</option>
-                  <option value="manter-peso">21</option>
-                  <option value="ganhar-peso">22</option>
-                  <option value="manter-peso">23</option>
+                <select class="input-style form-select dropdownX" id="numero1" name="Objetivo">
+                  <option value="00">00</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
               </select>
             </div>
             <div class="campo-input">
@@ -216,30 +217,31 @@
                 <!-- Rest of your code -->
                 <div class="d-flex mb-3 label-form-style">
                   <label for="Objetivo" class="label-style form-label text-start fw-bold"></label>
-                  <select class="input-style form-select dropdownX" id="Objetivo" name="Objetivo">
-                      <option value="perder-peso">00</option>
-                      <option value="perder-peso">05</option>
-                      <option value="ganhar-peso">10</option>
-                      <option value="manter-peso">15</option>
-                      <option value="perder-peso">20</option>
-                      <option value="ganhar-peso">25</option>
-                      <option value="manter-peso">30</option>
-                      <option value="perder-peso">35</option>
-                      <option value="ganhar-peso">40</option>
-                      <option value="manter-peso">45</option>
-                      <option value="manter-peso">55</option>
+                  <select class="input-style form-select dropdownX" id="numero2" name="Objetivo">
+                      <option value="00">00</option>
+                      <option value="05">05</option>
+                      <option value="10">10</option>
+                      <option value="15">15</option>
+                      <option value="20">20</option>
+                      <option value="25">25</option>
+                      <option value="30">30</option>
+                      <option value="35">35</option>
+                      <option value="40">40</option>
+                      <option value="45">45</option>
+                      <option value="55">55</option>
                   </select>
               </div>
 
             </div>
-            <button class="calculate-button" style="background-color: #FF0000; color: #fff; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">Calcular</button>
+            <button onclick="teste()" class="calculate-button" style="background-color: #FF0000; color: #fff; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">Calcular</button>
         </div>
         <div id="frequencia">
           <div class="RE">
           </div>
           <div class="resultado">
             <h2>RESULTADOS:</h2>
-            <img src="img/tabela.png" alt="Imagem da Receita">
+            <div id="x">Tabela</div>
+            
           </div>
           <div class="parametro">
             <h2>PARÂMETRO DE COMPARAÇÃO:</h2>

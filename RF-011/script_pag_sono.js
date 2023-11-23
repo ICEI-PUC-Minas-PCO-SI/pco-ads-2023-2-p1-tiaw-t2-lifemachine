@@ -1,20 +1,19 @@
 function myFunction1() {
-    let numero1 = document.getElementById("numero1");
-    return numero1.value;
+    let dropdown = document.getElementById("numero1");
+    var valorSelecionado = dropdown.options[dropdown.selectedIndex].value;
+    return parseInt(valorSelecionado);
 }
 function myFunction2() {
-    let numero2 = document.getElementById("numero2");
-    return numero2.value;
+    let dropdown = document.getElementById("numero2");
+    var valorSelecionado = dropdown.options[dropdown.selectedIndex].value;
+    return parseInt(valorSelecionado);
 }
 
 function adicionarMinutos(hora, minuto, minutosAdicionais) {
     // Converter a hora e o minuto para minutos
     let totalMinutos = hora * 60 + minuto;
 
-    // Adicionar os minutos adicionais
     totalMinutos += minutosAdicionais;
-
-    // Calcular a nova hora e o novo minuto
     let novaHora = Math.floor(totalMinutos / 60);
     let novoMinuto = totalMinutos % 60;
 
@@ -29,8 +28,6 @@ function adicionarMinutos(hora, minuto, minutosAdicionais) {
       novoMinuto = "0"+novoMinuto;
     }
 
-
-    // Retornar a nova hora e o novo minuto
     novaHora = novaHora.toString();
     novoMinuto = novoMinuto.toString();
 
@@ -39,16 +36,13 @@ function adicionarMinutos(hora, minuto, minutosAdicionais) {
     
 }
 
-function subtractMinutes(hour, minute, minutesToSubtract) {
-    // Convert the hour and minute to minutes
-    let totalMinutes = hour * 60 + minute;
+function subtraiMinutos(hora, minutos, minutosExc) {
+    let minutosTotais = hora * 60 + minutos;
 
-    // Subtract the minutes
-    totalMinutes -= Math.abs(minutesToSubtract);
+    minutosTotais -= Math.abs(minutosExc);
 
-    // Calculate the new hour and minute
-    let novaHora = Math.floor(totalMinutes / 60);
-    let novoMinuto = totalMinutes % 60;
+    let novaHora = Math.floor(minutosTotais / 60);
+    let novoMinuto = minutosTotais % 60;
 
       if(novaHora < 0){
         novaHora = 24 - novaHora;
@@ -68,15 +62,75 @@ function subtractMinutes(hour, minute, minutesToSubtract) {
         novoMinuto = "0"+novoMinuto;
       }
 
-  
-      // Retornar a nova hora e o novo minuto
       novaHora = novaHora.toString();
       novoMinuto = novoMinuto.toString();
   
       let horario = novaHora+":"+novoMinuto;
       return horario;
 }
-console.log(subtractMinutes(1,0,90))
+
+function teste(){
+
+    var ciclo1 = subtraiMinutos(myFunction1(),myFunction2(),540);
+    var ciclo2 = subtraiMinutos(myFunction1(),myFunction2(),450);
+    var ciclo3 = subtraiMinutos(myFunction1(),myFunction2(),360);
+    var ciclo4 = subtraiMinutos(myFunction1(),myFunction2(),270);
+    var ciclo5 = subtraiMinutos(myFunction1(),myFunction2(),180);
+    var ciclo6 = subtraiMinutos(myFunction1(),myFunction2(),90);
+
+    let Divtela = document.getElementById("x");
+    let newDiv = `
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Ciclo</th>
+                        <th scope="col">Hora de adormecer</th>
+                        <th scope="col">Tempo de Sono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>1</td>
+                        <td>${ciclo1}</td>
+                        <td>540 minutos</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>2</td>
+                        <td>${ciclo2}</td>
+                        <td>450 minutos</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>3</td>
+                        <td>${ciclo3}</td>
+                        <td>360 minutos</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>4</td>
+                        <td>${ciclo4}</td>
+                        <td>270 minutos</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>5</td>
+                        <td>${ciclo5}</td>
+                        <td>180 minutos</td>
+                    </tr>
+                    <tr>
+                    <th scope="row"></th>
+                        <td>6</td>
+                        <td>${ciclo6}</td>
+                        <td>90 Minutos</td>
+                    </tr>
+                </tbody>
+            </table>
+        `;
+
+    Divtela.innerHTML = newDiv;
+}
 
 
 
