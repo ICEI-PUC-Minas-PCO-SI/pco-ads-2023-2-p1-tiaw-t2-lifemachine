@@ -38,6 +38,9 @@ a{
     box-sizing: border-box;
     padding-bottom: 0px;
 }
+.img-info p {
+    font-size: 30px;
+}
 
 .imagem {
     border: 2px solid #FF0000;
