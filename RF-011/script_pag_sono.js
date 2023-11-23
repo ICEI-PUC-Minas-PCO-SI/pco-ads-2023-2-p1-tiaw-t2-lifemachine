@@ -9,7 +9,205 @@ function myFunction2() {
     return parseInt(valorSelecionado);
 }
 
+function adicionarHora(hora, minuto, minutosAdicionais) {
+    let totalMinutos = hora * 60 + minuto;
+
+    totalMinutos += minutosAdicionais;
+    let novaHora = Math.floor(totalMinutos / 60);
+
+    if(novaHora>23){
+     novaHora = novaHora-24;
+    }
+  
+    return novaHora;
+}
+
 function adicionarMinutos(hora, minuto, minutosAdicionais) {
+    let totalMinutos = hora * 60 + minuto;
+    totalMinutos += minutosAdicionais;
+    let novoMinuto = totalMinutos % 60;
+
+    if(novoMinuto < 0){
+        novoMinuto = 0-novoMinuto;
+    }
+    return novoMinuto;
+}
+
+function subtraiMinutos(hora, minutos, minutosExc) {
+    let minutosTotais = hora * 60 + minutos;
+    minutosTotais -= minutosExc;
+
+    let novoMinuto = Math.abs(minutosTotais) % 60;
+
+    if(novoMinuto < 0){
+    novoMinuto = 0-novoMinuto;
+    }
+    return novoMinuto;
+}
+
+function subtraiHora(hora, minutos, minutosExc) {
+    let minutosTotais = hora * 60 + minutos;
+    minutosTotais -= minutosExc;
+
+    let novaHora = Math.floor(Math.abs(minutosTotais) / 60);
+
+    if(hora < 9){
+    novaHora =  24 - novaHora;
+    }
+    if(novaHora>23){
+    novaHora = novaHora-24;
+    }
+    return novaHora;
+}
+
+function TransformarStrHora(hora){
+    if(hora < 10){
+        hora = hora.toString();
+        hora = "0"+hora.toString();
+        return hora;
+    }
+    return hora.toString();
+}
+
+function TransformarStrMinuto(minuto){
+    if(minuto < 10){
+        minuto = minuto.toString();
+        minuto = "0"+ minuto
+        return minuto;
+    }
+    return minuto.toString();
+}
+
+
+function teste(){
+
+const pessoa = {
+    nome: "João",
+    idade: 25,
+    profissao: "Engenheiro"
+};
+
+    var teste1 = {
+        hora: subtraiHora(myFunction1(),myFunction2(),540),
+        minuto: subtraiMinutos(myFunction1(),myFunction2(),540)
+    };
+    var teste2 = {
+        hora: adicionarHora(teste1.hora, teste1.minuto,90),
+        minuto: adicionarMinutos(teste1.hora, teste1.minuto,90)
+    };
+    var teste3 = {
+        hora: adicionarHora(teste2.hora, teste2.minuto,90),
+        minuto: adicionarMinutos(teste2.hora, teste2.minuto,90)
+    };
+    var teste4 = {
+        hora: adicionarHora(teste3.hora, teste3.minuto,90),
+        minuto: adicionarMinutos(teste3.hora, teste3.minuto,90)
+    };
+    var teste5 = {
+        hora: adicionarHora(teste4.hora, teste4.minuto,90),
+        minuto: adicionarMinutos(teste4.hora, teste4.minuto,90)
+    };
+    var teste6 = {
+        hora: adicionarHora(teste5.hora, teste5.minuto,90),
+        minuto: adicionarMinutos(teste5.hora, teste5.minuto,90)
+    };
+
+
+    let Divtela = document.getElementById("x");
+    let newDiv = `
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Ciclo</th>
+                        <th scope="col">Hora de adormecer</th>
+                        <th scope="col">Tempo de Sono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>${TransformarStrHora(teste1.hora)+":"+TransformarStrMinuto(teste1.minuto)}</td>
+                        <td>540 minutos</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>${TransformarStrHora(teste2.hora)+":"+TransformarStrMinuto(teste2.minuto)}</td>
+                        <td>450 minutos</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>${TransformarStrHora(teste3.hora)+":"+TransformarStrMinuto(teste3.minuto)}</td>
+                        <td>360 minutos</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>${TransformarStrHora(teste4.hora)+":"+TransformarStrMinuto(teste4.minuto)}</td>
+                        <td>270 minutos</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>${TransformarStrHora(teste5.hora)+":"+TransformarStrMinuto(teste5.minuto)}</td>
+                        <td>180 minutos</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">6</th>
+                        <td>${TransformarStrHora(teste6.hora)+":"+TransformarStrMinuto(teste6.minuto)}</td>
+                        <td>90 Minutos</td>
+                    </tr>
+                </tbody>
+            </table>
+        `;
+
+    Divtela.innerHTML = newDiv;
+}
+
+//#region Tentativas frustratadas 
+/*
+
+    /*
+    var ciclo1 = subtraiMinutos(myFunction1(),myFunction2(),540);
+    var ciclo2 = subtraiMinutos(myFunction1(),myFunction2(),450);
+    var ciclo3 = subtraiMinutos(myFunction1(),myFunction2(),360);
+    var ciclo4 = subtraiMinutos(myFunction1(),myFunction2(),270);
+    var ciclo5 = subtraiMinutos(myFunction1(),myFunction2(),180);
+    var ciclo6 = subtraiMinutos(myFunction1(),myFunction2(),90);
+    */
+
+/* function subtraiMinutos(hora, minutos, minutosExc) {
+    let minutosTotais = hora * 60 + minutos;
+
+    minutosTotais -= minutosExc;
+
+    let novaHora = Math.floor(Math.abs(minutosTotais) / 60);
+    let novoMinuto = Math.abs(minutosTotais) % 60;
+
+      if(hora < 9){
+        novaHora =  24 - novaHora;
+      }
+      if(novoMinuto < 0){
+      novoMinuto = 0-novoMinuto;
+      }
+  
+      if(novaHora>23){
+        novaHora = novaHora-24;
+      }
+  
+      if(novaHora < 10){
+        novaHora = "0"+novaHora.toString();
+      }
+      if(novoMinuto < 10){
+        novoMinuto = "0"+novoMinuto;
+      }
+
+      novaHora = novaHora.toString();
+      novoMinuto = novoMinuto.toString();
+  
+      let horario = novaHora+":"+novoMinuto;
+      return horario;
+}
+*/
+
+/* function adicionarMinutos(hora, minuto, minutosAdicionais) {
     // Converter a hora e o minuto para minutos
     let totalMinutos = hora * 60 + minuto;
 
@@ -35,109 +233,8 @@ function adicionarMinutos(hora, minuto, minutosAdicionais) {
     return horario;
     
 }
+*/
 
-function subtraiMinutos(hora, minutos, minutosExc) {
-    let minutosTotais = hora * 60 + minutos;
-
-    minutosTotais -= minutosExc;
-
-    let novaHora = Math.floor(Math.abs(minutosTotais) / 60);
-    let novoMinuto = Math.abs(minutosTotais) % 60;
-
-      if(hora < 9){
-        novaHora =  12 + novaHora;
-      }
-      if(novoMinuto < 0){
-      novoMinuto = 0-novoMinuto;
-      }
-  
-      if(novaHora>23){
-        novaHora = novaHora-24;
-      }
-  
-      if(novaHora < 10){
-        novaHora = "0"+novaHora.toString();
-      }
-      if(novoMinuto < 10){
-        novoMinuto = "0"+novoMinuto;
-      }
-
-      novaHora = novaHora.toString();
-      novoMinuto = novoMinuto.toString();
-  
-      let horario = novaHora+":"+novoMinuto;
-      return horario;
-}
-
-function teste(){
-
-    var ciclo1 = subtraiMinutos(myFunction1(),myFunction2(),540);
-    var ciclo2 = subtraiMinutos(myFunction1(),myFunction2(),450);
-    var ciclo3 = subtraiMinutos(myFunction1(),myFunction2(),360);
-    var ciclo4 = subtraiMinutos(myFunction1(),myFunction2(),270);
-    var ciclo5 = subtraiMinutos(myFunction1(),myFunction2(),180);
-    var ciclo6 = subtraiMinutos(myFunction1(),myFunction2(),90);
-
-    let Divtela = document.getElementById("x");
-    let newDiv = `
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">Ciclo</th>
-                        <th scope="col">Hora de adormecer</th>
-                        <th scope="col">Tempo de Sono</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row"></th>
-                        <td>1</td>
-                        <td>${ciclo1}</td>
-                        <td>540 minutos</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"></th>
-                        <td>2</td>
-                        <td>${ciclo2}</td>
-                        <td>450 minutos</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"></th>
-                        <td>3</td>
-                        <td>${ciclo3}</td>
-                        <td>360 minutos</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"></th>
-                        <td>4</td>
-                        <td>${ciclo4}</td>
-                        <td>270 minutos</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"></th>
-                        <td>5</td>
-                        <td>${ciclo5}</td>
-                        <td>180 minutos</td>
-                    </tr>
-                    <tr>
-                    <th scope="row"></th>
-                        <td>6</td>
-                        <td>${ciclo6}</td>
-                        <td>90 Minutos</td>
-                    </tr>
-                </tbody>
-            </table>
-        `;
-
-    Divtela.innerHTML = newDiv;
-}
-
-
-
-
-
-//#region Tentativas frustratadas 
-/*
 
 function validHora(hora, valor){
     if(hora < 900){
