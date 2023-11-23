@@ -76,7 +76,7 @@ function subtractMinutes(hour, minute, minutesToSubtract) {
       let horario = novaHora+":"+novoMinuto;
       return horario;
 }
-console.log(subtractMinutes(1,00,90))
+console.log(subtractMinutes(1,0,90))
 
 
 
