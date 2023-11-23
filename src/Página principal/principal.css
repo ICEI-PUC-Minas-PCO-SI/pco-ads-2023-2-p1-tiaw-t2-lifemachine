@@ -34,14 +34,16 @@ a{
     padding-top: 20px;
     margin-top: auto;
     margin-bottom: auto;
-    padding: 30px;
+    padding: 25px;
     box-sizing: border-box;
+    padding-bottom: 0px;
 }
 
 .imagem {
     border: 2px solid #FF0000;
     border-radius: 5%;
     background-color: #D9D9D9;
+    min-width: 130px;
 }
 
 .info {
@@ -49,6 +51,7 @@ a{
     border: 2px solid #FF0000;
     padding: 20px;
     border-radius: 30px;
+    margin-bottom: 20px;
 }
 .info-textos {
     font-size: 30px;
@@ -64,23 +67,28 @@ a{
 .img-info img {
     height: 80px;
 }
+.imagens-row-style {
+    flex-wrap: wrap;
+}
 
 #suporte {
     border-radius: 10px;
     background-color: #D9D9D9;
     padding: 5px;
     margin-top: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 18px;
     max-width: fit-content;
 }
 .btn-custom {
     background-color: #FF0000;
     color: white;
-    margin-top: 18px;
-    width: 80%;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 150px;
     font-size: 20px;
     font-weight: bolder;
+    margin-bottom: 10px;
 }
 
 .btn-custom:hover {

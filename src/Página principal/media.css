@@ -19,9 +19,12 @@
     .imagem {
         height: 130px;
     }
-    .imagens-row-style{
-        flex-wrap: wrap;
-        
+    .info-textos {
+        font-size: 16px;
+
+    }
+    .img-info img {
+        height: 50px;
     }
 }
 @media screen and (min-width: 576px) and (max-width: 768px){
@@ -90,5 +93,23 @@
     }
     .info {
         margin-bottom: 98px;
+    }
+    .info-textos {
+        font-size: 16px;
+
+    }
+    .img-info img {
+        height: 30px;
+        margin-left: 10px;
+        box-sizing: border-box;
+    }
+    .info {
+        padding: 15px;
+    }
+    .img-info p {
+        font-size: 16px;
+    }
+    .custom-padding {
+        padding: 10px;
     }
 }
