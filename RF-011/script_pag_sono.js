@@ -39,13 +39,13 @@ function adicionarMinutos(hora, minuto, minutosAdicionais) {
 function subtraiMinutos(hora, minutos, minutosExc) {
     let minutosTotais = hora * 60 + minutos;
 
-    minutosTotais -= Math.abs(minutosExc);
+    minutosTotais -= minutosExc;
 
-    let novaHora = Math.floor(minutosTotais / 60);
-    let novoMinuto = minutosTotais % 60;
+    let novaHora = Math.floor(Math.abs(minutosTotais) / 60);
+    let novoMinuto = Math.abs(minutosTotais) % 60;
 
-      if(novaHora < 0){
-        novaHora = 24 - novaHora;
+      if(hora < 9){
+        novaHora =  12 + novaHora;
       }
       if(novoMinuto < 0){
       novoMinuto = 0-novoMinuto;
