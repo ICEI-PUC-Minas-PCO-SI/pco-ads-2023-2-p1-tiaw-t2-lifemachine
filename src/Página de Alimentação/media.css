@@ -57,10 +57,22 @@
 @media screen and (max-width:400px){
     #receita{
         min-width: 160px !important;
+        font-size: 16px;
     }
+    #receita h2{
 
+        font-size: 20px;
+    }
+    #receita h3{
+
+        font-size: 18px;
+    }
     #dados {
         font-size: 12px;
+        padding-right: 10px;
+    }
+    .campo-input {
+        flex-direction: column;
     }
 
 }

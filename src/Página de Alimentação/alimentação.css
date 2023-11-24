@@ -74,7 +74,7 @@ body {
 #alimento{
     height: 100px;
 }
-#alimento img {
+#alimento img, a {
     height: 100%;
 }
 .header-style{
