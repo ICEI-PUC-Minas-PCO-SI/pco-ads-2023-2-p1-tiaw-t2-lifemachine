@@ -1,0 +1,56 @@
+@media screen and (min-width: 360px) and (max-width: 576px){
+    .container_config {
+        height: 350px;
+        width: 350px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px){
+    .container_config {
+        height: 400px;
+        width: 450px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1125px){
+    .container_config {
+        height: 330px;
+        width: 330px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 1126px) and (max-width: 1300px){
+    .container_config {
+        height: 350px;
+        width: 350px;
+    }
+}
+@media screen and (min-width: 1301px){
+    .container_config {
+        height: 400px;
+        width: 400px;
+    }
+}
+@media screen and (max-width:360px){
+    .container_config {
+        height: 330px;
+        width: 270px;
+        margin-bottom: 30px;
+    }
+    .ficha {
+        font-size: small;
+    }
+    .botoes{
+        font-size: smaller;
+        margin-top: 2px;
+        display: inline-block;
+    }
+    .btns {
+        text-align: start !important;
+        display: flex;
+    }
+    .botoes:hover{
+        background-color: red;
+        color: black;
+    }
+}
