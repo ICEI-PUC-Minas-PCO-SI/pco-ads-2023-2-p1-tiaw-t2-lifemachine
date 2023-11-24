@@ -62,15 +62,9 @@ main {
         padding: 45px;
         flex-wrap: wrap;
 }
-
-
-.titulo{
-    padding: 20px 0px 40px 40px;
-    font-size:25px;
-} 
 .container_config {
-    height: 400px;
-    width: 450px;
+    min-height: 400px;
+
     border-radius: 20px;
     border: 2px solid;
     border-color: rgba(255, 0, 0, 0.753);
