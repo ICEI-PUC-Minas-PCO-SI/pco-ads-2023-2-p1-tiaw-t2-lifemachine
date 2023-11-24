@@ -62,3 +62,78 @@ main {
         padding: 45px;
         flex-wrap: wrap;
 }
+
+
+.titulo{
+    padding: 20px 0px 40px 40px;
+    font-size:25px;
+} 
+.container_config {
+    height: 400px;
+    width: 450px;
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: rgba(255, 0, 0, 0.753);
+    background-color: rgb(197, 193, 193);
+    display: flex;
+    padding: 40px;
+    overflow: hidden;
+    padding-top: 10px;
+
+}
+
+.input_label{
+    border-radius: 5px; 
+    width: 160px;
+}
+
+.container_config{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_text{
+    margin-top: 10px;
+    display: flex;;
+}
+.botoes{
+    background-color: red;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    width: fit-content;
+    margin-right: 20px;
+}
+.botoes:hover{
+    background-color: red;
+    color: black;
+}
+#carouselExample{
+    height: 90%;
+}
+
+.ficha {
+    text-align: center;
+}
+.peso_indicador{
+    text-align: center;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.peso_indicador h1 {
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding: 30px;
+    border: 2px solid red;
+}
+
+#resultados-chart {
+    margin-top: 35px;
+
+}
