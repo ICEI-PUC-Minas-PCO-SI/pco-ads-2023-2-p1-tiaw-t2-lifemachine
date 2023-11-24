@@ -1,160 +1,168 @@
-html {
-    height: 100%;
-    width: 100%;
-  }
-  
-  .dropdownX{
-      height: 40px;
-      width: 100px;
-  }
-  .resultado {
-    flex: 4;
-    flex-direction: column;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #D9D9D9;
-    max-width: 50%; /* Alterado para ocupar metade da largura em monitores */
-    float: left; /* Mantém resultado à esquerda */
-  }
+/* Reset de estilos */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-  .parametro {
-    flex-direction: column;
-    text-align: justify;
-    padding: 5px;
-    margin: 7px;
-    float: left; /* Mantém parametro à esquerda */
-    max-width: 50%; 
-  }
+body {
+  min-height: 100vh;
+  width: 100%;
+}
 
-  body {
-    font-family: 'Bahnschrift', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+a {
+  text-decoration: none;
+  color: black;
+}
 
-  header {
-    background-color: #D9D9D9;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.dropdownX {
+  height: 40px;
+  width: 100px;
+}
 
-  header h1 {
-    font-size: 24px;
-  }
+.resultado {
+  flex: 4;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #D9D9D9;
+  max-width: 50%;
+  /* Alterado para ocupar metade da largura em monitores */
+  float: left;
+  /* Mantém resultado à esquerda */
+}
 
-  h1 {
-    font-size: 50px;
-  }
+.parametro {
+  flex-direction: column;
+  text-align: justify;
+  padding: 5px;
+  margin: 7px;
+  float: left;
+  /* Mantém parametro à esquerda */
+  max-width: 50%;
+}
 
-  h2 {
-    font-size: 30px;
-  }
 
-  p {
-    font-size: 20px;
-  }
+/* Estilos do contêiner principal de conteúdo */
+#conteudo {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  padding: 45px;
+  flex-wrap: wrap;
+}
 
-  #logo {
-    display: flex;
-    align-items: center;
-  }
+#despertador {
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #FF0000;
+  border-radius: 10px;
+  margin-right: 10px;
+  background-color: #D9D9D9;
+}
 
-  #logo img {
-    margin-right: 10px;
-  }
+/* Estilos dos campos de entrada e rótulos */
+.campo-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
 
-  #conteudo {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px;
-    max-width: 100%;
-  }
+.campo-input label {
+  flex: 1;
+  text-align: right;
+  font-size: 20px;
+  margin-right: 10px;
+}
 
-  #despertador {
-    flex: 1;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid #FF0000;
-    border-radius: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    background-color: #D9D9D9;
-  }
+.campo-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
 
-  .campo-input {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
+#frequencia {
+  text-align: center;
+  flex: 4;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #FF0000;
+  border-radius: 10px;
+  background-color: #D9D9D9;
+  max-width: 100%;
+}
 
-  .campo-input label {
-    flex: 1;
-    text-align: right;
-    font-size: 30px;
-  }
+#frequencia img {
+  flex: 50;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
-  .campo-input input {
-    flex: 1;
-    width: 60px;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 10px;
-    text-align: left;
-  }
+.botoes {
+  background-color: red;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  width: fit-content;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
 
-  #frequencia {
-    text-align: center;
-    flex: 4;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid #FF0000;
-    border-radius: 10px;
-    background-color: #D9D9D9;
-    max-width: 100%;
-  }
+.botoes:hover {
+  background-color: red;
+  color: black;
+}
 
-  #frequencia img {
-    flex: 50;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    text-align: center;
-  }
+.header-style {
+  background-color: #D9D9D9;
+  text-align: center;
+  max-width: 2500px;
+}
 
-  #rodape {
-    background-color: #D9D9D9;
-    text-align: left;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+.header-style h1 {
+  font-style: normal;
+  font-weight: 700;
+}
 
-  /* Estilos responsivos para telas menores */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+.footer-style {
+  background: #D9D9D9;
+  max-width: 2500px;
+  padding: 15px;
+}
 
-    header h1 {
-      font-size: 20px;
-    }
+.footer-style p {
+  font-size: 12px;
+}
 
-    #logo {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-
-    #conteudo, #sono, #despertador, #frequencia, .resultado, .parametro {
-      max-width: 100%; /* Ocupa a largura total em telas menores */
-      float: none; /* Remove o float em telas menores */
-    }
-  }
+.all-content {
+  max-width: 2500px;
+  min-width: 280px;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('./img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,21 @@
+  /* Estilos responsivos para telas menores */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    header h1 {
+      font-size: 20px;
+    }
+
+    #logo {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    #conteudo, #sono, #despertador, #frequencia, .resultado, .parametro {
+      max-width: 100%; /* Ocupa a largura total em telas menores */
+      float: none; /* Remove o float em telas menores */
+    }
+  }
