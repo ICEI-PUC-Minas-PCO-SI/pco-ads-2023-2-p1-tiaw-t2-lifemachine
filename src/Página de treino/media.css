@@ -1,0 +1,162 @@
+@media only screen and (max-width: 856px) {
+
+
+    .titulo{
+        padding: 20px 0px 40px 40px;
+        font-size:25px;
+    } 
+    
+    .seta{
+        height: 40px;
+        width: 40px;
+        margin-left: 10px;
+        padding-top: 18px;
+        padding-right: 10px;
+        float: left;
+    }
+
+    .logo {
+        padding: 10px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        padding-top: 25px;
+    }
+    
+    .logo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .img_usu{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+    
+    .foto_usuario {
+        height: 200px;
+        width: 200px;
+        padding-top: 30px;
+        border-radius: 30%;
+        margin: 0 auto;
+        display: block;
+        border-style: solid;
+        border-color: red;
+    }
+    
+    .nome_usu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        padding: 10px 0px 40px 0px;
+    }
+
+    .container_config {
+        height: max-content;
+        width: 350px;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: rgba(255, 0, 0, 0.753);
+        background-color: rgb(197, 193, 193);
+        margin: 0 auto;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .input_label{
+        border-radius: 5px; 
+        width: 160px;
+    }
+    
+    .container_config{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container_text{
+        margin-top: 10px;
+        display: flex;;
+    }
+    
+    .ficha{
+        margin: 40px 30px 20px 100px;
+        justify-content: center;
+        
+    }
+    
+    .botoes{
+        background-color: red;
+        justify-content: center;
+        margin-bottom: 60px;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    
+    
+    #tela2{
+        margin-top: 350px;
+    }
+    
+    #tela3{
+        margin-top: 710px;
+    }
+    
+    
+    }
+@media only screen and (min-width: 857px) {
+
+        .titulo{
+            padding: 20px 0px 40px 40px;
+            font-size:25px;
+        } 
+        .container_config {
+            height: 350px;
+            width: 350px;
+            border-radius: 20px;
+            border-style: solid;
+            border-color: rgba(255, 0, 0, 0.753);
+            background-color: rgb(197, 193, 193);
+            margin: 0 auto;
+            margin-left: auto;
+            display: flex;
+            margin-right: auto;
+        }
+        
+        .input_label{
+            border-radius: 5px; 
+            width: 160px;
+        }
+        
+        .container_config{
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container_text{
+            margin-top: 10px;
+            display: flex;;
+        }
+        .botoes{
+            background-color: red;
+            justify-content: center;
+            margin-bottom: 60px;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        
+    }
