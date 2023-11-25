@@ -133,21 +133,15 @@
         <div class="row">
             <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <div id="tela1" class="container_config">
-                    <div class="ficha">
-                        <b style="font-size: 30px;">FICHA A</b><br>
-                        <b>00x Loren Ipsum</b><br>
-                        <b>00x Loren Ipsum</b><br>
-                        <b>00x Loren Ipsum</b><br>
-                        <b>00x Loren Ipsum</b><br>
-                        <b>00x Loren Ipsum</b><br>
-                        <b>00x Loren Ipsum</b><br>
-                        <b>00x Loren Ipsum</b><br>
+                    <div id="ficha">
+                        <!-- Aqui onde o conteúdo do treino será mostrado -->
                     </div>
                     <div class="row">
-                        <span>
-                            <button class="botoes" style="width: 100px; margin: 0px 40px 20px 40px;">Concluído</button>
-                            <button class="botoes" style="width: 100px; margin: 0px 40px 20px 0px;" type="button">Gerar</button>
-                        </span>
+                        <div class="col text-center">
+                            <h2>Fichas de treinos</h2><h4>Escolha seu tipo de ficha abaixo :</h4>
+                            <button id="botaoGanhoMassa" class="botoes" style= "width: 120px; margin-top: 20px;" onclick="carregarTreinoGanhoMassa()">Ficha de Ganho de Massa</button>
+                            <button id="botaoEmagrecimento" class="botoes" style= "width: 120px; margin-top: 20px;" onclick="carregarTreinos()">Ficha de Emagrecimento</button>
+                        </div>
                     </div>
                 </div>
             </div>
