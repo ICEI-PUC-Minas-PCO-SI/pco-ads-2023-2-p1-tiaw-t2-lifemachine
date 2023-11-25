@@ -72,7 +72,10 @@ function carregarTreinos() {
             console.error('Erro ao carregar os treinos:', error);
         });
 
-   
+        
+
+        document.getElementById('titulo').style.display = 'none';
+        document.getElementById('descricao').style.display = 'none';
 
 }
 
@@ -151,6 +154,6 @@ function carregarTreinoGanhoMassa() {
             console.error('Erro ao carregar os treinos de ganho de massa:', error);
         });
 
-    
-    
+        document.getElementById('titulo').style.display = 'none';
+        document.getElementById('descricao').style.display = 'none';
 }
