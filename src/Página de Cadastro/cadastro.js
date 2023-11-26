@@ -1,5 +1,14 @@
 $(document).ready(function () {
-    var users = JSON.parse(localStorage.getItem('users')) || [];
+    // Use a URL correta para os usuários
+    var URL = 'http://localhost:3000/usuarios';
+    var users = [];
+
+    // Recupere os usuários do servidor quando a página carregar
+    fetch(URL)
+        .then(res => res.json())
+        .then(data => {
+            users = data.usuarios || [];
+        });
 
     $('#registration-form').submit(function (event) {
         event.preventDefault();
@@ -8,7 +17,7 @@ $(document).ready(function () {
 
         if (camposFaltando.length > 0) {
             alert('Por favor, preencha todos os campos obrigatórios (' + camposFaltando.join(', ') + ').');
-            return; 
+            return;
         }
 
         var email = $('#email').val();
@@ -20,23 +29,24 @@ $(document).ready(function () {
         var Objetivo = $('#Objetivo').val();
         var DiasDeTreino = $('#DiasDeTreino').val();
         var Sexo = $('#Sexo').val();
-        
-        // Validaçoes pra ta certinho
-        if (emailusado(email)) {
-            alert('Este e-mail ja esta em uso. Por favor, use outro e-mail.');
+
+        // Validações para verificar se está tudo certo
+        if (emailUsado(email)) {
+            alert('Este e-mail já está em uso. Por favor, use outro e-mail.');
             return;
         }
 
         if (senha !== confirmSenha) {
             alert('A senha e a confirmação de senha não são iguais.');
-            return; 
+            return;
         }
 
-        // Caso tudo de boa faz o cadastro
+        // Caso tudo esteja correto, faz o cadastro
         var CadastroUsuario = {
+            id: (users.length + 1).toString(),
+            Nome: nome,
             email: email,
             senha: senha,
-            nome: nome,
             altura: Altura,
             peso: Peso,
             objetivo: Objetivo,
@@ -44,13 +54,31 @@ $(document).ready(function () {
             sexo: Sexo
         };
 
-        users.push(CadastroUsuario);
-        localStorage.setItem('users', JSON.stringify(users));
-
-        window.location.href = '../Página de login/login.html';
+        // Adiciona o novo usuário ao servidor (JSON Server)
+        fetch(URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ usuarios: [CadastroUsuario] }),
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erro ao cadastrar usuário.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Usuário cadastrado com sucesso:', data);
+                window.location.href = '../Página de login/login.html';
+            })
+            .catch(error => {
+                console.error('Erro ao cadastrar usuário:', error);
+                alert('Erro ao cadastrar usuário. Por favor, tente novamente.');
+            });
     });
 
-    //funcoes para ver c ta tudo certinho
+    // Funções para verificar se está tudo certo
     function validarCampos() {
         var camposObrigatorios = ['#email', '#password', '#1password', '#nome', '#Altura', '#Peso', '#Objetivo', '#DiasDeTreino', '#Sexo'];
         var camposFaltando = [];
@@ -65,10 +93,10 @@ $(document).ready(function () {
         return camposFaltando;
     }
 
-    function emailusado(email) {
+    function emailUsado(email) {
         for (var x = 0; x < users.length; x++) {
             if (users[x].email === email) {
-                return true; 
+                return true;
             }
         }
         return false;

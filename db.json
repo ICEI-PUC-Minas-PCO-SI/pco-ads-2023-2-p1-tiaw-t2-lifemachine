@@ -1,0 +1,16 @@
+    {
+      "usuarios": [
+        {
+          "id": "1",
+          "Nome": "Caio",
+          "email": "Caiof13araujo@gmail.com",
+          "senha": "123",
+          "altura": "162",
+          "peso": "124",
+          "objetivo": "perder-peso",
+          "diasDeTreino": "3-dias",
+          "sexo": "F"
+        }
+      ]
+    }
+  
