@@ -1,122 +1,146 @@
- /* Estilo geral do corpo da página */
- body {
-    font-family: 'Bahnschrift', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 
-/* Estilo do cabeçalho da página */
-.header-style{
-    height: 150px;
-    background-color: #D9D9D9;
-}
-.img-header-style{
-    height: 100px;
-    width: 98px;
-    border-radius: 60px;
-}
+    body {
+        font-family: 'Bahnschrift', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
+    /* Estilo do cabeçalho da página */
+    header {
+        background-color: #D9D9D9;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-/* Estilo do título principal no cabeçalho */
-.titulo-style {
-    height: 80px;
-}
-.titulo-style img {
-    height: 80px;   
-}
-/* Estilos de títulos e parágrafos */
-h1 {
-    font-size: 50px;
-}
-h2 {
-    font-size: 25px;
-}
-p {
-    font-size: 20px;
-}
+    /* Estilo do título principal no cabeçalho */
+    header h1 {
+        font-size: 24px;
+    }
 
-/* Estilos do logotipo no cabeçalho */
-
-#logo img {
-    margin-right: 10px;
-}
-
-/* Estilos do contêiner principal de conteúdo */
-#conteudo {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px;
-    max-width: 100%;
-}
-
-/* Estilos do contêiner de dados */
-#dados {
-    flex: 1;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid #FF0000;
-    border-radius: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    background-color: #D9D9D9;
-}
-
-/* Estilos do contêiner de receita */
-#receita {
-    flex: 4;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid #FF0000;
-    border-radius: 10px;
-    background-color: #D9D9D9;
-    max-width: 100%;
-}
-
-/* Estilos dos campos de entrada e rótulos */
-.campo-input {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-.campo-input label {
-    flex: 1;
-    text-align: right;
-    font-size: 30px;
-}
-.campo-input input {
-    flex: 1;
-    width: 60px;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 10px;
-    text-align: left;
-}
-
-/* Estilos do rodapé da página */
-#rodape {
-    background-color: #D9D9D9;
-    text-align: left;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Estilos responsivos para telas menores */
-@media (max-width: 500px) {
-  #conteudo, #alimento, #despertador, #frequencia, .resultado, .parametro {
-    max-width: 100%;
-    float: none; 
-  }
-    .campo-input label {
+    /* Estilos de títulos e parágrafos */
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    p {
         font-size: 20px;
     }
-    .campo-input input {
-        width: 100%; /
+
+    /* Estilos do logotipo no cabeçalho */
+    #logo {
+        display: flex;
+        align-items: center;
     }
-}
+    #logo img {
+        margin-right: 10px;
+    }
+
+    /* Estilos do contêiner principal de conteúdo */
+    #conteudo {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px;
+        max-width: 100%;
+    }
+
+    /* Estilos do contêiner de dados */
+    #dados {
+        flex: 1;
+        flex-direction: column;
+        padding: 10px;
+        border: 1px solid #FF0000;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: #D9D9D9;
+    }
+
+    /* Estilos do contêiner de receita */
+    #receita {
+        flex: 4;
+        flex-direction: column;
+        padding: 10px;
+        border: 1px solid #FF0000;
+        border-radius: 10px;
+        background-color: #D9D9D9;
+        max-width: 100%;
+    }
+
+    /* Estilos dos campos de entrada e rótulos */
+    .campo-input {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .campo-input label {
+        flex: 1;
+        text-align: right;
+        font-size: 30px;
+    }
+    .campo-input input {
+        flex: 1;
+        width: 60px;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    /* Estilos do rodapé da página */
+    #rodape {
+        background-color: #D9D9D9;
+        text-align: left;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Estilos responsivos para telas menores */
+    @media (max-width: 500px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        header h1 {
+            font-size: 20px;
+        }
+        #logo {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+      #conteudo, #alimento, #despertador, #frequencia, .resultado, .parametro {
+        max-width: 100%;
+        float: none; 
+      }
+        .campo-input label {
+            font-size: 20px;
+        }
+        .campo-input input {
+            width: 100%;
+        }
+
+      .receita-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px; 
+      }
+
+      .imagem-receita img {
+          height: 10%; 
+          max-width: 20px;
+          margin-right: 20px; 
+      }
+
+      .texto-receita {
+          flex: 1; 
+      }
