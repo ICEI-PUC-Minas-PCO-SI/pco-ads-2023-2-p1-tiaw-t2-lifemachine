@@ -68,7 +68,7 @@ html {
     margin-right: 10px;
   }
 
-  #conteudo {
+#conteudo {
     display: flex;
     flex-wrap: wrap;
     margin: 50px;
