@@ -1,4 +1,4 @@
-ENTREGA ETAPA 1 -
+## ENTREGA ETAPA 1 
 
 Caio : Ediçao do video, pitch e organizaçao de tarefas.
 
