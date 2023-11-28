@@ -10,17 +10,6 @@
       "objetivo": "perder-peso",
       "diasDeTreino": "3-dias",
       "sexo": "F"
-    },
-    {
-      "id": "2",
-      "Nome": "TESTE",
-      "email": "teste@1.com",
-      "senha": "123",
-      "altura": "123",
-      "peso": "123",
-      "objetivo": "perder-peso",
-      "diasDeTreino": "3-dias",
-      "sexo": "F"
     }
   ]
 }
