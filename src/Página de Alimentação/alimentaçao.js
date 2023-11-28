@@ -87,7 +87,8 @@ const receitas = [
         proteina: 30,
         calorias: 420,
         gorduras: 15,
-        modoPreparo: 'Misture a quinoa cozida com frango desfiado, legumes e molho de tomate. Cubra com queijo ralado e asse.'
+        modoPreparo: 'Misture a quinoa cozida com frango desfiado, legumes e molho de tomate. Cubra com queijo ralado e asse.',
+        "img": "./img/receitas/Caçarola de Quinoa com Legumes e Frango.png"
     },
     {
         nome: 'Salada de Camarão com Abacate',
@@ -96,7 +97,8 @@ const receitas = [
         proteina: 30,
         calorias: 380,
         gorduras: 20,
-        modoPreparo: 'Misture camarão, abacate, folhas verdes, tomate e cebola. Regue com molho de limão e coentro.'
+        modoPreparo: 'Misture camarão, abacate, folhas verdes, tomate e cebola. Regue com molho de limão e coentro.',
+        "img": "./img/receitas/Salada de Camarão com Abacate.png"
     },
     {
         nome: 'Wrap de Frango com Abacate',
@@ -105,7 +107,8 @@ const receitas = [
         proteina: 25,
         calorias: 320,
         gorduras: 10,
-        modoPreparo: 'Monte o wrap com os ingredientes e tempere a gosto.'
+        modoPreparo: 'Monte o wrap com os ingredientes e tempere a gosto.',
+        "img": "./img/receitas/Wrap de Frango com Vegetais.jpg"
     },
     {
         nome: 'Salada de Quinoa com Legumes Assados',
@@ -114,7 +117,8 @@ const receitas = [
         proteina: 15,
         calorias: 350,
         gorduras: 12,
-        modoPreparo: 'Misture todos os ingredientes e regue com molho de limão e azeite.'
+        modoPreparo: 'Misture todos os ingredientes e regue com molho de limão e azeite.',
+        "img": "./img/receitas/Salada de Quinoa com Legumes Assados.jpg"
     },
     {
         nome: 'Salmão Grelhado com Aspargos',
@@ -123,7 +127,8 @@ const receitas = [
         proteina: 30,
         calorias: 280,
         gorduras: 15,
-        modoPreparo: 'Tempere o salmão e os aspargos, grelhe e regue com azeite de oliva.'
+        modoPreparo: 'Tempere o salmão e os aspargos, grelhe e regue com azeite de oliva.',
+        "img": "./img/receitas/Salmão Grelhado com Aspargos.jpg"
     },
     {
         nome: 'Muffins de Aveia e Banana',
@@ -132,7 +137,8 @@ const receitas = [
         proteina: 10,
         calorias: 250,
         gorduras: 8,
-        modoPreparo: 'Misture os ingredientes, despeje em formas de muffin e asse.'
+        modoPreparo: 'Misture os ingredientes, despeje em formas de muffin e asse.',
+        "img": "./img/receitas/Muffins de Aveia e Banana.jpg"
     },
     {
         nome: 'Espaguete de Abobrinha com Molho de Tomate Caseiro',
@@ -216,7 +222,8 @@ const receitas = [
         proteina: 35,
         calorias: 480,
         gorduras: 15,
-        modoPreparo: 'Monte a tigela com os ingredientes e regue com molho de soja e gengibre.'
+        modoPreparo: 'Monte a tigela com os ingredientes e regue com molho de soja e gengibre.',
+        "img": "./img/receitas/Tigela de Arroz Integral com Legumes Assados e Salmão.jpeg"
     },
     {
         nome: 'Pizza de Frango com Crosta de Couve-Flor',
@@ -225,7 +232,8 @@ const receitas = [
         proteina: 40,
         calorias: 520,
         gorduras: 25,
-        modoPreparo: 'Asse a crosta, adicione os ingredientes e asse novamente.'
+        modoPreparo: 'Asse a crosta, adicione os ingredientes e asse novamente.',
+        "img": "./img/receitas/Pizza de Frango com Crosta de Couve-Flor.jpg"
     },
     {
         nome: 'Batata Doce Recheada com Chili de Carne',
@@ -234,7 +242,8 @@ const receitas = [
         proteina: 25,
         calorias: 480,
         gorduras: 15,
-        modoPreparo: 'Recheie a batata com chili de carne, feijão preto e abacate.'
+        modoPreparo: 'Recheie a batata com chili de carne, feijão preto e abacate.',
+        "img": "./img/receitas/Batata Doce Recheada com Chili de Carne.png"
     },
     {
         nome: 'Smoothie de Banana e Manteiga de Amendoim',
@@ -243,7 +252,8 @@ const receitas = [
         proteina: 15,
         calorias: 480,
         gorduras: 20,
-        modoPreparo: 'Bata todos os ingredientes no liquidificador e aproveite.'
+        modoPreparo: 'Bata todos os ingredientes no liquidificador e aproveite.',
+        "img": "./img/receitas/Smoothie de Banana e Manteiga de Amendoim.jpg"
     },
     {
         nome: 'Burrito de Frango com Guacamole',
@@ -252,7 +262,8 @@ const receitas = [
         proteina: 30,
         calorias: 500,
         gorduras: 18,
-        modoPreparo: 'Monte o burrito com os ingredientes e adicione guacamole.'
+        modoPreparo: 'Monte o burrito com os ingredientes e adicione guacamole.',
+        "img": "./img/receitas/Burrito de Frango com Guacamole.jpg"
     },
     {
         nome: 'Risoto de Cogumelos com Frango',
@@ -261,7 +272,8 @@ const receitas = [
         proteina: 35,
         calorias: 520,
         gorduras: 15,
-        modoPreparo: 'Prepare o risoto com frango, cogumelos e caldo de galinha.'
+        modoPreparo: 'Prepare o risoto com frango, cogumelos e caldo de galinha.',
+        "img": "./img/receitas/Risoto de Cogumelos com Frango.Jpeg"
     },
     {
         nome: 'Omelete de Queijo e Abacate',
@@ -270,7 +282,8 @@ const receitas = [
         proteina: 25,
         calorias: 400,
         gorduras: 30,
-        modoPreparo: 'Prepare a omelete com queijo e abacate, adicionando tomate e cebola.'
+        modoPreparo: 'Prepare a omelete com queijo e abacate, adicionando tomate e cebola.',
+        "img": "./img/receitas/Omelete de Queijo e Abacate.jpg"
     },
     {
         nome: 'Hambúrguer de Quinoa e Feijão Preto',
@@ -279,7 +292,8 @@ const receitas = [
         proteina: 20,
         calorias: 480,
         gorduras: 15,
-        modoPreparo: 'Prepare hambúrgueres com quinoa, feijão preto e temperos a gosto.'
+        modoPreparo: 'Prepare hambúrgueres com quinoa, feijão preto e temperos a gosto.',
+        "img": "./img/receitas/Hambúrguer de Quinoa e Feijão Preto.jpg"
     },
     {
         nome: 'Lasanha de Berinjela com Carne Moída',
@@ -288,7 +302,8 @@ const receitas = [
         proteina: 30,
         calorias: 500,
         gorduras: 22,
-        modoPreparo: 'Monte a lasanha intercalando camadas de berinjela, carne, queijo e molho.'
+        modoPreparo: 'Monte a lasanha intercalando camadas de berinjela, carne, queijo e molho.',
+        "img": "./img/receitas/Lasanha de Berinjela com Carne Moída.jpg"
     },
 ];
 
@@ -316,7 +331,7 @@ function calcularReceita() {
                                         <p>${receitaSugerida.modoPreparo}</p>
                                         </div>
                                         <div class="d-flex justify-content-center">
-                                            <img class="img-fluid rounded border border-danger" id="img-receita" src="" alt="">
+                                            <img class="img-fluid rounded border border-danger img-receita-style" id="img-receita" src="" alt="">
                                         </div>
                                     `;
 

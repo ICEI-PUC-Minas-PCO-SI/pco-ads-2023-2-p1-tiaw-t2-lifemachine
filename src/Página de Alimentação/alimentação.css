@@ -105,3 +105,6 @@ body {
     display: flex;
     flex-direction: column;
 }
+.img-receita-style{
+    max-width: 435px;
+}
