@@ -6,7 +6,7 @@ $(document).ready(function () {
     fetch(URL)
         .then(res => res.json())
         .then(data => {
-            users = data.usuarios || [];
+            users = data || [];
             x = users.length + 1;
 
          

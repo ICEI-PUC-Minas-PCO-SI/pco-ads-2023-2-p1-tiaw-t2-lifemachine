@@ -10,7 +10,7 @@ $(document).ready(function () {
         fetch(URL)
             .then(res => res.json())
             .then(data => {
-                var cadastrado = tentarlogin(data.usuarios, email, senha);
+                var cadastrado = tentarlogin(data, email, senha);
 
                 if (cadastrado) {
                     window.location.href = '../Página principal/pagina principal.html';
