@@ -37,6 +37,7 @@ fetch(URL)
 .then(data => {
 users = data;
 pesoAtual = users[x].peso
+// Adicionar atualizacao no db de cada usuario quando calcualra o peso
 
 })
 
