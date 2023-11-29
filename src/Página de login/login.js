@@ -13,7 +13,9 @@ $(document).ready(function () {
                 var cadastrado = tentarlogin(data, email, senha);
 
                 if (cadastrado) {
+                    localStorage.setItem('userName', Detalhescadastrousuario(data, email).Nome);
                     window.location.href = '../Página principal/pagina principal.html';
+                    
                 } else {
                     alert('Senha Inválida');
                 }
@@ -31,5 +33,13 @@ $(document).ready(function () {
             }
         }
         return false;
+    }
+    function Detalhescadastrousuario(usuarios, email) {
+        for (var x = 0; x < usuarios.length; x++) {
+            if (usuarios[x].email === email) {
+                return usuarios[x];
+            }
+        }
+        return null;
     }
 });
