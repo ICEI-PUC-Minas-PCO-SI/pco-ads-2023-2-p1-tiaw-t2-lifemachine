@@ -7,6 +7,7 @@
     <title>Life Machine - Principal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <link rel="stylesheet" href="principal.css">
     <link rel="stylesheet" href="media.css">
 </head>
@@ -18,138 +19,95 @@
         <nav class="navbar navbar-expand-lg header-style">
             <div class="container-fluid">
                 <div class="d-flex flex-row align-items-center">
-                    <a class="navbar-brand" href="../Página Inicial/Página Inicial.html"><img src="./Img/logo.png" alt="logo-lifeMachine"></a>
+                    <a class="navbar-brand" href="../Página Inicial/Página Inicial.html"><img src="./Img/logo.png"
+                            alt="logo-lifeMachine"></a>
                     <h1 class="p-0 m-0">LifeMachine</h1>
                 </div>
             </div>
         </nav>
 
-            <div class="container-fluid custom-padding">
+        <div class="container-fluid custom-padding">
 
 
 
-                <div class="row px-1 flex-row">
-                    <div class="col d-flex">
-                        <div class="align-self-center fotos d-flex flex-column">
-                            <div class="row d-flex">
-                                <i class="fa-solid fa-circle-user fotoDePerfil"
-                                    style="font-size: 5.5em; margin-right: 10px;"></i>
-                                <h1 class="ml-3" style="margin-bottom: 30px;">Olá, Usuário</h1>
+            <div class="row px-1 flex-row">
+                <div class="col d-flex">
+                    <div class="align-self-center fotos d-flex flex-column">
+                        <div class="row d-flex">
+                            <i class="fa-solid fa-circle-user fotoDePerfil"
+                                style="font-size: 5.5em; margin-right: 10px;"></i>
+                            <h1 class="ml-3" style="margin-bottom: 30px;">Olá, Usuário</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex flex-column lateral">
+                    <div class="d-flex justify-content-end mt-3">
+                        <div class="gear-style">
+                            <a href="../Página de Configuração/config.html"><i class="fa-solid fa-gear ferradura"
+                                    style="font-size: 2em;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-fluid d-flex flex-row row-main-style">
+
+                <div class="col-12 col-lg-6">
+
+                    <div class="row-fluid">
+                        <div class="container-fluid">
+                            <div class="row-fluid d-flex flex-row justify-content-center imagens-row-style">
+                                <div class="col me-3 text-center d-flex flex-column align-items-center">
+                                    <img src="./img/dumbbells_ico.png" alt="Imagem 1" class="img-fluid imagem p-4">
+                                    <a href="../Página de treino/treino.html">
+                                        <button class="btn btn-block btn-custom">Treino</button>
+                                    </a>
+                                </div>
+                                <div class="col me-3 text-center d-flex flex-column align-items-center">
+                                    <img src="./img/food_ico.png" alt="Imagem 2" class="img-fluid imagem p-4">
+                                    <a href="../Página de Alimentação/Página alimentação.html">
+                                        <button class="btn btn-block btn-custom">Alimentação</button>
+                                    </a>
+                                </div>
+                                <div class="col me-3 text-center d-flex flex-column align-items-center">
+                                    <img src="./img/sleep-ico.png" alt="Imagem 3" class="img-fluid imagem p-4">
+                                    <a href="../Página de sono/Página sono.html">
+                                        <button class="btn btn-block btn-custom">Sono</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col d-flex flex-column lateral">
-                        <div class="d-flex justify-content-end mt-3">
-                            <div class="gear-style">
-                                <a href="../Página de Configuração/config.html"><i class="fa-solid fa-gear ferradura"
-                                        style="font-size: 2em;"></i></a>
+                    <div class="row-fluid">
+                        <div class="container-fluid">
+                            <div id="suporte">
+                                <a href=""><strong>SUPORTE:</strong> suporte.lifemachine@gmail.com</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row-fluid d-flex flex-row row-main-style">
 
-                    <div class="col-12 col-lg-6">
 
-                        <div class="row-fluid">
-                            <div class="container-fluid">
-                                <div class="row-fluid d-flex flex-row justify-content-center imagens-row-style">
-                                    <div class="col me-3 text-center d-flex flex-column align-items-center">
-                                        <img src="./img/dumbbells_ico.png" alt="Imagem 1" class="img-fluid imagem p-4">
-                                        <a href="../Página de treino/treino.html">
-                                            <button class="btn btn-block btn-custom">Treino</button>
-                                        </a>
-                                    </div>
-                                    <div class="col me-3 text-center d-flex flex-column align-items-center">
-                                        <img src="./img/food_ico.png" alt="Imagem 2" class="img-fluid imagem p-4">
-                                        <a href="../Página de Alimentação/Página alimentação.html">
-                                            <button class="btn btn-block btn-custom">Alimentação</button>
-                                        </a>
-                                    </div>
-                                    <div class="col me-3 text-center d-flex flex-column align-items-center">
-                                        <img src="./img/sleep-ico.png" alt="Imagem 3" class="img-fluid imagem p-4">
-                                        <a href="../Página de sono/Página sono.html">
-                                            <button class="btn btn-block btn-custom">Sono</button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row-fluid">
-                            <div class="container-fluid">
-                                <div id="suporte">
-                                    <a href=""><strong>SUPORTE:</strong> suporte.lifemachine@gmail.com</a>
-                                </div>
-                            </div>
+                <div class="col-12 col-lg-6">
+
+                    <div class="info">
+
+                        <div class="container-fluid d-flex flex-row p-0">
+
+                            <canvas id="myLineChart"></canvas>
+
                         </div>
                     </div>
-
-
-                    
-                    <div class="col-12 col-lg-6">
-                      
-                            <div class="info">
-
-                                <div class="container-fluid d-flex flex-row p-0">
-
-                                    <div class="row-fluid text-center info-textos">
-                                        <p class="m-0">Peso anterior: 60 Kg</p>
-                                        <p class="m-0">Peso atual: 80 Kg</p>
-                                        <hr>
-                                    </div>
-                                    <div class="row-fluid d-flex flex-row justify-content-center align-items-center img-info">
-                                        <img src="img/seta verde cima.png" alt="" class="img-fluid">
-                                        <p class="m-0 fw-bold ms-2">33%</p>
-                                    </div>
-                                </div>
-
-                                <div class="container-fluid d-flex flex-row p-0">
-                                    <div class="row-fluid text-center info-textos">
-                                        <p class="m-0">Treino concluído: 9</p>
-                                        <p class="m-0">Recorte anterior: 6</p>
-                                        <hr>
-                                    </div>
-                                    <div class="row-fluid d-flex flex-row justify-content-center align-items-center img-info">
-                                        <img src="img/seta verde cima.png" alt="" class="img-fluid">
-                                        <p class="m-0 fw-bold ms-2">33%</p>
-                                    </div>
-                                </div>
-
-                                <div class="container-fluid d-flex flex-row p-0">
-                                    <div class="row-fluid text-center info-textos">
-                                        <p class="m-0">Treino concluído: 60</p>
-                                        <p class="m-0">Recorte anterior: 80</p>
-                                        <hr>
-                                    </div>
-                                    <div class="row-fluid d-flex flex-row justify-content-center align-items-center img-info">
-                                        <img src="img/setaVermelha.png" alt="" class="img-fluid">
-                                        <p class="m-0 fw-bold ms-2">33%</p>
-                                    </div>
-                                </div>
-
-                                <div class="container-fluid d-flex flex-row p-0">
-                                    <div class="row-fluid text-center info-textos">
-                                        <p class="m-0">Treino concluído: 60</p>
-                                        <p class="m-0">Recorte anterior: 80</p>
-                                    </div>
-                                    <div class="row-fluid d-flex flex-row justify-content-center align-items-center img-info">
-                                        <img src="img/setaVermelha.png" alt="" class="img-fluid">
-                                        <p class="m-0 fw-bold ms-2">33%</p>
-                                    </div>
-                                </div>
-                            </div>
-                  
-                    </div>
-
-
-
 
                 </div>
 
 
             </div>
+
+
+        </div>
 
         <footer class="container-fluid footer-style d-flex align-items-center">
             <div class="row-fluid">
@@ -165,6 +123,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="principal.js"></script>
+
 </body>
 
 </html>
