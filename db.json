@@ -21,6 +21,17 @@
       "objetivo": "perder-peso",
       "diasDeTreino": "3-dias",
       "sexo": "F"
+    },
+    {
+      "id": "3",
+      "Nome": "Pedro Henrique Ferraz Lima",
+      "email": "teste@2.com",
+      "senha": "123",
+      "altura": "123",
+      "peso": "123",
+      "objetivo": "perder-peso",
+      "diasDeTreino": "3-dias",
+      "sexo": "F"
     }
   ]
 }
