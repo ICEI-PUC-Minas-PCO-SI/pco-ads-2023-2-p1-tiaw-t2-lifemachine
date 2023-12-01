@@ -1,3 +1,4 @@
+const URL = 'http://localhost:3000/usuarios';
 
 var treinosJAN = 0;
 var treinosFEB = 0;
@@ -75,8 +76,9 @@ for (let i = 0; i < pesosUsuario[0].length; i++) {
         pesosUsuario[0][i].peso = pesoInfo
     }                           //Criar uma objeto de peso dentro de cada usuario do JSON Server usando "Fetch"
                                 //Sempre que pegar o peso atual no login ou apos atualização mudar dento do JSON
-                                //Lembrando que precisa alterar dependendo do mes atual
+                               //Lembrando que precisa alterar dependendo do mes atual               
 }
+
 
 
 var data = {
