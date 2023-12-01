@@ -1,3 +1,4 @@
+
 var treinosJAN = 0;
 var treinosFEB = 0;
 var treinosMAR = 0;
@@ -11,40 +12,71 @@ var treinosOCT = 0;
 var treinosNOV = 0;
 var treinosDEC = 0;
 
-var pesoJAN = 0;
-var pesoFEB = 0;
-var pesoMAR = 0;
-var pesoAPR = 0;
-var pesoMAY = 0;
-var pesoJUN = 0;
-var pesoJUL = 0;
-var pesoAUG = 0;
-var pesoSEP = 0;
-var pesoOCT = 0;
-var pesoNOV = 0;
-var pesoDEC = 0;
+const pesosUsuario = [[
 
+    {
+        "id": "0",
+        "peso": 0
+    },
+    {
+        "id": "1",
+        "peso": 0
+    },
+    {
+        "id": "2",
+        "peso": 0
+    },
+    {
+        "id": "3",
+        "peso": 0
+    },
+    {
+        "id": "4",
+        "peso": 0
+    },
+    {
+        "id": "5",
+        "peso": 0
+    },
+    {
+        "id": "6",
+        "peso": 0
+    },
+    {
+        "id": "7",
+        "peso": 0
+    },
+    {
+        "id": "8",
+        "peso": 0
+    },
+    {
+        "id": "9",
+        "peso": 0
+    },
+    {
+        "id": "10",
+        "peso": 0
+    },
+    {
+        "id": "11",
+        "peso": 0
+    },
 
+]]
 
-var dataAtual = new Date()
-dataAtual = Date()
-var users
-var pesoAtual
+var dataAtual = new Date();
+var mes = dataAtual.getMonth();
+var auxPeso = localStorage.getItem('pesoAtual')
+var pesoInfo = JSON.parse(auxPeso)
 
-var URL = 'http://localhost:3000/usuarios';
-fetch(URL)
-    .then(res => res.json())
-    .then(usuarios => {
-        let storgaLocal = localStorage.getItem(users)
-        let storageJSON = JSON.parse(storgaLocal);
-        let userAtual = storageJSON[0].email
-
-        for(let i = 0; i<usuarios ; i++){
-            if(userAtual == usuarios){}
-            //continuar logica
-        }
-
-})
+for (let i = 0; i < pesosUsuario[0].length; i++) {
+    if (pesosUsuario[0][i].id == mes) {
+        pesosUsuario[0][i].peso = pesoInfo
+    }                           //Criar uma objeto de peso dentro de cada usuario do JSON Server usando "Fetch"
+                                //Sempre que pegar o peso atual no login ou apos atualização mudar dento do JSON
+                                //Lembrando que precisa alterar dependendo do mes atual
+}
 
 
 var data = {
@@ -58,7 +90,20 @@ var data = {
     },
     {
         label: 'Peso (KG)',
-        data: [pesoJAN, pesoFEB, pesoMAR, pesoAPR, pesoMAY, pesoJUN, pesoJUL, pesoAUG, pesoSEP, pesoOCT, pesoNOV, pesoDEC],
+        data: [
+            pesosUsuario[0][0].peso,
+            pesosUsuario[0][1].peso,
+            pesosUsuario[0][2].peso,
+            pesosUsuario[0][3].peso,
+            pesosUsuario[0][4].peso,
+            pesosUsuario[0][5].peso,
+            pesosUsuario[0][6].peso,
+            pesosUsuario[0][7].peso,
+            pesosUsuario[0][8].peso,
+            pesosUsuario[0][9].peso,
+            pesosUsuario[0][10].peso,
+            pesosUsuario[0][11].peso
+        ],
         borderColor: 'blue',
         borderWidth: 4,
         fill: false
