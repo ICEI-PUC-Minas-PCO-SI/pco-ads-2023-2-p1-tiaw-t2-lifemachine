@@ -33,13 +33,19 @@ var pesoAtual
 
 var URL = 'http://localhost:3000/usuarios';
 fetch(URL)
-.then(res => res.json())
-.then(data => {
-users = data;
-pesoAtual = users[x].peso
-// Adicionar atualizacao no db de cada usuario quando calcualra o peso
+    .then(res => res.json())
+    .then(usuarios => {
+        let storgaLocal = localStorage.getItem(users)
+        let storageJSON = JSON.parse(storgaLocal);
+        let userAtual = storageJSON[0].email
+
+        for(let i = 0; i<usuarios ; i++){
+            if(userAtual == usuarios){}
+            //continuar logica
+        }
 
 })
+
 
 var data = {
     labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
