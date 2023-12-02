@@ -1,19 +1,5 @@
 const URL = 'http://localhost:3000/usuarios';
 
-var treinosJAN = 0;
-var treinosFEB = 0;
-var treinosMAR = 0;
-var treinosAPR = 0;
-var treinosMAY = 0;
-var treinosJUN = 0;
-var treinosJUL = 0;
-var treinosAUG = 0;
-var treinosSEP = 0;
-var treinosOCT = 0;
-var treinosNOV = 0;
-var treinosDEC = 0;
-
-
 var dataAtual = new Date();
 var mes = dataAtual.getMonth();
 var jsonMes = `PesoMes` + mes
