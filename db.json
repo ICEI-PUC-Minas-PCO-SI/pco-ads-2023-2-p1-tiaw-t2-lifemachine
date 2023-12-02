@@ -22,7 +22,8 @@
       "objetivo": "ganhar-peso",
       "diasDeTreino": "5-dias",
       "sexo": "M",
-      "PesoMes11": 72
+      "PesoMes11": 72,
+      "QtdTreinoMes11": 1
     }
   ]
 }
