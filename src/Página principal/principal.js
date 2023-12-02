@@ -13,79 +13,73 @@ var treinosOCT = 0;
 var treinosNOV = 0;
 var treinosDEC = 0;
 
-const pesosUsuario = [[
-
-    {
-        "id": "0",
-        "peso": 0
-    },
-    {
-        "id": "1",
-        "peso": 0
-    },
-    {
-        "id": "2",
-        "peso": 0
-    },
-    {
-        "id": "3",
-        "peso": 0
-    },
-    {
-        "id": "4",
-        "peso": 0
-    },
-    {
-        "id": "5",
-        "peso": 0
-    },
-    {
-        "id": "6",
-        "peso": 0
-    },
-    {
-        "id": "7",
-        "peso": 0
-    },
-    {
-        "id": "8",
-        "peso": 0
-    },
-    {
-        "id": "9",
-        "peso": 0
-    },
-    {
-        "id": "10",
-        "peso": 0
-    },
-    {
-        "id": "11",
-        "peso": 0
-    },
-
-]]
 
 var dataAtual = new Date();
 var mes = dataAtual.getMonth();
-var auxPeso = localStorage.getItem('pesoAtual')
-var pesoInfo = JSON.parse(auxPeso)
+var jsonMes = `PesoMes` + mes
+var auxPeso = JSON.parse(localStorage.getItem('pesoAtual'))
+var auxID = JSON.parse(localStorage.getItem('atualID'))
 
-for (let i = 0; i < pesosUsuario[0].length; i++) {
-    if (pesosUsuario[0][i].id == mes) {
-        pesosUsuario[0][i].peso = pesoInfo
-    }                           //Criar uma objeto de peso dentro de cada usuario do JSON Server usando "Fetch"
-                                //Sempre que pegar o peso atual no login ou apos atualização mudar dento do JSON
-                               //Lembrando que precisa alterar dependendo do mes atual               
+ fetch(`${URL}/${auxID}`)
+   .then(response => {
+     if (response.ok) {
+       // Se o usuário existir, realizar o PATCH apenas se a estrutura do mês não existir
+       return fetch(`${URL}/${auxID}`)
+         .then(res => res.json())
+         .then(usuario => {
+           if (!usuario[jsonMes]) {
+             return fetch(`${URL}/${auxID}`, {
+               method: "PATCH",
+               headers: {
+                 "Content-Type": "application/json",
+               },
+               body: JSON.stringify({ [jsonMes]: auxPeso }), // Atualiza apenas o mês atual
+             });
+           }
+         });
+     } else {
+       console.error("Usuário não encontrado.");
+     }
+   })
+   .catch(error => {
+     console.error("Erro durante a operação:", error);
+   });            
+    
+
+fetch(`${URL}/${auxID}`)
+.then(res => res.json())
+.then(users => {
+
+const pesos = []
+
+for(let i = 0; i < 12 ; i++){
+    const aux = `PesoMes${i}`
+
+    if(users[aux] > 0){
+        pesos[i] = users[aux];
+    }
+    else{
+        pesos[i] = 0
+    }
 }
-
-
-
 var data = {
     labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
     datasets: [{
         label: 'Treinos concluidos',
-        data: [treinosJAN, treinosFEB, treinosMAR, treinosAPR, treinosMAY, treinosJUN, treinosJUL, treinosAUG, treinosSEP, treinosOCT, treinosNOV, treinosDEC],
+        data: [
+            treinosJAN, 
+            treinosFEB, 
+            treinosMAR, 
+            treinosAPR, 
+            treinosMAY, 
+            treinosJUN, 
+            treinosJUL, 
+            treinosAUG, 
+            treinosSEP, 
+            treinosOCT, 
+            treinosNOV, 
+            treinosDEC
+        ],
         borderColor: 'red',
         borderWidth: 4,
         fill: false
@@ -93,18 +87,18 @@ var data = {
     {
         label: 'Peso (KG)',
         data: [
-            pesosUsuario[0][0].peso,
-            pesosUsuario[0][1].peso,
-            pesosUsuario[0][2].peso,
-            pesosUsuario[0][3].peso,
-            pesosUsuario[0][4].peso,
-            pesosUsuario[0][5].peso,
-            pesosUsuario[0][6].peso,
-            pesosUsuario[0][7].peso,
-            pesosUsuario[0][8].peso,
-            pesosUsuario[0][9].peso,
-            pesosUsuario[0][10].peso,
-            pesosUsuario[0][11].peso
+            pesos[0],
+            pesos[1],
+            pesos[2],
+            pesos[3],
+            pesos[4],
+            pesos[5],
+            pesos[6],
+            pesos[7],
+            pesos[8],
+            pesos[9],
+            pesos[10],
+            pesos[11]
         ],
         borderColor: 'blue',
         borderWidth: 4,
@@ -112,7 +106,7 @@ var data = {
     }]
 };
 
-// Configurações do gráfico
+// Configuração do gráfico
 var options = {
     scales: {
         x: {
@@ -128,10 +122,12 @@ var options = {
 };
 
 
-// Criar o gráfico de linhas
+// Cria o gráfico de linhas
 var ctx = document.getElementById('myLineChart').getContext('2d');
 var myLineChart = new Chart(ctx, {
     type: 'line',
     data: data,
     options: options
 });
+
+})
