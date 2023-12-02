@@ -4,202 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Pagina sono.css">
+    <script src="script_pag_sono.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="media.css">
     <title>LIFE MACHINE</title>
-    <style>
-      .resultado {
-        flex: 4;
-        flex-direction: column;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: #D9D9D9;
-        max-width: 50%; /* Alterado para ocupar metade da largura em monitores */
-        float: left; /* Mantém resultado à esquerda */
-      }
 
-      .parametro {
-        flex-direction: column;
-        text-align: justify;
-        padding: 5px;
-        margin: 7px;
-        float: left; /* Mantém parametro à esquerda */
-        max-width: 50%; 
-      }
 
-      body {
-        font-family: 'Bahnschrift', sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-
-      header {
-        background-color: #D9D9D9;
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      header h1 {
-        font-size: 24px;
-      }
-
-      h1 {
-        font-size: 50px;
-      }
-
-      h2 {
-        font-size: 30px;
-      }
-
-      p {
-        font-size: 20px;
-      }
-
-      #logo {
-        display: flex;
-        align-items: center;
-      }
-
-      #logo img {
-        margin-right: 10px;
-      }
-
-      #conteudo {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 50px;
-        max-width: 100%;
-      }
-
-      #despertador {
-        flex: 1;
-        flex-direction: column;
-        padding: 10px;
-        border: 1px solid #FF0000;
-        border-radius: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        background-color: #D9D9D9;
-      }
-
-      .campo-input {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-        margin-top: 10px;
-      }
-
-      .campo-input label {
-        flex: 1;
-        text-align: right;
-        font-size: 30px;
-      }
-
-      .campo-input input {
-        flex: 1;
-        width: 60px;
-        padding: 10px;
-        font-size: 16px;
-        border: none;
-        border-radius: 10px;
-        text-align: left;
-      }
-
-      #frequencia {
-        text-align: center;
-        flex: 4;
-        flex-direction: column;
-        padding: 10px;
-        border: 1px solid #FF0000;
-        border-radius: 10px;
-        background-color: #D9D9D9;
-        max-width: 100%;
-      }
-
-      #frequencia img {
-        flex: 50;
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        text-align: center;
-      }
-
-      #rodape {
-        background-color: #D9D9D9;
-        text-align: left;
-        padding: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-
-      /* Estilos responsivos para telas menores */
-      @media (max-width: 768px) {
-        header {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        header h1 {
-          font-size: 20px;
-        }
-
-        #logo {
-          margin-right: 0;
-          margin-bottom: 10px;
-        }
-
-        #conteudo, #sono, #despertador, #frequencia, .resultado, .parametro {
-          max-width: 100%; /* Ocupa a largura total em telas menores */
-          float: none; /* Remove o float em telas menores */
-        }
-      }
-    </style>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div id="logo">
-                <a href="../Página principal/pagina principal.html"><img src="img/logo.png" alt="Logo da Empresa"></a>
-                <h1>LIFE MACHINE</h1>
+    <body>
+        <div class="all-content">
+    <!-- Cabeçalho da página -->
+    <nav class="navbar navbar-expand-lg header-style">
+        <div class="container-fluid">
+            <div class="d-flex flex-row align-items-center">
+                <a class="navbar-brand" href="../Página principal/pagina principal.html"><img src="./Img/logo.png" alt="logo-lifeMachine"></a>
+                <h1 class="p-0 m-0">LifeMachine</h1>
             </div>
         </div>
-    </header>
+    </nav>
+    
     <div id="sono" style="display: flex; align-items: center;">
-        <img src="img/seta.png" style="margin-right: 10px;">
+        <a href="../Página principal/pagina principal.html"><img src="./img/horizontal-arrow.png"></a>
         <h1>SONO</h1>
     </div>
     <div id="conteudo">
-        <div id="despertador" style="text-align: center;">
+        <div id="despertador">
             <h2>Horário de Despertar</h2>
             <div class="campo-input">
                 <label for="horas">Horas:</label>
-                <input type="text" id="horas" placeholder="">
+                <select class="input-style form-select dropdownX" id="numero1" name="Objetivo">
+                  <option value="00">00</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+              </select>
             </div>
             <div class="campo-input">
-                <label for "minutos">Minutos:</label>
-                <input type="text" id="minutos" placeholder="">
+                <label for="minutos">Minutos:</label>
+                  <select class="input-style form-select dropdownX" id="numero2" name="Objetivo">
+                      <option value="00">00</option>
+                      <option value="05">05</option>
+                      <option value="10">10</option>
+                      <option value="15">15</option>
+                      <option value="20">20</option>
+                      <option value="25">25</option>
+                      <option value="30">30</option>
+                      <option value="35">35</option>
+                      <option value="40">40</option>
+                      <option value="45">45</option>
+                      <option value="55">55</option>
+                  </select> 
+
             </div>
-            <button class="calculate-button" style="background-color: #FF0000; color: #fff; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">Calcular</button>
+            <button onclick="Calcular()" class="botoes calculate-button">Calcular</button>
         </div>
         <div id="frequencia">
           <div class="RE">
           </div>
           <div class="resultado">
-            <h2>RESULTADOS:</h2>
-            <img src="img/tabela.png" alt="Imagem da Receita">
+            <h2>Resultados:</h2>
+            <div id="x" style="width: auto; height: auto;">CLIQUE EM CALCULAR</div>
+            
           </div>
           <div class="parametro">
-            <h2>PARÂMETRO DE COMPARAÇÃO:</h2>
-            <p>-Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor -desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, </p>
+            <h2>Parâmetro de comparação:</h2>
+            <p>Para programar uma boa noite de sono, deve-se calcular o tempo de sono por meio de pequenos ciclos de 90 minutos, devendo-se despertar assim que o último ciclo terminar. <br> Assim, é possível acordar com maior disposição e energia.
+              <br><br><b style="color: green;">SAÚDAVEL: </b>De 6 a 5 ciclos de sono<br>
+              <b style="color: rgb(150, 100, 8);">RAZOÁVEL: </b> 4 ciclos de sono<br>
+              <b style="color: rgb(185, 0, 0);">RUIM: </b>De 3 a 1 ciclo de sono</p>
           </div>
         </div>
     </div>
-    <div id="rodape">
-        Copywriting 2023
+
+    <!-- Rodapé da página -->
+    <footer class="container-fluid footer-style d-flex align-items-center">
+        <div class="row-fluid">
+            
+            <p class="m-0 p-0">Copyright 2023</p>
+        </div>
     </div>
+</div>
+</footer>
 </body>
 </html>

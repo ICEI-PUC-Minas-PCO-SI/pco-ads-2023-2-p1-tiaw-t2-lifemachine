@@ -1,0 +1,52 @@
+@media screen and (min-width: 831px) {
+  #despertador {
+    margin-right: 20px;
+    /* text-align: center; */
+  }
+  .campo-input label {
+    text-align: right;
+    width: 30%;
+  }
+  
+}
+@media screen and (max-width: 830px){
+  #conteudo {
+    flex-direction: column;
+  }
+  #despertador {
+    margin-bottom: 20px;
+  }
+  .campos-input{
+    align-items: center;
+  }
+  .campos-input label{
+    text-align: start;
+  }
+}
+@media screen and (min-width: 830px) and (max-width:1270) {
+  .parametro{
+    flex-direction: column;
+    padding: 5px;
+    margin: 7px;
+  }
+
+  #frequencia {
+    min-width: 831px;
+  }
+  .resultado {
+    width: 100% ;
+  }
+}
+@media screen and (min-width:1271px){
+  .resultado {
+    float: left;
+    /* Mantém resultado à esquerda */
+  }
+  .parametro{
+  float: left;
+  /* Mantém parametro à esquerda */
+  text-align: justify;
+  max-width: 50%;
+  }
+}
+

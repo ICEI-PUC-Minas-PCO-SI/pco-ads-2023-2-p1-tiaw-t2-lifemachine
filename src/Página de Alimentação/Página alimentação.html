@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Machine - Alimentação</title>
     <link rel="stylesheet" href="alimentação.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" type="imagex/png" href="./Img/dumbbells_ico.png">
+    <title>LIFE MACHINE</title>
+
 </head>
 <body>
+
+    <div class="all-content">
     <!-- Cabeçalho da página -->
-    <header class="container-fluid d-flex header-style align-items-center">
-        <div class="row d-flex flex-column">
-            <div class="col d-flex align-items-center">
-                <a href="../Página principal/pagina principal.html"><img class="img-header-style" src="./img/logo.jpeg" alt="logo-lifemachine"></a>
-                <h2 class="ms-4 fs-1">LifeMachine</h2>
+    <nav class="navbar navbar-expand-lg header-style">
+        <div class="container-fluid">
+            <div class="d-flex flex-row align-items-center">
+                <a class="navbar-brand" href="../Página principal/pagina principal.html"><img src="./Img/logo.png" alt="logo-lifeMachine"></a>
+                <h1 class="p-0 m-0">LifeMachine</h1>
             </div>
         </div>
-    </header>
+    </nav>
+    
 
     <!-- Título "ALIMENTAÇÃO" -->
-    <div class="container-fluid d-flex align-items-center titulo-style mt-3">
-        <a href="#"><img class="img-fluid" src="./img/horizontal-arrow.png"></a>
+    <div id="alimento" style="display: flex; align-items: center;">
+        <a href="../Página principal/pagina principal.html"><img class="img-fluid" src="./img/horizontal-arrow.png"></a>
         <h1>ALIMENTAÇÃO</h1>
     </div>
-
-    <!-- Container principal de conteúdo -->
+    
+    <!-- Contêiner principal de conteúdo -->
     <div id="conteudo">
-        <!-- Container de dados -->
+        
+        <!-- Contêiner de dados -->
         <div id="dados">
             <div class="campo-input">
                 <label for="calorias">Calorias</label>
@@ -38,30 +45,35 @@
             </div>
             <div class="campo-input">
                 <label for="proteina">Proteína</label>
-                <input type="text" id="Proteína" placeholder="">
+                <input type="text" id="proteina" placeholder="">
             </div>
             <div class="campo-input">
                 <label for="gorduras">Gorduras</label>
                 <input type="text" id="gorduras" placeholder="">
             </div>
+            <button onclick="calcularReceita()" style="background-color: #FF0000; color: #fff; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">Calcular Receita</button>
+          
         </div>
 
-        <!-- Container de receita -->
-        <div id="receita">
-            <img src="img/img.png" alt="Imagem da Receita" style="float: left; margin-right: 20px; bottom: 10px;">
-            <div id="texto">
-                <h2>RECEITA SUGESTIVA:</h2>
-                <h3>NOME DA RECEITA</h3>
-                <p>-Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e <br> -de impressos, e vem sendo utilizado desde o século XVI, quando um impressor <br>-desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, </p>
-            </div>
+        <!-- Contêiner de receita -->
+        <div class="d-flex flex-row align-items-center flex-wrap justify-content-between" id="receita">
+            <!-- Aqui será exibida a receita sugerida -->
         </div>
+        
     </div>
 
     <!-- Rodapé da página -->
-    <div id="rodape">
-        Copyright 2023
+    <footer class="container-fluid footer-style d-flex align-items-center">
+        <div class="row-fluid">
+            
+            <p class="m-0 p-0">Copyright 2023</p>
+        </div>
     </div>
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="alimentaçao.js"></script>
+
 </html>
