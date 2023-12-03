@@ -1,0 +1,51 @@
+[
+    {
+    "id" : 1,
+    "message" : "Seu corpo pode suportar quase tudo. É a sua mente que você tem que convencer."
+    },
+
+    {
+        "id" : 2,
+        "message" : "Definição de um treino realmente bom: quando você odeia fazer, mas adora terminá-lo."
+    },
+
+    {
+        "id" : 3,
+        "message" : "O sucesso começa com autodisciplina"
+    },
+    
+    {
+        "id" : 4,
+        "message" : "Motivação é o que você começa. Hábito é o que te mantém indo."
+    },
+
+    {
+        "id" : 5,
+        "message" : "O corpo alcança o que a mente acredita."
+    },
+
+    {
+        "id" : 6,
+        "message" : "O que parece impossível hoje um dia se tornará o seu aquecimento."
+    },
+
+    {
+        "id" : 7,
+        "message" : "Seu corpo é capaz do que sua mente acredita. Vá além!"
+    },
+
+    {
+        "id" : 8,
+        "message" : "Trabalhe duro em silêncio. Deixe o sucesso ser o seu barulho."
+    },
+
+    {
+        "id" : 9,
+        "message" : "Quando você sentir vontade de parar, pense por que você começou."
+    },
+
+    {
+        "id" : 10,
+        "message" : "A dor que você sente hoje será a força que você sentirá amanhã."
+    }
+]

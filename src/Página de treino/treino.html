@@ -1,189 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life Machine</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="treino_config.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="treino.css">
+    <link rel="stylesheet" href="media.css">
 </head>
+
 <body>
-    <header class="container-fluid d-flex header-style align-items-center">
-        <div class="row d-flex flex-column">
-            <div class="col d-flex align-items-center">
-                <a href="../Página principal/pagina principal.html"><img class="img-header-style" src="./img/logo.png" alt="logo-lifemachine"></a>
-                <h2 class="ms-4 fs-1">LifeMachine</h2>
+
+    <div class="all-content">
+        <!-- Cabeçalho da página -->
+        <nav class="navbar navbar-expand-lg header-style">
+            <div class="container-fluid">
+                <div class="d-flex flex-row align-items-center">
+                    <a class="navbar-brand" href="../Página principal/pagina principal.html"><img src="./Img/logo.png"
+                            alt="logo-lifeMachine"></a>
+                    <h1 class="p-0 m-0">LifeMachine</h1>
+                </div>
             </div>
+        </nav>
+
+        <div id="treino" class="d-flex align-items-center">
+            <a href="../Página principal/pagina principal.html"><img class="img-fluid"
+                    src="./img/horizontal-arrow.png"></a>
+            <h1>TREINO</h1>
         </div>
-    </header>
-    <main>
-        <div>
-            <img class="seta" src="./img/arrow.png" alt="arrow">
-            <h1 class="titulo">TREINO</h1>
-        </div>
-        
-        <!--
-            <div class="row">         
-                <div class="col-2 col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
-                    <div class="container_config">
-                        <div class="ficha">
-                            <b style="font-size: 30px;">FICHA A</b><br>
-                            <b>00x Loren Ipsum</b><br>
-                            <b>00x Loren Ipsum</b><br>
-                            <b>00x Loren Ipsum</b><br>
-                            <b>00x Loren Ipsum</b><br>
-                            <b>00x Loren Ipsum</b><br>
-                            <b>00x Loren Ipsum</b><br>
-                            <b>00x Loren Ipsum</b><br>
+
+        <!-- Corpo da página -->
+        <main class="align-items-center justify-content-center container-fluid">
+
+            <div class="row d-flex">
+                <!-- Primeiro quadrdo de dados -->
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div id="tela1" class="container_config">
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <p>
+                                    <div class="ficha">
+                                        <b style="font-size: 30px;">FICHA A</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                    </div>
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p>
+                                    <div class="ficha">
+                                        <b style="font-size: 30px;">FICHA B</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                    </div>
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p>
+                                    <div class="ficha">
+                                        <b style="font-size: 30px;">FICHA C</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                        <b>00x Loren Ipsum</b><br>
+                                    </div>
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div" class="row">
-                            <span>
-                                <button style="width: 100px; margin: 0px 40px 20px 40px;">Concluído</button>
-                                <button style="width: 100px; margin: 0px 40px 20px 0px;" type="button">Gerar</button>
+
+                        <div class="row">
+                            <span class="btns text-center">
+                                <button id="concluir-treino" class="botoes btn">Concluído</button>
+                                <button class="botoes btn" type="button">Gerar</button>
                             </span>
                         </div>
                     </div>
-                </div>           
-                    <div class="col-2 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                        <div style="margin-top: 350px;" class="container_config">
-                            <div class="ficha">
-                                <b style="font-size: 30px;">SEU PESO</b><br>
-                                <H1 style="padding-left: 20px;font-weight: bold; margin-top: 30PX;">60 KG</H1><br>
-                                <b>SENTIU ALTERAÇÃO:</b><br>
-                            </div>
-                            <div" class="row">
-                                <span>
-                                    <button style="width: 100px; height: 30px; display: block; margin-left: auto;
-                                    margin-right: auto; margin-bottom: 20px;" type="button">Alterar</button>
-                                </span>
-                            </div>
-                        </div>   
-                    </div>
-                </div>            
-                    <div class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                        <div style="margin-top: 670px;" class="container_config">
-                            <div style="padding-top: 30px;">
-                                <b style="font-size: 30px; padding: 1000px 0px 10px 80px;">RESULTADOS</b><br>
-                            </div>
-                                <img style="height: 100px; width: 250px; display: flex; margin-left: auto; margin-right: auto; margin-top: 30px;" src="./img/graph.jpeg" alt="logo">
-                            </div>
-                            <div" class="row">
-                            </div>
-                        </div>
-                    </div>       
 
                 </div>
-            </div>
-
-            <div class="row">         
-                <div class="col-2 col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
-                    <div class="container_config">
-                        <div class="ficha">
-                            <b style="font-size: 30px;">FICHA A</b><br>
-                            <b>00x Loren Ipsum</b><br>
-                            <b>00x Loren Ipsum</b><br>
-                            <b>00x Loren Ipsum</b><br>
-                            <b>00x Loren Ipsum</b><br>
-                            <b>00x Loren Ipsum</b><br>
-                            <b>00x Loren Ipsum</b><br>
-                            <b>00x Loren Ipsum</b><br>
+                <!-- Segundo quadrado de dados -->
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div id="tela2" class="container_config text-center">
+                        <b style="font-size: 30px;">SEU PESO</b>
+                        <div class="peso_indicador">
+                            <h1 id="peso-atual"></h1>
                         </div>
-                        <div" class="row">
-                            <span>
-                                <button style="width: 100px; margin: 0px 40px 20px 40px;">Concluído</button>
-                                <button style="width: 100px; margin: 0px 40px 20px 0px;" type="button">Gerar</button>
+                        <div class="row">
+                            <span class="text-center">
+                                <b>SENTIU ALTERAÇÃO:</b><br>
+                                <a href="../Página de Configuração/config.html"><button class="botoes btn"
+                                        type="button">Alterar</button></a>
                             </span>
                         </div>
                     </div>
-                </div>           
-                    <div class="col-2 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                        <div style="margin-top: 350px;" class="container_config">
-                            <div class="ficha">
-                                <b style="font-size: 30px;">SEU PESO</b><br>
-                                <H1 style="padding-left: 20px;font-weight: bold; margin-top: 30PX;">60 KG</H1><br>
-                                <b>SENTIU ALTERAÇÃO:</b><br>
-                            </div>
-                            <div" class="row">
-                                <span>
-                                    <button style="width: 100px; height: 30px; display: block; margin-left: auto;
-                                    margin-right: auto; margin-bottom: 20px;" type="button">Alterar</button>
-                                </span>
-                            </div>
-                        </div>   
-                    </div>
-                </div>            
-                    <div class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                        <div style="margin-top: 670px;" class="container_config">
-                            <div style="padding-top: 30px;">
-                                <b style="font-size: 30px; padding: 1000px 0px 10px 80px;">RESULTADOS</b><br>
-                            </div>
-                                <img style="height: 100px; width: 250px; display: flex; margin-left: auto; margin-right: auto; margin-top: 30px;" src="./img/graph.jpeg" alt="logo">
-                            </div>
-                            <div" class="row">
-                            </div>
-                        </div>
-                    </div>       
-
                 </div>
-            </div>
-        -->
-
-        <div class="row">
-            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <div id="tela1" class="container_config">
-                    <div class="ficha">
-                        <b style="font-size: 30px;">FICHA A</b><br>
-                        <b>00x Loren Ipsum</b><br>
-                        <b>00x Loren Ipsum</b><br>
-                        <b>00x Loren Ipsum</b><br>
-                        <b>00x Loren Ipsum</b><br>
-                        <b>00x Loren Ipsum</b><br>
-                        <b>00x Loren Ipsum</b><br>
-                        <b>00x Loren Ipsum</b><br>
+                <div class="col d-flex justify-content-center align-items-center"">
+                <!-- Terceiro quadrado de dados -->
+                    <div id=" tela3" class="container_config text-center">
+                    <div>
+                        <b style="font-size: 30px;">RESULTADOS</b>
                     </div>
-                    <div class="row">
-                        <span>
-                            <button class="botoes" style="width: 100px; margin: 0px 40px 20px 40px;">Concluído</button>
-                            <button class="botoes" style="width: 100px; margin: 0px 40px 20px 0px;" type="button">Gerar</button>
-                        </span>
+                    <div id="resultados-chart">
+                        <canvas id="myBarChart"></canvas>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <div id="tela2" class="container_config">
-                    <div class="ficha">
-                        <b style="font-size: 30px;">SEU PESO</b><br>
-                        <H1 style="padding-left: 20px;font-weight: bold; margin-top: 30PX; margin-bottom: 50px;">60 KG</H1><br>
-                        <b>SENTIU ALTERAÇÃO:</b><br>
-                    </div>
-                    <div class="row">
-                        <span>
-                            <a href="../Pagina de configuração/config.html"><button class="botoes"  style="width: 100px; height: 30px; display: block; margin-left: auto;
-                            margin-right: auto; margin-bottom: 20px;" type="button">Alterar</button></a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div id="tela3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4;">
-                <div class="container_config">
-                    <div style="padding-top: 30px;">
-                        <b style="font-size: 30px; padding: 1000px 0px 10px 80px;">RESULTADOS</b><br>
-                    </div>
-                    <img style="height: 100px; width: 250px; display: flex; margin-left: auto; margin-right: auto; margin-top: 30px;" src="./img/graph.jpeg" alt="logo">
-                </div>
-            </div>
-        </div>
+    </div>
 
     </main>
-    
-    <footer class="container-fluid mt-4 footer-style d-flex align-items-center">
+
+    <!-- Rodapé da página -->
+    <footer class="container-fluid footer-style d-flex align-items-center">
         <div class="row-fluid">
-            <div class="col d-flex">
+
             <p class="m-0 p-0">Copyright 2023</p>
-            </div>
+        </div>
         </div>
     </footer>
+
+    </div>
+    <script src="treino.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
