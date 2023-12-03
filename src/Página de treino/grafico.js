@@ -14,21 +14,26 @@ var dataAtual = new Date();
 var mes = dataAtual.getMonth();
 var dia = dataAtual.getDate();
 var jsonMes = `QtdTreinoMes` + mes
-var treinoConcluidos = 0;
+
 
 
 const URL = 'http://localhost:3000/usuarios';
 var auxID = JSON.parse(localStorage.getItem('atualID'))
 
-//Adicionar treinos concluidos
-var botao_treino = document.getElementById('concluir-treino')
-botao_treino.addEventListener('click', function (event) {
-    const auxClique = dia;
-    const ultimoClique = localStorage.getItem('ultimoClique')
+fetch(`${URL}/${auxID}`)
+  .then(res => res.json())
+  .then(user => {
+    treinoConcluidos = user[jsonMes] || 0;
 
-    if (ultimoClique != auxClique) {
-        treinoConcluidos++
-        localStorage.setItem('ultimoClique', auxClique)
+    // Adicionar treinos concluídos
+    var botao_treino = document.getElementById('concluir-treino');
+    botao_treino.addEventListener('click', function (event) {
+      const auxClique = dia;
+      const ultimoClique = localStorage.getItem('ultimoClique');
+
+      if (ultimoClique != auxClique) {
+        treinoConcluidos++;
+        localStorage.setItem('ultimoClique', auxClique);
 
         // Atualiza o JSON Server
         fetch(`${URL}/${auxID}`, {
@@ -54,6 +59,7 @@ botao_treino.addEventListener('click', function (event) {
         event.preventDefault()
     }
 });
+})
 
 // Função para atualizar o gráfico
 function atualizarGrafico() {
