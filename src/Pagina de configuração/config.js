@@ -1,3 +1,85 @@
+function valor_Dropdown(id) {
+  let dropdown = document.getElementById(id);
+  var valorSelecionado = dropdown.options[dropdown.selectedIndex].value;
+  return valorSelecionado;
+}
+
+function valor_digitado(id){
+  let valor = document.getElementById(id);
+  let valorSelecionado = valor.value;
+  return valorSelecionado;
+}
+
+/* {
+  "usuarios": [
+    {
+      "id": "1",
+      "Nome": "123",
+      "email": "Caiof13araujo@gmail.com",
+      "senha": "123",
+      "altura": "123",
+      "peso": "123",
+      "objetivo": "perder-peso",
+      "diasDeTreino": "3-dias",
+      "sexo": "F"
+    }
+  ]
+}*/
+
+function ad(id){
+//Validar campos
+
+let a = document.getElementById("DiasDeTreino");
+var b = a.value;
+
+let dadosAtualizados = {  
+  "peso": b
+};
+
+// Configuração da requisição
+const opcoes = {
+  method: 'PUT',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(dadosAtualizados)
+};
+
+const url1 = `http://localhost:3000/usuarios/1`;
+
+// Envia a requisição
+fetch(url1, opcoes)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro ao tentar atualizar o peso do usuário');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Peso do usuário atualizado com sucesso:', data);
+  })
+  .catch(error => {
+    console.error('Erro:', error.message);
+  });
+}
+
+
+function ad1(){
+  alert($("Peso").value);
+}
+
+
+
+//#region Testes
+/*
+
+$(document).ready(function() {
+  var pesoInput = $("#Peso");
+  // Now you can work with the "Peso" input element
+  // For example, you can get its value:
+  var pesoValue = pesoInput.val();
+  console.log(pesoValue);
+});
 
 function teste2(){
 const idUsuario = "2";
@@ -94,3 +176,5 @@ fetch(url3, opcoes3)
 
 
 }
+*/
+//#endregion
