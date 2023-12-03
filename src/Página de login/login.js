@@ -19,7 +19,10 @@ $(document).ready(function () {
                     window.location.href = '../Página principal/pagina principal.html';
                     
                 } else {
-                    alert('Senha Inválida');
+                    let erro = document.getElementById('erro-login')
+                    erro.innerHTML = `
+                    <small class="text-danger">Login e/ou senha inválido(s). Tente novamente.</small>
+                    `
                 }
             })
             .catch(error => {
