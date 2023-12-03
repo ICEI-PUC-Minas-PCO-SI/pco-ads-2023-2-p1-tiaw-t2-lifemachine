@@ -99,24 +99,32 @@
             </div>
         </div>
     </div>
+
   <script>
-      document.getElementById('Nome').addEventListener('input', function (event) {
-          this.value = this.value.replace(/[0-9]/g, '');
-      });
-    document.getElementById('Altura').addEventListener('input', function (event) {
-        this.value = this.value.replace(/[^\d#,.]/g, '');
 
-        if (this.value.length > 4) {
-            this.value = this.value.substring(0, 4);
-        }
-    });
-    document.getElementById('Peso').addEventListener('input', function (event) {
-        this.value = this.value.replace(/[^\d,#]/g, '');
+function onlyTel(evento){
+    inputTel = document.getElementById("tel");
+    var code = evento.keyCode;
 
-        if (this.value.length > 5) {
-            this.value = this.value.substring(0, 5);
-        }
-    });
+    if(code<48 || code>57){
+        return false;
+    }
+
+    maskTel(inputTel);
+
+}
+function maskTel(elemento){
+    var content = elemento.value;
+
+    if (content.length === 7){
+        var text = "(" + content.substring(0, 2) + ") " + content.substring(2, 3) + " " + content.substring(3, 7) + "-" + content.substring(7);
+        elemento.value = text;
+    }
+
+
+
+
+}
   </script>
 
     <footer class="container-fluid footer-style d-flex align-items-center">
