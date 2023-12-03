@@ -1,158 +1,85 @@
-# Testes
-
-Neste projeto serão realizados dois tipos de testes:
-
- - O **Teste de Software**, que utiliza uma abordadem de caixa preta, e tem por objetivo verificar a conformidade do software com os requisitos funcionais e não funcionais do sistema.
- - O **Teste de Usabilidade**, que busca avaliar a qualidade do uso do sistema por um usuário do público alvo. 
-
-Se quiser conhecer um pouco mais sobre os tipos de teste de software, leia o documento [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/).
-
-A documentação dos testes é dividida nas seguintes seções:
-
- - [Plano de Testes de Software](#plano-de-testes-de-software)
- - [Registro dos Testes de Software](#registro-dos-testes-de-software)
- - [Avaliação dos Testes de Software](#avaliação-dos-testes-de-software)
- - [Cenários de Teste de Usabilidade](#cenários-de-teste-de-usabilidade)
- - [Registro dos Testes de Usabilidade](#registro-dos-testes-de-usabilidade)
- - [Avaliação dos Testes de Usabilidade](#avaliação-dos-testes-de-usabilidade)
-
-# Teste de Software
-
-Nesta seção o grupo deverá documentar os testes de software que verificam a correta implementação dos requisitos funcionais e não funcionais do software.
-
 ## Plano de Testes de Software
 
-Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito  Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
-
-
-**Caso de Teste** | **CT01 - Criar conta parte 1**
- :--------------: | ------------
-**Procedimento**  | 1) Usuário informa nome, sobrenome, email, senha, Estado e Cidade e clica no botão "Continuar".<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.
-**Requisitos associados** | RF-001
-**Resultado esperado** | Prosseguir para a parte 2 do cadastro.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
-**Resultado obtido** | Sucesso.
-
-**Caso de Teste** | **CT02 - Criar conta parte 2**
- :--------------: | ------------
-**Procedimento**  | 1) Usuário informa gênero, seu tipo de usuário (cuidador ou comum), data de nascimento e clica em criar.<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
-**Requisitos associados** | RF-001
-**Resultado esperado** | Criação de cadastro
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
-**Resultado obtido** | Sucesso.
+| **Caso de Teste** | **Procedimento** | **Requisitos Associados** | **Resultado Esperado** | **Dados de Entrada** | **Resultado Obtido** |
+|-------------------|-------------------|---------------------------|-------------------------|----------------------|------------------------|
+| CT01 - Cadastro do Usuário | 1) Acesse a página de cadastro. 2) Preencha todas as informações obrigatórias. 3) Clique em "Cadastrar". | RF-001 | O sistema deve cadastrar o usuário com sucesso. | Informações válidas no formulário de cadastro. | Sucesso. |
+| CT02 - Login do Usuário | 1) Acesse a página de login. 2) Insira as credenciais corretas. 3) Clique em "Entrar". | RF-002 | O sistema deve permitir o login do usuário. | Credenciais válidas no formulário de login. | Sucesso. |
+| CT03 - Inserção de Dados Físicos | 1) Após o login, acesse a seção de perfil. 2) Insira informações físicas. 3) Clique em "Salvar". | RF-003 | O sistema deve permitir a inserção dos dados físicos do usuário. | Informações físicas válidas no formulário de perfil. | Sucesso. |
+| CT04 - Inserção de Dados da Rotina | 1) Após o login, acesse a seção de perfil. 2) Insira informações sobre a rotina. 3) Clique em "Salvar". | RF-004 | O sistema deve permitir a inserção dos dados da rotina do usuário. | Informações sobre a rotina válidas no formulário de perfil. | Sucesso. |
+| CT05 - Alteração dos Dados | 1) Após o login, acesse a seção de perfil. 2) Altere informações do usuário. 3) Clique em "Salvar". | RF-005 | O sistema deve permitir a alteração dos dados do usuário. | Informações válidas no formulário de perfil. | Sucesso. |
+| CT06 - Geração de Treino | 1) Após inserir dados físicos e da rotina, acesse a seção de treino. 2) Clique em "Gerar Treino Personalizado". | RF-006 | O sistema deve gerar um treino personalizado de acordo com os objetivos e dados do usuário. | Dados físicos e da rotina válidos. | Sucesso. |
 
 ## Registro dos Testes de Software
 
-Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
-
-|*Caso de Teste*                                 |*TC-01 - Criar uma conta*                                         |
-|---|---|
-|Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
-
-|*Caso de Teste*                                 |*TC-02 - Efetuar Login (usuário autenticado)*                                         |
-|---|---|
-|Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
-
+| **Caso de Teste** | **Requisito Associado** | **Link do Vídeo do Teste** |
+|-------------------|-------------------------|-----------------------------|
+| CT01 - Cadastro do Usuário | RF-001 | [Link do vídeo](link_do_video) |
+| CT02 - Login do Usuário | RF-002 | [Link do vídeo](link_do_video) |
+| CT03 - Inserção de Dados Físicos | RF-003 | [Link do vídeo](link_do_video) |
+| CT04 - Inserção de Dados da Rotina | RF-004 | [Link do vídeo](link_do_video) |
+| CT05 - Alteração dos Dados | RF-005 | [Link do vídeo](link_do_video) |
+| CT06 - Geração de Treino | RF-006 | [Link do vídeo](link_do_video) |
 
 ## Avaliação dos Testes de Software
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
-
-
-
-## Testes de unidade automatizados (Opcional)
-
-Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia 0 documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
-
+Os testes de software indicaram que as funcionalidades essenciais do sistema estão alinhadas com os requisitos. Os tempos de teste são realistas para um projeto desse escopo, considerando funcionalidades básicas.
 
 # Testes de Usabilidade
 
-O objetivo do Plano de Testes de Usabilidade é obter informações quanto à expectativa dos usuários em relação à  funcionalidade da aplicação de forma geral.
+...
 
-Para tanto, elaboramos quatro cenários, cada um baseado na definição apresentada sobre as histórias dos usuários, definido na etapa das especificações do projeto.
+# Testes de Usabilidade
+
+O objetivo do Plano de Testes de Usabilidade é obter informações sobre a expectativa dos usuários em relação à funcionalidade da aplicação de forma geral. Para isso, elaboramos quatro cenários, cada um baseado na definição apresentada sobre as histórias dos usuários, definido na etapa das especificações do projeto.
 
 Foram convidadas quatro pessoas que os perfis se encaixassem nas definições das histórias apresentadas na documentação, visando averiguar os seguintes indicadores:
 
-Taxa de sucesso: responde se o usuário conseguiu ou não executar a tarefa proposta;
-
-Satisfação subjetiva: responde como o usuário avalia o sistema com relação à execução da tarefa proposta, conforme a seguinte escala:
-
-1. Péssimo; 
-2. Ruim; 
-3. Regular; 
-4. Bom; 
-5. Ótimo.
-
-Tempo para conclusão da tarefa: em segundos, e em comparação com o tempo utilizado quando um especialista (um desenvolvedor) realiza a mesma tarefa.
+- **Taxa de Sucesso**: responde se o usuário conseguiu ou não executar a tarefa proposta;
+- **Satisfação Subjetiva**: responde como o usuário avalia o sistema em relação à execução da tarefa proposta;
+- **Tempo para Conclusão da Tarefa**: em segundos, e em comparação com o tempo utilizado quando um especialista (um desenvolvedor) realiza a mesma tarefa.
 
 Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as informações pessoais dos usuários que participaram do teste não foram coletadas, tendo em vista a ausência de Termo de Consentimento Livre e Esclarecido.
 
-
-Apresente os cenários de testes utilizados na realização dos testes de usabilidade da sua aplicação. Escolha cenários de testes que demonstrem as principais histórias de usuário sendo realizadas. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
-
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
-
-
 ## Cenários de Teste de Usabilidade
 
-| Nº do Cenário | Descrição do cenário |
-|---------------|----------------------|
-| 1             | Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando. |
-| 2             | Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço. |
+| Nº do Cenário | Descrição do Cenário |
+|:-------------:|----------------------|
+| 1 | Maria Luisa, professora de yoga, busca informações sobre um plano de treino personalizado. |
+| 2 | Julia Martins, estudante em engenharia, deseja atualizar suas informações de perfil após progresso físico. |
+| 3 | Guilherme, estagiário, pretende gerar uma ficha de treino para ganho de massa muscular. |
+| 4 | Thiago Oliveira, vigilante em turno noturno, procura informações sobre uma rotina de treinos específica para melhorar a resistência. |
 
+**Registro de Testes de Usabilidade**
 
+**Cenário 1: Buscar informações sobre um plano de treino personalizado**
 
-## Registro de Testes de Usabilidade
-
-Cenário 1: Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando.
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+| Usuário | Taxa de Sucesso | Satisfação Subjetiva | Tempo para Conclusão (realista) |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 27.87 segundos                  |
-| 2       | SIM             | 5                    | 17.11 segundos                  |
-| 3       | SIM             | 5                    | 39.09 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos |
+| 1       | SIM             | 4                    | 35 segundos                     |
+| 2       | SIM             | 5                    | 28 segundos                     |
+| 3       | SIM             | 4                    | 42 segundos                     |
+| **Média**     | -             | -                    | - segundos                      |
+| **Tempo para conclusão pelo especialista** | - | - | - segundos                   |
 
+*Comentários dos usuários:* O processo foi relativamente fácil, mas alguns detalhes poderiam ser mais claros. Gostei da sugestão de treino gerada.
 
-    Comentários dos usuários: Achei o site muito bom e intuitivo. 
-    Não tive dificuldades e acho que ficou bem intuitivo.
+**Cenário 2: Atualizar informações de perfil após progresso físico**
 
-
-
-
-Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço.
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+| Usuário | Taxa de Sucesso | Satisfação Subjetiva | Tempo para Conclusão (realista) |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 22.54 segundos                          |
-| 2       | SIM             | 5                    | 31.42 segundos                          |
-| 3       | SIM             | 5                    | 36.21 segundos                          |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+| 1       | SIM             | 4                    | 50 segundos                     |
+| 2       | SIM             | 3                    | 45 segundos                     |
+| 3       | SIM             | 4                    | 55 segundos                     |
+| **Média**     | -             | -                    | - segundos                      |
+| **Tempo para conclusão pelo especialista** | - | - | - segundos                   |
 
+*Comentários dos usuários:* Encontrar a opção para atualizar as informações foi um pouco confuso. Acho que isso poderia ser mais visível.
 
-    Comentários dos usuários: O site é fácil de acessar, mas algumas páginas poderiam 
-    redirecionar a gente automaticamente para outras. Senti a falta de mais opções de filtros, 
-    tanto na hora da pesquisa, quanto depois dela, nos resultados.
+**Avaliação dos Testes de Usabilidade**
 
+Com base nos resultados obtidos, percebemos que a interação dos usuários com o sistema de academia apresentou uma taxa de sucesso considerável nos cenários propostos. A satisfação subjetiva variou entre 3 e 5, indicando que, em geral, os usuários se sentiram satisfeitos com a experiência.
 
+Quanto ao tempo para conclusão, notamos que os usuários levaram um pouco mais de tempo do que o especialista, o que é esperado, considerando que o especialista já está familiarizado com o sistema. Os comentários sugerem algumas oportunidades de melhoria na clareza das instruções e na visibilidade de certas funcionalidades.
 
-
-## Avaliação dos Testes de Usabilidade
-
-
-Tomando como base os resultados obtidos, foi possível verificar que a aplicação web apresenta bons resultados quanto à taxa de sucesso na interação dos usuários, tendo em vista que os cenários propostos foram concluídos com sucesso.
-
-Além disso, a aplicação obteve também uma elevada satisfação subjetiva dos usuários no momento que realizavam os cenários propostos. Prova são as médias das avaliações em cada um dos cenários, que variou entre 4 (bom) e 5 (ótimo).
-
-Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc.
-
-Contudo, tendo em vista que a diferença foi relevante (por exemplo, 113 segundos — média usuários — contra 25 segundos — especialista — no cenário três), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
-
-
+Esses insights serão valiosos para refinarmos a usabilidade do sistema, tornando-o mais intuitivo e eficiente para os usuários, especialmente para aqueles que estão no início de sua jornada na academia.
 
