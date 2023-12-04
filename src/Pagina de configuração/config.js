@@ -10,6 +10,23 @@ function valor_digitado(id){
   return valorSelecionado;
 }
 
+function verificarValor(valor) {
+  const regex = /[!@#$%^&*(),.?":{}|<>]/;
+  const numero = parseInt(valor);
+
+  if (regex.test(valor)) {
+    return true;
+  }
+  else if (numero > 200) {
+    return true;
+  }
+  else if (isNaN(numero)) {
+    return true;
+  }
+  return false
+}
+
+
 /* {
   "usuarios": [
     {
@@ -25,15 +42,41 @@ function valor_digitado(id){
     }
   ]
 }*/
+function campos(){
+  let disposicao = document.getElementById("DiasDeTreino");
+  let peso = document.getElementById("Peso");
+  let objetivo = document.getElementById("Objetivo");
+  let senha = document.getElementById("password");
 
-function ad(id){
+  if (!disposicao.value && !peso.value && !objetivo.value && !senha.value){
+    alert("Não é possível atualizar, preencha pelo um dos campos!");
+  }
+    let Disposicao = "Disposicao";
+    methodPost(disposicao, Disposicao);
+    
+    if(verificarValor(peso)==false){
+      let Peso = "Peso";
+      methodPost(peso, Peso);
+    }
+
+    let Objetivo = "Objetivo"
+    methodPost(objetivo, Objetivo);
+
+    let Senha = "Senha";
+    methodPost(senha, Senha);
+  
+  
+}
+
+
+function methodPost(campo1, atributo1, campo2, atributo2, campo3, atributo3, campo4, atributo4){
 //Validar campos
 
-let a = document.getElementById("DiasDeTreino");
-var b = a.value;
+let attributeName = variavel;
+let attributeValue = campo.value;
 
-let dadosAtualizados = {  
-  "peso": b
+let dadosAtualizados = {
+  [attributeName]: attributeValue
 };
 
 // Configuração da requisição
@@ -63,10 +106,65 @@ fetch(url1, opcoes)
   });
 }
 
-
-function ad1(){
-  alert($("Peso").value);
-}
+function GetNome(){
+  const idUsuario = "1";
+ 
+  const opcoes3 = {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
+  
+  // URL do servidor JSON (substitua pelo seu endpoint correto)
+  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
+  
+  fetch(url1, opcoes3)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro ao tentar obter o peso do usuário');
+      }
+      return response.json();
+    })
+    .then(data => {
+      let variavel = data.Nome;
+      return variavel;
+    })
+    .catch(error => {
+      console.error('Erro:', error.message);
+    });
+  }
+  
+function GetSenha(){
+  const idUsuario = "1";
+ 
+  const opcoes3 = {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
+  
+  // URL do servidor JSON (substitua pelo seu endpoint correto)
+  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
+  
+  fetch(url1, opcoes3)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro ao tentar obter o peso do usuário');
+      }
+      return response.json();
+    })
+    .then(data => {
+      let variavel = data.Senha;
+      return variavel;
+    })
+    .catch(error => {
+      console.error('Erro:', error.message);
+    });
+  }
+  
+  
 
 
 
