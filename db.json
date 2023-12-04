@@ -1,44 +1,24 @@
 {
   "usuarios": [
     {
-      "Senha": "123",
-      "id": 1
+      "senha": "7-dias",
+      "peso": "68",
+      "objetivo": "perder-peso",
+      "diasDeTreino": "",
+      "id": "1"
     },
     {
-      "testertd": "teste",
-      "id": 2
-    },
-    {
-      "teste2": "teste",
-      "id": 3
+      "id": "2",
+      "Nome": "Pedro",
+      "email": "pedro@teste.com",
+      "senha": "abc123efg456",
+      "altura": "183",
+      "peso": "72",
+      "objetivo": "ganhar-peso",
+      "diasDeTreino": "5-dias",
+      "sexo": "M",
+      "PesoMes11": 72,
+      "QtdTreinoMes11": 1
     }
-  ],
-  "daniel": [
-    {
-      "id": "38",
-      "sus": [
-        {
-          "nome": "teste"
-        }
-      ]
-    },
-    {
-      "teste2": "teste",
-      "id": "CkdyV12"
-    },
-    {
-      "teste4": "teste",
-      "id": "sU-0TaE"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

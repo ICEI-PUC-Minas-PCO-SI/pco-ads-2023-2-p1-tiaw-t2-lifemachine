@@ -1,14 +1,3 @@
-function valor_Dropdown(id) {
-  let dropdown = document.getElementById(id);
-  var valorSelecionado = dropdown.options[dropdown.selectedIndex].value;
-  return valorSelecionado;
-}
-
-function valor_digitado(id){
-  let valor = document.getElementById(id);
-  let valorSelecionado = valor.value;
-  return valorSelecionado;
-}
 
 function verificarValor(valor) {
   const regex = /[!@#$%^&*(),.?":{}|<>]/;
@@ -27,21 +16,6 @@ function verificarValor(valor) {
 }
 
 
-/* {
-  "usuarios": [
-    {
-      "id": "1",
-      "Nome": "123",
-      "email": "Caiof13araujo@gmail.com",
-      "senha": "123",
-      "altura": "123",
-      "peso": "123",
-      "objetivo": "perder-peso",
-      "diasDeTreino": "3-dias",
-      "sexo": "F"
-    }
-  ]
-}*/
 function campos(){
   let disposicao = document.getElementById("DiasDeTreino");
   let peso = document.getElementById("Peso");
@@ -51,32 +25,32 @@ function campos(){
   if (!disposicao.value && !peso.value && !objetivo.value && !senha.value){
     alert("Não é possível atualizar, preencha pelo um dos campos!");
   }
-    let Disposicao = "Disposicao";
-    methodPost(disposicao, Disposicao);
-    
-    if(verificarValor(peso)==false){
-      let Peso = "Peso";
-      methodPost(peso, Peso);
-    }
-
-    let Objetivo = "Objetivo"
-    methodPost(objetivo, Objetivo);
-
-    let Senha = "Senha";
-    methodPost(senha, Senha);
-  
-  
+  if(verificarValor(peso.value)==false){
+    let Peso = "Peso";
+    methodPost(disposicao.value, peso.value, objetivo.value, senha.value)
+  }
+  else{
+    alert("Valor de Peso inválido");
+  }
 }
 
 
-function methodPost(campo1, atributo1, campo2, atributo2, campo3, atributo3, campo4, atributo4){
-//Validar campos
+function methodPost(valorSenha, valorPeso, valorObjetivo, valorDiasDeTreino){
 
-let attributeName = variavel;
-let attributeValue = campo.value;
+let valorNome = GetNome();
+let valorAltura = GetAltura();
+let valorSexo = GetSexo();
+let valorEmail = GetEmail();
 
 let dadosAtualizados = {
-  [attributeName]: attributeValue
+  Nome: valorNome,
+  email: valorEmail,
+  senha: valorSenha,
+  altura: valorAltura,
+  peso: valorPeso,
+  objetivo: valorObjetivo,
+  diasDeTreino: valorDiasDeTreino,
+  sexo: valorSexo,
 };
 
 // Configuração da requisição
@@ -94,12 +68,12 @@ const url1 = `http://localhost:3000/usuarios/1`;
 fetch(url1, opcoes)
   .then(response => {
     if (!response.ok) {
-      throw new Error('Erro ao tentar atualizar o peso do usuário');
+      throw new Error('Erro ao tentar atualizar');
     }
     return response.json();
   })
   .then(data => {
-    console.log('Peso do usuário atualizado com sucesso:', data);
+    console.log('Atualizado', data);
   })
   .catch(error => {
     console.error('Erro:', error.message);
@@ -122,7 +96,7 @@ function GetNome(){
   fetch(url1, opcoes3)
     .then(response => {
       if (!response.ok) {
-        throw new Error('Erro ao tentar obter o peso do usuário');
+        throw new Error('Erro ao tentar obter');
       }
       return response.json();
     })
@@ -135,7 +109,7 @@ function GetNome(){
     });
   }
   
-function GetSenha(){
+function GetSexo(){
   const idUsuario = "1";
  
   const opcoes3 = {
@@ -156,14 +130,72 @@ function GetSenha(){
       return response.json();
     })
     .then(data => {
-      let variavel = data.Senha;
+      let variavel = data.sexo;
       return variavel;
     })
     .catch(error => {
       console.error('Erro:', error.message);
     });
-  }
+}
+
+function GetAltura(){
+    const idUsuario = "1";
+   
+    const opcoes3 = {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    };
+    
+    // URL do servidor JSON (substitua pelo seu endpoint correto)
+    const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
+    
+    fetch(url1, opcoes3)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Erro ao tentar obter o peso do usuário');
+        }
+        return response.json();
+      })
+      .then(data => {
+        let variavel = data.altura;
+        return variavel;
+      })
+      .catch(error => {
+        console.error('Erro:', error.message);
+      });
+}
+
+function GetEmail(){
+  const idUsuario = "1";
+ 
+  const opcoes3 = {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
   
+  // URL do servidor JSON (substitua pelo seu endpoint correto)
+  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
+  
+  fetch(url1, opcoes3)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro ao tentar obter o peso do usuário');
+      }
+      return response.json();
+    })
+    .then(data => {
+      let variavel = data.email;
+      return variavel;
+    })
+    .catch(error => {
+      console.error('Erro:', error.message);
+    });
+}
+
   
 
 
