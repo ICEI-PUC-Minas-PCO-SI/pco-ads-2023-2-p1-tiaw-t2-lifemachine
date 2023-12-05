@@ -711,37 +711,37 @@
                     {
                       "nome": "Supino Reto",
                       "series": 4,
-                      "repetições": "6 à 8",
+                      "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Supino Inclinado com Barra",
                       "series": 4,
-                      "repetições": "6 à 8",
+                      "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Crucifixo",
                       "series": 4,
-                      "repetições": "8 à 10",
+                      "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Paralelas",
                       "series": 4,
-                      "repetições": "8 à 10",
+                      "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Tríceps Pulley",
                       "series": 4,
-                      "repetições": "10 à 12",
+                      "repetições": "12",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
                       "nome": "Tríceps Testa",
                       "series": 4,
-                      "repetições": "10 à 12",
+                      "repetições": "12",
                       "tempoDescanso": "1:30 minutos"
                     }
                   ]
@@ -752,31 +752,31 @@
                     {
                       "nome": "Barra Fixa",
                       "series": 4,
-                      "repetições": "6 à 8",
+                      "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Puxada na Polia Alta",
                       "series": 4,
-                      "repetições": "6 à 8",
+                      "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Remada Curvada",
                       "series": 4,
-                      "repetições": "8 à 10",
+                      "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Rosca Direta",
                       "series": 4,
-                      "repetições": "10 à 12",
+                      "repetições": "12",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
                       "nome": "Rosca Alternada com Halteres",
                       "series": 4,
-                      "repetições": "10 à 12",
+                      "repetições": "12",
                       "tempoDescanso": "1:30 minutos"
                     }
                   ]
@@ -787,37 +787,37 @@
                     {
                       "nome": "Agachamento",
                       "series": 4,
-                      "repetições": "6 à 8",
+                      "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Leg Press",
                       "series": 4,
-                      "repetições": "6 à 8",
+                      "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Afundo",
                       "series": 4,
-                      "repetições": "8 à 10",
+                      "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Cadeira Extensora",
                       "series": 4,
-                      "repetições": "8 à 10",
+                      "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Elevação de Panturrilha em Pé",
                       "series": 5,
-                      "repetições": "10 à 12",
+                      "repetições": "12",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
                       "nome": "Elevação de Panturrilha Sentado",
                       "series": 5,
-                      "repetições": "10 à 12",
+                      "repetições": "12",
                       "tempoDescanso": "1:30 minutos"
                     }
                   ]
@@ -1061,6 +1061,8 @@
                       "tempoDescanso": "1 minuto"
                     },
                     {
+                      "series": 3,
+                      "repetições": "12",
                       "nome": "Extensão de Tríceps",
                       "tempo": "10 Minutos"
                     }
@@ -1072,31 +1074,31 @@
                     {
                       "nome": "Pull-Up",
                       "series": 4,
-                      "repetições": "6 à 8",
+                      "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Lat Pulldown",
                       "series": 4,
-                      "repetições": "6 à 8",
+                      "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Bent Over Row",
                       "series": 4,
-                      "repetições": "8 à 10",
+                      "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Barbell Curl",
                       "series": 4,
-                      "repetições": "10 à 12",
+                      "repetições": "12",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
                       "nome": "Alternate Dumbbell Curl",
                       "series": 4,
-                      "repetições": "10 à 12",
+                      "repetições": "12",
                       "tempoDescanso": "1:30 minutos"
                     }
                   ]
@@ -1107,37 +1109,37 @@
                     {
                       "nome": "Squat",
                       "series": 4,
-                      "repetições": "6 à 8",
+                      "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Leg Press",
                       "series": 4,
-                      "repetições": "6 à 8",
+                      "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Lunge",
                       "series": 4,
-                      "repetições": "8 à 10",
+                      "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Leg Extension",
                       "series": 4,
-                      "repetições": "8 à 10",
+                      "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
                       "nome": "Standing Calf Raise",
                       "series": 5,
-                      "repetições": "10 à 12",
+                      "repetições": "12",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
                       "nome": "Seated Calf Raise",
                       "series": 5,
-                      "repetições": "10 à 12",
+                      "repetições": "12",
                       "tempoDescanso": "1:30 minutos"
                     }
                   ]
