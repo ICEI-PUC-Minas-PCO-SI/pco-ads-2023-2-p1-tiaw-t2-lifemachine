@@ -9,14 +9,17 @@ $(document).ready(function () {
             users = data || [];
             x = users.length + 1;
 
-         
             $('#registration-form').submit(function (event) {
                 event.preventDefault();
 
                 var camposFaltando = validarCampos();
 
                 if (camposFaltando.length > 0) {
-                    alert('Por favor, preencha todos os campos obrigatórios (' + camposFaltando.join(', ') + ').');
+                    var mensagem = 'Por favor, complete os seguintes campos antes de prosseguir:';
+                    camposFaltando.forEach(function(campo) {
+                        mensagem += '\n- ' + RefinamentoCadastro(campo);
+                    });
+                    alert(mensagem);
                     return;
                 }
 
@@ -85,22 +88,47 @@ $(document).ready(function () {
         var camposObrigatorios = ['#email', '#password', '#1password', '#nome', '#Altura', '#Peso', '#Objetivo', '#DiasDeTreino', '#Sexo'];
         var camposFaltando = [];
 
-        for (var x = 0; x < camposObrigatorios.length; x++) {
-            var campo = $(camposObrigatorios[x]);
-            if (!campo.val()) {
-                camposFaltando.push(camposObrigatorios[x]);
+        camposObrigatorios.forEach(function(campo) {
+            var valorCampo = $(campo).val();
+            if (!valorCampo || valorCampo.trim() === '') {
+                camposFaltando.push(campo);
             }
-        }
+        });
 
         return camposFaltando;
     }
 
     function emailUsado(email) {
-        for (var x = 0; x < users.length; x++) {
-            if (users[x].email === email) {
+        for (var i = 0; i < users.length; i++) {
+            if (users[i].email === email) {
                 return true;
             }
         }
         return false;
     }
-})
+
+    function RefinamentoCadastro(campo) {
+        switch(campo) {
+            case '#email':
+                return 'E-mail';
+            case '#password':
+                return 'Senha';
+            case '#1password':
+                return 'Confirmação de Senha';
+            case '#nome':
+                return 'Nome';
+            case '#Altura':
+                return 'Altura';
+            case '#Peso':
+                return 'Peso';
+            case '#Objetivo':
+                return 'Objetivo';
+            case '#DiasDeTreino':
+                return 'Dias de Treino';
+            case '#Sexo':
+                return 'Sexo';
+            default:
+                return campo;
+        }
+    }
+});

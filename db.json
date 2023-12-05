@@ -36,6 +36,18 @@
       "diasDeTreino": "3-dias",
       "sexo": "M",
       "PesoMes11": 85
+    },
+    {
+      "id": "4",
+      "Nome": "Caio Ferreira Araujo",
+      "email": "teste@2.com",
+      "senha": "123",
+      "altura": "1,23",
+      "peso": "123",
+      "objetivo": "perder-peso",
+      "diasDeTreino": "3-dias",
+      "sexo": "N",
+      "PesoMes11": 123
     }
   ],
   "treinos": [
