@@ -1,8 +1,8 @@
-var dbMensagens
-var mensagemArea
-var mensagemAleatoria
+var dbMensagens;
+var areaMensagem;
+var mensagemAleatoria;
 
-// Cria um numero aleatorio
+// Cria um número aleatório
 let min = 1;
 let max = 10;
 let numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -15,11 +15,16 @@ fetch('mensagens-motivacionais.json')
 
     mensagemAleatoria = dbMensagens[numeroAleatorio-1].message;
     
-    //Define a variavel com a area que sera colocada a mensagem
-    mensagemArea = document.getElementById("frase-motivacional");
+    // Define a variável com a área que será colocada a mensagem
+    areaMensagem = document.getElementById("frase-motivacional");
     
-    mensagemArea.innerHTML = `${mensagemAleatoria}`;
+    areaMensagem.innerHTML = `${mensagemAleatoria}`;
   })
   .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
 
-
+// Funcao para enviar feedback
+function enviarFeedback() {
+ 
+    var opiniaoUsuario = document.querySelector(".comentario-input").value;
+    window.location.href = "mailto:LifeMachine@gmail.com.br?subject=Feedback&body=" + encodeURIComponent(opiniaoUsuario);
+}

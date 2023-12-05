@@ -175,16 +175,19 @@
             <article class="container-fluid mt-4 coment-area">
                 <div class="row-fluid d-flex flex-column">
                     <div class="col text-center">
-                        <h1 id="opiniao">DEIXE SUA OPINIÃO</h1>
+                        <h1 id="Feedback">DEIXE SUA OPINIÃO</h1>
                     </div>
                     <div class="col text-center">
-                        <input class="comentario-input" type="text" maxlength="130">
+                        <form id="opiniao" action="mailto:caiof13araujo@gmail.com" method="post" enctype="text/plain">
+                            <input class="comentario-input" type="text" maxlength="130" name="opinion">
+                        </form>
                     </div>
                     <div class="col text-center">
-                        <button class="btn btn-block mt-2">Enviar</button>
+                        <button class="btn btn-block mt-2" onclick="enviarFeedback()">Enviar</button>
                     </div>
                 </div>
             </article>
+            
 
         </main>
     </div>
