@@ -39,9 +39,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url('./img/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .seta{
@@ -110,7 +107,7 @@ main {
 }
 
 .ficha {
-    text-align: center;
+    margin-left: 65px;
 }
 .peso_indicador{
     text-align: center;
