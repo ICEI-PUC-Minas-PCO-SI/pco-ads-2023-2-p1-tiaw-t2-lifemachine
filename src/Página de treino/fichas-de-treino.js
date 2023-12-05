@@ -5,13 +5,14 @@ const fichas3X = document.getElementById('carrossel-fichas')
 const fichas5X = document.getElementById('carrossel-fichas')
 var btnFicha = document.getElementById('btn-nova-ficha')
 
-btnFicha.addEventListener('click',alterarFicha)
-function alterarFicha(){
-   let a = JSON.parse(localStorage.getItem('ficha'))
-    if (a == 0 || a == ""){
+btnFicha.addEventListener('click', alterarFicha)
+function alterarFicha() {
+
+    let a = JSON.parse(localStorage.getItem('ficha'))
+    if (a == 0) {
         localStorage.setItem('ficha', 1)
     }
-    else if(a == 1){
+    else if (a == 1) {
         localStorage.setItem('ficha', 0)
     }
     location.reload()
@@ -73,7 +74,7 @@ fetch(`${URL2}/${auxID}`)
 </div>
 `
                     }
-                    else if (diasDisp == '5-dias'){
+                    else if (diasDisp == '5-dias') {
                         let aux = objetivo.treino5xSemana
                         fichas5X.innerHTML = `
 <div class="carousel-item active">
@@ -194,7 +195,7 @@ fetch(`${URL2}/${auxID}`)
 
 `
                     }
-                    else if (diasDisp == '5-dias'){
+                    else if (diasDisp == '5-dias') {
                         let aux = objetivo.treino5xSemana
                         fichas5X.innerHTML = `
 <div class="carousel-item active">
@@ -312,7 +313,7 @@ fetch(`${URL2}/${auxID}`)
 
 `
                     }
-                    else if (diasDisp == '5-dias'){
+                    else if (diasDisp == '5-dias') {
                         let aux = objetivo.treino5xSemana
                         fichas5X.innerHTML = `
 <div class="carousel-item active">
