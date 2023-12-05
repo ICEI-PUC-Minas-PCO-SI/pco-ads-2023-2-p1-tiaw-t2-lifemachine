@@ -14,6 +14,8 @@ $(document).ready(function () {
 
                 if (cadastrado) {
                     localStorage.setItem('userName', Detalhescadastrousuario(data, email).Nome);
+                    localStorage.setItem('pesoAtual', Detalhescadastrousuario(data, email).peso);
+                    localStorage.setItem('atualID', Detalhescadastrousuario(data, email).id)
                     window.location.href = '../Página principal/pagina principal.html';
                     
                 } else {
