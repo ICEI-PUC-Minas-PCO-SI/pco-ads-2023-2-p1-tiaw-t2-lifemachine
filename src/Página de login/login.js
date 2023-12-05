@@ -21,7 +21,7 @@ $(document).ready(function () {
                 } else {
                     let erro = document.getElementById('erro-login')
                     erro.innerHTML = `
-                    <small class="text-danger">Login e/ou senha inválido(s). Tente novamente.</small>
+                    <small class="text-danger">Login e/ou senha inválido(s). Por favor, tente novamente. Em caso de esquecimento de senha, entre em contato conosco pelo e-mail LifeMachine@gmail.com.</small>
                     `
                 }
             })
