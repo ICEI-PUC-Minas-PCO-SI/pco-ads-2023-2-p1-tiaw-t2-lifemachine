@@ -86,16 +86,20 @@ function GetNome() {
   const idUsuario = "1";
   const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
 
-  try {
-    const response = axios.get(url1);
-    if (response.status !== 200) {
-      throw new Error('Erro ao tentar obter o peso do usuário');
-    }
-    return response.json();
-  } catch (error) {
-    console.error('Erro:', error.message);
-    return null;
-  }
+  fetch(url1, opcoes3)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro ao tentar obter o peso do usuário');
+      }
+      return response.json();
+    })
+    .then(data => {
+      let a = data.Nome;
+      sessionStorage.setItem("nome", "sd");
+    })
+    .catch(error => {
+      console.error('Erro:', error.message);
+    });
 }
 
  
@@ -186,7 +190,33 @@ function GetEmail(){
     });
 }
 
+function deleteData() {
+  const idUsuario = "2";
+ 
+  const opcoes = {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
   
+  // URL do servidor JSON (substitua pelo seu endpoint correto)
+  const url = `http://localhost:3000/usuarios/${idUsuario}`;
+  
+  fetch(url, opcoes)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro ao tentar apagar os dados do usuário');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Dados apagados com sucesso');
+    })
+    .catch(error => {
+      console.error('Erro:', error.message);
+    });
+}
 
 
 

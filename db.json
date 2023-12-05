@@ -1,25 +1,12 @@
 {
   "usuarios": [
     {
-      "Nome": "sd",
+      "Nome": 10,
       "senha": "3-dias",
-      "objetivo": "perder-peso",
+      "objetivo": "manter-peso",
       "diasDeTreino": "",
-      "sexo": "sd",
+      "sexo": 10,
       "id": "1"
-    },
-    {
-      "id": "2",
-      "Nome": "Pedro",
-      "email": "pedro@teste.com",
-      "senha": "abc123efg456",
-      "altura": "183",
-      "peso": "72",
-      "objetivo": "ganhar-peso",
-      "diasDeTreino": "5-dias",
-      "sexo": "M",
-      "PesoMes11": 72,
-      "QtdTreinoMes11": 1
     }
   ]
 }
