@@ -1,10 +1,11 @@
 {
   "usuarios": [
     {
-      "senha": "7-dias",
-      "peso": "68",
+      "Nome": "sd",
+      "senha": "3-dias",
       "objetivo": "perder-peso",
       "diasDeTreino": "",
+      "sexo": "sd",
       "id": "1"
     },
     {

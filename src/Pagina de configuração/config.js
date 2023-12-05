@@ -1,4 +1,5 @@
 
+
 function verificarValor(valor) {
   const regex = /[!@#$%^&*(),.?":{}|<>]/;
   const numero = parseInt(valor);
@@ -16,7 +17,7 @@ function verificarValor(valor) {
 }
 
 
-function campos(){
+function campo(){
   let disposicao = document.getElementById("DiasDeTreino");
   let peso = document.getElementById("Peso");
   let objetivo = document.getElementById("Objetivo");
@@ -26,20 +27,20 @@ function campos(){
     alert("Não é possível atualizar, preencha pelo um dos campos!");
   }
   if(verificarValor(peso.value)==false){
-    let Peso = "Peso";
+    let peso = "Peso";
     methodPost(disposicao.value, peso.value, objetivo.value, senha.value)
   }
   else{
     alert("Valor de Peso inválido");
   }
 }
-
-
 function methodPost(valorSenha, valorPeso, valorObjetivo, valorDiasDeTreino){
 
-let valorNome = GetNome();
+GetSexo();
+
+let valorNome = sessionStorage.getItem("sexo");
 let valorAltura = GetAltura();
-let valorSexo = GetSexo();
+let valorSexo = sessionStorage.getItem("sexo");
 let valorEmail = GetEmail();
 
 let dadosAtualizados = {
@@ -73,42 +74,31 @@ fetch(url1, opcoes)
     return response.json();
   })
   .then(data => {
-    console.log('Atualizado', data);
+    console.log('Atualizado com sucesso:', data);
   })
   .catch(error => {
     console.error('Erro:', error.message);
   });
 }
 
-function GetNome(){
+
+function GetNome() {
   const idUsuario = "1";
- 
-  const opcoes3 = {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  };
-  
-  // URL do servidor JSON (substitua pelo seu endpoint correto)
   const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
-  
-  fetch(url1, opcoes3)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Erro ao tentar obter');
-      }
-      return response.json();
-    })
-    .then(data => {
-      let variavel = data.Nome;
-      return variavel;
-    })
-    .catch(error => {
-      console.error('Erro:', error.message);
-    });
+
+  try {
+    const response = axios.get(url1);
+    if (response.status !== 200) {
+      throw new Error('Erro ao tentar obter o peso do usuário');
+    }
+    return response.json();
+  } catch (error) {
+    console.error('Erro:', error.message);
+    return null;
   }
-  
+}
+
+ 
 function GetSexo(){
   const idUsuario = "1";
  
@@ -130,13 +120,14 @@ function GetSexo(){
       return response.json();
     })
     .then(data => {
-      let variavel = data.sexo;
-      return variavel;
+      let a = data.sexo;
+      sessionStorage.setItem("sexo", "sd");
     })
     .catch(error => {
       console.error('Erro:', error.message);
     });
 }
+
 
 function GetAltura(){
     const idUsuario = "1";
@@ -159,8 +150,7 @@ function GetAltura(){
         return response.json();
       })
       .then(data => {
-        let variavel = data.altura;
-        return variavel;
+         variavel = data.altura;
       })
       .catch(error => {
         console.error('Erro:', error.message);
