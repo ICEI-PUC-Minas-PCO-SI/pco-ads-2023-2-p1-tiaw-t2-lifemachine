@@ -2,7 +2,22 @@ const URL1 = 'http://localhost:3000/treinos';
 const URL2 = 'http://localhost:3000/usuarios';
 var auxID = JSON.parse(localStorage.getItem('atualID'))
 const fichas3X = document.getElementById('carrossel-fichas')
-const fichas5X = document.getElementById('carrossel-fichas') 
+const fichas5X = document.getElementById('carrossel-fichas')
+var btnFicha = document.getElementById('btn-nova-ficha')
+
+btnFicha.addEventListener('click', alterarFicha)
+function alterarFicha() {
+
+    let a = JSON.parse(localStorage.getItem('ficha'))
+    if (a == 0) {
+        localStorage.setItem('ficha', 1)
+    }
+    else if (a == 1) {
+        localStorage.setItem('ficha', 0)
+    }
+    location.reload()
+}
+
 
 fetch(`${URL2}/${auxID}`)
     .then(res => res.json())
@@ -14,7 +29,7 @@ fetch(`${URL2}/${auxID}`)
             fetch(`${URL1}`)
                 .then(res => res.json())
                 .then(fichas => {
-                    var objetivo = fichas[0].objetivos[0].emagrecer
+                    var objetivo = fichas[0].objetivos[0].emagrecer[JSON.parse(localStorage.getItem('ficha'))]
                     if (diasDisp == '3-dias') {
                         let aux = objetivo.treino3xSemana
                         fichas3X.innerHTML = `
@@ -59,7 +74,7 @@ fetch(`${URL2}/${auxID}`)
 </div>
 `
                     }
-                    else if (diasDisp == '5-dias'){
+                    else if (diasDisp == '5-dias') {
                         let aux = objetivo.treino5xSemana
                         fichas5X.innerHTML = `
 <div class="carousel-item active">
@@ -135,7 +150,7 @@ fetch(`${URL2}/${auxID}`)
             fetch(`${URL1}`)
                 .then(res => res.json())
                 .then(fichas => {
-                    var objetivo = fichas[0].objetivos[0].ganharPeso
+                    var objetivo = fichas[0].objetivos[0].ganharPeso[JSON.parse(localStorage.getItem('ficha'))]
                     if (diasDisp == '3-dias') {
                         let aux = objetivo.treino3xSemana
                         fichas3X.innerHTML = `
@@ -180,7 +195,7 @@ fetch(`${URL2}/${auxID}`)
 
 `
                     }
-                    else if (diasDisp == '5-dias'){
+                    else if (diasDisp == '5-dias') {
                         let aux = objetivo.treino5xSemana
                         fichas5X.innerHTML = `
 <div class="carousel-item active">
@@ -255,7 +270,7 @@ fetch(`${URL2}/${auxID}`)
             fetch(`${URL1}`)
                 .then(res => res.json())
                 .then(fichas => {
-                    var objetivo = fichas[0].objetivos[0].manterPeso
+                    var objetivo = fichas[0].objetivos[0].manterPeso[JSON.parse(localStorage.getItem('ficha'))]
                     if (diasDisp == '3-dias') {
                         let aux = objetivo.treino3xSemana
                         fichas3X.innerHTML = `
@@ -298,7 +313,7 @@ fetch(`${URL2}/${auxID}`)
 
 `
                     }
-                    else if (diasDisp == '5-dias'){
+                    else if (diasDisp == '5-dias') {
                         let aux = objetivo.treino5xSemana
                         fichas5X.innerHTML = `
 <div class="carousel-item active">
@@ -368,6 +383,3 @@ fetch(`${URL2}/${auxID}`)
         }
 
     });
-
-
-
