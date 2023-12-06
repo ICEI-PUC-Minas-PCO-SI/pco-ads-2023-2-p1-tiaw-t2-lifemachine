@@ -233,7 +233,7 @@ function deleteData() {
   const url = `http://localhost:3000/usuarios/${idUsuario}`;
   
   fetch(url, opcoes)
-    .then(response => {
+  .then(response => {
       if (!response.ok) {
         throw new Error('Erro ao tentar apagar os dados do usuário');
       }
@@ -241,6 +241,7 @@ function deleteData() {
     })
     .then(data => {
       console.log('Dados apagados com sucesso');
+      window.location.href = '../Página de login/login.html';
     })
     .catch(error => {
       console.error('Erro:', error.message);
