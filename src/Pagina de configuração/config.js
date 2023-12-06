@@ -1,6 +1,3 @@
-function setID(){
-  const a = localStorage.setItem("atualID", "1");
-}
 function atualizarFoto(){
   let a = document.getElementById("galeria");
   let b = `<div id="usuB" onclick="abrirGaleria()" class="row img-usuario-style">
