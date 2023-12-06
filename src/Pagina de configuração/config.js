@@ -1,3 +1,6 @@
+function setID(){
+  const a = localStorage.setItem("atualID", "1");
+}
 
 
 function verificarValor(valor) {
@@ -28,18 +31,18 @@ function campo(){
   }
   if(verificarValor(peso.value)==false){
     if(!disposicao.value){
-      methodPost(sessionStorage.getItem("objetivo"), peso.value, objetivo.value, senha.value)
+      methodPost(senha.value, peso.value, objetivo.value, sessionStorage.getItem("objetivo"))
     }
     if(!peso.value){
-      methodPost(disposicao.value, sessionStorage.getItem("peso"), objetivo.value, senha.value)
+      methodPost(senha.value, sessionStorage.getItem("peso"), objetivo.value, disposicao.value)
     }
     if(!objetivo.value){
-      methodPost(disposicao.value, peso.value, sessionStorage.getItem("objetivo"), senha.value)
+      methodPost(senha.value, peso.value, sessionStorage.getItem("objetivo"),disposicao.value)
     }
     if(!senha.value){
-      methodPost(disposicao.value, peso.value, objetivo.value, sessionStorage.getItem("senha"))
+      methodPost(sessionStorage.getItem("senha"), peso.value, objetivo.value, disposicao.value )
     }
-    methodPost(disposicao.value, peso.value, objetivo.value, senha.value)
+    methodPost(senha.value, peso.value, objetivo.value, disposicao.value);
   }
   else{
     alert("Valor de Peso inválido");
@@ -73,8 +76,8 @@ const opcoes = {
   },
   body: JSON.stringify(dadosAtualizados)
 };
-
-const url1 = `http://localhost:3000/usuarios/1`;
+const a = localStorage.getItem("atualID");
+const url1 = `http://localhost:3000/usuarios/${a}`;
 
 // Envia a requisição
 fetch(url1, opcoes)
@@ -94,8 +97,15 @@ fetch(url1, opcoes)
 
 
 function GetNome() {
-  const idUsuario = "1";
+  const idUsuario = localStorage.getItem("atualID");
   const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
+
+  const opcoes3 = {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
 
   fetch(url1, opcoes3)
     .then(response => {
@@ -114,7 +124,7 @@ function GetNome() {
 }
 
 function GetSexo(){
-  const idUsuario = "1";
+  const idUsuario = localStorage.getItem("atualID");
  
   const opcoes3 = {
     method: 'GET',
@@ -143,7 +153,7 @@ function GetSexo(){
 }
 
 function GetAltura(){
-    const idUsuario = "1";
+    const idUsuario = localStorage.getItem("atualID");
    
     const opcoes3 = {
       method: 'GET',
@@ -172,7 +182,7 @@ function GetAltura(){
 }
 
 function GetEmail(){
-  const idUsuario = "1";
+  const idUsuario = localStorage.getItem("atualID");
  
   const opcoes3 = {
     method: 'GET',
@@ -201,7 +211,7 @@ function GetEmail(){
 }
 
 function GetSenha(){
-  const idUsuario = "1";
+  const idUsuario = localStorage.getItem("atualID");
  
   const opcoes3 = {
     method: 'GET',
@@ -230,7 +240,7 @@ function GetSenha(){
 }
 
 function GetPeso(){
-  const idUsuario = "1";
+  const idUsuario = localStorage.getItem("atualID");
  
   const opcoes3 = {
     method: 'GET',
@@ -251,7 +261,7 @@ function GetPeso(){
     })
     .then(data => {
       let variavel = data.peso;
-      sessionStorage.setItem("email", variavel);
+      sessionStorage.setItem("peso", variavel);
     })
     .catch(error => {
       console.error('Erro:', error.message);
@@ -259,7 +269,7 @@ function GetPeso(){
 }
 
 function GetObjetivo(){
-  const idUsuario = "1";
+  const idUsuario = localStorage.getItem("atualID");
  
   const opcoes3 = {
     method: 'GET',
@@ -287,8 +297,37 @@ function GetObjetivo(){
     });
 }
 
+function GetDiasDeTreino(){
+  const idUsuario = localStorage.getItem("atualID");
+ 
+  const opcoes3 = {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
+  
+  // URL do servidor JSON (substitua pelo seu endpoint correto)
+  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
+  
+  fetch(url1, opcoes3)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro ao tentar obter o peso do usuário');
+      }
+      return response.json();
+    })
+    .then(data => {
+      let variavel = data.diasDeTreino;
+      sessionStorage.setItem("dias de treino", variavel);
+    })
+    .catch(error => {
+      console.error('Objetivo', error.message);
+    });
+}
+
 function deleteData() {
-  const idUsuario = "2";
+  const idUsuario = localStorage.getItem("atualID");
  
   const opcoes = {
     method: 'DELETE',
