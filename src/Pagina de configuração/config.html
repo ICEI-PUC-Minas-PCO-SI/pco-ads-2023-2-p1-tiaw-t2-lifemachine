@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="media.css">
 </head>
 
-<body onload="setID() ;GetNome(); GetSexo(); GetDiasDeTreino(); GetAltura(); GetEmail(); GetSenha(); GetPeso(); GetObjetivo()">
+<body onload="setID(); GetNome(); teste()">
     <div class="all-content">
         <!-- Cabeçalho da página -->
 
@@ -40,28 +40,21 @@
         <main class="container">
             <div class="row-fluid d-flex flex-wrap wraping-container">
                 <div class="col-3 d-flex flex-column align-items-center justify-content-center size-of-the-user-img">
-                    <div class="row img-usuario-style">
+                    <div id="usuB" onclick="abrirGaleria()" class="row img-usuario-style">
                         <img class="img-fluid" src="./img/usuario.jpg" alt="">
                     </div>
-                    <div class="row">
-                        <h2>Usuario</h2>
+                    <div id="usuA" class="row">
+                        <script>
+                            function teste(){
+                                let a = document.getElementById("usuA");
+                                let b = sessionStorage.getItem("nome");
+                                let v = `<h5>${b}</h5>`;
+                                a.innerHTML = v;
+                            }
+                        </script>
+                        <h5>Usuário</h5>
                     </div>
                 </div>
-
-                <div class="gallery">
-                    <figure class="gallery__item gallery__item--2">
-                      <img src="./img/usuario.jpg" class="gallery__img" alt="Image 2">
-                    </figure>
-                    <figure class="gallery__item gallery__item--3">
-                      <img src="./img/usuario.jpg" class="gallery__img" alt="Image 3">
-                    </figure>
-                    <figure class="gallery__item gallery__item--4">
-                      <img src="./img/usuario.jpg" class="gallery__img" alt="Image 4">
-                    </figure>
-                    <figure class="gallery__item gallery__item--5">
-                      <img src="./img/usuario.jpg" class="gallery__img" alt="Image 5">
-                    </figure>
-                  </div>
                 
                 <!-- ABA de configuracoes -->
                 <div class="col">
@@ -81,7 +74,7 @@
                         <!-- Input/Label /~; -->
                         <div class="d-flex align-items-center justify-content-center create-space-between-labels">
                             <label for="Peso" class="label-style form-label text-start fw-bold">Peso (kg):</label>
-                            <input type="text" placeholder="ad" class="input-style form-control Peso" id="Peso" name="Peso">
+                            <input type="text" placeholder="" class="input-style form-control Peso" id="Peso" name="Peso">
                             <label for="Objetivo" class="label-style form-label text-start fw-bold">Objetivo:</label>
                             <select class="input-style form-select" id="Objetivo" name="Objetivo">
                                 <option value=""></option>

@@ -1,6 +1,59 @@
 function setID(){
   const a = localStorage.setItem("atualID", "1");
 }
+function atualizarFoto(){
+  let a = document.getElementById("galeria");
+  let b = `<div id="usuB" onclick="abrirGaleria()" class="row img-usuario-style">
+  <img class="img-fluid" src="./img/emoji1.png" alt="">
+  </div>`
+  a.innerHTML = b;
+}
+
+function abrirGaleria(){
+  let a = document.getElementById("usuB");
+  let b = `<div id="galeria" class="gallery">
+  <figure onclick="atualizarFoto()" class="gallery__item gallery__item--2">
+    <img src="./img/emoji1.png" class="gallery__img" alt="Image 2">
+  </figure>
+  <figure class="gallery__item gallery__item--3">
+    <img src="./img/emoji2.png" class="gallery__img" alt="Image 3">
+  </figure>
+  <figure class="gallery__item gallery__item--4">
+    <img src="./img/emoji3.png" class="gallery__img" alt="Image 4">
+  </figure>
+  <figure class="gallery__item gallery__item--5">
+    <img src="./img/emoji4.png" class="gallery__img" alt="Image 5">
+  </figure>
+</div>`
+  a.innerHTML = b;
+}
+
+function GetNome() {
+  const idUsuario = localStorage.getItem("atualID");
+  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
+
+  const opcoes3 = {
+      method: 'GET',
+      headers: {
+      'Content-Type': 'application/json'
+      }
+  };
+
+  fetch(url1, opcoes3)
+      .then(response => {
+      if (!response.ok) {
+          throw new Error('Erro ao tentar obter o peso do usuário');
+      }
+      return response.json();
+      })
+      .then(data => {
+      let a = data.Nome;
+      sessionStorage.setItem("nome", a);
+      })
+      .catch(error => {
+      console.error('Erro:', error.message);
+      });
+  }
 
 
 function verificarValor(valor) {
@@ -13,316 +66,159 @@ function verificarValor(valor) {
   else if (numero > 200) {
     return true;
   }
-  else if (isNaN(numero)) {
-    return true;
-  }
   return false
 }
 
 
 function campo(){
-  let disposicao = document.getElementById("DiasDeTreino");
-  let peso = document.getElementById("Peso");
-  let objetivo = document.getElementById("Objetivo");
-  let senha = document.getElementById("password");
+  var disposicao = document.getElementById("DiasDeTreino");
+  var peso = document.getElementById("Peso");
+  var objetivo = document.getElementById("Objetivo");
+  var senha = document.getElementById("password");
 
-  if (!disposicao.value && !peso.value && !objetivo.value && !senha.value){
+  if (!disposicao.value && !objetivo.value && !senha.value && !senha.value){
     alert("Não é possível atualizar, preencha pelo um dos campos!");
   }
   if(verificarValor(peso.value)==false){
-    if(!disposicao.value){
-      methodPost(senha.value, peso.value, objetivo.value, sessionStorage.getItem("objetivo"))
+    if(disposicao.value){
+      GetDiasDeTreino(disposicao.value)
     }
-    if(!peso.value){
-      methodPost(senha.value, sessionStorage.getItem("peso"), objetivo.value, disposicao.value)
+    if(peso.value){
+      GetPeso(peso.value)
     }
-    if(!objetivo.value){
-      methodPost(senha.value, peso.value, sessionStorage.getItem("objetivo"),disposicao.value)
+    if(objetivo.value){
+      GetObjetivo(objetivo.value)
     }
-    if(!senha.value){
-      methodPost(sessionStorage.getItem("senha"), peso.value, objetivo.value, disposicao.value )
+    if(senha.value){
+      GetSenha(senha.value)
     }
-    methodPost(senha.value, peso.value, objetivo.value, disposicao.value);
   }
   else{
     alert("Valor de Peso inválido");
   }
 }
-function methodPost(valorSenha, valorPeso, valorObjetivo, valorDiasDeTreino){
 
-
-
-let valorNome = sessionStorage.getItem("nome");
-let valorAltura = sessionStorage.getItem("altura");
-let valorSexo = sessionStorage.getItem("sexo");
-let valorEmail = sessionStorage.getItem("email");
-
-let dadosAtualizados = {
-  Nome: valorNome,
-  email: valorEmail,
-  senha: valorSenha,
-  altura: valorAltura,
-  peso: valorPeso,
-  objetivo: valorObjetivo,
-  diasDeTreino: valorDiasDeTreino,
-  sexo: valorSexo,
-};
-
-// Configuração da requisição
-const opcoes = {
-  method: 'PUT',
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify(dadosAtualizados)
-};
-const a = localStorage.getItem("atualID");
-const url1 = `http://localhost:3000/usuarios/${a}`;
-
-// Envia a requisição
-fetch(url1, opcoes)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Erro ao tentar atualizar');
-    }
-    return response.json();
-  })
-  .then(data => {
-    console.log('Atualizado com sucesso:', data);
-  })
-  .catch(error => {
-    console.error('Erro:', error.message);
-  });
-}
-
-
-function GetNome() {
-  const idUsuario = localStorage.getItem("atualID");
-  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
-
-  const opcoes3 = {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json'
-    }
+function GetSenha(valorSenha){
+  const dadosAtualizados = {
+    senha: valorSenha
   };
 
-  fetch(url1, opcoes3)
+  const opcoes = {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(dadosAtualizados)
+  };
+  const a = localStorage.getItem("atualID");
+  const url1 = `http://localhost:3000/usuarios/${a}`;
+
+  // Envia a requisição
+  fetch(url1, opcoes)
     .then(response => {
       if (!response.ok) {
-        throw new Error('Erro ao tentar obter o peso do usuário');
+        throw new Error('Erro ao tentar atualizar');
       }
       return response.json();
     })
     .then(data => {
-      let a = data.Nome;
-      sessionStorage.setItem("nome", a);
+      console.log('Atualizado com sucesso:', data);
     })
     .catch(error => {
       console.error('Erro:', error.message);
     });
 }
 
-function GetSexo(){
-  const idUsuario = localStorage.getItem("atualID");
- 
-  const opcoes3 = {
-    method: 'GET',
+function GetPeso(valorPeso){
+  const dadosAtualizados = {
+    peso: valorPeso
+  };
+
+  const opcoes = {
+    method: 'PATCH',
     headers: {
       'Content-Type': 'application/json'
-    }
+    },
+    body: JSON.stringify(dadosAtualizados)
   };
-  
-  // URL do servidor JSON (substitua pelo seu endpoint correto)
-  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
-  
-  fetch(url1, opcoes3)
+  const a = localStorage.getItem("atualID");
+  const url1 = `http://localhost:3000/usuarios/${a}`;
+
+  // Envia a requisição
+  fetch(url1, opcoes)
     .then(response => {
       if (!response.ok) {
-        throw new Error('Erro ao tentar obter o peso do usuário');
+        throw new Error('Erro ao tentar atualizar');
       }
       return response.json();
     })
     .then(data => {
-      let a = data.sexo;
-      sessionStorage.setItem("sexo", a);
+      console.log('Atualizado com sucesso:', data);
     })
     .catch(error => {
       console.error('Erro:', error.message);
     });
 }
 
-function GetAltura(){
-    const idUsuario = localStorage.getItem("atualID");
-   
-    const opcoes3 = {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    };
-    
-    // URL do servidor JSON (substitua pelo seu endpoint correto)
-    const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
-    
-    fetch(url1, opcoes3)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Erro ao tentar obter o peso do usuário');
-        }
-        return response.json();
-      })
-      .then(data => {
-         variavel = data.altura;
-         sessionStorage.setItem("altura", variavel);
-      })
-      .catch(error => {
-        console.error('Erro:', error.message);
-      });
-}
+function GetObjetivo(valorObjetivo){
+  const dadosAtualizados = {
+    objetivo: valorObjetivo
+  };
 
-function GetEmail(){
-  const idUsuario = localStorage.getItem("atualID");
- 
-  const opcoes3 = {
-    method: 'GET',
+  const opcoes = {
+    method: 'PATCH',
     headers: {
       'Content-Type': 'application/json'
-    }
+    },
+    body: JSON.stringify(dadosAtualizados)
   };
-  
-  // URL do servidor JSON (substitua pelo seu endpoint correto)
-  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
-  
-  fetch(url1, opcoes3)
+  const a = localStorage.getItem("atualID");
+  const url1 = `http://localhost:3000/usuarios/${a}`;
+
+  // Envia a requisição
+  fetch(url1, opcoes)
     .then(response => {
       if (!response.ok) {
-        throw new Error('Erro ao tentar obter o peso do usuário');
+        throw new Error('Erro ao tentar atualizar');
       }
       return response.json();
     })
     .then(data => {
-      let variavel = data.email;
-      sessionStorage.setItem("email", variavel);
+      console.log('Atualizado com sucesso:', data);
     })
     .catch(error => {
       console.error('Erro:', error.message);
     });
 }
 
-function GetSenha(){
-  const idUsuario = localStorage.getItem("atualID");
- 
-  const opcoes3 = {
-    method: 'GET',
+function GetDiasDeTreino(valorDiasDeTreino){
+  const dadosAtualizados = {
+    diasDeTreino: valorDiasDeTreino
+  };
+
+  const opcoes = {
+    method: 'PATCH',
     headers: {
       'Content-Type': 'application/json'
-    }
+    },
+    body: JSON.stringify(dadosAtualizados)
   };
-  
-  // URL do servidor JSON (substitua pelo seu endpoint correto)
-  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
-  
-  fetch(url1, opcoes3)
+  const a = localStorage.getItem("atualID");
+  const url1 = `http://localhost:3000/usuarios/${a}`;
+
+  // Envia a requisição
+  fetch(url1, opcoes)
     .then(response => {
       if (!response.ok) {
-        throw new Error('Erro ao tentar obter o peso do usuário');
+        throw new Error('Erro ao tentar atualizar');
       }
       return response.json();
     })
     .then(data => {
-      let variavel = data.senha;
-      sessionStorage.setItem("senha", variavel);
+      console.log('Atualizado com sucesso:', data);
     })
     .catch(error => {
       console.error('Erro:', error.message);
-    });
-}
-
-function GetPeso(){
-  const idUsuario = localStorage.getItem("atualID");
- 
-  const opcoes3 = {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  };
-  
-  // URL do servidor JSON (substitua pelo seu endpoint correto)
-  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
-  
-  fetch(url1, opcoes3)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Erro ao tentar obter o peso do usuário');
-      }
-      return response.json();
-    })
-    .then(data => {
-      let variavel = data.peso;
-      sessionStorage.setItem("peso", variavel);
-    })
-    .catch(error => {
-      console.error('Erro:', error.message);
-    });
-}
-
-function GetObjetivo(){
-  const idUsuario = localStorage.getItem("atualID");
- 
-  const opcoes3 = {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  };
-  
-  // URL do servidor JSON (substitua pelo seu endpoint correto)
-  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
-  
-  fetch(url1, opcoes3)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Erro ao tentar obter o peso do usuário');
-      }
-      return response.json();
-    })
-    .then(data => {
-      let variavel = data.objetivo;
-      sessionStorage.setItem("objetivo", variavel);
-    })
-    .catch(error => {
-      console.error('Objetivo', error.message);
-    });
-}
-
-function GetDiasDeTreino(){
-  const idUsuario = localStorage.getItem("atualID");
- 
-  const opcoes3 = {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  };
-  
-  // URL do servidor JSON (substitua pelo seu endpoint correto)
-  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
-  
-  fetch(url1, opcoes3)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Erro ao tentar obter o peso do usuário');
-      }
-      return response.json();
-    })
-    .then(data => {
-      let variavel = data.diasDeTreino;
-      sessionStorage.setItem("dias de treino", variavel);
-    })
-    .catch(error => {
-      console.error('Objetivo', error.message);
     });
 }
 
@@ -353,8 +249,6 @@ function deleteData() {
       console.error('Erro:', error.message);
     });
 }
-
-
 
 //#region Testes
 /*

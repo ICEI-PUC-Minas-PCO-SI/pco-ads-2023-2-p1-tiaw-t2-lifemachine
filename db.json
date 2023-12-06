@@ -3,13 +3,13 @@
     {
       "Nome": "123",
       "email": "123",
-      "senha": "4534",
       "altura": "123",
       "peso": "12",
-      "objetivo": "ganhar-peso",
-      "diasDeTreino": "5-dias",
+      "objetivo": "perder-peso",
+      "diasDeTreino": "3-dias",
       "sexo": "F",
-      "id": "1"
+      "id": "1",
+      "senha": 33434343434
     }
   ]
 }
