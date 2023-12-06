@@ -27,7 +27,18 @@ function campo(){
     alert("Não é possível atualizar, preencha pelo um dos campos!");
   }
   if(verificarValor(peso.value)==false){
-    let peso = "Peso";
+    if(!disposicao.value){
+      methodPost(sessionStorage.getItem("objetivo"), peso.value, objetivo.value, senha.value)
+    }
+    if(!peso.value){
+      methodPost(disposicao.value, sessionStorage.getItem("peso"), objetivo.value, senha.value)
+    }
+    if(!objetivo.value){
+      methodPost(disposicao.value, peso.value, sessionStorage.getItem("objetivo"), senha.value)
+    }
+    if(!senha.value){
+      methodPost(disposicao.value, peso.value, objetivo.value, sessionStorage.getItem("senha"))
+    }
     methodPost(disposicao.value, peso.value, objetivo.value, senha.value)
   }
   else{
@@ -36,12 +47,12 @@ function campo(){
 }
 function methodPost(valorSenha, valorPeso, valorObjetivo, valorDiasDeTreino){
 
-GetSexo();
 
-let valorNome = sessionStorage.getItem("sexo");
-let valorAltura = GetAltura();
+
+let valorNome = sessionStorage.getItem("nome");
+let valorAltura = sessionStorage.getItem("altura");
 let valorSexo = sessionStorage.getItem("sexo");
-let valorEmail = GetEmail();
+let valorEmail = sessionStorage.getItem("email");
 
 let dadosAtualizados = {
   Nome: valorNome,
@@ -95,14 +106,13 @@ function GetNome() {
     })
     .then(data => {
       let a = data.Nome;
-      sessionStorage.setItem("nome", "sd");
+      sessionStorage.setItem("nome", a);
     })
     .catch(error => {
       console.error('Erro:', error.message);
     });
 }
 
- 
 function GetSexo(){
   const idUsuario = "1";
  
@@ -125,13 +135,12 @@ function GetSexo(){
     })
     .then(data => {
       let a = data.sexo;
-      sessionStorage.setItem("sexo", "sd");
+      sessionStorage.setItem("sexo", a);
     })
     .catch(error => {
       console.error('Erro:', error.message);
     });
 }
-
 
 function GetAltura(){
     const idUsuario = "1";
@@ -155,6 +164,7 @@ function GetAltura(){
       })
       .then(data => {
          variavel = data.altura;
+         sessionStorage.setItem("altura", variavel);
       })
       .catch(error => {
         console.error('Erro:', error.message);
@@ -183,10 +193,97 @@ function GetEmail(){
     })
     .then(data => {
       let variavel = data.email;
-      return variavel;
+      sessionStorage.setItem("email", variavel);
     })
     .catch(error => {
       console.error('Erro:', error.message);
+    });
+}
+
+function GetSenha(){
+  const idUsuario = "1";
+ 
+  const opcoes3 = {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
+  
+  // URL do servidor JSON (substitua pelo seu endpoint correto)
+  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
+  
+  fetch(url1, opcoes3)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro ao tentar obter o peso do usuário');
+      }
+      return response.json();
+    })
+    .then(data => {
+      let variavel = data.senha;
+      sessionStorage.setItem("senha", variavel);
+    })
+    .catch(error => {
+      console.error('Erro:', error.message);
+    });
+}
+
+function GetPeso(){
+  const idUsuario = "1";
+ 
+  const opcoes3 = {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
+  
+  // URL do servidor JSON (substitua pelo seu endpoint correto)
+  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
+  
+  fetch(url1, opcoes3)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro ao tentar obter o peso do usuário');
+      }
+      return response.json();
+    })
+    .then(data => {
+      let variavel = data.peso;
+      sessionStorage.setItem("email", variavel);
+    })
+    .catch(error => {
+      console.error('Erro:', error.message);
+    });
+}
+
+function GetObjetivo(){
+  const idUsuario = "1";
+ 
+  const opcoes3 = {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
+  
+  // URL do servidor JSON (substitua pelo seu endpoint correto)
+  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
+  
+  fetch(url1, opcoes3)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro ao tentar obter o peso do usuário');
+      }
+      return response.json();
+    })
+    .then(data => {
+      let variavel = data.objetivo;
+      sessionStorage.setItem("objetivo", variavel);
+    })
+    .catch(error => {
+      console.error('Objetivo', error.message);
     });
 }
 
