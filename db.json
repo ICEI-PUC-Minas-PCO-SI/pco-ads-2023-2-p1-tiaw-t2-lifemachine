@@ -1084,31 +1084,31 @@
                   "nome": "Treino de Costas e Bíceps para Ganho de Massa",
                   "exercicios": [
                     {
-                      "nome": "Pull-Up",
+                      "nome": "Remada Baixa",
                       "series": 4,
                       "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Lat Pulldown",
+                      "nome": "Puxada Alta",
                       "series": 4,
                       "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Bent Over Row",
+                      "nome": "Remada Curvada",
                       "series": 4,
                       "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Barbell Curl",
+                      "nome": "Rosca Direta com Barra",
                       "series": 4,
                       "repetições": "12",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
-                      "nome": "Alternate Dumbbell Curl",
+                      "nome": "Rosca Alternada com Halteres",
                       "series": 4,
                       "repetições": "12",
                       "tempoDescanso": "1:30 minutos"
@@ -1119,7 +1119,7 @@
                   "nome": "Treino de Pernas e Panturrilhas para Ganho de Massa",
                   "exercicios": [
                     {
-                      "nome": "Squat",
+                      "nome": "Agachamento Livre",
                       "series": 4,
                       "repetições": "8",
                       "tempoDescanso": "2 minutos"
@@ -1131,25 +1131,25 @@
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Lunge",
+                      "nome": "Avanço",
                       "series": 4,
                       "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Leg Extension",
+                      "nome": "Extensão de Pernas",
                       "series": 4,
                       "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Standing Calf Raise",
+                      "nome": "Elevação de Panturrilha em Pé",
                       "series": 5,
                       "repetições": "12",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
-                      "nome": "Seated Calf Raise",
+                      "nome": "Elevação de Panturrilha Sentado",
                       "series": 5,
                       "repetições": "12",
                       "tempoDescanso": "1:30 minutos"
@@ -1162,37 +1162,37 @@
                   "nome": "Treino de Peito e Tríceps para Ganho de Massa",
                   "exercicios": [
                     {
-                      "nome": "Bench Press",
+                      "nome": "Supino Reto",
                       "series": 4,
                       "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Chest Fly",
+                      "nome": "Fly Peitoral",
                       "series": 4,
                       "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Cable Crossover",
+                      "nome": "Cross Over com Cabos",
                       "series": 4,
                       "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Parallel Bar Dips",
+                      "nome": "Paralelas",
                       "series": 4,
                       "repetições": "12",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Triceps Pushdown",
+                      "nome": "Pulldown para Tríceps",
                       "series": 4,
                       "repetições": "12",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Bench Dips",
+                      "nome": "Fundos",
                       "series": 4,
                       "repetições": "12",
                       "tempoDescanso": "2 minutos"
@@ -1203,37 +1203,37 @@
                   "nome": "Treino de Costas e Bíceps para Ganho de Massa",
                   "exercicios": [
                     {
-                      "nome": "Pull-Up",
+                      "nome": "Remada Baixa",
                       "series": 4,
                       "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Lat Pulldown",
+                      "nome": "Puxada Alta",
                       "series": 4,
                       "repetições": "8",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Bent Over Row",
+                      "nome": "Remada Curvada",
                       "series": 4,
                       "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Single-Arm Dumbbell Row",
+                      "nome": "Remada Unilateral com Halteres",
                       "series": 4,
                       "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Barbell Curl",
+                      "nome": "Rosca Direta com Barra",
                       "series": 4,
                       "repetições": "12",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Hammer Curl",
+                      "nome": "Rosca Martelo",
                       "series": 4,
                       "repetições": "12",
                       "tempoDescanso": "2 minutos"
@@ -1244,7 +1244,7 @@
                   "nome": "Treino de Pernas e Panturrilhas",
                   "exercicios": [
                     {
-                      "nome": "Squat",
+                      "nome": "Agachamento Livre",
                       "series": 4,
                       "repetições": "10",
                       "tempoDescanso": "2 minutos"
@@ -1256,25 +1256,25 @@
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Lunge",
+                      "nome": "Avanço",
                       "series": 3,
                       "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Leg Extension",
+                      "nome": "Extensão de Pernas",
                       "series": 3,
                       "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Standing Calf Raise",
+                      "nome": "Elevação de Panturrilha em Pé",
                       "series": 5,
                       "repetições": "15",
                       "tempoDescanso": "1 minuto"
                     },
                     {
-                      "nome": "Seated Calf Raise",
+                      "nome": "Elevação de Panturrilha Sentado",
                       "series": 5,
                       "repetições": "15",
                       "tempoDescanso": "1 minuto"
@@ -1285,31 +1285,31 @@
                   "nome": "Treino de Ombros",
                   "exercicios": [
                     {
-                      "nome": "Overhead Press com Halteres",
+                      "nome": "Desenvolvimento com Halteres Acima da Cabeça",
                       "series": 4,
                       "repetições": "10",
                       "tempoDescanso": "01:30 minutos"
                     },
                     {
-                      "nome": "Lateral Raise",
+                      "nome": "Elevação Lateral",
                       "series": 3,
                       "repetições": "10",
                       "tempoDescanso": "1 minuto"
                     },
                     {
-                      "nome": "Upright Row",
+                      "nome": "Remada Alta",
                       "series": 3,
                       "repetições": "10",
                       "tempoDescanso": "1 minuto"
                     },
                     {
-                      "nome": "Face Pull",
+                      "nome": "Puxada de Rosto",
                       "series": 3,
                       "repetições": "10",
                       "tempoDescanso": "1 minuto"
                     },
                     {
-                      "nome": "Barbell Shoulder Press",
+                      "nome": "Pressão de Ombros com Barra",
                       "series": 3,
                       "repetições": "10",
                       "tempoDescanso": "1 minuto"
@@ -1320,37 +1320,37 @@
                   "nome": "Treino de Pernas e Panturrilhas",
                   "exercicios": [
                     {
-                      "nome": "Hip Thrust",
+                      "nome": "Impulso de Quadril",
                       "series": 3,
                       "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Leg Curl",
+                      "nome": "Flexão de Pernas",
                       "series": 3,
                       "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Barbell Lunge",
+                      "nome": "Avanço com Barra",
                       "series": 3,
                       "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Weighted Glute Bridge",
+                      "nome": "Ponte Glútea com Peso",
                       "series": 3,
                       "repetições": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Standing Calf Raise",
+                      "nome": "Elevação de Panturrilha em Pé",
                       "series": 5,
                       "repetições": "15",
                       "tempoDescanso": "1 minuto"
                     },
                     {
-                      "nome": "Seated Calf Raise",
+                      "nome": "Elevação de Panturrilha Sentado",
                       "series": 5,
                       "repetições": "15",
                       "tempoDescanso": "1 minuto"
@@ -1653,31 +1653,31 @@
                   "nome": "Treino Full Body para Manter Peso",
                   "exercicios": [
                     {
-                      "nome": "Squat",
+                      "nome": "Agachamento",
                       "series": 3,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Barbell Incline Bench Press",
+                      "nome": "Supino Inclinado com Barra",
                       "series": 3,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Lat Pulldown",
+                      "nome": "Puxada na Polia Alta",
                       "series": 3,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Barbell Curl",
+                      "nome": "Rosca Direta com Barra",
                       "series": 3,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Standing Calf Raise",
+                      "nome": "Elevação de Panturrilha em Pé",
                       "series": 4,
                       "repeticoes": "12",
                       "tempoDescanso": "1:30 minutos"
@@ -1688,31 +1688,31 @@
                   "nome": "Treino Full Body para Manter Peso",
                   "exercicios": [
                     {
-                      "nome": "Deadlift",
+                      "nome": "Levantamento Terra",
                       "series": 3,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Push-up",
+                      "nome": "Flexão de Braço",
                       "series": 3,
                       "repeticoes": "12",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Bent Over Row",
+                      "nome": "Remada Curvada",
                       "series": 3,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Barbell Shoulder Press",
+                      "nome": "Desenvolvimento com Barra",
                       "series": 3,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Crunches",
+                      "nome": "Abdominais",
                       "series": 4,
                       "repeticoes": "15",
                       "tempoDescanso": "1:30 minutos"
@@ -1723,31 +1723,31 @@
                   "nome": "Treino Full Body para Manter Peso",
                   "exercicios": [
                     {
-                      "nome": "Front Squat",
+                      "nome": "Agachamento Frontal",
                       "series": 3,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Dumbbell Bench Press",
+                      "nome": "Supino Reto com Halteres",
                       "series": 3,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Pull-up",
+                      "nome": "Barra Fixa",
                       "series": 3,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Alternate Dumbbell Curl",
+                      "nome": "Rosca Alternada com Halteres",
                       "series": 3,
                       "repeticoes": "12",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Hanging Leg Raise",
+                      "nome": "Elevação de Pernas Suspensas",
                       "series": 4,
                       "repeticoes": "12",
                       "tempoDescanso": "1:30 minutos"
@@ -1760,7 +1760,7 @@
                   "nome": "Treino para Manter Peso - Quadríceps",
                   "exercicios": [
                     {
-                      "nome": "Back Squat",
+                      "nome": "Agachamento Livre",
                       "series": 4,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
@@ -1772,19 +1772,19 @@
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
-                      "nome": "Front Squat",
+                      "nome": "Agachamento Frontal",
                       "series": 4,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Sumo Squat",
+                      "nome": "Agachamento Sumô",
                       "series": 4,
                       "repeticoes": "12",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
-                      "nome": "Hack Squat",
+                      "nome": "Agachamento Hack",
                       "series": 4,
                       "repeticoes": "10",
                       "tempoDescanso": "1:30 minutos"
@@ -1795,31 +1795,31 @@
                   "nome": "Treino para Manter Peso - Peito",
                   "exercicios": [
                     {
-                      "nome": "Flat Bench Press",
+                      "nome": "Supino Reto com Barra",
                       "series": 4,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Incline Dumbbell Press",
+                      "nome": "Supino Inclinado com Halteres",
                       "series": 4,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Push-ups",
+                      "nome": "Flexão de Braço",
                       "series": 4,
                       "repeticoes": "12",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Dumbbell Flyes",
+                      "nome": "Fly com Halteres",
                       "series": 4,
                       "repeticoes": "12",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
-                      "nome": "Decline Bench Press",
+                      "nome": "Supino Declinado com Barra",
                       "series": 4,
                       "repeticoes": "10",
                       "tempoDescanso": "1:30 minutos"
@@ -1830,31 +1830,31 @@
                   "nome": "Treino para Manter Peso - Costas",
                   "exercicios": [
                     {
-                      "nome": "Lat Pulldown",
+                      "nome": "Puxada Alta",
                       "series": 4,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Bent-Over Row",
+                      "nome": "Remada Curvada",
                       "series": 4,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Pull-up",
+                      "nome": "Remada Baixa",
                       "series": 4,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Machine Row",
+                      "nome": "Remada na Máquina",
                       "series": 4,
                       "repeticoes": "12",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
-                      "nome": "Machine Pulldown",
+                      "nome": "Puxada na Máquina",
                       "series": 4,
                       "repeticoes": "12",
                       "tempoDescanso": "1:30 minutos"
@@ -1865,31 +1865,31 @@
                   "nome": "Treino para Manter Peso - Ombros",
                   "exercicios": [
                     {
-                      "nome": "Military Press",
+                      "nome": "Pressão Militar",
                       "series": 4,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Dumbbell Shoulder Press",
+                      "nome": "Pressão de Ombros com Halteres",
                       "series": 4,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Standing Calf Raise",
+                      "nome": "Elevação de Panturrilha em Pé",
                       "series": 4,
                       "repeticoes": "12",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
-                      "nome": "Hanging Leg Raise",
+                      "nome": "Elevação de Pernas Suspensas",
                       "series": 4,
                       "repeticoes": "12",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
-                      "nome": "Plank",
+                      "nome": "Prancha",
                       "series": 3,
                       "tempo": "45 segundos",
                       "tempoDescanso": "1 minuto"
@@ -1900,31 +1900,31 @@
                   "nome": "Treino para Manter Peso - Braços",
                   "exercicios": [
                     {
-                      "nome": "Barbell Curl",
+                      "nome": "Rosca Direta com Barra",
                       "series": 3,
                       "repeticoes": "12",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
-                      "nome": "Alternating Dumbbell Curl",
+                      "nome": "Rosca Alternada com Halteres",
                       "series": 3,
                       "repeticoes": "12",
                       "tempoDescanso": "2 minutos"
                     },
                     {
-                      "nome": "Scott Curl",
+                      "nome": "Rosca Scott",
                       "series": 3,
                       "repeticoes": "12",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
-                      "nome": "Incline Push-Up",
+                      "nome": "Flexão de Braço Inclinada",
                       "series": 4,
                       "repeticoes": "10",
                       "tempoDescanso": "1:30 minutos"
                     },
                     {
-                      "nome": "Dumbbell Shoulder Press",
+                      "nome": "Pressão de Ombros com Halteres",
                       "series": 4,
                       "repeticoes": "10",
                       "tempoDescanso": "2 minutos"
