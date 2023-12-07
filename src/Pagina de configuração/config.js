@@ -1,5 +1,3 @@
-
-
 function atualizarFoto(){
   let elemento = document.getElementById("Emogi");
   let elementoSelect = elemento.options[elemento.selectedIndex].value;
@@ -266,7 +264,7 @@ function deleteData() {
   const url = `http://localhost:3000/usuarios/${idUsuario}`;
   
   fetch(url, opcoes)
-    .then(response => {
+  .then(response => {
       if (!response.ok) {
         throw new Error('Erro ao tentar apagar os dados do usuário');
       }
