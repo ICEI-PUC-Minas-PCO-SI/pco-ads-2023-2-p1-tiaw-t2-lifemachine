@@ -9,51 +9,66 @@ function atualizarFoto(){
     let c = './img/avatar/Avatar1.png'
     localStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    Visibilidade();
   }
   if(elementoSelect=="Avatar2"){
     let c = './img/avatar/Avatar2.png'
     localStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    Visibilidade();
   }
   if(elementoSelect=="Avatar3"){
     let c = './img/avatar/Avatar3.png'
     localStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    Visibilidade();
   }
   if(elementoSelect=="Avatar4"){
     let c = './img/avatar/Avatar4.png'
     localStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    Visibilidade();
   }
   if(elementoSelect=="Avatar5"){
     let c = './img/avatar/Avatar5.png'
     localStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    Visibilidade();
   }
   if(elementoSelect=="Avatar6"){
     let c = './img/avatar/Avatar6.png'
     localStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    Visibilidade();
   }
   if(elementoSelect=="Avatar7"){
     let c = './img/avatar/Avatar7.png'
     localStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    Visibilidade();
   }
   if(elementoSelect=="Avatar8"){
     let c = './img/avatar/Avatar8.png'
     localStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    Visibilidade();
   }
   if(elementoSelect=="Avatar9"){
     let c = './img/avatar/Avatar9.png'
     localStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    Visibilidade();
   }
   
+}
 
-
-
+function Visibilidade(){
+  let a = document.getElementById("esconde");
+  if (a.style.visibility === "visible") {
+    a.style.visibility = "hidden";
+  } else {
+    a.style.visibility = "visible";
+  }
 }
 
 
@@ -86,8 +101,8 @@ function GetNome() {
 
 
 function verificarValor(valor) {
-  const regex = /[!@#$%^&*(),.?":{}|<>]/;
-  const numero = parseInt(valor);
+  const regex = /[!@#$%^&*()?":{}|<>]/;
+  const numero = parseFloat(valor.replace(',', '.'));
 
   if (regex.test(valor)) {
     return true;
@@ -95,7 +110,7 @@ function verificarValor(valor) {
   else if (numero > 200) {
     return true;
   }
-  return false
+  return false;
 }
 
 function campo(){
@@ -112,7 +127,8 @@ function campo(){
       GetDiasDeTreino(disposicao.value)
     }
     if(peso.value){
-      GetPeso(peso.value)
+      var pesoFloat = parseFloat(peso.value.replace(',', '.'));
+      GetPeso(pesoFloat);
     }
     if(objetivo.value){
       GetObjetivo(objetivo.value)

@@ -4,12 +4,12 @@
       "Nome": "4555",
       "email": "123",
       "altura": "123",
-      "peso": "12",
-      "objetivo": "perder-peso",
-      "diasDeTreino": "3-dias",
+      "peso": 110.5,
+      "objetivo": "ganhar-peso",
+      "diasDeTreino": "7-dias",
       "sexo": "F",
       "id": "1",
-      "senha": 33434343434
+      "senha": "0000"
     }
   ]
 }

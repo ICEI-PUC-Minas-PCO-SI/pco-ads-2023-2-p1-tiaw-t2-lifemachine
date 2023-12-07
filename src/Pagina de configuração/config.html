@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="media.css">
 </head>
 
-<body onload="GetNome(); teste(); testando()">
+<body onload="GetNome(); AtualizandoNomeUsuario(); AtualizandoImagemInicial()">
     <div class="all-content">
         <!-- Cabeçalho da página -->
 
@@ -44,7 +44,7 @@
                         <img id="imagemUsuario" class="img-fluid" src="" alt="">
                     </div>
                     <script>
-                        function testando(){
+                        function AtualizandoImagemInicial(){
                             let a = document.getElementById("imagemUsuario");
                             let b = localStorage.getItem("caminhoImagemUsuario");
                             a.src = b;
@@ -52,31 +52,40 @@
                     </script>
                     <div id="usuA" class="row">
                         <script>
-                            function teste(){
+                            function AtualizandoNomeUsuario(){
                                 let a = document.getElementById("usuA");
                                 let b = sessionStorage.getItem("nome");
-                                let v = `<h5>${b}</h5>`;
+                                let v = `<h2>${b}</h2>`;
                                 a.innerHTML = v;
                             }
                         </script>
                         <h5>Usuário</h5>
                     </div>
-                    <label for="Emogi" class="label-style form-label text-start fw-bold">Trocar a foto:</label>
-                    <select class="input-style form-select" id="Emogi" name="Emogi">
-                        <option value=""></option>
-                        <option value="Avatar1">Avatar1</option>
-                        <option value="Avatar2">Avatar2</option>
-                        <option value="Avatar3">Avatar3</option>
-                        <option value="Avatar4">Avatar4</option>
-                        <option value="Avatar5">Avatar5</option>
-                        <option value="Avatar6">Avatar6</option>
-                        <option value="Avatar7">Avatar7</option>
-                        <option value="Avatar8">Avatar8</option>
-                        <option value="Avatar9">Avatar9</option>
-                    </select>
-                    <div style="padding-top: 10px;" class="input-control-password">
-                        <button onclick="atualizarFoto()" class="btn btn-primary" style="color: white; background-color: red; border: none;">Alterar</button>
+                    <span onclick="Visibilidade()" id="botaoVisibilidade" style="margin-bottom: 10px;" class="badge rounded-pill bg-primary">Alterar Avatar</span>
+                    <script>
+                        var botaoVisibilidade = document.getElementById('botaoVisibilidade');
+                        botaoVisibilidade.onmouseover = function() {
+                        this.style.cursor = "pointer";
+                        };
+                    </script>
+                    <div  id="esconde" class="input-style">
+                        <select class="input-style form-select" id="Emogi" name="Emogi">
+                            <option value=""></option>
+                            <option value="Avatar1">Avatar1</option>
+                            <option value="Avatar2">Avatar2</option>
+                            <option value="Avatar3">Avatar3</option>
+                            <option value="Avatar4">Avatar4</option>
+                            <option value="Avatar5">Avatar5</option>
+                            <option value="Avatar6">Avatar6</option>
+                            <option value="Avatar7">Avatar7</option>
+                            <option value="Avatar8">Avatar8</option>
+                            <option value="Avatar9">Avatar9</option>
+                        </select>
+                        <div style="padding-top: 10px; padding-left: 50px;" class="input-control-password">
+                            <button onclick="atualizarFoto()" class="btn btn-primary" style="color: white; background-color: red; border: none;">Alterar</button>
+                        </div>
                     </div>
+
                 </div>
 
 
@@ -98,8 +107,8 @@
 
                         <!-- Input/Label /~; -->
                         <div class="d-flex align-items-center justify-content-center create-space-between-labels">
-                            <label for="Peso" class="label-style form-label text-start fw-bold">Peso (kg):</label>
-                            <input type="text" placeholder="" class="input-style form-control Peso" id="Peso" name="Peso">
+                            <label for="Peso" class="label-style form-label text-start fw-bold">Peso(kg)</label>
+                            <input type="text" placeholder="Exemplo: 67,5" class="input-style form-control Peso" id="Peso" name="Peso">
                             <label for="Objetivo" class="label-style form-label text-start fw-bold">Objetivo:</label>
                             <select class="input-style form-select" id="Objetivo" name="Objetivo">
                                 <option value=""></option>
