@@ -1,32 +1,63 @@
-function setID(){
-  const a = localStorage.setItem("atualID", "1");
-}
+
+
 function atualizarFoto(){
-  let a = document.getElementById("galeria");
-  let b = `<div id="usuB" onclick="abrirGaleria()" class="row img-usuario-style">
-  <img class="img-fluid" src="./img/emoji1.png" alt="">
-  </div>`
-  a.innerHTML = b;
+  let elemento = document.getElementById("Emogi");
+  let elementoSelect = elemento.options[elemento.selectedIndex].value;
+  console.log(elementoSelect);
+
+  let b = document.getElementById("imagemUsuario");
+
+  if(elementoSelect=="Avatar1"){
+    let c = './img/avatar/Avatar1.png'
+    localStorage.setItem("caminhoImagemUsuario", c);
+    b.src = c;
+  }
+  if(elementoSelect=="Avatar2"){
+    let c = './img/avatar/Avatar2.png'
+    localStorage.setItem("caminhoImagemUsuario", c);
+    b.src = c;
+  }
+  if(elementoSelect=="Avatar3"){
+    let c = './img/avatar/Avatar3.png'
+    localStorage.setItem("caminhoImagemUsuario", c);
+    b.src = c;
+  }
+  if(elementoSelect=="Avatar4"){
+    let c = './img/avatar/Avatar4.png'
+    localStorage.setItem("caminhoImagemUsuario", c);
+    b.src = c;
+  }
+  if(elementoSelect=="Avatar5"){
+    let c = './img/avatar/Avatar5.png'
+    localStorage.setItem("caminhoImagemUsuario", c);
+    b.src = c;
+  }
+  if(elementoSelect=="Avatar6"){
+    let c = './img/avatar/Avatar6.png'
+    localStorage.setItem("caminhoImagemUsuario", c);
+    b.src = c;
+  }
+  if(elementoSelect=="Avatar7"){
+    let c = './img/avatar/Avatar7.png'
+    localStorage.setItem("caminhoImagemUsuario", c);
+    b.src = c;
+  }
+  if(elementoSelect=="Avatar8"){
+    let c = './img/avatar/Avatar8.png'
+    localStorage.setItem("caminhoImagemUsuario", c);
+    b.src = c;
+  }
+  if(elementoSelect=="Avatar9"){
+    let c = './img/avatar/Avatar9.png'
+    localStorage.setItem("caminhoImagemUsuario", c);
+    b.src = c;
+  }
+  
+
+
+
 }
 
-function abrirGaleria(){
-  let a = document.getElementById("usuB");
-  let b = `<div id="galeria" class="gallery">
-  <figure onclick="atualizarFoto()" class="gallery__item gallery__item--2">
-    <img src="./img/emoji1.png" class="gallery__img" alt="Image 2">
-  </figure>
-  <figure class="gallery__item gallery__item--3">
-    <img src="./img/emoji2.png" class="gallery__img" alt="Image 3">
-  </figure>
-  <figure class="gallery__item gallery__item--4">
-    <img src="./img/emoji3.png" class="gallery__img" alt="Image 4">
-  </figure>
-  <figure class="gallery__item gallery__item--5">
-    <img src="./img/emoji4.png" class="gallery__img" alt="Image 5">
-  </figure>
-</div>`
-  a.innerHTML = b;
-}
 
 function GetNome() {
   const idUsuario = localStorage.getItem("atualID");
@@ -68,7 +99,6 @@ function verificarValor(valor) {
   }
   return false
 }
-
 
 function campo(){
   var disposicao = document.getElementById("DiasDeTreino");
@@ -244,6 +274,7 @@ function deleteData() {
     })
     .then(data => {
       console.log('Dados apagados com sucesso');
+      window.location.href = '../Página de login/login.html';
     })
     .catch(error => {
       console.error('Erro:', error.message);

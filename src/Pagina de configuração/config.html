@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="media.css">
 </head>
 
-<body onload="setID(); GetNome(); teste()">
+<body onload="GetNome(); teste(); testando()">
     <div class="all-content">
         <!-- Cabeçalho da página -->
 
@@ -40,9 +40,16 @@
         <main class="container">
             <div class="row-fluid d-flex flex-wrap wraping-container">
                 <div class="col-3 d-flex flex-column align-items-center justify-content-center size-of-the-user-img">
-                    <div id="usuB" onclick="abrirGaleria()" class="row img-usuario-style">
-                        <img class="img-fluid" src="./img/usuario.jpg" alt="">
+                    <div id="usuB" class="row img-usuario-style">
+                        <img id="imagemUsuario" class="img-fluid" src="" alt="">
                     </div>
+                    <script>
+                        function testando(){
+                            let a = document.getElementById("imagemUsuario");
+                            let b = localStorage.getItem("caminhoImagemUsuario");
+                            a.src = b;
+                        }
+                    </script>
                     <div id="usuA" class="row">
                         <script>
                             function teste(){
@@ -54,7 +61,25 @@
                         </script>
                         <h5>Usuário</h5>
                     </div>
+                    <label for="Emogi" class="label-style form-label text-start fw-bold">Trocar a foto:</label>
+                    <select class="input-style form-select" id="Emogi" name="Emogi">
+                        <option value=""></option>
+                        <option value="Avatar1">Avatar1</option>
+                        <option value="Avatar2">Avatar2</option>
+                        <option value="Avatar3">Avatar3</option>
+                        <option value="Avatar4">Avatar4</option>
+                        <option value="Avatar5">Avatar5</option>
+                        <option value="Avatar6">Avatar6</option>
+                        <option value="Avatar7">Avatar7</option>
+                        <option value="Avatar8">Avatar8</option>
+                        <option value="Avatar9">Avatar9</option>
+                    </select>
+                    <div style="padding-top: 10px;" class="input-control-password">
+                        <button onclick="atualizarFoto()" class="btn btn-primary" style="color: white; background-color: red; border: none;">Alterar</button>
+                    </div>
                 </div>
+
+
                 
                 <!-- ABA de configuracoes -->
                 <div class="col">
