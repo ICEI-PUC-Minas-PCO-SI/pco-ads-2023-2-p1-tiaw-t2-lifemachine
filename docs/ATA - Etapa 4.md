@@ -8,4 +8,4 @@ Karolayne: Criação de todas as tarefas no Kanban, Responsavel pela criação d
 
 Erick :
 
-Daniel : 
+Daniel : Criação do funcionamento da página de configuração e de sonos com a calculadora de sono
