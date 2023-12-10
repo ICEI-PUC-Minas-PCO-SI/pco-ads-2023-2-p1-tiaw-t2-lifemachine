@@ -17,7 +17,7 @@ $(document).ready(function () {
                     localStorage.setItem('pesoAtual', Detalhescadastrousuario(data, email).peso);
                     localStorage.setItem('atualID', Detalhescadastrousuario(data, email).id)
                     localStorage.setItem('ficha', 0)
-                    window.location.href = '../Página principal/pagina principal.html';
+                    window.location.href = '../pagina-principal/pagina principal.html';
                     
                 } else {
                     let erro = document.getElementById('erro-login')
