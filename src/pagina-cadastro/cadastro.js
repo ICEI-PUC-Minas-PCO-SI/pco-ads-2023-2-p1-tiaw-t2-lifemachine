@@ -75,7 +75,7 @@ $(document).ready(function () {
                     .then(res => res.json())
                     .then(data => {
                         users = data.usuarios || [];
-                        window.location.href = '../Página de login/login.html';
+                        window.location.href = '../pagina-login/login.html';
                     })
                     .catch(error => {
                         console.error('Erro ao cadastrar usuário:', error);
