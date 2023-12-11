@@ -1,3 +1,34 @@
+function inicial(){
+  sessionStorage.setItem("atualID","1")
+}
+
+function onlyPeso(evento) {
+  var inputPeso = document.getElementById("Peso");
+  var code = evento.keyCode;
+  var valor = inputPeso.value;
+
+  if ((code < 48 || code > 57) && code !== 8 && code !== 46 && (code !== 44 || valor.includes(','))) {
+      evento.preventDefault();
+      return false;
+  }
+
+  maskPeso(inputPeso);
+}
+
+function maskPeso(elemento) {
+  var content = elemento.value.replace(/[^\d,]/g, '');
+  var formatted = '';
+
+  if (content.length > 0) {
+      var parts = content.split(',');
+      formatted = parts[0].substring(0, 3);
+      if (parts.length > 1) {
+          formatted += ',' + parts[1].substring(0, 1);
+      }
+      elemento.value = formatted;
+  }
+}
+
 function atualizarFoto(){
   let elemento = document.getElementById("Emogi");
   let elementoSelect = elemento.options[elemento.selectedIndex].value;
@@ -7,55 +38,55 @@ function atualizarFoto(){
 
   if(elementoSelect=="Avatar1"){
     let c = './img/avatar/Avatar1.png'
-    localStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     Visibilidade();
   }
   if(elementoSelect=="Avatar2"){
     let c = './img/avatar/Avatar2.png'
-    localStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     Visibilidade();
   }
   if(elementoSelect=="Avatar3"){
     let c = './img/avatar/Avatar3.png'
-    localStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     Visibilidade();
   }
   if(elementoSelect=="Avatar4"){
     let c = './img/avatar/Avatar4.png'
-    localStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     Visibilidade();
   }
   if(elementoSelect=="Avatar5"){
     let c = './img/avatar/Avatar5.png'
-    localStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     Visibilidade();
   }
   if(elementoSelect=="Avatar6"){
     let c = './img/avatar/Avatar6.png'
-    localStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     Visibilidade();
   }
   if(elementoSelect=="Avatar7"){
     let c = './img/avatar/Avatar7.png'
-    localStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     Visibilidade();
   }
   if(elementoSelect=="Avatar8"){
     let c = './img/avatar/Avatar8.png'
-    localStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     Visibilidade();
   }
   if(elementoSelect=="Avatar9"){
     let c = './img/avatar/Avatar9.png'
-    localStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     Visibilidade();
   }
@@ -71,12 +102,17 @@ function Visibilidade(){
   }
 }
 
+function sair(){
+  sessionStorage.clear();
+  window.location.href = '../Página de login/login.html';
+}
+
 function Reload(){
   location.reload()
 }
 
 function GetNome() {
-  const idUsuario = localStorage.getItem("atualID");
+  const idUsuario = sessionStorage.getItem("atualID");
   const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
 
   const opcoes3 = {
@@ -157,7 +193,7 @@ function GetSenha(valorSenha){
     },
     body: JSON.stringify(dadosAtualizados)
   };
-  const a = localStorage.getItem("atualID");
+  const a = sessionStorage.getItem("atualID");
   const url1 = `http://localhost:3000/usuarios/${a}`;
 
   // Envia a requisição
@@ -188,7 +224,7 @@ function GetPeso(valorPeso){
     },
     body: JSON.stringify(dadosAtualizados)
   };
-  const a = localStorage.getItem("atualID");
+  const a = sessionStorage.getItem("atualID");
   const url1 = `http://localhost:3000/usuarios/${a}`;
 
   // Envia a requisição
@@ -219,7 +255,7 @@ function GetObjetivo(valorObjetivo){
     },
     body: JSON.stringify(dadosAtualizados)
   };
-  const a = localStorage.getItem("atualID");
+  const a = sessionStorage.getItem("atualID");
   const url1 = `http://localhost:3000/usuarios/${a}`;
 
   // Envia a requisição
@@ -250,7 +286,7 @@ function GetDiasDeTreino(valorDiasDeTreino){
     },
     body: JSON.stringify(dadosAtualizados)
   };
-  const a = localStorage.getItem("atualID");
+  const a = sessionStorage.getItem("atualID");
   const url1 = `http://localhost:3000/usuarios/${a}`;
 
   // Envia a requisição
@@ -270,7 +306,7 @@ function GetDiasDeTreino(valorDiasDeTreino){
 }
 
 function deleteData() {
-  const idUsuario = localStorage.getItem("atualID");
+  const idUsuario = sessionStorage.getItem("atualID");
  
   const opcoes = {
     method: 'DELETE',
