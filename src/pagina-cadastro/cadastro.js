@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var URL = 'http://localhost:3000/usuarios';
+    var URL = 'https://json-server-life-machine.vercel.app/usuarios';
     var users = [];
     var x; 
 

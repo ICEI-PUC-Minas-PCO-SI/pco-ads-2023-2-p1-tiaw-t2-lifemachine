@@ -17,7 +17,7 @@ var jsonMes = `QtdTreinoMes` + mes
 
 
 
-const URL = 'http://localhost:3000/usuarios';
+const URL = 'https://json-server-life-machine.vercel.app/usuarios';
 var auxID = JSON.parse(localStorage.getItem('atualID'))
 
 fetch(`${URL}/${auxID}`)

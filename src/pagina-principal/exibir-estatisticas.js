@@ -1,4 +1,4 @@
-const URL = 'http://localhost:3000/usuarios';
+const URL = 'https://json-server-life-machine.vercel.app/usuarios';
 
 var dataAtual = new Date();
 var mes = dataAtual.getMonth();

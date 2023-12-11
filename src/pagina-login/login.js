@@ -1,4 +1,4 @@
-var URL = 'http://localhost:3000/usuarios';
+var URL = 'https://json-server-life-machine.vercel.app/usuarios';
 
 $(document).ready(function () {
     $('#login-form').submit(function (event) {
