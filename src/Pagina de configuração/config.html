@@ -16,6 +16,25 @@
 </head>
 
 <body onload="GetNome(); AtualizandoNomeUsuario(); AtualizandoImagemInicial()">
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">EXCLUIR CONTA
+            </h5>
+            </div>
+            <div class="modal-body">
+                <p>Esta ação não pode ser desfeita</p><br>
+                <p>Clique fora desta caixa para cancelar</p>
+            </div>
+            <div class="modal-footer">
+            <button onclick="Reload()" type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button onclick="deleteData()" type="button" class="btn btn-primary">Deletar Conta</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <div class="all-content">
         <!-- Cabeçalho da página -->
 
@@ -40,7 +59,7 @@
             <div class="row-fluid d-flex flex-wrap wraping-container">
                 <div class="col-3 d-flex flex-column align-items-center justify-content-center size-of-the-user-img">
                     <div id="usuB" class="row img-usuario-style">
-                        <img id="imagemUsuario" class="img-fluid" src="" alt="">
+                        <img id="imagemUsuario" class="img-fluid" src="./img/avatar/Avatar1.png" alt="">
                     </div>
                     <script>
                         function AtualizandoImagemInicial(){
@@ -133,30 +152,18 @@
                                 <button onclick="campo()" class="btn btn-primary" style="color: white; background-color: red; border: none;">SALVAR ALTERAÇÕES</button>
                             </div>
                             <!-- Botão para acionar modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ExemploModalCentralizado">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                                 Abrir modal de demonstração
                             </button>
                             
                             <!-- Modal -->
-    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Tem certeza dessa açao?</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Continuar</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            
+                            <!-- Modal -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
         </main>
