@@ -40,57 +40,97 @@ function atualizarFoto(){
     let c = './img/avatar/Avatar1.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar2"){
     let c = './img/avatar/Avatar2.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar3"){
     let c = './img/avatar/Avatar3.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar4"){
     let c = './img/avatar/Avatar4.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar5"){
     let c = './img/avatar/Avatar5.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar6"){
     let c = './img/avatar/Avatar6.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar7"){
     let c = './img/avatar/Avatar7.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar8"){
     let c = './img/avatar/Avatar8.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar9"){
     let c = './img/avatar/Avatar9.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
+    AtualizaFoto(c)
     Visibilidade();
   }
   
+}
+
+function AtualizaFoto(caminhoFoto){
+  const dadosAtualizados = {
+    imgUsuario: caminhoFoto
+  };
+
+  const opcoes = {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(dadosAtualizados)
+  };
+  const a = sessionStorage.getItem("atualID");
+  const url1 = `http://localhost:3000/usuarios/${a}`;
+
+  // Envia a requisição
+  fetch(url1, opcoes)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro ao tentar atualizar');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Atualizado com sucesso:', data);
+    })
+    .catch(error => {
+      console.error('Erro:', error.message);
+    });
 }
 
 function Visibilidade(){
@@ -181,6 +221,34 @@ function campo(){
   }
 }
 
+function GetImg() {
+  const idUsuario = sessionStorage.getItem("atualID");
+  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
+
+  const opcoes3 = {
+      method: 'GET',
+      headers: {
+      'Content-Type': 'application/json'
+      }
+  };
+
+  fetch(url1, opcoes3)
+      .then(response => {
+      if (!response.ok) {
+          throw new Error('Erro ao tentar obter o peso do usuário');
+      }
+      return response.json();
+      })
+      .then(data => {
+      let a = data.imgUsuario;
+      sessionStorage.setItem("caminhoImagemUsuario", a);
+      })
+      .catch(error => {
+      console.error('Erro:', error.message);
+      });
+  }
+
+
 function GetSenha(valorSenha){
   const dadosAtualizados = {
     senha: valorSenha
@@ -242,6 +310,7 @@ function GetPeso(valorPeso){
       console.error('Erro:', error.message);
     });
 }
+
 
 function GetObjetivo(valorObjetivo){
   const dadosAtualizados = {

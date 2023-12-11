@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="media.css">
 </head>
 
-<body onload="GetNome(); AtualizandoNomeUsuario(); AtualizandoImagemInicial(); inicial()">
+<body onload="GetNome(); AtualizandoNomeUsuario(); AtualizandoImagemInicial()">
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -62,6 +62,7 @@
                     </div>
                     <script>
                         function AtualizandoImagemInicial(){
+                            GetImg();
                             let a = document.getElementById("imagemUsuario");
                             let b = sessionStorage.getItem("caminhoImagemUsuario");
                             a.src = b;
