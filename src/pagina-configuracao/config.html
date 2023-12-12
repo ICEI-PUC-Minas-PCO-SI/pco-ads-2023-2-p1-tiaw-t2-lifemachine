@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life Machine</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -37,6 +38,19 @@
     <div class="all-content">
         <!-- Cabeçalho da página -->
 
+=======
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="config.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <script src="/src/Página principal/atualizadornome.js"></script> 
+    <div class="all-content">
+        <!-- Cabeçalho da página -->
+>>>>>>> origin/Develop
         <nav class="navbar navbar-expand-lg header-style">
             <div class="container-fluid">
                 <div class="d-flex flex-row align-items-center">
@@ -55,6 +69,7 @@
         </div>
 
         <main class="container">
+<<<<<<< HEAD
             <div class="row-fluid d-flex flex-wrap wraping-container">
                 <div class="col-3 d-flex flex-column align-items-center justify-content-center size-of-the-user-img">
                     <div id="usuB" class="row img-usuario-style">
@@ -108,13 +123,32 @@
 
 
                 
+=======
+
+            <div class="row-fluid d-flex flex-wrap wraping-container">
+                <!-- Imagem do usuario -->
+                <div class="col-3 d-flex flex-column align-items-center justify-content-center size-of-the-user-img">
+                    <div class="row img-usuario-style">
+                        <img class="img-fluid" src="./img/usuario.jpg" alt="">
+                    </div>
+                    <div class="row">
+                        <h2 id="Att-Nome" >Usuario</h2>
+                    </div>
+                </div>
+
+>>>>>>> origin/Develop
                 <!-- ABA de configuracoes -->
                 <div class="col">
                     <div class="label-forms-style d-flex flex-column justify-content-center">
 
                         <!-- Input/Label Disposicao -->
                         <div class="d-flex align-items-center justify-content-center create-space-between-labels">
+<<<<<<< HEAD
                             <label for="DiasDeTreino" class="label-style form-label text-start fw-bold">Rotina de treino:</label>
+=======
+                            <label for="DiasDeTreino"
+                                class="label-style form-label text-start fw-bold">Disposiçao:</label>
+>>>>>>> origin/Develop
                             <select class="input-style form-select" id="DiasDeTreino" name="DiasDeTreino">
                                 <option value=""></option>
                                 <option value="3-dias">3 Dias por Semana</option>
@@ -123,10 +157,21 @@
                             </select>
                         </div>
 
+<<<<<<< HEAD
                         <!-- Input/Label /~; -->
                         <div class="d-flex align-items-center justify-content-center create-space-between-labels">
                             <label for="Peso" class="label-style form-label text-start fw-bold">Peso(kg)</label>
                             <input onkeypress="onlyPeso(event)" type="text" placeholder="Exemplo: 67,5" class="input-style form-control Peso" id="Peso" name="Peso">
+=======
+                        <!-- Input/Label Peso -->
+                        <div class="d-flex align-items-center justify-content-center create-space-between-labels">
+                            <label for="Peso" class="label-style form-label text-start fw-bold">Peso (kg):</label>
+                            <input type="text" class="input-style form-control" id="Peso" name="Peso">
+                        </div>
+
+                        <!-- Input/Label Objetivo -->
+                        <div class="d-flex align-items-center justify-content-center create-space-between-labels">
+>>>>>>> origin/Develop
                             <label for="Objetivo" class="label-style form-label text-start fw-bold">Objetivo:</label>
                             <select class="input-style form-select" id="Objetivo" name="Objetivo">
                                 <option value=""></option>
@@ -136,6 +181,7 @@
                             </select>
                         </div>
 
+<<<<<<< HEAD
 
                         <!-- Input/Label Senhas -->
                         <div class="create-space-between-labels responsive-display">
@@ -155,12 +201,27 @@
                             </div>
                             <div class="input-control-password">
                                 <button onclick="campo()" class="btn btn-primary" style="color: white; background-color: red; border: none;">SALVAR ALTERAÇÕES</button>
+=======
+                        <!-- Input/Label Senhas -->
+                        <div class="create-space-between-labels responsive-display">
+                            <div class="input-control-password">
+                                <label for="password" class="label-style form-label text-start fw-bold">Senha:</label>
+                                <input type="password" class="input-style form-control" id="password" name="password">
+                            </div>
+                            <div class="input-control-password">
+                                <label for="1password" class="label-style form-label text-start fw-bold">Senha
+                                    Atual:</label>
+                                <input type="password" class="input-style form-control" id="1password" name="1password">
+>>>>>>> origin/Develop
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
         </div>
+=======
+>>>>>>> origin/Develop
 
 
         </main>

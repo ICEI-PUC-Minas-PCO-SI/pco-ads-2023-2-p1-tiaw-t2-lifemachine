@@ -14,18 +14,26 @@
     padding: 15px;
 }
 
+<<<<<<< HEAD
 #esconde{
     visibility: hidden;
 }
 
 
+=======
+>>>>>>> origin/Develop
 .footer-style p {
     font-size: 12px;
 }
 
 .all-content{
     max-width: 2500px;
+<<<<<<< HEAD
     min-width: 700px;
+=======
+    min-width: 400px;
+    margin: auto;
+>>>>>>> origin/Develop
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -41,6 +49,7 @@
     height: 100%;
 }
 
+<<<<<<< HEAD
 #usub{
 
 }
@@ -51,6 +60,13 @@
     padding: 10px 10px 10px 10px;
     width: auto;
     height: auto;
+=======
+.img-usuario-style{
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 15px;
+    border: 2px solid #FF0000;
+>>>>>>> origin/Develop
 }
 .size-of-the-user-img{
     padding: 30px;
@@ -88,6 +104,7 @@ main{
 .responsive-display {
     display: flex;
 }
+<<<<<<< HEAD
 
 .gallery {
     display: grid;
@@ -116,3 +133,5 @@ main{
         grid-template-rows: repeat(16, auto);
     }
 }
+=======
+>>>>>>> origin/Develop
