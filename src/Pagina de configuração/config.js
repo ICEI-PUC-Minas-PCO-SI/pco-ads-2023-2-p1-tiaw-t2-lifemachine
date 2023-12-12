@@ -115,7 +115,7 @@ function AtualizaFoto(caminhoFoto){
     body: JSON.stringify(dadosAtualizados)
   };
   const a = sessionStorage.getItem("atualID");
-  const url1 = `http://localhost:3000/usuarios/${a}`;
+  const url1 = `https://db-json-life-machine.onrender.com/usuarios/${a}`;
 
   // Envia a requisição
   fetch(url1, opcoes)
@@ -144,7 +144,7 @@ function Visibilidade(){
 
 function sair(){
   sessionStorage.clear();
-  window.location.href = '../Página de login/login.html';
+  window.location.href = '../pagina-login/login.html';
 }
 
 function Reload(){
@@ -153,7 +153,7 @@ function Reload(){
 
 function GetNome() {
   const idUsuario = sessionStorage.getItem("atualID");
-  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
+  const url1 = `https://db-json-life-machine.onrender.com/usuarios/${idUsuario}`;
 
   const opcoes3 = {
       method: 'GET',
@@ -223,7 +223,7 @@ function campo(){
 
 function GetImg() {
   const idUsuario = sessionStorage.getItem("atualID");
-  const url1 = `http://localhost:3000/usuarios/${idUsuario}`;
+  const url1 = `https://db-json-life-machine.onrender.com/usuarios/${idUsuario}`;
 
   const opcoes3 = {
       method: 'GET',
@@ -262,7 +262,7 @@ function GetSenha(valorSenha){
     body: JSON.stringify(dadosAtualizados)
   };
   const a = sessionStorage.getItem("atualID");
-  const url1 = `http://localhost:3000/usuarios/${a}`;
+  const url1 = `https://db-json-life-machine.onrender.com/usuarios/${a}`;
 
   // Envia a requisição
   fetch(url1, opcoes)
@@ -293,7 +293,7 @@ function GetPeso(valorPeso){
     body: JSON.stringify(dadosAtualizados)
   };
   const a = sessionStorage.getItem("atualID");
-  const url1 = `http://localhost:3000/usuarios/${a}`;
+  const url1 = `https://db-json-life-machine.onrender.com/usuarios/${a}`;
 
   // Envia a requisição
   fetch(url1, opcoes)
@@ -325,7 +325,7 @@ function GetObjetivo(valorObjetivo){
     body: JSON.stringify(dadosAtualizados)
   };
   const a = sessionStorage.getItem("atualID");
-  const url1 = `http://localhost:3000/usuarios/${a}`;
+  const url1 = `https://db-json-life-machine.onrender.com/usuarios/${a}`;
 
   // Envia a requisição
   fetch(url1, opcoes)
@@ -356,7 +356,7 @@ function GetDiasDeTreino(valorDiasDeTreino){
     body: JSON.stringify(dadosAtualizados)
   };
   const a = sessionStorage.getItem("atualID");
-  const url1 = `http://localhost:3000/usuarios/${a}`;
+  const url1 = `https://db-json-life-machine.onrender.com/usuarios/${a}`;
 
   // Envia a requisição
   fetch(url1, opcoes)
@@ -385,7 +385,7 @@ function deleteData() {
   };
   
   // URL do servidor JSON (substitua pelo seu endpoint correto)
-  const url = `http://localhost:3000/usuarios/${idUsuario}`;
+  const url = `https://db-json-life-machine.onrender.com/usuarios/${idUsuario}`;
   
   fetch(url, opcoes)
   .then(response => {
@@ -396,7 +396,7 @@ function deleteData() {
     })
     .then(data => {
       console.log('Dados apagados com sucesso');
-      window.location.href = '../Página de login/login.html';
+      window.location.href = '../pagina-login/login.html';
     })
     .catch(error => {
       console.error('Erro:', error.message);
