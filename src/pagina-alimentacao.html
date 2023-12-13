@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets-alimentacao/alimentacao.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets-alimentacao/media.css">
+    <link rel="shortcut icon" type="imagex/png" href="./Img/dumbbells_ico.png">
+    <title>LIFE MACHINE</title>
+
+</head>
+<body>
+
+    <div class="all-content">
+    <!-- Cabeçalho da página -->
+    <nav class="navbar navbar-expand-lg header-style">
+        <div class="container-fluid">
+            <div class="d-flex flex-row align-items-center">
+                <a class="navbar-brand" href="./pagina-principal.html"><img src="./assets-alimentacao/img/logo.png" alt="logo-lifeMachine"></a>
+                <h1 class="p-0 m-0">LifeMachine</h1>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Título "ALIMENTAÇÃO" -->
+    <div id="alimento" style="display: flex; align-items: center;">
+        <a href="./pagina-principal.html"><img class="img-fluid" src="./assets-alimentacao/img/horizontal-arrow.png"></a>
+        <h1>ALIMENTAÇÃO</h1>
+    </div>
+    
+    <!-- Contêiner principal de conteúdo -->
+    <div id="conteudo">
+        
+        <!-- Contêiner de dados -->
+        <div id="dados">
+            <div class="campo-input">
+                <label for="calorias">Calorias</label>
+                <input type="text" id="calorias" placeholder="">
+            </div>
+            <div class="campo-input">
+                <label for="carboidratos">Carboidratos</label>
+                <input type="text" id="carboidratos" placeholder="">
+            </div>
+            <div class="campo-input">
+                <label for="proteina">Proteína</label>
+                <input type="text" id="proteina" placeholder="">
+            </div>
+            <div class="campo-input">
+                <label for="gorduras">Gorduras</label>
+                <input type="text" id="gorduras" placeholder="">
+            </div>
+            <button onclick="calcularReceita()" style="background-color: #FF0000; color: #fff; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">Calcular Receita</button>
+          
+        </div>
+
+        <!-- Contêiner de receita -->
+        <div class="d-flex flex-row align-items-center flex-wrap justify-content-between" id="receita">
+            <!-- Aqui será exibida a receita sugerida -->
+        </div>
+        
+    </div>
+
+    <!-- Rodapé da página -->
+    <footer class="container-fluid footer-style d-flex align-items-center">
+        <div class="row-fluid">
+            
+            <p class="m-0 p-0">Copyright 2023</p>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./assets-alimentacao/alimentacao.js"></script>
+
+</html>
