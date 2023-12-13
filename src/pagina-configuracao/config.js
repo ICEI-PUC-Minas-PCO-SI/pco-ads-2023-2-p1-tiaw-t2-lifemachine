@@ -1,7 +1,3 @@
-function inicial(){
-  sessionStorage.setItem("atualID","1")
-}
-
 function onlyPeso(evento) {
   var inputPeso = document.getElementById("Peso");
   var code = evento.keyCode;
