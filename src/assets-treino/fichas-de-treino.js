@@ -1,6 +1,6 @@
-const URL1 = 'https://json-server-life-machine.vercel.app/treinos';
-const URL2 = 'https://json-server-life-machine.vercel.app/usuarios';
-var auxID = JSON.parse(localStorage.getItem('atualID'))
+const URL1 = 'https://db-json-life-machine.onrender.com/treinos';
+const URL2 = 'https://db-json-life-machine.onrender.com/usuarios';
+var auxID = JSON.parse(sessionStorage.getItem('atualID'))
 const fichas3X = document.getElementById('carrossel-fichas')
 const fichas5X = document.getElementById('carrossel-fichas')
 var btnFicha = document.getElementById('btn-nova-ficha')
@@ -8,12 +8,12 @@ var btnFicha = document.getElementById('btn-nova-ficha')
 btnFicha.addEventListener('click', alterarFicha)
 function alterarFicha() {
 
-    let a = JSON.parse(localStorage.getItem('ficha'))
+    let a = JSON.parse(sessionStorage.getItem('ficha'))
     if (a == 0) {
-        localStorage.setItem('ficha', 1)
+        sessionStorage.setItem('ficha', 1)
     }
     else if (a == 1) {
-        localStorage.setItem('ficha', 0)
+        sessionStorage.setItem('ficha', 0)
     }
     location.reload()
 }
@@ -29,7 +29,7 @@ fetch(`${URL2}/${auxID}`)
             fetch(`${URL1}`)
                 .then(res => res.json())
                 .then(fichas => {
-                    var objetivo = fichas[0].objetivos[0].emagrecer[JSON.parse(localStorage.getItem('ficha'))]
+                    var objetivo = fichas[0].objetivos[0].emagrecer[JSON.parse(sessionStorage.getItem('ficha'))]
                     if (diasDisp == '3-dias') {
                         let aux = objetivo.treino3xSemana
                         fichas3X.innerHTML = `
@@ -150,7 +150,7 @@ fetch(`${URL2}/${auxID}`)
             fetch(`${URL1}`)
                 .then(res => res.json())
                 .then(fichas => {
-                    var objetivo = fichas[0].objetivos[0].ganharPeso[JSON.parse(localStorage.getItem('ficha'))]
+                    var objetivo = fichas[0].objetivos[0].ganharPeso[JSON.parse(sessionStorage.getItem('ficha'))]
                     if (diasDisp == '3-dias') {
                         let aux = objetivo.treino3xSemana
                         fichas3X.innerHTML = `
@@ -270,7 +270,7 @@ fetch(`${URL2}/${auxID}`)
             fetch(`${URL1}`)
                 .then(res => res.json())
                 .then(fichas => {
-                    var objetivo = fichas[0].objetivos[0].manterPeso[JSON.parse(localStorage.getItem('ficha'))]
+                    var objetivo = fichas[0].objetivos[0].manterPeso[JSON.parse(sessionStorage.getItem('ficha'))]
                     if (diasDisp == '3-dias') {
                         let aux = objetivo.treino3xSemana
                         fichas3X.innerHTML = `

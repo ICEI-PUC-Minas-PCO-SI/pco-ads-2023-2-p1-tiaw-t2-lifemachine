@@ -37,63 +37,63 @@ function atualizarFoto(){
   let b = document.getElementById("imagemUsuario");
 
   if(elementoSelect=="Avatar1"){
-    let c = './img/avatar/Avatar1.png'
+    let c = './assets-configuracao/img/avatar/Avatar1.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar2"){
-    let c = './img/avatar/Avatar2.png'
+    let c = './assets-configuracao/img/avatar/Avatar2.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar3"){
-    let c = './img/avatar/Avatar3.png'
+    let c = './assets-configuracao/img/avatar/Avatar3.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar4"){
-    let c = './img/avatar/Avatar4.png'
+    let c = './assets-configuracao/img/avatar/Avatar4.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar5"){
-    let c = './img/avatar/Avatar5.png'
+    let c = './assets-configuracao/img/avatar/Avatar5.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar6"){
-    let c = './img/avatar/Avatar6.png'
+    let c = './assets-configuracao/img/avatar/Avatar6.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar7"){
-    let c = './img/avatar/Avatar7.png'
+    let c = './assets-configuracao/img/avatar/Avatar7.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar8"){
-    let c = './img/avatar/Avatar8.png'
+    let c = './assets-configuracao/img/avatar/Avatar8.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar9"){
-    let c = './img/avatar/Avatar9.png'
+    let c = './assets-configuracao/img/avatar/Avatar9.png'
     sessionStorage.setItem("caminhoImagemUsuario", c);
     b.src = c;
     AtualizaFoto(c)
@@ -144,7 +144,7 @@ function Visibilidade(){
 
 function sair(){
   sessionStorage.clear();
-  window.location.href = '../pagina-login/login.html';
+  window.location.href = './pagina-login.html';
 }
 
 function Reload(){
@@ -152,7 +152,7 @@ function Reload(){
 }
 
 function GetNome() {
-  const idUsuario = sessionStorage.getItem("atualID");
+  const idUsuario = JSON.parse(sessionStorage.getItem("atualID"));
   const url1 = `https://db-json-life-machine.onrender.com/usuarios/${idUsuario}`;
 
   const opcoes3 = {
@@ -198,8 +198,8 @@ function campo(){
   var objetivo = document.getElementById("Objetivo");
   var senha = document.getElementById("password");
 
-  if (!disposicao.value && !objetivo.value && !senha.value && !senha.value){
-    alert("Não é possível atualizar, preencha pelo um dos campos!");
+  if (!disposicao.value && !objetivo.value && !peso.value && !senha.value){
+    alert("Não é possível atualizar, preencha pelo menos um dos campos!");
   }
   if(verificarValor(peso.value)==false){
     if(disposicao.value){
@@ -396,7 +396,7 @@ function deleteData() {
     })
     .then(data => {
       console.log('Dados apagados com sucesso');
-      window.location.href = '../pagina-login/login.html';
+      window.location.href = './pagina-login.html';
     })
     .catch(error => {
       console.error('Erro:', error.message);

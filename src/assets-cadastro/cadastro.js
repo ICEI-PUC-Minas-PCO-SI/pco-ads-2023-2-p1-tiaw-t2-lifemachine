@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var URL = 'https://json-server-life-machine.vercel.app/usuarios';
+    var URL = 'https://db-json-life-machine.onrender.com/usuarios';
     var users = [];
     var x; 
 
@@ -75,7 +75,7 @@ $(document).ready(function () {
                     .then(res => res.json())
                     .then(data => {
                         users = data.usuarios || [];
-                        window.location.href = '../pagina-login/login.html';
+                        window.location.href = './pagina-login.html';
                     })
                     .catch(error => {
                         console.error('Erro ao cadastrar usuário:', error);

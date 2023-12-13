@@ -1,10 +1,19 @@
-const URL = 'https://json-server-life-machine.vercel.app/usuarios';
+const URL = 'https://db-json-life-machine.onrender.com/usuarios';
+
+var auxID = JSON.parse(sessionStorage.getItem('atualID'))
+
+fetch(`${URL}/${auxID}`)
+  .then(res => res.json())
+  .then(user => {
+    var pesoRefresh = user.peso;
+    sessionStorage.setItem('pesoAtual', pesoRefresh)
+  });
 
 var dataAtual = new Date();
 var mes = dataAtual.getMonth();
 var jsonMes = `PesoMes` + mes
-var auxPeso = JSON.parse(localStorage.getItem('pesoAtual'))
-var auxID = JSON.parse(localStorage.getItem('atualID'))
+var auxPeso = JSON.parse(sessionStorage.getItem('pesoAtual'))
+
 
 fetch(`${URL}/${auxID}`)
   .then(response => {
@@ -13,7 +22,7 @@ fetch(`${URL}/${auxID}`)
       return fetch(`${URL}/${auxID}`)
         .then(res => res.json())
         .then(usuario => {
-          if (!usuario[jsonMes]) {
+          if (usuario[jsonMes]) {
             return fetch(`${URL}/${auxID}`, {
               method: "PATCH",
               headers: {

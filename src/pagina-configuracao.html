@@ -9,10 +9,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="config.js"></script>
+    <script src="./assets-configuracao/config.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="config.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="./assets-configuracao/config.css">
+    <link rel="stylesheet" href="./assets-configuracao/media.css">
 </head>
 
 <body onload="GetNome(); AtualizandoNomeUsuario(); AtualizandoImagemInicial()">
@@ -40,7 +40,7 @@
         <nav class="navbar navbar-expand-lg header-style">
             <div class="container-fluid">
                 <div class="d-flex flex-row align-items-center">
-                    <a class="navbar-brand" href="../pagina-principal/pagina principal.html"><img src="./Img/logo.png"
+                    <a class="navbar-brand" href="./pagina-principal.html"><img src="./assets-configuracao/img/logo.png"
                             alt="logo-lifeMachine"></a>
                     <h1 class="p-0 m-0">LifeMachine</h1>
                 </div>
@@ -49,8 +49,8 @@
 
         <!-- Título "CONFIG" -->
         <div id="configuracao" style="display: flex; align-items: center;">
-            <a href="../pagina-principal/pagina principal.html"><img class="img-fluid"
-                    src="./img/horizontal-arrow.png"></a>
+            <a href="./pagina-principal.html"><img class="img-fluid"
+                    src="./assets-configuracao/img/horizontal-arrow.png"></a>
             <h1>CONFIGURAÇÃO</h1>
         </div>
 
@@ -58,7 +58,7 @@
             <div class="row-fluid d-flex flex-wrap wraping-container">
                 <div class="col-3 d-flex flex-column align-items-center justify-content-center size-of-the-user-img">
                     <div id="usuB" class="row img-usuario-style">
-                        <img id="imagemUsuario" class="img-fluid" src="./img/avatar/Avatar1.png" alt="">
+                        <img id="imagemUsuario" class="img-fluid" src="./assets-configuracao/img/avatar/Avatar1.png" alt="">
                     </div>
                     <script>
                         function AtualizandoImagemInicial(){
@@ -119,7 +119,6 @@
                                 <option value=""></option>
                                 <option value="3-dias">3 Dias por Semana</option>
                                 <option value="5-dias">5 Dias por Semana</option>
-                                <option value="7-dias">7 Dias por Semana</option>
                             </select>
                         </div>
 

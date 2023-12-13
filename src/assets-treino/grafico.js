@@ -1,6 +1,6 @@
 //Exibe o peso atual do usuario na box do meio
 const pesoAtualArea = document.getElementById("peso-atual")
-var peso = JSON.parse(localStorage.getItem("pesoAtual"))
+var peso = JSON.parse(sessionStorage.getItem("pesoAtual"))
 
 pesoAtualArea.innerHTML = `${peso}Kg`
 
@@ -17,8 +17,8 @@ var jsonMes = `QtdTreinoMes` + mes
 
 
 
-const URL = 'https://json-server-life-machine.vercel.app/usuarios';
-var auxID = JSON.parse(localStorage.getItem('atualID'))
+const URL = 'https://db-json-life-machine.onrender.com/usuarios';
+var auxID = JSON.parse(sessionStorage.getItem('atualID'))
 
 fetch(`${URL}/${auxID}`)
   .then(res => res.json())

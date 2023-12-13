@@ -1,6 +1,6 @@
 $(document).ready(function () {
     function atualizarnome() {
-        var nomeDoUsuario = localStorage.getItem('userName') || 'Usuário';
+        var nomeDoUsuario = sessionStorage.getItem('userName') || 'Usuário';
         if (window.location.pathname.includes('config.html')) {
             $('#Att-Nome').text(nomeDoUsuario);
         } else {
