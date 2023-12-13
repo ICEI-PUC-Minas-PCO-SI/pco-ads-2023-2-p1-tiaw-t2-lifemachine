@@ -62,7 +62,7 @@
     <!-- Adicione o seguinte código JavaScript no final do seu arquivo HTML, antes da tag </body> -->
     <script>
       const receitas = [
-          {
+           {
 
               nome: 'Omelete de Vegetais e Queijo',
               ingredientes: ['3 ovos', '1/2 xícara de espinafre', '1/4 de xícara de tomate picado', '30g de queijo feta', 'Temperos a gosto'],
@@ -326,7 +326,582 @@
             gorduras: 22,
             modoPreparo: 'Monte a lasanha intercalando camadas de berinjela, carne, queijo e molho.'
         },
-
+        {
+            nome: 'Lasanha de Berinjela com Carne Moída',
+            ingredientes: ['Fatias de berinjela grelhada', '200g de carne moída magra com molho de tomate', 'Ricota ou queijo cottage', 'Queijo mussarela ralado', 'Molho de tomate'],
+            carboidratos: 35,
+            proteina: 30,
+            calorias: 500,
+            gorduras: 22,
+            modoPreparo: 'Monte a lasanha intercalando camadas de berinjela, carne, queijo e molho.'
+        },
+        {
+            nome: 'Strogonoff de Frango',
+            ingredientes: ['Peito de frango', 'Creme de leite', 'Cebola', 'Alho', 'Ketchup', 'Mostarda', 'Sal e pimenta a gosto'],
+            carboidratos: 20,
+            proteina: 25,
+            calorias: 400,
+            gorduras: 18,
+            modoPreparo: 'Refogue o frango, adicione cebola e alho, acrescente ketchup e mostarda, finalize com creme de leite.'
+        },
+        {
+            nome: 'Sopa de Legumes',
+            ingredientes: ['Batata', 'Cenoura', 'Abobrinha', 'Cebola', 'Alho', 'Caldo de legumes', 'Sal e pimenta a gosto'],
+            carboidratos: 15,
+            proteina: 5,
+            calorias: 200,
+            gorduras: 8,
+            modoPreparo: 'Cozinhe os legumes, refogue cebola e alho, adicione caldo de legumes, tempere e cozinhe até os legumes ficarem macios.'
+        },
+        {
+            nome: 'Espetinho de Carne com Vegetais',
+            ingredientes: ['Carne de sua escolha', 'Pimentão', 'Cebola', 'Tomate cereja', 'Azeite de oliva', 'Sal e pimenta a gosto'],
+            carboidratos: 10,
+            proteina: 20,
+            calorias: 300,
+            gorduras: 15,
+            modoPreparo: 'Monte espetinhos alternando carne e vegetais, tempere com azeite, sal e pimenta, e grelhe até a carne ficar no ponto desejado.'
+        },
+        {
+            nome: 'Macarrão com Molho de Tomate e Manjericão',
+            ingredientes: ['Macarrão de sua escolha', 'Molho de tomate', 'Manjericão fresco', 'Alho', 'Azeite de oliva', 'Queijo parmesão ralado'],
+            carboidratos: 40,
+            proteina: 12,
+            calorias: 350,
+            gorduras: 10,
+            modoPreparo: 'Cozinhe o macarrão, refogue alho no azeite, adicione molho de tomate e manjericão, misture com o macarrão e finalize com queijo parmesão.'
+        },
+        {
+            nome: 'Tacos de Frango com Guacamole',
+            ingredientes: ['Peitos de frango', 'Tortilhas de milho', 'Abacate', 'Tomate', 'Cebola roxa', 'Coentro', 'Limão', 'Sal e pimenta a gosto'],
+            carboidratos: 30,
+            proteina: 25,
+            calorias: 450,
+            gorduras: 15,
+            modoPreparo: 'Tempere o frango e grelhe, prepare o guacamole misturando abacate, tomate, cebola, coentro, limão, sal e pimenta. Monte os tacos.'
+        },
+        {
+            nome: 'Cuscuz Marroquino com Vegetais',
+            ingredientes: ['Cuscuz marroquino', 'Legumes variados (cenoura, abobrinha, pimentão)', 'Passas', 'Amêndoas', 'Hortelã', 'Azeite de oliva', 'Sal e pimenta a gosto'],
+            carboidratos: 45,
+            proteina: 8,
+            calorias: 380,
+            gorduras: 14,
+            modoPreparo: 'Hidrate o cuscuz, cozinhe os legumes, misture tudo com passas, amêndoas, hortelã, azeite, sal e pimenta.'
+        },
+        {
+            nome: 'Salada Caesar com Frango Grelhado',
+            ingredientes: ['Peito de frango', 'Alface romana', 'Croutons', 'Queijo parmesão', 'Molho Caesar', 'Azeite de oliva', 'Sal e pimenta a gosto'],
+            carboidratos: 18,
+            proteina: 28,
+            calorias: 350,
+            gorduras: 15,
+            modoPreparo: 'Grelhe o frango, monte a salada com alface, croutons, queijo parmesão, regue com molho Caesar e tempere com azeite, sal e pimenta.'
+        },
+        {
+            nome: 'Risoto de Abóbora com Frango',
+            ingredientes: ['Arroz arbóreo', 'Abóbora', 'Peito de frango', 'Cebola', 'Caldo de galinha', 'Queijo parmesão', 'Salsinha', 'Azeite de oliva', 'Sal e pimenta a gosto'],
+            carboidratos: 30,
+            proteina: 22,
+            calorias: 420,
+            gorduras: 14,
+            modoPreparo: 'Refogue o frango, adicione arroz e abóbora, acrescente caldo de galinha aos poucos até o arroz ficar cremoso, finalize com queijo, salsinha, azeite, sal e pimenta.'
+        },
+        {
+            nome: 'Peixe Assado com Ervas e Limão',
+            ingredientes: ['Filé de peixe', 'Ervas frescas (alecrim, tomilho, salsa)', 'Limão', 'Alho', 'Azeite de oliva', 'Sal e pimenta a gosto'],
+            carboidratos: 5,
+            proteina: 25,
+            calorias: 300,
+            gorduras: 12,
+            modoPreparo: 'Tempere o peixe com ervas, alho, limão, azeite, sal e pimenta. Asse no forno até que o peixe esteja cozido e dourado.'
+        },
+        {
+            nome: 'Wrap de Frango com Vegetais',
+            ingredientes: ['Tortilha integral', 'Peito de frango grelhado', 'Alface', 'Tomate', 'Cenoura ralada', 'Molho de iogurte', 'Sal e pimenta a gosto'],
+            carboidratos: 25,
+            proteina: 20,
+            calorias: 350,
+            gorduras: 10,
+            modoPreparo: 'Monte o wrap com frango, alface, tomate, cenoura e molho de iogurte. Tempere com sal e pimenta.'
+        },
+        {
+          nome: 'Ratatouille',
+          ingredientes: ['Berinjela', 'Abobrinha', 'Tomate', 'Cebola', 'Pimentão', 'Alho', 'Azeite de oliva', 'Tomilho', 'Manjericão', 'Sal e pimenta a gosto'],
+          carboidratos: 30,
+          proteina: 5,
+          calorias: 250,
+          gorduras: 15,
+          modoPreparo: 'Corte os vegetais em rodelas, monte em camadas em uma assadeira, regue com azeite, tempere e asse até os vegetais ficarem macios.'
+        },
+        {
+          nome: 'Salada de Quinoa com Legumes Assados',
+          ingredientes: ['Quinoa cozida', 'Abóbora', 'Brócolis', 'Cenoura', 'Azeite de oliva', 'Suco de limão', 'Sal e pimenta a gosto'],
+          carboidratos: 35,
+          proteina: 8,
+          calorias: 300,
+          gorduras: 12,
+          modoPreparo: 'Cozinhe a quinoa, asse os legumes, misture tudo e tempere com azeite, suco de limão, sal e pimenta.'
+        },
+        {
+          nome: 'Torta de Frango com Massa Integral',
+          ingredientes: ['Peito de frango cozido e desfiado', 'Massa integral para torta', 'Brócolis cozidos', 'Cenoura ralada', 'Creme de leite', 'Ovos', 'Queijo ralado', 'Sal e pimenta a gosto'],
+          carboidratos: 40,
+          proteina: 20,
+          calorias: 380,
+          gorduras: 18,
+          modoPreparo: 'Forre uma forma com a massa, misture os ingredientes do recheio, despeje sobre a massa e asse até dourar.'
+        },
+        {
+          nome: 'Muffins de Banana com Aveia',
+          ingredientes: ['Bananas maduras', 'Aveia em flocos', 'Ovos', 'Iogurte natural', 'Mel', 'Canela', 'Fermento em pó'],
+          carboidratos: 25,
+          proteina: 5,
+          calorias: 200,
+          gorduras: 8,
+          modoPreparo: 'Amasse as bananas, misture com os outros ingredientes, despeje em formas de muffin e asse até que fiquem firmes.'
+        },
+        {
+          nome: 'Salmão ao Molho de Maracujá',
+          ingredientes: ['Filé de salmão', 'Maracujá', 'Azeite de oliva', 'Alho picado', 'Mel', 'Sal e pimenta a gosto'],
+          carboidratos: 15,
+          proteina: 30,
+          calorias: 350,
+          gorduras: 20,
+          modoPreparo: 'Grelhe o salmão, faça um molho com o maracujá, azeite, alho, mel, sal e pimenta, e sirva sobre o peixe.'
+        },
+        {
+          nome: 'Ceviche de Camarão',
+          ingredientes: ['Camarões limpos', 'Limão', 'Cebola roxa', 'Coentro', 'Pimenta', 'Sal a gosto'],
+          carboidratos: 10,
+          proteina: 25,
+          calorias: 200,
+          gorduras: 5,
+          modoPreparo: 'Misture os camarões com suco de limão, cebola, coentro, pimenta e sal. Deixe marinar na geladeira e sirva frio.'
+        },
+        {
+          nome: 'Risoto de Aspargos e Parmesão',
+          ingredientes: ['Arroz arbóreo', 'Aspargos', 'Cebola', 'Caldo de legumes', 'Queijo parmesão', 'Vinho branco', 'Manteiga', 'Sal e pimenta a gosto'],
+          carboidratos: 30,
+          proteina: 10,
+          calorias: 350,
+          gorduras: 15,
+          modoPreparo: 'Refogue a cebola, adicione o arroz e vinho. Cozinhe com o caldo de legumes, acrescente aspargos e finalize com parmesão e manteiga.'
+        },
+        {
+          nome: 'Moussaka Grega',
+          ingredientes: ['Berinjela', 'Carne moída', 'Tomate', 'Cebola', 'Molho bechamel', 'Queijo ralado', 'Azeite', 'Sal e pimenta a gosto'],
+          carboidratos: 25,
+          proteina: 20,
+          calorias: 400,
+          gorduras: 18,
+          modoPreparo: 'Grelhe as berinjelas, refogue a carne, faça camadas com tomate, molho bechamel e queijo. Asse até dourar.'
+        },
+        {
+          nome: 'Salada de Grão-de-Bico com Atum',
+          ingredientes: ['Grão-de-bico cozido', 'Atum em lata', 'Tomate cereja', 'Pepino', 'Cebola roxa', 'Salsa', 'Azeite', 'Vinagre, Sal e pimenta a gosto'],
+          carboidratos: 30,
+          proteina: 15,
+          calorias: 280,
+          gorduras: 12,
+          modoPreparo: 'Misture grão-de-bico, atum, tomate, pepino, cebola e salsa. Tempere com azeite, vinagre, sal e pimenta.'
+        },
+        {
+          nome: 'Torta de Maçã com Canela',
+          ingredientes: ['Maçãs', 'Açúcar mascavo', 'Canela', 'Massa para torta', 'Farinha de trigo', 'Manteiga', 'Limão', 'Açúcar de confeiteiro'],
+          carboidratos: 40,
+          proteina: 5,
+          calorias: 320,
+          gorduras: 15,
+          modoPreparo: 'Misture maçãs com açúcar e canela. Forre uma forma com a massa, coloque as maçãs e cubra com outra camada de massa. Asse até dourar. Polvilhe com açúcar de confeiteiro antes de servir.'
+        },
+      {
+        nome: 'Frango ao Curry com Leite de Coco',
+        ingredientes: ['Peitos de frango', 'Leite de coco', 'Curry em pó', 'Cebola', 'Alho', 'Gengibre', 'Coentro', 'Azeite', 'Sal e pimenta a gosto'],
+        carboidratos: 15,
+        proteina: 25,
+        calorias: 300,
+        gorduras: 18,
+        modoPreparo: 'Refogue o frango com cebola, alho e gengibre, adicione leite de coco e curry. Cozinhe até o frango ficar macio. Finalize com coentro.'
+      },
+      {
+        nome: 'Massa Carbonara',
+        ingredientes: ['Espaguete', 'Bacon', 'Ovos', 'Queijo parmesão', 'Pimenta preta', 'Alho', 'Azeite', 'Sal'],
+        carboidratos: 40,
+        proteina: 15,
+        calorias: 450,
+        gorduras: 22,
+        modoPreparo: 'Cozinhe o espaguete, frite o bacon e o alho no azeite. Misture os ovos, queijo parmesão e pimenta. Misture tudo e sirva.'
+      },
+      {
+        nome: 'Sushi de Quinoa',
+        ingredientes: ['Quinoa cozida', 'Alga nori', 'Abacate', 'Pepino', 'Cenoura', 'Salmão cru', 'Molho de soja', 'Gengibre ralado'],
+        carboidratos: 30,
+        proteina: 20,
+        calorias: 350,
+        gorduras: 12,
+        modoPreparo: 'Espalhe quinoa sobre a alga nori, adicione abacate, pepino, cenoura e salmão. Enrole como um sushi e corte em pedaços. Sirva com molho de soja e gengibre.'
+      },
+      {
+        nome: 'Feijão Tropeiro',
+        ingredientes: ['Feijão cozido', 'Arroz', 'Bacon', 'Linguiça calabresa', 'Farinha de mandioca', 'Ovos', 'Cebola', 'Alho', 'Cheiro-verde', 'Sal'],
+        carboidratos: 35,
+        proteina: 18,
+        calorias: 380,
+        gorduras: 15,
+        modoPreparo: 'Refogue bacon, linguiça, cebola e alho. Adicione feijão, arroz e farinha de mandioca. Mexa bem e finalize com ovos cozidos e cheiro-verde.'
+      },
+      {
+        nome: 'Salada Caprese',
+        ingredientes: ['Tomates', 'Mozzarella', 'Manjericão', 'Azeite de oliva', 'Vinagre balsâmico', 'Sal e pimenta a gosto'],
+        carboidratos: 10,
+        proteina: 15,
+        calorias: 200,
+        gorduras: 15,
+        modoPreparo: 'Corte tomates e mozzarella em rodelas. Disponha em camadas, intercalando com folhas de manjericão. Regue com azeite, vinagre balsâmico, sal e pimenta.'
+      },
+      {
+        nome: 'Tacos Vegetarianos',
+        ingredientes: ['Tortilhas de milho', 'Feijão-preto cozido', 'Abacate', 'Tomate', 'Milho', 'Cebola roxa', 'Coentro', 'Limão', 'Sal e pimenta a gosto'],
+        carboidratos: 30,
+        proteina: 10,
+        calorias: 300,
+        gorduras: 12,
+        modoPreparo: 'Monte os tacos com feijão-preto, abacate, tomate, milho, cebola e coentro. Tempere com suco de limão, sal e pimenta.'
+      },
+      {
+        nome: 'Ravioli de Espinafre com Molho de Tomate',
+        ingredientes: ['Ravioli de espinafre', 'Tomates frescos', 'Alho', 'Manjericão', 'Azeite de oliva', 'Queijo parmesão', 'Sal e pimenta a gosto'],
+        carboidratos: 35,
+        proteina: 12,
+        calorias: 380,
+        gorduras: 14,
+        modoPreparo: 'Cozinhe o ravioli, faça um molho com tomates, alho, manjericão e azeite. Misture e sirva com queijo parmesão.'
+      },
+      {
+        nome: 'Couscous Marroquino com Vegetais Assados',
+        ingredientes: ['Couscous marroquino', 'Abóbora', 'Brócolis', 'Cenoura', 'Passas', 'Amêndoas', 'Hortelã', 'Azeite de oliva', 'Sal e pimenta a gosto'],
+        carboidratos: 40,
+        proteina: 8,
+        calorias: 350,
+        gorduras: 15,
+        modoPreparo: 'Hidrate o couscous, asse os vegetais, misture tudo com passas, amêndoas, hortelã, azeite, sal e pimenta.'
+      },
+      {
+        nome: 'Lentilhas com Curry',
+        ingredientes: ['Lentilhas', 'Cebola', 'Alho', 'Tomate', 'Leite de coco', 'Curry em pó', 'Azeite de oliva', 'Coentro', 'Sal e pimenta a gosto'],
+        carboidratos: 25,
+        proteina: 18,
+        calorias: 320,
+        gorduras: 10,
+        modoPreparo: 'Refogue cebola e alho no azeite, adicione lentilhas, tomate, leite de coco e curry. Cozinhe até as lentilhas ficarem macias. Finalize com coentro.'
+      },
+      {
+        nome: 'Sanduíche de Frango Grelhado com Abacate',
+        ingredientes: ['Peito de frango grelhado', 'Abacate', 'Tomate', 'Alface', 'Pão integral', 'Maionese', 'Mostarda', 'Sal e pimenta a gosto'],
+        carboidratos: 30,
+        proteina: 25,
+        calorias: 400,
+        gorduras: 15,
+        modoPreparo: 'Monte o sanduíche com frango, abacate, tomate e alface. Tempere com maionese, mostarda, sal e pimenta.'
+      },
+        {
+          nome: 'Poke Bowl de Salmão',
+          ingredientes: ['Salmão cru em cubos', 'Abacate', 'Arroz de sushi', 'Pepino', 'Cebola roxa', 'Molho de soja', 'Gergelim', 'Alga nori'],
+          carboidratos: 30,
+          proteina: 25,
+          calorias: 350,
+          gorduras: 15,
+          modoPreparo: 'Monte uma tigela com arroz, salmão, abacate, pepino e cebola roxa. Regue com molho de soja, polvilhe gergelim e adicione pedaços de alga nori.'
+        },
+        {
+          nome: 'Camarões Grelhados com Molho de Limão',
+          ingredientes: ['Camarões grandes', 'Alho', 'Azeite de oliva', 'Limão', 'Coentro', 'Sal e pimenta a gosto'],
+          carboidratos: 10,
+          proteina: 30,
+          calorias: 250,
+          gorduras: 12,
+          modoPreparo: 'Tempere os camarões com alho, azeite, suco de limão, coentro, sal e pimenta. Grelhe até que fiquem dourados.'
+        },
+        {
+          nome: 'Risoto de Cogumelos',
+          ingredientes: ['Arroz arbóreo', 'Cogumelos variados', 'Cebola', 'Vinho branco', 'Caldo de legumes', 'Queijo parmesão', 'Manteiga', 'Sal e pimenta a gosto'],
+          carboidratos: 35,
+          proteina: 10,
+          calorias: 380,
+          gorduras: 14,
+          modoPreparo: 'Refogue cebola, adicione arroz e vinho. Cozinhe com caldo de legumes e acrescente cogumelos. Finalize com queijo parmesão e manteiga.'
+        },
+        {
+          nome: 'Salada de Frutas Tropicais',
+          ingredientes: ['Abacaxi', 'Manga', 'Kiwi', 'Morangos', 'Hortelã', 'Mel', 'Suco de limão'],
+          carboidratos: 40,
+          proteina: 2,
+          calorias: 180,
+          gorduras: 1,
+          modoPreparo: 'Corte as frutas em pedaços, misture com hortelã picada. Regue com mel e suco de limão.'
+        },
+        {
+          nome: 'Panquecas de Banana',
+          ingredientes: ['Bananas maduras', 'Ovos', 'Aveia em flocos', 'Leite', 'Fermento em pó', 'Mel', 'Canela', 'Óleo para untar'],
+          carboidratos: 30,
+          proteina: 8,
+          calorias: 250,
+          gorduras: 10,
+          modoPreparo: 'Misture bananas amassadas, ovos, aveia, leite, fermento, mel e canela. Cozinhe colheradas da massa em uma frigideira untada.'
+        },
+        {
+          nome: 'Tagliatelle ao Pesto de Manjericão',
+          ingredientes: ['Tagliatelle', 'Folhas de manjericão', 'Queijo parmesão', 'Alho', 'Pinhões', 'Azeite de oliva', 'Sal e pimenta a gosto'],
+          carboidratos: 40,
+          proteina: 10,
+          calorias: 350,
+          gorduras: 18,
+          modoPreparo: 'Cozinhe a massa, faça um pesto batendo manjericão, queijo, alho, pinhões e azeite. Misture com a massa e tempere.'
+        },
+        {
+          nome: 'Quiche de Espinafre e Queijo Feta',
+          ingredientes: ['Massa para quiche', 'Espinafre', 'Queijo feta', 'Ovos', 'Creme de leite', 'Noz-moscada', 'Sal e pimenta a gosto'],
+          carboidratos: 25,
+          proteina: 15,
+          calorias: 320,
+          gorduras: 20,
+          modoPreparo: 'Forre uma forma com a massa, refogue o espinafre, misture com queijo feta. Bata ovos, creme de leite, noz-moscada, sal e pimenta. Despeje sobre a massa e asse.'
+        },
+        {
+          nome: 'Sopa de Tomate Assado',
+          ingredientes: ['Tomates', 'Cenoura', 'Cebola', 'Alho', 'Caldo de legumes', 'Manjericão', 'Azeite de oliva', 'Sal e pimenta a gosto'],
+          carboidratos: 20,
+          proteina: 5,
+          calorias: 180,
+          gorduras: 10,
+          modoPreparo: 'Asse tomates, cenoura, cebola e alho. Bata com caldo de legumes. Leve ao fogo com manjericão, azeite, sal e pimenta.'
+        },
+        {
+          nome: 'Bolo de Cenoura com Cobertura de Chocolate',
+          ingredientes: ['Cenouras', 'Farinha de trigo', 'Açúcar', 'Óleo vegetal', 'Ovos', 'Fermento em pó', 'Chocolate meio amargo', 'Leite', 'Açúcar de confeiteiro'],
+          carboidratos: 45,
+          proteina: 5,
+          calorias: 300,
+          gorduras: 15,
+          modoPreparo: 'Bata cenouras, farinha, açúcar, óleo e ovos. Adicione fermento e asse. Derreta chocolate com leite, cubra o bolo e polvilhe açúcar de confeiteiro.'
+        },
+        {
+          nome: 'Molho Pesto de Abacate',
+          ingredientes: ['Abacate', 'Manjericão', 'Azeite de oliva', 'Alho', 'Nozes', 'Suco de limão', 'Sal e pimenta a gosto'],
+          carboidratos: 10,
+          proteina: 2,
+          calorias: 150,
+          gorduras: 12,
+          modoPreparo: 'Bata abacate, manjericão, azeite, alho, nozes e suco de limão. Tempere com sal e pimenta. Sirva sobre massas ou saladas.'
+        },
+        {
+          nome: 'Smoothie de Frutas Vermelhas',
+          ingredientes: ['Morangos', 'Framboesas', 'Mirtilos', 'Iogurte natural', 'Mel', 'Gelo'],
+          carboidratos: 25,
+          proteina: 5,
+          calorias: 150,
+          gorduras: 2,
+          modoPreparo: 'Bata morangos, framboesas, mirtilos, iogurte, mel e gelo no liquidificador. Sirva gelado.'
+        },
+        {
+          nome: 'Espaguete ao Molho Pesto de Rúcula',
+          ingredientes: ['Espaguete', 'Rúcula', 'Azeite de oliva', 'Alho', 'Nozes', 'Queijo parmesão', 'Sal e pimenta a gosto'],
+          carboidratos: 35,
+          proteina: 10,
+          calorias: 380,
+          gorduras: 18,
+          modoPreparo: 'Cozinhe o espaguete, bata rúcula, azeite, alho, nozes e queijo parmesão no processador. Misture com a massa. Tempere com sal e pimenta.'
+        },
+        {
+          nome: 'Salmão Grelhado com Molho de Ervas',
+          ingredientes: ['Filé de salmão', 'Salsinha', 'Cebolinha', 'Dill', 'Limão', 'Azeite de oliva', 'Sal e pimenta a gosto'],
+          carboidratos: 5,
+          proteina: 30,
+          calorias: 300,
+          gorduras: 15,
+          modoPreparo: 'Tempere o salmão com salsinha, cebolinha, dill, suco de limão, azeite, sal e pimenta. Grelhe até que fique no ponto desejado.'
+        },
+        {
+          nome: 'Tacos de Frango com Abacaxi',
+          ingredientes: ['Peito de frango', 'Abacaxi', 'Cebola roxa', 'Coentro', 'Pimenta jalapeño', 'Tortilhas de milho', 'Limão', 'Sal e pimenta a gosto'],
+          carboidratos: 30,
+          proteina: 25,
+          calorias: 350,
+          gorduras: 12,
+          modoPreparo: 'Grelhe o frango, abacaxi e cebola. Monte os tacos com frango, abacaxi, cebola, coentro e jalapeño. Tempere com suco de limão, sal e pimenta.'
+        },
+        {
+          nome: 'Salada de Quinoa com Pêssego',
+          ingredientes: ['Quinoa cozida', 'Pêssegos em pedaços', 'Amêndoas', 'Folhas de hortelã', 'Queijo feta', 'Azeite de oliva', 'Suco de limão', 'Sal e pimenta a gosto'],
+          carboidratos: 35,
+          proteina: 8,
+          calorias: 320,
+          gorduras: 14,
+          modoPreparo: 'Misture quinoa, pêssegos, amêndoas, hortelã e queijo feta. Regue com azeite, suco de limão, sal e pimenta.'
+        },
+        {
+          nome: 'Pizza de Legumes',
+          ingredientes: ['Massa de pizza', 'Molho de tomate', 'Abobrinha', 'Pimentão', 'Cebola', 'Tomate', 'Queijo mussarela', 'Orégano', 'Azeite de oliva', 'Sal e pimenta a gosto'],
+          carboidratos: 40,
+          proteina: 12,
+          calorias: 380,
+          gorduras: 16,
+          modoPreparo: 'Espalhe molho de tomate sobre a massa, adicione abobrinha, pimentão, cebola, tomate e queijo. Tempere com orégano, azeite, sal e pimenta. Asse até dourar.'
+        },
+        {
+          nome: 'Cuscuz Marroquino com Legumes',
+          ingredientes: ['Cuscuz marroquino', 'Abobrinha', 'Cenoura', 'Ervilhas', 'Passas', 'Amêndoas', 'Curry em pó', 'Azeite de oliva', 'Sal e pimenta a gosto'],
+          carboidratos: 35,
+          proteina: 8,
+          calorias: 340,
+          gorduras: 12,
+          modoPreparo: 'Hidrate o cuscuz, cozinhe os legumes, misture tudo com passas, amêndoas, curry, azeite, sal e pimenta.'
+        },
+        {
+          nome: 'Torta de Limão com Merengue',
+          ingredientes: ['Massa para torta', 'Leite condensado', 'Creme de leite', 'Suco de limão', 'Raspas de limão', 'Claras de ovos', 'Açúcar', 'Sal'],
+          carboidratos: 40,
+          proteina: 6,
+          calorias: 350,
+          gorduras: 15,
+          modoPreparo: 'Asse a massa, misture leite condensado, creme de leite, suco e raspas de limão. Bata claras com açúcar e sal até formar um merengue. Cubra a torta e asse até dourar.'
+        },
+        {
+          nome: 'Ceviche de Tilápia',
+          ingredientes: ['Filés de tilápia', 'Limões', 'Cebola roxa', 'Coentro', 'Pimenta dedo-de-moça', 'Sal e pimenta a gosto'],
+          carboidratos: 10,
+          proteina: 20,
+          calorias: 250,
+          gorduras: 8,
+          modoPreparo: 'Corte o peixe em cubos, misture com suco de limão, cebola, coentro, pimenta, sal e pimenta. Deixe marinar na geladeira e sirva frio.'
+        },
+        {
+          nome: 'Sanduíche de Atum com Abacate',
+          ingredientes: ['Atum em lata', 'Abacate', 'Tomate', 'Alface', 'Pão integral', 'Maionese', 'Mostarda', 'Sal e pimenta a gosto'],
+          carboidratos: 30,
+          proteina: 25,
+          calorias: 400,
+          gorduras: 15,
+          modoPreparo: 'Misture atum, abacate, tomate e alface. Monte o sanduíche com essa mistura. Tempere com maionese, mostarda, sal e pimenta.'
+        },
+        {
+          nome: 'Molho de Tomate Caseiro',
+          ingredientes: ['Tomates maduros', 'Cebola', 'Alho', 'Azeite de oliva', 'Manjericão', 'Orégano', 'Sal e pimenta a gosto'],
+          carboidratos: 15,
+          proteina: 2,
+          calorias: 120,
+          gorduras: 8,
+          modoPreparo: 'Refogue cebola e alho no azeite, adicione tomates, manjericão, orégano, sal e pimenta. Cozinhe até obter um molho espesso.'
+        },
+        {
+          nome: 'Brownie de Chocolate e Nozes',
+          ingredientes: ['Chocolate meio amargo', 'Manteiga', 'Açúcar', 'Ovos', 'Baunilha', 'Farinha de trigo', 'Nozes picadas', 'Sal'],
+          carboidratos: 30,
+          proteina: 5,
+          calorias: 350,
+          gorduras: 20,
+          modoPreparo: 'Derreta chocolate e manteiga, misture açúcar, ovos, baunilha, farinha e nozes. Asse até que o centro fique firme. Deixe esfriar antes de cortar.'
+        },
+          {
+            nome: 'Wrap de Frango Grelhado com Abacate',
+            ingredientes: ['Peito de frango grelhado', 'Abacate', 'Tomate', 'Alface', 'Tortilhas de trigo', 'Maionese', 'Limão', 'Sal e pimenta a gosto'],
+            carboidratos: 30,
+            proteina: 25,
+            calorias: 400,
+            gorduras: 15,
+            modoPreparo: 'Monte o wrap com frango, abacate, tomate e alface. Tempere com maionese, suco de limão, sal e pimenta.'
+          },
+          {
+            nome: 'Pasta de Grão-de-Bico',
+            ingredientes: ['Grão-de-bico cozido', 'Tahine', 'Alho', 'Azeite de oliva', 'Suco de limão', 'Cominho em pó', 'Sal e pimenta a gosto'],
+            carboidratos: 20,
+            proteina: 8,
+            calorias: 250,
+            gorduras: 12,
+            modoPreparo: 'Bata grão-de-bico, tahine, alho, azeite, suco de limão e cominho até obter uma pasta. Tempere com sal e pimenta.'
+          },
+          {
+            nome: 'Arroz Integral com Legumes Assados',
+            ingredientes: ['Arroz integral', 'Abóbora', 'Cenoura', 'Brócolis', 'Pimentão', 'Azeite de oliva', 'Tomilho', 'Sal e pimenta a gosto'],
+            carboidratos: 40,
+            proteina: 10,
+            calorias: 350,
+            gorduras: 15,
+            modoPreparo: 'Cozinhe o arroz integral, asse os legumes com azeite e tomilho. Misture tudo e tempere com sal e pimenta.'
+          },
+          {
+            nome: 'Cookies de Aveia com Passas',
+            ingredientes: ['Aveia em flocos', 'Farinha de trigo', 'Açúcar mascavo', 'Manteiga', 'Ovos', 'Baunilha', 'Passas', 'Fermento em pó', 'Sal'],
+            carboidratos: 25,
+            proteina: 5,
+            calorias: 200,
+            gorduras: 10,
+            modoPreparo: 'Misture aveia, farinha, açúcar mascavo, manteiga, ovos, baunilha, passas, fermento e sal. Asse até dourar.'
+          },
+          {
+            nome: 'Sopa de Abóbora com Gengibre',
+            ingredientes: ['Abóbora', 'Cebola', 'Alho', 'Gengibre', 'Caldo de legumes', 'Creme de leite', 'Noz-moscada', 'Sal e pimenta a gosto'],
+            carboidratos: 20,
+            proteina: 5,
+            calorias: 180,
+            gorduras: 10,
+            modoPreparo: 'Refogue abóbora, cebola, alho e gengibre. Adicione caldo de legumes e cozinhe até que a abóbora esteja macia. Bata no liquidificador, adicione creme de leite, noz-moscada, sal e pimenta.'
+          },
+          {
+            nome: 'Macarrão ao Molho Alfredo',
+            ingredientes: ['Macarrão fettuccine', 'Creme de leite', 'Queijo parmesão', 'Manteiga', 'Alho', 'Sal e pimenta a gosto'],
+            carboidratos: 30,
+            proteina: 10,
+            calorias: 380,
+            gorduras: 18,
+            modoPreparo: 'Cozinhe o macarrão, derreta manteiga, refogue alho, adicione creme de leite e queijo parmesão. Misture com o macarrão. Tempere com sal e pimenta.'
+          },
+          {
+            nome: 'Bolinho de Quinoa e Vegetais',
+            ingredientes: ['Quinoa cozida', 'Cenoura ralada', 'Abobrinha ralada', 'Ovos', 'Queijo ralado', 'Farinha de trigo', 'Salsinha', 'Sal e pimenta a gosto'],
+            carboidratos: 25,
+            proteina: 8,
+            calorias: 220,
+            gorduras: 10,
+            modoPreparo: 'Misture quinoa, cenoura, abobrinha, ovos, queijo, farinha, salsinha, sal e pimenta. Faça bolinhos e asse até dourar.'
+          },
+          {
+            nome: 'Espetinho de Camarão com Limão',
+            ingredientes: ['Camarões grandes', 'Limões', 'Alho', 'Azeite de oliva', 'Pimenta', 'Sal e pimenta a gosto'],
+            carboidratos: 5,
+            proteina: 30,
+            calorias: 250,
+            gorduras: 12,
+            modoPreparo: 'Tempere os camarões com suco de limão, alho, azeite, pimenta, sal e pimenta. Grelhe até que fiquem dourados.'
+          },
+          {
+            nome: 'Ratatouille',
+            ingredientes: ['Berinjela', 'Abobrinha', 'Pimentão vermelho', 'Tomates', 'Cebola', 'Alho', 'Azeite de oliva', 'Tomilho', 'Sal e pimenta a gosto'],
+            carboidratos: 25,
+            proteina: 5,
+            calorias: 220,
+            gorduras: 10,
+            modoPreparo: 'Corte os vegetais em rodelas, arrume em camadas em uma assadeira. Regue com azeite, adicione alho, tomilho, sal e pimenta. Asse até que fiquem macios.'
+          },
+          {
+            nome: 'Salada de Lentilhas com Abóbora Assada',
+            ingredientes: ['Lentilhas cozidas', 'Abóbora em cubos assada', 'Cebola roxa', 'Rúcula', 'Queijo feta', 'Azeite de oliva', 'Vinagre balsâmico', 'Sal e pimenta a gosto'],
+            carboidratos: 30,
+            proteina: 15,
+            calorias: 320,
+            gorduras: 12,
+            modoPreparo: 'Misture lentilhas, abóbora, cebola, rúcula e queijo feta. Tempere com azeite, vinagre balsâmico, sal e pimenta.'
+          },
+          {
+            nome: 'Muffins de Banana com Aveia',
+            ingredientes: ['Bananas maduras', 'Aveia em flocos', 'Ovos', 'Iogurte natural', 'Mel', 'Canela', 'Fermento em pó', 'Sal'],
+            carboidratos: 30,
+            proteina: 5,
+            calorias: 250,
+            gorduras: 8,
+            modoPreparo: 'Amasse bananas, misture com aveia, ovos, iogurte, mel, canela, fermento e sal. Asse em formas de muffin até dourar.'
+          }
       ];
 
 
