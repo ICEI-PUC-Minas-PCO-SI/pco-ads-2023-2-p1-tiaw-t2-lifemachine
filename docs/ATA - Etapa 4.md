@@ -1,6 +1,6 @@
 ## ENTREGA ETAPA 4
 
-Caio : 
+Caio : Suporte geral em demandas , responsavel pelo desenvolvimento dos requisitos RF-001 , RF-002 , RF-003 e RF-004 e ajustes no J-son sever. Melhoria/Ajuste em detalhes , e colaboração na organização da equipe.
 
 Pedro : Aprimoramento geral do front, responsavel pelo desenvolvimento dos requisitos RF-014 e RF-015, colaboração na organização da equipe, desenvolvimento dos requisitos da pagina de treino (RF-006,RF-007) com grande ajuda do Erick, padronização das pastas e branches seguindo ideias dos demais integrantes, hospedagem da aplicação no Vercel.
 
