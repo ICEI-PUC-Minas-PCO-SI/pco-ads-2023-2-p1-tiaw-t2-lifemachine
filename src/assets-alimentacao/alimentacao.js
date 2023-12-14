@@ -8,7 +8,7 @@ const receitas = [
         calorias: 300,
         gorduras: 18,
         modoPreparo: 'Bata os ovos, misture com os ingredientes e cozinhe em uma frigideira.',
-        
+        "img": "./img/receitas/Omelete de Vegetais e Queijo.jpg"
     },
     {
         nome: 'Salada de Atum e Grão-de-Bico',
@@ -18,7 +18,7 @@ const receitas = [
         calorias: 400,
         gorduras: 15,
         modoPreparo: 'Misture todos os ingredientes em uma tigela e regue com azeite de oliva.',
-        
+        "img": "./img/receitas/Salada de Atum e Grão-de-Bico.jpeg"
     },
     {
         nome: 'Sopa de Lentilhas com Vegetais',
@@ -28,7 +28,7 @@ const receitas = [
         calorias: 350,
         gorduras: 8,
         modoPreparo: 'Cozinhe as lentilhas com os vegetais no caldo de legumes até que estejam macios.',
-        
+        "img": "./img/receitas/Sopa de Lentilhas com Vegetais.jpeg"
     },
     {
         nome: 'Tigela de Frango com Abacate',
@@ -38,7 +38,7 @@ const receitas = [
         calorias: 450,
         gorduras: 15,
         modoPreparo: 'Monte a tigela com frango, abacate, quinoa e tomate. Regue com molho de iogurte.',
-        
+        "img": "./img/receitas/Tigela de Frango com Abacate.jpg"
     },
     {
         nome: 'Espaguete de Abobrinha com Almôndegas de Peru',
@@ -48,7 +48,7 @@ const receitas = [
         calorias: 380,
         gorduras: 12,
         modoPreparo: 'Cozinhe o espaguete de abobrinha, faça as almôndegas e sirva com molho de tomate e queijo ralado.',
-        
+        "img": "./img/receitas/Espaguete de Abobrinha com Almôndegas de Peru.jpg"
     },
     {
         nome: 'Wrap de Frango com Vegetais',
@@ -58,7 +58,7 @@ const receitas = [
         calorias: 420,
         gorduras: 15,
         modoPreparo: 'Monte o wrap com frango, vegetais e molho de iogurte.',
-        
+        "img": "./img/receitas/Wrap de Frango com Vegetais.jpg"
     },
     {
         nome: 'Tigela de Arroz Integral com Legumes Assados e Salmão',
@@ -68,7 +68,7 @@ const receitas = [
         calorias: 500,
         gorduras: 18,
         modoPreparo: 'Coloque o salmão grelhado sobre o arroz integral e legumes assados. Regue com molho de limão e ervas.',
-        
+        "img": "./img/receitas/Tigela de Arroz Integral com Legumes Assados e Salmão.jpeg"
     },
     {
         nome: 'Smoothie de Banana e Amêndoas',
@@ -78,7 +78,7 @@ const receitas = [
         calorias: 350,
         gorduras: 15,
         modoPreparo: 'Bata todos os ingredientes no liquidificador até obter uma mistura homogênea.',
-        
+        "img": "./img/receitas/Smoothie de Banana e Amêndoas.png"
     },
     {
         nome: 'Caçarola de Quinoa com Legumes e Frango',
@@ -88,7 +88,7 @@ const receitas = [
         calorias: 420,
         gorduras: 15,
         modoPreparo: 'Misture a quinoa cozida com frango desfiado, legumes e molho de tomate. Cubra com queijo ralado e asse.',
-        
+        "img": "./img/receitas/Caçarola de Quinoa com Legumes e Frango.png"
     },
     {
         nome: 'Salada de Camarão com Abacate',
@@ -98,7 +98,7 @@ const receitas = [
         calorias: 380,
         gorduras: 20,
         modoPreparo: 'Misture camarão, abacate, folhas verdes, tomate e cebola. Regue com molho de limão e coentro.',
-        
+        "img": "./img/receitas/Salada de Camarão com Abacate.png"
     },
     {
         nome: 'Wrap de Frango com Abacate',
@@ -108,7 +108,7 @@ const receitas = [
         calorias: 320,
         gorduras: 10,
         modoPreparo: 'Monte o wrap com os ingredientes e tempere a gosto.',
-        
+        "img": "./img/receitas/Wrap de Frango com Vegetais.jpg"
     },
     {
         nome: 'Salada de Quinoa com Legumes Assados',
@@ -118,7 +118,7 @@ const receitas = [
         calorias: 350,
         gorduras: 12,
         modoPreparo: 'Misture todos os ingredientes e regue com molho de limão e azeite.',
-        
+        "img": "./img/receitas/Salada de Quinoa com Legumes Assados.jpg"
     },
     {
         nome: 'Salmão Grelhado com Aspargos',
@@ -128,6 +128,7 @@ const receitas = [
         calorias: 280,
         gorduras: 15,
         modoPreparo: 'Tempere o salmão e os aspargos, grelhe e regue com azeite de oliva.',
+        "img": "./img/receitas/Salmão Grelhado com Aspargos.jpg"
     },
     {
         nome: 'Muffins de Aveia e Banana',
@@ -137,7 +138,7 @@ const receitas = [
         calorias: 250,
         gorduras: 8,
         modoPreparo: 'Misture os ingredientes, despeje em formas de muffin e asse.',
-        
+        "img": "./img/receitas/Muffins de Aveia e Banana.jpg"
     },
     {
         nome: 'Espaguete de Abobrinha com Molho de Tomate Caseiro',
@@ -147,7 +148,7 @@ const receitas = [
         calorias: 180,
         gorduras: 7,
         modoPreparo: 'Faça o espaguete de abobrinha e cubra com molho de tomate e queijo.',
-        
+        "img": "./img/receitas/Espaguete de Abobrinha com Molho de Tomate Caseiro.jpg"
     },
     {
         nome: 'Tigela de Café da Manhã com Aveia e Frutas',
@@ -157,7 +158,7 @@ const receitas = [
         calorias: 280,
         gorduras: 7,
         modoPreparo: 'Misture os ingredientes em uma tigela e aproveite seu café da manhã.',
-        
+        "img": "./img/receitas/Tigela de Café da Manhã com Aveia e Frutas.png"
     },
     {
         nome: 'Lombo de Porco com Legumes Assados',
@@ -167,7 +168,7 @@ const receitas = [
         calorias: 320,
         gorduras: 15,
         modoPreparo: 'Tempere o lombo, asse com os legumes e regue com azeite de oliva.',
-        
+        "img": "./img/receitas/Lombo de Porco com Legumes Assados.jpeg"
 
     },
     {
@@ -178,6 +179,8 @@ const receitas = [
         calorias: 250,
         gorduras: 12,
         modoPreparo: 'Bata todos os ingredientes no liquidificador e sirva.',
+        "img": "./img/receitas/Smoothie Verde Energizante.jpg"
+
     },
     {
         nome: 'Salada de Frango com Quinoa',
@@ -187,7 +190,7 @@ const receitas = [
         calorias: 320,
         gorduras: 10,
         modoPreparo: 'Misture todos os ingredientes e regue com molho de iogurte.',
-        
+        "img": "./img/receitas/Salada de Frango com Quinoa.jpg"
 
     },
     {
@@ -198,7 +201,7 @@ const receitas = [
         calorias: 270,
         gorduras: 8,
         modoPreparo: 'Misture os ingredientes e faça as panquecas em uma frigideira.',
-        
+        "img": "./img/receitas/Panquecas de Banana e Aveia.jpg"
 
     },
     {
@@ -209,7 +212,7 @@ const receitas = [
         calorias: 450,
         gorduras: 20,
         modoPreparo: 'Cozinhe o macarrão, grelhe o frango, misture com pesto e abacate.',
-        
+        "img": "./img/receitas/Macarrão Integral com Frango ao Pesto.jpg"
 
     },
     {
@@ -220,7 +223,7 @@ const receitas = [
         calorias: 480,
         gorduras: 15,
         modoPreparo: 'Monte a tigela com os ingredientes e regue com molho de soja e gengibre.',
-        
+        "img": "./img/receitas/Tigela de Arroz Integral com Legumes Assados e Salmão.jpeg"
     },
     {
         nome: 'Pizza de Frango com Crosta de Couve-Flor',
@@ -230,7 +233,7 @@ const receitas = [
         calorias: 520,
         gorduras: 25,
         modoPreparo: 'Asse a crosta, adicione os ingredientes e asse novamente.',
-        
+        "img": "./img/receitas/Pizza de Frango com Crosta de Couve-Flor.jpg"
     },
     {
         nome: 'Batata Doce Recheada com Chili de Carne',
@@ -240,7 +243,7 @@ const receitas = [
         calorias: 480,
         gorduras: 15,
         modoPreparo: 'Recheie a batata com chili de carne, feijão preto e abacate.',
-        
+        "img": "./img/receitas/Batata Doce Recheada com Chili de Carne.png"
     },
     {
         nome: 'Smoothie de Banana e Manteiga de Amendoim',
@@ -250,7 +253,7 @@ const receitas = [
         calorias: 480,
         gorduras: 20,
         modoPreparo: 'Bata todos os ingredientes no liquidificador e aproveite.',
-        
+        "img": "./img/receitas/Smoothie de Banana e Manteiga de Amendoim.jpg"
     },
     {
         nome: 'Burrito de Frango com Guacamole',
@@ -260,7 +263,7 @@ const receitas = [
         calorias: 500,
         gorduras: 18,
         modoPreparo: 'Monte o burrito com os ingredientes e adicione guacamole.',
-        
+        "img": "./img/receitas/Burrito de Frango com Guacamole.jpg"
     },
     {
         nome: 'Risoto de Cogumelos com Frango',
@@ -270,7 +273,7 @@ const receitas = [
         calorias: 520,
         gorduras: 15,
         modoPreparo: 'Prepare o risoto com frango, cogumelos e caldo de galinha.',
-        
+        "img": "./img/receitas/Risoto de Cogumelos com Frango.Jpeg"
     },
     {
         nome: 'Omelete de Queijo e Abacate',
@@ -280,7 +283,7 @@ const receitas = [
         calorias: 400,
         gorduras: 30,
         modoPreparo: 'Prepare a omelete com queijo e abacate, adicionando tomate e cebola.',
-        
+        "img": "./img/receitas/Omelete de Queijo e Abacate.jpg"
     },
     {
         nome: 'Hambúrguer de Quinoa e Feijão Preto',
@@ -290,7 +293,7 @@ const receitas = [
         calorias: 480,
         gorduras: 15,
         modoPreparo: 'Prepare hambúrgueres com quinoa, feijão preto e temperos a gosto.',
-        
+        "img": "./img/receitas/Hambúrguer de Quinoa e Feijão Preto.jpg"
     },
     {
         nome: 'Lasanha de Berinjela com Carne Moída',
@@ -300,7 +303,7 @@ const receitas = [
         calorias: 500,
         gorduras: 22,
         modoPreparo: 'Monte a lasanha intercalando camadas de berinjela, carne, queijo e molho.',
-        
+        "img": "./img/receitas/Lasanha de Berinjela com Carne Moída.jpg"
     },
 ];
 
@@ -326,7 +329,15 @@ function calcularReceita() {
                                         <h3>${receitaSugerida.nome}</h3>
                                         <p>${formatarIngredientes(receitaSugerida.ingredientes)}</p>
                                         <p>${receitaSugerida.modoPreparo}</p>
-                                        </div>`;
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img class="img-fluid rounded border border-danger img-receita-style" id="img-receita" src="" alt="">
+                                        </div>
+                                    `;
+
+    let url_img = receitaSugerida.img
+    let img_area = document.getElementById("img-receita")
+    img_area.src = url_img;
 }
 
 function calcularReceitaSugerida(usuario) {

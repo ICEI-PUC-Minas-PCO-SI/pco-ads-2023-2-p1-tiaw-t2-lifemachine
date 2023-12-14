@@ -32,7 +32,8 @@ $(document).ready(function () {
                 var Objetivo = $('#Objetivo').val();
                 var DiasDeTreino = $('#DiasDeTreino').val();
                 var Sexo = $('#Sexo').val();
-
+                var imagemUsuario = '../assets-configuracao/img/avatar/Avatar1.png';
+                
                 if (emailUsado(email)) {
                     alert('Este e-mail já está em uso. Por favor, use outro e-mail.');
                     return;
@@ -52,7 +53,8 @@ $(document).ready(function () {
                     peso: Peso,
                     objetivo: Objetivo,
                     diasDeTreino: DiasDeTreino,
-                    sexo: Sexo
+                    sexo: Sexo,
+                    imgUsuario: imagemUsuario
                 };
 
                 fetch(URL, {

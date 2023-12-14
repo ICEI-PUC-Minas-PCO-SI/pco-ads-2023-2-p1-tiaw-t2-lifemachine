@@ -26,5 +26,5 @@ fetch('mensagens-motivacionais.json')
 function enviarFeedback() {
  
     var opiniaoUsuario = document.querySelector(".comentario-input").value;
-    window.location.href = "mailto:lifemachineacademia@gmail.com?subject=Feedback&body=" + encodeURIComponent(opiniaoUsuario);
+    window.location.href = "mailto:feedback.lifemachine@gmail.com?subject=Feedback&body=" + encodeURIComponent(opiniaoUsuario);
 }
