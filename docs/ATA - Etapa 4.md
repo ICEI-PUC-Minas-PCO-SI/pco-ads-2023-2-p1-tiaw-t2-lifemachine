@@ -6,6 +6,6 @@ Pedro : Aprimoramento geral do front, responsavel pelo desenvolvimento dos requi
 
 Karolayne: Criação de todas as tarefas no Kanban, Responsavel pela criação do requisito RF-008, RF-009 E RF-010, correçãs das atas, criação da branche (Feature/ RF-008,RF-009,RF-010), organizaçãop da documentação,criação da máscara para inputda pagina de cadastro, slides da etapa 5 e participação em ideias e alterações que foram necessarias.
 
-Erick :
+Erick : Criação de fichas de treinos em JSON, desenvolvimento dos requisitos RF-006 e RF-007 em colaboração com Pedro, participação em ideias e alterações que foram necessarias.
 
 Daniel : Criação do funcionamento da página de configuração e de sonos com a calculadora de sono
