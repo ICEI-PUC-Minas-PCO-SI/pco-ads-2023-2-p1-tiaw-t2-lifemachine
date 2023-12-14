@@ -46,10 +46,22 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 
 | Caso de Teste                   | Requisito Associado | Link do Vídeo do Teste               |
 |----------------------------------|----------------------|---------------------------------------|
-| TC01 - Cadastro de Usuário       | RF-001               | [Link do vídeo](link_do_video)       |
-| TC02 - Login de Usuário          | RF-002               | [Link do vídeo](link_do_video)       |
-| TC03 - Preenchimento de Dados    | RF-003               | [Link do vídeo](link_do_video)       |
-| TC04 - Geração de Plano de Treino | RF-006               | [Link do vídeo](link_do_video)       |
+| TC01 - O sistema deve permitir cadastro do usuário       | RF-001               |   https://life-machine.vercel.app/pagina-cadastro.html   |
+| TC02 - O sistema deve permitir login do usuário          | RF-002               |    https://life-machine.vercel.app/pagina-login.html   |
+| TC03 - O sistema deve permitir a inserção dos dados fisicos do usuário    | RF-003               |   https://life-machine.vercel.app/pagina-cadastro.html    |
+| TC04 - O sistema deve permitir a inserção dos dados da rotina do usuário | RF-004               |   https://life-machine.vercel.app/pagina-cadastro.html    |
+| TC05 - O sistema deve permitir ao usuario alterar os seus dados | RF-005               |   https://life-machine.vercel.app/pagina-configuracao.html    |
+| TC06 - O sistema deve gerar treino personalizado de acordo com objetivo do usuario | RF-006               |   https://life-machine.vercel.app/pagina-treino.html     |
+| TC07 - O sistema deve permitir o usuario escolher gerar outra ficha | RF-007               |    https://life-machine.vercel.app/pagina-treino.html    |
+| TC08 - O sistema deve gerar sugestao de calorias para consumo diário do usuario. | RF-008               |    https://life-machine.vercel.app/pagina-alimentacao.html    |
+| TC09 - O sistema deve gerar sugestao de receitas fitness para o usuario. | RF-009               |    https://life-machine.vercel.app/pagina-alimentacao.html    |
+| TC10 - O sistema deve gerar sugestao de macro-nutrientes para consumo diário do usuario. | RF-010               |    https://life-machine.vercel.app/pagina-alimentacao.html    |
+| TC11 - O sistema deve gerar sugestao de horario de sono de acordo com a rotina do usuario. | RF-011               |   https://life-machine.vercel.app/pagina-sono.html     |
+| TC12 - O sistema deve permitir o usuario alterar medidas corporais apos sua evoluçao. | RF-012               |    https://life-machine.vercel.app/pagina-treino.html    |
+| TC13 - O sistema deve permitir o usuario registrar feedback sobre mudanças geradas pelo programa. | RF-013               |     https://life-machine.vercel.app   |
+| TC14 - O sistema deve gerar para o usuario estatisticas do seu desempenho fisico. | RF-014               |   https://life-machine.vercel.app/pagina-principal.html     |
+| TC15 - O sistema deve exibir para o usuario mensagens motivacionais. | RF-015               |   https://life-machine.vercel.app     |
+| TC16 - O sistema deve permitir que o usuario entre em contato com o suporte | RF-016               |   https://life-machine.vercel.app/pagina-principal.html     |
 
 
 ## Avaliação dos Testes de Software
