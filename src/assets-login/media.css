@@ -1,0 +1,17 @@
+@media screen and (max-width:360px){
+    .form-style {
+        height: 30px;
+    }
+    #card-body {
+  padding: 2rem !important;
+    }
+
+    .container-main-style {
+        background-image: url('./img/background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 82px;
+    }
+}
+@media screen and (min-width: 1200px){
+}

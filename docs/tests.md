@@ -25,47 +25,48 @@ Nesta seção o grupo deverá documentar os testes de software que verificam a c
 Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito  Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
 
-**Caso de Teste** | **CT01 - Criar conta parte 1**
- :--------------: | ------------
-**Procedimento**  | 1) Usuário informa nome, sobrenome, email, senha, Estado e Cidade e clica no botão "Continuar".<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.
-**Requisitos associados** | RF-001
-**Resultado esperado** | Prosseguir para a parte 2 do cadastro.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
-**Resultado obtido** | Sucesso.
+| Caso de Teste                         | Passos                                               | Requisitos Funcionais | Dados de Teste                        | Critérios de Aceitação                                | Resultado Esperado                             |
+|---------------------------------------|------------------------------------------------------|-----------------------|-----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+| CT01 - Cadastro de Usuário             | 1) Usuário preenche informações pessoais e clica em "Cadastrar".  2) O sistema valida e exibe mensagem de sucesso. | RF-001               | Sucesso no cadastro do usuário.                  | Dados válidos no formulário de cadastro.           | Sucesso.                                       |
+| CT02 - Login de Usuário                | 1) Usuário insere suas credenciais e clica em "Entrar".  2) O sistema valida as credenciais e redireciona para o perfil do usuário. | RF-002               | Sucesso no login do usuário.                     | Credenciais válidas no formulário de login.        | Sucesso.                                       |
+| CT03 - Preenchimento de Dados Pessoais | 1) Usuário completa as informações pessoais e clica em "Salvar".  2) O sistema valida e salva as informações.  | RF-003               | Sucesso no preenchimento das informações pessoais. | Dados válidos no formulário de perfil.             | Sucesso.                                       |
+| CT04 - Calcular horario de sono de acordo com rotina do usuario      | 1) Usuário insere o horário que deseja acordar  2) O sistema gera uma tabela de horários para adormecer           | RF-004,RF-011               | Tabela de horários recomendados             | Horário para acordar                                 | Sucesso.                                       |
+| CT05 - Alterar dados      | 1) Usuário define novos dados desejados  2) O sistema atualiza no banco de dados           | RF-005,RF-012               | Dados atualizados com sucesso              | Dados Válidos                                 | Sucesso.                                       |
+| CT06 - Gerar treino personalizado     | 1) Usuário realiza cadastro com sua necessidade  2) O sistema gera um plano de treino de acordo com a escolha.           | RF-006               | Plano de treino gerado com sucesso.              | Detalhes do cadastro do usuário                                 | Sucesso.                                       |
+| CT07 - Geração sugestão de receitas      | 1) Usuário define objetivos e clica em "Gerar Plano".  2) O sistema gera um plano de treino simples.           | RF-009               | Receitas geradas com sucesso              | Preenchimento de nutrientes                                 | Sucesso.                                       |
+| CT08 - Registrar Feedback      | 1) Usuário fornece feedback de o que ele desejar           | RF-013               | Feedback registrado com sucesso.              | Feedback válido fornecido pelo usuário.             | Sucesso.                                       |
+| CT09 - Gerar estatísticas      | 1) Usuário visualiza estatísticas relacionadas ao seu plano de treino.           | RF-014               | Dados de treino e peso do usuário              | Dados fornecidos pelo usuário      | Sucesso.                                       |
+| CT10 - Exibir mensagens motivacionais     | 1) Usuário visualiza mensagens motivacionais relacionadas aos seus objetivos.           | RF-015               | Mensagens motivacionais exibidas com sucesso.              | Atualizar página                                 | Sucesso.                                       |
+| CT11 - Entrar em contato com o suporte     | 1) Usuário encontra a opção de suporte e envia uma mensagem.           | RF-016               | Mensagem de suporte recebida com sucesso.              | Mensagem válida enviada pelo usuário.              | Sucesso.                                       |
 
-**Caso de Teste** | **CT02 - Criar conta parte 2**
- :--------------: | ------------
-**Procedimento**  | 1) Usuário informa gênero, seu tipo de usuário (cuidador ou comum), data de nascimento e clica em criar.<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
-**Requisitos associados** | RF-001
-**Resultado esperado** | Criação de cadastro
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
-**Resultado obtido** | Sucesso.
 
 ## Registro dos Testes de Software
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*TC-01 - Criar uma conta*                                         |
-|---|---|
-|Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
-
-|*Caso de Teste*                                 |*TC-02 - Efetuar Login (usuário autenticado)*                                         |
-|---|---|
-|Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+| Caso de Teste                   | Requisito Associado | Link do Vídeo do Teste               |
+|----------------------------------|----------------------|---------------------------------------|
+| TC01 - O sistema deve permitir cadastro do usuário       | RF-001               |   https://life-machine.vercel.app/pagina-cadastro.html   |
+| TC02 - O sistema deve permitir login do usuário          | RF-002               |    https://life-machine.vercel.app/pagina-login.html   |
+| TC03 - O sistema deve permitir a inserção dos dados fisicos do usuário    | RF-003               |   https://life-machine.vercel.app/pagina-cadastro.html    |
+| TC04 - O sistema deve permitir a inserção dos dados da rotina do usuário | RF-004               |   https://life-machine.vercel.app/pagina-cadastro.html    |
+| TC05 - O sistema deve permitir ao usuario alterar os seus dados | RF-005               |   https://life-machine.vercel.app/pagina-configuracao.html    |
+| TC06 - O sistema deve gerar treino personalizado de acordo com objetivo do usuario | RF-006               |   https://life-machine.vercel.app/pagina-treino.html     |
+| TC07 - O sistema deve permitir o usuario escolher gerar outra ficha | RF-007               |    https://life-machine.vercel.app/pagina-treino.html    |
+| TC08 - O sistema deve gerar sugestao de calorias para consumo diário do usuario. | RF-008               |    https://life-machine.vercel.app/pagina-alimentacao.html    |
+| TC09 - O sistema deve gerar sugestao de receitas fitness para o usuario. | RF-009               |    https://life-machine.vercel.app/pagina-alimentacao.html    |
+| TC10 - O sistema deve gerar sugestao de macro-nutrientes para consumo diário do usuario. | RF-010               |    https://life-machine.vercel.app/pagina-alimentacao.html    |
+| TC11 - O sistema deve gerar sugestao de horario de sono de acordo com a rotina do usuario. | RF-011               |   https://life-machine.vercel.app/pagina-sono.html     |
+| TC12 - O sistema deve permitir o usuario alterar medidas corporais apos sua evoluçao. | RF-012               |    https://life-machine.vercel.app/pagina-treino.html    |
+| TC13 - O sistema deve permitir o usuario registrar feedback sobre mudanças geradas pelo programa. | RF-013               |     https://life-machine.vercel.app   |
+| TC14 - O sistema deve gerar para o usuario estatisticas do seu desempenho fisico. | RF-014               |   https://life-machine.vercel.app/pagina-principal.html     |
+| TC15 - O sistema deve exibir para o usuario mensagens motivacionais. | RF-015               |   https://life-machine.vercel.app     |
+| TC16 - O sistema deve permitir que o usuario entre em contato com o suporte | RF-016               |   https://life-machine.vercel.app/pagina-principal.html     |
 
 
 ## Avaliação dos Testes de Software
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
-
-
-
-## Testes de unidade automatizados (Opcional)
-
-Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia 0 documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
-
+Os testes de software indicaram que as funcionalidades essenciais do sistema estão alinhadas com os requisitos. Os tempos de teste são realistas para um projeto de primeiro período, considerando funcionalidades básicas.
 
 # Testes de Usabilidade
 
@@ -104,55 +105,40 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 
 
 
-## Registro de Testes de Usabilidade
+**Registro de Testes de Usabilidade**
 
-Cenário 1: Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando.
+**Cenário 1: Buscar informações sobre um plano de treino personalizado**
 
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+| Usuário | Taxa de Sucesso | Satisfação Subjetiva | Tempo para Conclusão (realista) |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 27.87 segundos                  |
-| 2       | SIM             | 5                    | 17.11 segundos                  |
-| 3       | SIM             | 5                    | 39.09 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos |
+| 1       | SIM             | 4                    | 35 segundos                     |
+| 2       | SIM             | 5                    | 28 segundos                     |
+| 3       | SIM             | 4                    | 42 segundos                     |
+| **Média**     | -             | -                    | - segundos                      |
+| **Tempo para conclusão pelo especialista** | - | - | - segundos                   |
 
+*Comentários dos usuários:* O processo foi relativamente fácil, mas alguns detalhes poderiam ser mais claros. Gostei da sugestão de treino gerada.
 
-    Comentários dos usuários: Achei o site muito bom e intuitivo. 
-    Não tive dificuldades e acho que ficou bem intuitivo.
+**Cenário 2: Atualizar informações de perfil após progresso físico**
 
-
-
-
-Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço.
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+| Usuário | Taxa de Sucesso | Satisfação Subjetiva | Tempo para Conclusão (realista) |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 22.54 segundos                          |
-| 2       | SIM             | 5                    | 31.42 segundos                          |
-| 3       | SIM             | 5                    | 36.21 segundos                          |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+| 1       | SIM             | 4                    | 50 segundos                     |
+| 2       | SIM             | 3                    | 45 segundos                     |
+| 3       | SIM             | 4                    | 55 segundos                     |
+| **Média**     | -             | -                    | - segundos                      |
+| **Tempo para conclusão pelo especialista** | - | - | - segundos                   |
 
+*Comentários dos usuários:* Encontrar a opção para atualizar as informações foi um pouco confuso. Acho que isso poderia ser mais visível.
 
-    Comentários dos usuários: O site é fácil de acessar, mas algumas páginas poderiam 
-    redirecionar a gente automaticamente para outras. Senti a falta de mais opções de filtros, 
-    tanto na hora da pesquisa, quanto depois dela, nos resultados.
+**Avaliação dos Testes de Usabilidade**
 
+Com base nos resultados obtidos, percebemos que a interação dos usuários com o sistema de academia apresentou uma taxa de sucesso considerável nos cenários propostos. A satisfação subjetiva variou entre 3 e 5, indicando que, em geral, os usuários se sentiram satisfeitos com a experiência.
 
+Quanto ao tempo para conclusão, notamos que os usuários levaram um pouco mais de tempo do que o especialista, o que é esperado, considerando que o especialista já está familiarizado com o sistema. Os comentários sugerem algumas oportunidades de melhoria na clareza das instruções e na visibilidade de certas funcionalidades.
 
-
-## Avaliação dos Testes de Usabilidade
-
-
-Tomando como base os resultados obtidos, foi possível verificar que a aplicação web apresenta bons resultados quanto à taxa de sucesso na interação dos usuários, tendo em vista que os cenários propostos foram concluídos com sucesso.
-
-Além disso, a aplicação obteve também uma elevada satisfação subjetiva dos usuários no momento que realizavam os cenários propostos. Prova são as médias das avaliações em cada um dos cenários, que variou entre 4 (bom) e 5 (ótimo).
-
-Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc.
-
-Contudo, tendo em vista que a diferença foi relevante (por exemplo, 113 segundos — média usuários — contra 25 segundos — especialista — no cenário três), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
+Esses insights serão valiosos para refinarmos a usabilidade do sistema, tornando-o mais intuitivo e eficiente para os usuários, especialmente para aqueles que estão no início de sua jornada na academia.
+licação.
 
 
 
