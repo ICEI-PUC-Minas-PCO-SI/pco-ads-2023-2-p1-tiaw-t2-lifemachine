@@ -1,3 +1,8 @@
+var imgArea = document.getElementById('fotoUser')
+var a = sessionStorage.getItem('ImgUsuario')
+imgArea.src = a;
+
+
 $(document).ready(function () {
     function atualizarnome() {
         var nomeDoUsuario = sessionStorage.getItem('userName') || 'Usuário';
@@ -10,3 +15,5 @@ $(document).ready(function () {
     }
     atualizarnome();
 });
+
+

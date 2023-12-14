@@ -117,3 +117,9 @@ a{
 .footer-style p {
     font-size: 12px;
 }
+
+#fotoUser {
+    width: 120px;
+    height: 90px;
+}
+

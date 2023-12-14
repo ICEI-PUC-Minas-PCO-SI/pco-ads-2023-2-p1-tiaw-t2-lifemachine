@@ -15,8 +15,9 @@ $(document).ready(function () {
                 if (cadastrado) {
                     sessionStorage.setItem('userName', Detalhescadastrousuario(data, email).Nome);
                     sessionStorage.setItem('pesoAtual', Detalhescadastrousuario(data, email).peso);
-                    sessionStorage.setItem('atualID', Detalhescadastrousuario(data, email).id)
-                    sessionStorage.setItem('ficha', 0)
+                    sessionStorage.setItem('atualID', Detalhescadastrousuario(data, email).id);
+                    sessionStorage.setItem('ficha', 0);
+                    sessionStorage.setItem('ImgUsuario', Detalhescadastrousuario(data, email).imgUsuario);
                     window.location.href = './pagina-principal.html';
                     
                 } else {
