@@ -61,9 +61,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-005| O sistema deve permitir ao usuario alterar os seus dados | ALTA | Daniel | 
 |RF-006| O sistema deve gerar treino personalizado de acordo com objetivo do usuario | ALTA | Erick | 
 |RF-007| O sistema deve permitir o usuario escolher gerar outra ficha | MÉDIA | Erick | 
-|RF-008| O sistema deve gerar sugestao de calorias para consumo diário do usuario. | MÉDIA | Karol | 
-|RF-009| O sistema deve gerar sugestao de receitas fitness para o usuario.  | BAIXA | Karol | 
-|RF-010| O sistema deve gerar sugestao de macro-nutrientes para consumo diário do usuario.  | MÉDIA | Karol | 
+|RF-009| O sistema deve gerar sugestao de receitas fitness para o usuario.  | BAIXA | Karol |  
 |RF-011| O sistema deve gerar sugestao de horario de sono de acordo com a rotina do usuario.  | MÉDIA | Daniel | 
 |RF-012| O sistema deve permitir o usuario alterar medidas corporais apos sua evoluçao.  | BAIXA | Daniel | 
 |RF-013| O sistema deve permitir o usuario registrar feedback sobre mudanças geradas pelo programa.  | BAIXA | Pedro | 
