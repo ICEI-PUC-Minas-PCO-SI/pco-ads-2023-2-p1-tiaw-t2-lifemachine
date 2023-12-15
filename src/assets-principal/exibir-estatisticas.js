@@ -30,6 +30,7 @@ fetch(`${URL}/${auxID}`)
               body: JSON.stringify({ [jsonMes]: auxPeso }), // Atualiza apenas o mês atual
             });
         });
+        
     } else {
       console.error("Usuário não encontrado.");
     }
