@@ -32,6 +32,7 @@ fetch(`${URL}/${auxID}`)
             });
           }
         });
+        
     } else {
       console.error("Usuário não encontrado.");
     }
