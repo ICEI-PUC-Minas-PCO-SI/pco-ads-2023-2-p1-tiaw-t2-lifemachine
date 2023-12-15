@@ -19,7 +19,7 @@
 
         <nav class="navbar navbar-expand-lg header-style">
             <div class="container-fluid">
-                <div class="d-flex flex-row align-items-center">
+                <div class="d-flex flex-row align-items-center" style="color: white;">
                     <a class="navbar-brand" href="./index.html"><img src="./assets-principal/img/logo.png"
                             alt="logo-lifeMachine"></a>
                     <h1 class="p-0 m-0">LifeMachine</h1>
@@ -27,6 +27,19 @@
             </div>
         </nav>
 
+        <img src="./assets-principal/img/fundo-principal.jpg" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1; background-image: url('./assets-principal/img/fundo-principal.jpg'); background-size: cover; background-attachment: fixed; background-position: center; filter: blur(5px);">
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+          
         <div class="container-fluid custom-padding">
 
 
@@ -36,7 +49,7 @@
                     <div class="align-self-center fotos d-flex flex-column">
                         <div class="row d-flex">
                             <img class="img-fluid" id="fotoUser" src="" alt="foto_usuario">
-                            <h1 id="Att-Nome" class="ml-3" style="margin-bottom: 30px;">Olá, Usuário</h1>
+                            <h1 id="Att-Nome" class="ml-3" style="margin-bottom: 30px; color: white;">Olá, Usuário</h1>
                         </div>
                     </div>
                 </div>
@@ -111,7 +124,7 @@
 
         <footer class="container-fluid footer-style d-flex align-items-center">
             <div class="row-fluid">
-                <div class="col d-flex">
+                <div class="col d-flex" style="color: white;">
                     <p class="m-0 p-0">Copyright 2023</p>
                 </div>
             </div>

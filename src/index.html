@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    
     <nav class="navbar navbar-expand-lg header-style">
         <div class="container-fluid">
             <div class="d-flex flex-row align-items-center">
@@ -27,20 +28,31 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link fs-4 text-dark me-4" href="#solucao">Soluções</a>
+                        <a class="nav-link fs-4 me-4" style="color: white;" href="#solucao">Soluções</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-4 text-dark me-4" href="#sobre-nos">Sobre nós</a>
+                        <a class="nav-link fs-4 me-4" style="color: white;" href="#sobre-nos">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-4 text-dark me-4" href="#opiniao">Opiniões dos Usuários</a>
+                        <a class="nav-link fs-4 me-4" style="color: white;" href="#opiniao">Opiniões dos Usuários</a>
                     </li>
                 </ul>
+                
             </div>
         </div>
     </nav>
 
-
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script> 
+      
     <div class="all-content">
 
         <nav class="container-fluid navbar-style d-flex align-items-center flex-row-reverse pe-4">
