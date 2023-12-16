@@ -65,6 +65,29 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.btn{
+    background-color: rgb(235, 77, 77) !important;
+    color: white !important;
+}
+.btn:hover{
+background-color: rgb(235, 77, 77) !important;
+color: black !important;
+}
+
+#username {
+    border-radius: 0px;
+    border: 1px solid black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+#password {
+    border-radius: 0px;
+    border: 1px solid black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
 
 .form-style {
     width: 80% !important;
