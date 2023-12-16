@@ -50,7 +50,14 @@ body {
     display: flex;
     align-items: center;
 }
-
+.btn{
+    background-color: rgb(235, 77, 77) !important;
+    color: white !important;
+}
+.btn:hover{
+background-color: rgb(235, 77, 77) !important;
+color: black !important;
+}
 .header-style{
     background-color:black;
     color: white;
