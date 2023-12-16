@@ -25,7 +25,7 @@ a{
 }
 
 .gear-style{
-    background-color: #FF0000;
+    background-color: rgb(235, 77, 77);
     padding: 20px;
     border-radius: 50%;
 }
@@ -43,15 +43,17 @@ a{
 }
 
 .imagem {
-    border: 2px solid #FF0000;
+    border-right: 2px solid rgb(248, 124, 124);
+    border-bottom: 2px solid rgb(248, 124, 124);
     border-radius: 5%;
-    background-color: white;
+    background-color: rgb(209, 207, 207);
     min-width: 130px;
+    background: linear-gradient(310deg, rgb(209, 207, 207) 40%,rgb(235, 77, 77));
 }
 
 .info {
-    background-color: white;
-    border: 2px solid #FF0000;
+    background-color: rgb(231, 230, 230);
+    border: 2px solid rgb(248, 124, 124);
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 20px;
@@ -75,6 +77,8 @@ a{
 }
 
 #suporte {
+    border-bottom: 5px solid rgb(248, 124, 124);
+    border-right: 5px solid rgb(248, 124, 124);
     border-radius: 10px;
     background-color: white;
     padding: 5px;
@@ -84,7 +88,7 @@ a{
     max-width: fit-content;
 }
 .btn-custom {
-    background-color: #FF0000;
+    background-color: rgb(235, 77, 77);
     color: white;
     margin-top: 15px;
     width: 100%;
@@ -95,7 +99,7 @@ a{
 }
 
 .btn-custom:hover {
-    background-color: #FF0000;
+    background-color: rgb(235, 77, 77);
 }
 
 .header-style{

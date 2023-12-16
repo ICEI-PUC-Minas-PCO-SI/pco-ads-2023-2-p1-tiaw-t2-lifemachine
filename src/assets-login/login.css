@@ -81,6 +81,13 @@ color: black !important;
     border-left: 0px;
     border-right: 0px;
 }
+
+input:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
 #password {
     border-radius: 0px;
     border: 1px solid black;
