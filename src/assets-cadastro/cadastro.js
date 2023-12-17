@@ -133,4 +133,18 @@ $(document).ready(function () {
                 return campo;
         }
     }
+    $('input, select').on('focus', function () {
+        console.log('Campo em foco:', this);
+        $(this).addClass('focus-highlight');
+    });
+
+    $('input, select').on('blur', function () {
+        console.log('Campo fora de foco:', this);
+
+        if ($(this).val().trim() === '') {
+            $(this).addClass('focus-highlight');
+        } else {
+            $(this).removeClass('focus-highlight');
+        }
+    });
 });
