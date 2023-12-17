@@ -99,6 +99,13 @@ body {
     align-items: center;
 }
 
-.focus-highlight {
-    border-color: red !important;
+.input-style {
+    width: 70% !important;
+    outline: 2px solid transparent; 
+    transition: outline 0.8s; 
+}
+
+.input-style.focus-highlight {
+    outline-color: rgb(255, 0, 0); 
+    outline-width: 2px; 
 }

@@ -86,22 +86,22 @@ $(document).ready(function () {
             });
         });
 
-        function validarCampos() {
-            var camposObrigatorios = ['#email', '#password', '#1password', '#nome', '#Altura', '#Peso', '#Objetivo', '#DiasDeTreino', '#Sexo'];
-            var camposFaltando = [];
-        
-            camposObrigatorios.forEach(function(campo) {
-                var valorCampo = $(campo).val();
-                if (!valorCampo || valorCampo.trim() === '') {
-                    camposFaltando.push(campo);
-                    $(campo).addClass('focus-highlight'); 
-                } else {
-                    $(campo).removeClass('focus-highlight'); 
-                }
-            });
-        
-            return camposFaltando;
-        }
+    function validarCampos() {
+        var camposObrigatorios = ['#email', '#password', '#1password', '#nome', '#Altura', '#Peso', '#Objetivo', '#DiasDeTreino', '#Sexo'];
+        var camposFaltando = [];
+    
+        camposObrigatorios.forEach(function(campo) {
+            var valorCampo = $(campo).val();
+            if (!valorCampo || (campo === '#email' && (!validarEmail(valorCampo) || valorCampo.indexOf('@') === -1))) {
+                camposFaltando.push(campo);
+                $(campo).addClass('focus-highlight'); 
+            } else {
+                $(campo).removeClass('focus-highlight'); 
+            }
+        });
+
+        return camposFaltando;
+    }
 
     function emailUsado(email) {
         for (var i = 0; i < users.length; i++) {
@@ -136,15 +136,31 @@ $(document).ready(function () {
                 return campo;
         }
     }
+
     $('input, select').on('focus', function () {
-        $(this).addClass('focus-highlight');
+        $(this).removeClass('focus-highlight');
     });
 
     $('input, select').on('blur', function () {
         if ($(this).val().trim() === '') {
             $(this).addClass('focus-highlight');
-        } else {
-            $(this).removeClass('focus-highlight');
         }
     });
-});
+
+    $('#email').on('input', function () {
+        var emailCampo = $(this);
+        if (!validarEmail(emailCampo.val())) {
+            emailCampo.addClass('focus-highlight');
+        } else {
+            emailCampo.removeClass('focus-highlight');
+        }
+    });
+    
+
+    function validarEmail(email) {
+        function validarEmail(email) {
+            return /^[^\s@]+@[^\s@]+$/.test(email);
+        }
+        
+    }
+});                                        
