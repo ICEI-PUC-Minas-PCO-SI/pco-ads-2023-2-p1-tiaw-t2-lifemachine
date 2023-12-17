@@ -43,8 +43,8 @@ a{
 }
 
 .imagem {
-    border-right: 2px solid rgb(248, 124, 124);
-    border-bottom: 2px solid rgb(248, 124, 124);
+    border-right: 5px solid rgb(248, 124, 124);
+    border-bottom: 5px solid rgb(248, 124, 124);
     border-radius: 5%;
     background-color: rgb(209, 207, 207);
     min-width: 130px;
