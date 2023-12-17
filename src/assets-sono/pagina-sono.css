@@ -24,6 +24,15 @@ a {
 .dropdownX {
   height: 40px;
   width: 100px;
+  border-radius: 20px;
+  padding: 0px 5px;
+  border: 1px solid black;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.dropdownX:focus {
+  outline: none;
 }
 
 .resultado {
@@ -31,7 +40,7 @@ a {
   flex-direction: column;
   padding: 10px;
   border-radius: 10px;
-  background-color: white;
+
 }
 
 .parametro {
@@ -55,9 +64,10 @@ a {
 #despertador {
   flex-direction: column;
   padding: 10px;
-  border: 1px solid #FF0000;
+  border-right: 6px solid rgb(248, 124, 124);
+  border-bottom: 6px solid rgb(248, 124, 124);
   border-radius: 10px;
-  background-color: white;
+  background: linear-gradient(140deg,white 20%,rgb(170, 169, 169));
   text-align: center;
   
 }
@@ -73,15 +83,13 @@ a {
 .campo-input label {
   font-size: 20px;
   margin-right: 10px;
-  width: 15%;
+  width: 25%;
 }
 
 .campo-input input {
   flex: 1;
   padding: 10px;
   font-size: 16px;
-  border: none;
-  border-radius: 10px;
   text-align: center;
   border: 1px solid black;
 }
@@ -91,9 +99,10 @@ a {
   flex: 4;
   flex-direction: column;
   padding: 10px;
-  border: 1px solid #FF0000;
+  border-right: 6px solid rgb(248, 124, 124);
+  border-bottom: 6px solid rgb(248, 124, 124);
   border-radius: 10px;
-  background-color: white;
+  background: linear-gradient(140deg,white 20%,rgb(170, 169, 169));
 }
 
 #frequencia img {
@@ -105,32 +114,13 @@ a {
 }
 
 .botoes {
-  background-color: red;
-  justify-content: center;
-  color: black;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-  width: fit-content;
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 0.25rem;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  background-color: rgb(235, 77, 77) !important;
+  color: white !important;
 }
 
 .botoes:hover {
-  background-color: red;
-  color: black;
+  background-color: rgb(235, 77, 77) !important;
+  color: black !important;
 }
 
 .header-style {
@@ -150,7 +140,6 @@ a {
     color:white;
     max-width: 2500px;
     padding: 15px;
-    position: fixed;
 }
 
 .footer-style p {
@@ -158,13 +147,15 @@ a {
 
 }
 
-.all-content {
+.all-content{
   max-width: 2500px;
   min-width: 400px;
   margin: auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-image: url('./img/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
+
