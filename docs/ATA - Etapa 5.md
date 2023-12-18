@@ -8,4 +8,4 @@ Karolayne: Aprimoramento realizado no layout do site e implementação da acessi
 
 Erick : Participacão com ideias de como fazer as correções solicitadas. 
 
-Daniel : 
+Daniel : Colabioração na ideia de como desenvolver a API do bancio de dados, ajuda na realização de testes
