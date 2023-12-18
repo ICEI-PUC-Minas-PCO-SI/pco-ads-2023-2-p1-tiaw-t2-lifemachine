@@ -6,6 +6,6 @@ Pedro : Correação de hospedagem do JSON-Server mantendo a utilização do Rend
 
 Karolayne: Aprimoramento realizado no layout do site e implementação da acessibilidade VLIBRAS.
 
-Erick : 
+Erick : Participacão com ideias de como fazer as correções solicitadas. 
 
 Daniel : 
