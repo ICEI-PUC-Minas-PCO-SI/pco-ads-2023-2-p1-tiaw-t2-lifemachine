@@ -18,14 +18,26 @@
         <div class="container-fluid">
             <div class="d-flex flex-row align-items-center">
                 <a class="navbar-brand" href="./pagina-principal.html"><img src="./assets-alimentacao/img/logo.png" alt="logo-lifeMachine"></a>
-                <h1 class="p-0 m-0">LifeMachine</h1>
+                <h1 class="p-0 m-0">LifeMachine </h1>
             </div>
         </div>
     </nav>
     
-
+    <img src="./assets-alimentacao/img/fundo-alimentação.jpg" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1; background-image: url('./assets-alimentacao/img/fundo-alimentação.jpg'); background-size: cover; background-attachment: fixed; background-position: center; filter: blur(5px);">
+    
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    
     <!-- Título "ALIMENTAÇÃO" -->
-    <div id="alimento" style="display: flex; align-items: center;">
+    <div id="alimento" style="display: flex; align-items: center; color:white">
         <a href="./pagina-principal.html"><img class="img-fluid" src="./assets-alimentacao/img/horizontal-arrow.png"></a>
         <h1>ALIMENTAÇÃO</h1>
     </div>
@@ -36,22 +48,22 @@
         <!-- Contêiner de dados -->
         <div id="dados">
             <div class="campo-input">
-                <label for="calorias">Calorias</label>
+                <label for="calorias">Calorias:</label>
                 <input type="text" id="calorias" placeholder="">
             </div>
             <div class="campo-input">
-                <label for="carboidratos">Carboidratos</label>
+                <label for="carboidratos">Carboidratos:</label>
                 <input type="text" id="carboidratos" placeholder="">
             </div>
             <div class="campo-input">
-                <label for="proteina">Proteína</label>
+                <label for="proteina">Proteína:</label>
                 <input type="text" id="proteina" placeholder="">
             </div>
             <div class="campo-input">
-                <label for="gorduras">Gorduras</label>
+                <label for="gorduras">Gorduras:</label>
                 <input type="text" id="gorduras" placeholder="">
             </div>
-            <button onclick="calcularReceita()" style="background-color: #FF0000; color: #fff; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">Calcular Receita</button>
+            <button class="btn" onclick="calcularReceita()">Calcular Receita</button>
           
         </div>
 
@@ -66,7 +78,7 @@
     <footer class="container-fluid footer-style d-flex align-items-center">
         <div class="row-fluid">
             
-            <p class="m-0 p-0">Copyright 2023</p>
+            <p class="m-0 p-0">&copy; Copyright 2023</p>
         </div>
     </div>
 </footer>

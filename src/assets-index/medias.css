@@ -3,19 +3,12 @@
     .card-opniao {
         font-size: 14px;
     }
-    .sobre-nos {
-        background-color: #D9D9D9;
-    
-    }
     .sobre-nos-banner {
-        background-color: #796E6E;
         border-radius: 30px;
-        border: 1px solid black;
     }
     .texto-sobrenos{
         font-size: 14px;
         font-weight: bold;
-        color: white;
     }
     .card-solucao {
         flex-direction: row;
@@ -33,19 +26,15 @@
         flex-direction: row;
     }
     .sobre-nos {
-        background-color: #D9D9D9;
         height: 400px;
     }
     .sobre-nos-banner {
-        background-color: #796E6E;
         border-radius: 30px;
-        border: 1px solid black;
         height: 220px;
     }
     .texto-sobrenos{
         font-size: 16px;
         font-weight: normal;
-        color: white;
     }
     .text-motivacional {
         position: absolute;
@@ -54,8 +43,6 @@
         font-size: large;
     }
     .coment-area button {
-        background-color: #F00;
-        color: white;
         width: 70px;
         height: 40px;
         padding: 3px;
@@ -67,12 +54,10 @@
     }
     .card-solucao {
         height: 60px;
-        background-color: #D2D2D2;
         border-radius: 10px;
         font-size: 16px;
         font-weight: bold;
         width: 100%;
-        border: 1px solid black;
     }
     .card-solucao img {
         height: 100%;
@@ -88,20 +73,16 @@
         flex-direction: row;
     }
     .sobre-nos {
-        background-color: #D9D9D9;
         height: 450px;
     }
     .sobre-nos-banner {
-        background-color: #796E6E;
         border-radius: 30px;
-        border: 1px solid black;
         height: 280px;
         width: 700px;
     }
     .texto-sobrenos{
         font-size: 18px;
         font-weight: normal;
-        color: white;
     }
     .text-motivacional {
         position: absolute;
@@ -110,8 +91,6 @@
         font-size: 25px;
     }
     .coment-area button {
-        background-color: #F00;
-        color: white;
         width: 70px;
         height: 40px;
         padding: 3px;
@@ -123,12 +102,10 @@
     }
     .card-solucao {
         height: 60px;
-        background-color: #D2D2D2;
         border-radius: 10px;
         font-size: 18px;
         font-weight: bold;
         width: 100%;
-        border: 1px solid black;
     }
     
     .all-cards-solucao {
@@ -137,12 +114,9 @@
         box-sizing: border-box;
     }
     .card-opniao {
-        background-color: #D2D2D2;
         border-radius: 50px;
         font-size: 18px;
-        font-weight: bold;
         width: 700px;
-        border: 1px solid black;
     }
     .card-opniao img {
         height: 60%;
@@ -163,13 +137,10 @@
     }
 
     .sobre-nos {
-        background-color: #D9D9D9;
         height: 450px;
     }
     .sobre-nos-banner {
-        background-color: #796E6E;
         border-radius: 30px;
-        border: 1px solid black;
         height: 280px;
         width: 700px;
     }
@@ -185,7 +156,6 @@
         font-size: 30px;
     }
     .coment-area button {
-        background-color: #F00;
         color: white;
         width: 70px;
         height: 40px;
@@ -198,12 +168,10 @@
     }
     .card-solucao {
         height: 60px;
-        background-color: #D2D2D2;
         border-radius: 10px;
         font-size: 18px;
         font-weight: bold;
         width: 100%;
-        border: 1px solid black;
     }
     .all-cards-solucao {
         height: 450px;
@@ -211,12 +179,9 @@
         box-sizing: border-box;
     }
     .card-opniao {
-        background-color: #D2D2D2;
         border-radius: 50px;
         font-size: 18px;
-        font-weight: bold;
         width: 700px;
-        border: 1px solid black;
     }
     .card-opniao img {
         height: 60%;
@@ -239,13 +204,10 @@
     }
 
     .sobre-nos {
-        background-color: #D9D9D9;
         height: 550px;
     }
     .sobre-nos-banner {
-        background-color: #796E6E;
         border-radius: 30px;
-        border: 1px solid black;
         height: 380px;
         width: 700px;
     }
@@ -261,7 +223,6 @@
         font-size: 30px;
     }
     .coment-area button {
-        background-color: #F00;
         color: white;
         width: 80px;
         height: 50px;
@@ -274,12 +235,10 @@
     }
     .card-solucao {
         height: 80px;
-        background-color: #D2D2D2;
         border-radius: 10px;
         font-size: 20px;
         font-weight: bold;
         width: 100%;
-        border: 1px solid black;
     }
     .all-cards-solucao {
         height: 550px;
@@ -287,12 +246,9 @@
         box-sizing: border-box;
     }
     .card-opniao {
-        background-color: #D2D2D2;
         border-radius: 50px;
         font-size: 18px;
-        font-weight: bold;
         /* width: 800px; */
-        border: 1px solid black;
     }
     .card-opniao img {
         height: 60%;

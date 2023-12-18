@@ -4,8 +4,8 @@
     font-family: Bahnschrift;
 }
 .header-style{
-    /* height: 120px; */
-    background-color: #D9D9D9;
+    background-color: black;
+    color:white;
     text-align: center;
     max-width: 2500px;
     margin: auto;
@@ -16,24 +16,30 @@
     border-radius: 50%;
 }
 .header-style h1 {
+    color: white;
     font-style: normal;
     font-weight: 700;
 
 }
+.header-links:hover {
+    color: rgb(235, 77, 77) !important;
+}
 
 .navbar-style {
     height: 50px;
-    background-color:#B0B0B0;;
+    text-decoration: none;
+    border-bottom: 6px solid rgb(248, 124, 124);
 }
 
 .navbar-style button {
-    background-color: #F00;
+    background-color: rgb(235, 77, 77);
     color: white;
     width: 80px;
     height: 35px;
 }
 .navbar-style button:hover{
-    background-color: #F00;
+    background-color: rgb(235, 77, 77);
+    color: black;
 }
 
 .first-area-style {
@@ -46,15 +52,18 @@
     top: 50px;
     font-size:  small;
 }
-
+#solucao {
+    font-weight: bolder;
+    color: black;
+}
 .card-solucao {
-    /* height: 60px; */
-    background-color: #D2D2D2;
+    background: linear-gradient(160deg, rgb(235, 77, 77), white 70%);
+    background-color: white;
     border-radius: 10px;
     font-size: 12px;
     font-weight: bold;
     width: 100%;
-    border: 1px solid black;
+
 }
 .card-solucao img {
     height: 70%;
@@ -65,37 +74,46 @@
 }
 
 .sobre-nos {
-    background-color: #D9D9D9;
+    background-color: rgb(248, 124, 124);
     padding-bottom: 30px;
+    color: white;
+    font-weight: bolder;
 }
 .sobre-nos-banner {
-    background-color: #796E6E;
+    background-color: rgb(248, 124, 124);
     border-radius: 30px;
-    border: 1px solid black;
 }
 .texto-sobrenos{
     font-size: 14px;
-    font-weight: bold;
-    color: white;
+    font-weight: normal;
+    color: black;
 }
 
-
+#opiniao {
+    font-weight: bolder;
+    color: black;
+}
 .card-opniao {
-    background-color: #D2D2D2;
+    background: linear-gradient(160deg, white 70%);
     border-radius: 50px;
     font-size: 12px;
-    font-weight: bold;
     width: 100%;
-    border: 1px solid black;
+    border: 3px solid rgb(248, 124, 124);
 }
 .card-opniao img {
+    border: 2px solid rgb(248, 124, 124);
     height: 40%;
+    border-radius: 50%;
 }
 
 .all-cards-opniao {
     width: 400px;
-    /* height: 350px; */
     box-sizing: border-box;
+}
+
+#Feedback {
+    font-weight: bolder;
+    color: black;
 }
 
 .comentario-input {
@@ -103,7 +121,7 @@
 }
 
 .coment-area button {
-    background-color: #F00;
+    background-color: rgb(235, 77, 77);
     color: white;
     width: 60px;
     height: 30px;
@@ -112,11 +130,12 @@
 }
 
 .coment-area button:hover {
-    background-color: #F00;
+    background-color: rgb(235, 77, 77);
 }
 
 .footer-style {
-    background: #D9D9D9;
+    background: black;
+    color:white;
     height: 45px;
     max-width: 2500px;
 

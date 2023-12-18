@@ -25,7 +25,7 @@ a{
 }
 
 .gear-style{
-    background-color: #FF0000;
+    background-color: rgb(235, 77, 77);
     padding: 20px;
     border-radius: 50%;
 }
@@ -43,15 +43,17 @@ a{
 }
 
 .imagem {
-    border: 2px solid #FF0000;
+    border-right: 5px solid rgb(248, 124, 124);
+    border-bottom: 5px solid rgb(248, 124, 124);
     border-radius: 5%;
-    background-color: #D9D9D9;
+    background-color: rgb(209, 207, 207);
     min-width: 130px;
+    background: linear-gradient(310deg, rgb(209, 207, 207) 40%,rgb(235, 77, 77));
 }
 
 .info {
-    background-color: #D9D9D9;
-    border: 2px solid #FF0000;
+    background-color: rgb(231, 230, 230);
+    border: 2px solid rgb(248, 124, 124);
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 20px;
@@ -75,8 +77,10 @@ a{
 }
 
 #suporte {
+    border-bottom: 5px solid rgb(248, 124, 124);
+    border-right: 5px solid rgb(248, 124, 124);
     border-radius: 10px;
-    background-color: #D9D9D9;
+    background-color: white;
     padding: 5px;
     margin-top: 100px;
     margin-bottom: 30px;
@@ -84,7 +88,7 @@ a{
     max-width: fit-content;
 }
 .btn-custom {
-    background-color: #FF0000;
+    background-color: rgb(235, 77, 77);
     color: white;
     margin-top: 15px;
     width: 100%;
@@ -95,11 +99,11 @@ a{
 }
 
 .btn-custom:hover {
-    background-color: #FF0000;
+    background-color: rgb(235, 77, 77);
 }
 
 .header-style{
-    background-color: #D9D9D9;
+    background-color: black;
     text-align: center;
     max-width: 2500px;
 }
@@ -109,7 +113,7 @@ a{
 }
 
 .footer-style {
-    background: #D9D9D9;
+    background: black;
     height: 45px;
     max-width: 2500px;
 }
@@ -122,4 +126,3 @@ a{
     width: 120px;
     height: 90px;
 }
-

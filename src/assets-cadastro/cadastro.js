@@ -89,11 +89,14 @@ $(document).ready(function () {
     function validarCampos() {
         var camposObrigatorios = ['#email', '#password', '#1password', '#nome', '#Altura', '#Peso', '#Objetivo', '#DiasDeTreino', '#Sexo'];
         var camposFaltando = [];
-
+    
         camposObrigatorios.forEach(function(campo) {
             var valorCampo = $(campo).val();
-            if (!valorCampo || valorCampo.trim() === '') {
+            if (!valorCampo ) {
                 camposFaltando.push(campo);
+                $(campo).addClass('focus-highlight'); 
+            } else {
+                $(campo).removeClass('focus-highlight'); 
             }
         });
 
@@ -133,4 +136,29 @@ $(document).ready(function () {
                 return campo;
         }
     }
-});
+
+    $('input, select').on('focus', function () {
+        $(this).removeClass('focus-highlight');
+    });
+    
+    $('input, select').on('blur', function () {
+        if ($(this).val().trim() === '') {
+            $(this).addClass('focus-highlight');
+        }
+    });
+
+    $('#email').on('input', function () {
+        var emailCampo = $(this);
+        if (!validarEmail(emailCampo.val())) {
+            emailCampo.addClass('focus-highlight');
+        } else {
+            emailCampo.removeClass('focus-highlight');
+        }
+    });
+    
+    function validarEmail(email) {
+        return /^[^\s@]+@[^\s@]+$/.test(email);
+    }
+    
+    
+});                                        
