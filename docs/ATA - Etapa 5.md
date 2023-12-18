@@ -1,6 +1,6 @@
 ## ENTREGA ETAPA 5
 
-Caio : 
+Caio : Aprimoramento feito na pagina de cadastro para facilitar na hora do preenchimento de dados.
 
 Pedro : Correação de hospedagem do JSON-Server mantendo a utilização do Render, aprimoramento do design de todo o projeto juntamente com a Karolayne.
 
