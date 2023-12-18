@@ -92,7 +92,7 @@ $(document).ready(function () {
     
         camposObrigatorios.forEach(function(campo) {
             var valorCampo = $(campo).val();
-            if (!valorCampo || (campo === '#email' && (!validarEmail(valorCampo) || valorCampo.indexOf('@') === -1))) {
+            if (!valorCampo ) {
                 camposFaltando.push(campo);
                 $(campo).addClass('focus-highlight'); 
             } else {
@@ -140,7 +140,7 @@ $(document).ready(function () {
     $('input, select').on('focus', function () {
         $(this).removeClass('focus-highlight');
     });
-
+    
     $('input, select').on('blur', function () {
         if ($(this).val().trim() === '') {
             $(this).addClass('focus-highlight');
@@ -156,11 +156,9 @@ $(document).ready(function () {
         }
     });
     
-
     function validarEmail(email) {
-        function validarEmail(email) {
-            return /^[^\s@]+@[^\s@]+$/.test(email);
-        }
-        
+        return /^[^\s@]+@[^\s@]+$/.test(email);
     }
+    
+    
 });                                        
